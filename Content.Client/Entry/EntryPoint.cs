@@ -129,6 +129,8 @@ namespace Content.Client.Entry
             _prototypeManager.RegisterIgnore("sponsorGroup"); // Sponsor think
             _prototypeManager.RegisterIgnore("ertTeams");
             _prototypeManager.RegisterIgnore("ertShuttle");
+            _prototypeManager.RegisterIgnore("additionalMap"); ///ADT-additionalMap
+
             _componentFactory.GenerateNetIds();
             _adminManager.Initialize();
             _screenshotHook.Initialize();
