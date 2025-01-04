@@ -79,7 +79,7 @@
       AggroVisionRadius: !type:Single
         10
   - type: NPCUseActionOnTarget
-    actionId: ActionGoliathTentacle
+    actions: GoliathActions
   - type: Tag
     tags:
     - CannotSuicide
@@ -338,3 +338,8 @@
     size: Normal
   - type: StaticPrice
     price: 500
+
+- type: weightedRandomEntity
+  id: GoliathActions
+  weights:
+    ActionGoliathTentacle: 1
