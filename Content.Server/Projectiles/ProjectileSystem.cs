@@ -44,7 +44,14 @@ public sealed class ProjectileSystem : SharedProjectileSystem
             return;
         }
 
-        var ev = new ProjectileHitEvent(component.Damage * _damageableSystem.UniversalProjectileDamageModifier, target, component.Shooter);
+        // ADT TornadoTech Tweak Start
+        var hitAttempt = new ProjectileHitAttemptEvent(component.Damage, target, component.Shooter);
+        RaiseLocalEvent(target, hitAttempt);
+        if (hitAttempt.Cancelled)
+            return;
+        // ADT TornadoTech Tweak End
+
+        var ev = new ProjectileHitEvent(component.Damage, target, component.Shooter);
         RaiseLocalEvent(uid, ref ev);
 
         var otherName = ToPrettyString(target);

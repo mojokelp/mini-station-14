@@ -45,3 +45,159 @@
     Telecrystal: 5
   categories:
   - UplinkPointless
+
+- type: listing
+  id: ADTUplinkSyndieCloak
+  name: uplink-syndiecloak-name
+  description: uplink-syndiecloak-desc
+  icon: { sprite: ADT/Clothing/Neck/Cloaks/syndicate_cloak.rsi, state: icon}
+  productEntity: ADTClothingNeckCloakSyndicate
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkPointless
+
+- type: listing
+  id: ADTUplinkNukeOpsCloak
+  name: uplink-nukeopscloak-name
+  description: uplink-nukeopscloak-desc
+  icon: { sprite: ADT/Clothing/Neck/Cloaks/nukeops_cloak.rsi, state: icon}
+  productEntity: ADTClothingNeckCloakNukeOps
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkPointless
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkNukiesShield
+  name: uplink-nukiesShield-name
+  description: uplink-nukiesShield-desc
+  icon: { sprite: ADT/Objects/Weapons/Melee/fullshieldsindi.rsi, state: icon}
+  productEntity: ADTFullRiotShieldSyndicate
+  cost:
+    Telecrystal: 16
+  categories:
+  - UplinkWeaponry
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkMaidBundle
+  name: uplink-maid-bundle-name
+  description: uplink-maid-bundle-desc
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledMaid
+  cost:
+    Telecrystal: 20
+  categories:
+    - UplinkPointless
+
+
+- type: listing
+  id: ADTUplinkOmnizinPizza
+  name: uplink-omnizinpizza-name
+  description: uplink-omnizinpizza-desc
+  productEntity: ADTFoodBoxSyndiPizza
+  cost:
+    Telecrystal: 4
+  categories:
+    - UplinkPointless
+
+- type: listing
+  id: ADTUplinkSyndicateHelmet
+  name: uplink-syndicate-helmet-name
+  description: uplink-syndicate-helmet-desc
+  productEntity: ClothingHeadHelmetSwatSyndicate
+  cost:
+    Telecrystal: 2
+  categories:
+    - UplinkWearables
+
+# Отключено до починки импланта
+# - type: listing
+#   id: ADTUplinkGFFImplant
+#   name: uplink-GFF-name
+#   description: uplink-GFF-desc
+#   productEntity: ADTGorlaxFriendlyFireImplanter
+#   cost:
+#     Telecrystal: 15
+#   categories:
+#   - UplinkImplants
+#   conditions:
+#   - !type:StoreWhitelistCondition
+#     whitelist:
+#       tags:
+#       - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkInvisibleCloak
+  name: uplink-invisible-cloak-name
+  description: uplink-invisible-cloak-desc
+  productEntity: ADTClothingNeckInvisibleCloak
+  cost:
+    Telecrystal: 5
+  categories:
+    - UplinkWearables
+
+- type: listing
+  id: ADTUplinkNightVision
+  name: uplink-night-vision-name
+  description: uplink-night-vision-desc
+  productEntity: ClothingEyesNightVision
+  cost:
+    Telecrystal: 5
+  categories:
+    - UplinkWearables
+
+- type: listing
+  id: UplinkADTModularGrenadeBundle
+  name: uplink-ADTModularGrenadeBundle-name
+  description: uplink-ADTModularGrenadeBundle-desc
+  productEntity: ADTClothingBackpackDuffelSyndicateModuleGrenade
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkChemicals
+
+- type: listing
+  id: ADTUplinkGrenadeLauncherBundle
+  name: ADTuplink-grenade-launcher-bundle-name
+  description: ADTuplink-grenade-launcher-bundle-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Launchers/rocket.rsi, state: base }
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledGrenadeLauncher
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 20
+  cost:
+    Telecrystal: 25
+  categories:
+  - UplinkWeaponry
+
+- type: listing
+  id: ADTUplinkMask
+  name: uplink-mask-name
+  description: uplink-mask-desc
+  productEntity: ADTMaskCoif
+  categories:
+    - UplinkPointless
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: ADTUplinkMiniatureEnergyCrossbow
+  name: uplink-miniature-energy-crossbow-name
+  description: uplink-miniature-energy-crossbow-desc
+  icon: { sprite:  /Textures/ADT/Objects/Weapons/Guns/Battery/miniature_ebow.rsi, state: icon }
+  productEntity: ADTWeaponMiniatureEnergyCrossbow
+  cost:
+    Telecrystal: 9
+  categories:
+  - UplinkWeaponry
