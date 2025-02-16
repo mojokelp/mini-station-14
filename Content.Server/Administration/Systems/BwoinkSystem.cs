@@ -45,6 +45,7 @@ namespace Content.Server.Administration.Systems
         [Dependency] private readonly IAfkManager _afkManager = default!;
         [Dependency] private readonly IServerDbManager _dbManager = default!;
         [Dependency] private readonly PlayerRateLimitManager _rateLimit = default!;
+        [Dependency] private readonly IBanManager _banManager = default!; // Sunrise-Ahelp-Antispam
 
         [GeneratedRegex(@"^https://discord\.com/api/webhooks/(\d+)/((?!.*/).*)$")]
         private static partial Regex DiscordRegex();
@@ -77,6 +78,14 @@ namespace Content.Server.Administration.Systems
         // Maximum length a message can be before it is cut off
         // Should be shorter than DescriptionMax
         private const ushort MessageLengthCap = 3000;
+
+        // Sunrise-Ahelp-Antispam-Start
+        private readonly TimeSpan _messageCooldown = TimeSpan.FromSeconds(2);
+
+        private readonly Queue<(NetUserId Channel, string Text, TimeSpan Timestamp)> _recentMessages = new();
+        private const int MaxRecentMessages = 10;
+        private const int SpamCheckMessageCount = 3;
+        // Sunrise-Ahelp-Antispam-End
 
         // Text to be used to cut off messages that are too long. Should be shorter than MessageLengthCap
         private const string TooLongText = "... **(too long)**";
@@ -867,6 +876,43 @@ namespace Content.Server.Administration.Systems
             /// </summary>
             public bool OnCall;
         }
+
+        // Sunrise-Ahelp-Antispam-Start
+        private void AddToRecentMessages(NetUserId channelId, string text, TimeSpan timestamp)
+        {
+            _recentMessages.Enqueue((channelId, text, timestamp));
+
+            if (_recentMessages.Count > MaxRecentMessages)
+            {
+                _recentMessages.Dequeue();
+            }
+        }
+
+        private bool IsOnCooldown(NetUserId channelId, TimeSpan currentTime)
+        {
+            var lastMessage = _recentMessages
+                .Where(msg => msg.Channel == channelId)
+                .OrderByDescending(msg => msg.Timestamp)
+                .FirstOrDefault();
+
+            return lastMessage != default && (currentTime - lastMessage.Timestamp) < _messageCooldown;
+        }
+
+        private bool IsSpam(NetUserId channelId, string text)
+        {
+            var recentMessages = _recentMessages
+                .Where(msg => msg.Channel == channelId)
+                .OrderByDescending(msg => msg.Timestamp)
+                .Take(10);
+
+            return recentMessages.All(msg => msg.Text == text) && recentMessages.Count() >= 5;
+        }
+
+        public IEnumerable<(NetUserId Channel, string Text, TimeSpan Timestamp)> GetRecentMessages()
+        {
+            return _recentMessages;
+        }
+        // Sunrise-Ahelp-Antispam-End
     }
 
     public sealed class AHelpMessageParams
