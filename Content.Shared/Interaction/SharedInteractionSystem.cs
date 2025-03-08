@@ -492,7 +492,7 @@ namespace Content.Shared.Interaction
                 return;
             }
 
-            DebugTools.Assert(!IsDeleted(user) && !IsDeleted(target));
+            // DebugTools.Assert(!IsDeleted(user) && !IsDeleted(target));
             // all interactions should only happen when in range / unobstructed, so no range check is needed
             var message = new InteractHandEvent(user, target);
             RaiseLocalEvent(target, message, true);
@@ -501,7 +501,7 @@ namespace Content.Shared.Interaction
             if (message.Handled)
                 return;
 
-            DebugTools.Assert(!IsDeleted(user) && !IsDeleted(target));
+            // DebugTools.Assert(!IsDeleted(user) && !IsDeleted(target));
             // Else we run Activate.
             InteractionActivate(user,
                 target,
@@ -536,7 +536,7 @@ namespace Content.Shared.Interaction
             if (RangedInteractDoBefore(user, used, target, clickLocation, inRangeUnobstructed, checkDeletion: false))
                 return;
 
-            DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used) && !IsDeleted(target));
+            // DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used) && !IsDeleted(target));   // ADT Exception Fix
             if (target != null)
             {
                 var rangedMsg = new RangedInteractEvent(user, used, target.Value, clickLocation);
@@ -548,7 +548,7 @@ namespace Content.Shared.Interaction
                     return;
             }
 
-            DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used) && !IsDeleted(target));
+            // DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used) && !IsDeleted(target));   // ADT Exception Fix
             InteractDoAfter(user, used, target, clickLocation, inRangeUnobstructed, checkDeletion: false);
         }
 
@@ -1014,7 +1014,7 @@ namespace Content.Shared.Interaction
             if (RangedInteractDoBefore(user, used, target, clickLocation, canReach: true, checkDeletion: false))
                 return true;
 
-            DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used) && !IsDeleted(target));
+            // DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used) && !IsDeleted(target));
             // all interactions should only happen when in range / unobstructed, so no range check is needed
             var interactUsingEvent = new InteractUsingEvent(user, used, target, clickLocation);
             RaiseLocalEvent(target, interactUsingEvent, true);
@@ -1027,7 +1027,7 @@ namespace Content.Shared.Interaction
             if (InteractDoAfter(user, used, target, clickLocation, canReach: true, checkDeletion: false))
                 return true;
 
-            DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used) && !IsDeleted(target));
+            // DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used) && !IsDeleted(target));
             return false;
         }
 
@@ -1064,7 +1064,7 @@ namespace Content.Shared.Interaction
             if (target == null)
                 return false;
 
-            DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used) && !IsDeleted(target));
+            //DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used) && !IsDeleted(target));
             var afterInteractUsingEvent = new AfterInteractUsingEvent(user, used, target, clickLocation, canReach);
             RaiseLocalEvent(target.Value, afterInteractUsingEvent);
 
@@ -1113,7 +1113,8 @@ namespace Content.Shared.Interaction
             if (checkDeletion && (IsDeleted(user) || IsDeleted(used)))
                 return false;
 
-            DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used));
+            //DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used));  // ADT Commented
+
             _delayQuery.TryComp(used, out var delayComponent);
             if (checkUseDelay && delayComponent != null && _useDelay.IsDelayed((used, delayComponent)))
                 return false;
@@ -1143,7 +1144,8 @@ namespace Content.Shared.Interaction
                 return true;
             }
 
-            DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used));
+            //DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used));  // ADT Commented
+
             var userEv = new UserActivateInWorldEvent(user, used, complexInteractions.Value);
             RaiseLocalEvent(user, userEv, true);
             if (!userEv.Handled)
@@ -1196,7 +1198,8 @@ namespace Content.Shared.Interaction
                 return true;
             }
 
-            DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used));
+            //DebugTools.Assert(!IsDeleted(user) && !IsDeleted(used));  // ADT Commented
+
             // else, default to activating the item
             return InteractionActivate(user, used, false, false, false, checkDeletion: false);
         }

@@ -320,7 +320,7 @@
     - BorgModulesStatic
     - BorgLimbsStatic
     dynamicPacks:
-    - Robotics
+    # - Robotics  # ADT Commented
     - BorgModules
     - MechParts
     - MechEquipment
