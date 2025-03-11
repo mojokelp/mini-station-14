@@ -17,3 +17,5 @@ ghost-role-information-bingle-description = Бездна - это жизнь. Б
 
 bingle-upgrade-success = Вы чувствуете прилив сил
 bingle-pit-grow = Бездна расширяется
+
+bingle-pit-end-of-round = The Binglepit near {$location} grew to level {$level} and collected {$points} Bingle points
