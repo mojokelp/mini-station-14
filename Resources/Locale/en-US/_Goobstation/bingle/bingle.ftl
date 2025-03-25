@@ -18,6 +18,5 @@ ghost-role-information-bingle-description = Бездна - это жизнь. Б
 bingle-upgrade-success = Вы чувствуете прилив сил
 bingle-pit-grow = Бездна расширяется
 
-ghost-role-information-bingle-rules = You are a [color=red][bold]Team Antagonist[/bold][/color] with other Bingles
-
-bingle-pit-end-of-round = The Binglepit near {$location} grew to level [color=teal]{$level}[/color] and collected [color=teal]{$points}[/color] Bingle points
+ghost-role-information-bingle-rules = Вы [color=red][bold]Антагонист[/bold][/color], работающий в команде с другими бинглами
+bingle-pit-end-of-round = Бездна возле {$location} достигла уровня [color=teal]{$level}[/color] и аккумулировала [color=teal]{$points}[/color] очков энергии
