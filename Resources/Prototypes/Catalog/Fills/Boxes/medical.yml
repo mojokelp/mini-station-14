@@ -12,6 +12,12 @@
     layers:
       - state: box_medical # Corvax-Resprite
       - state: syringe
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Pistols/viper.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt
 
 - type: entity
   name: pill canister box

@@ -13,11 +13,19 @@
   icon: "JobIconSeniorSalvageSpecialist"
   supervisors: job-supervisors-qm
   access:
-  - Cargo
-  - Salvage
-  - Maintenance
-  - External
-  - SeniorSalvage
+    - Cargo
+    - Salvage
+    - Maintenance
+    - External
+    - SeniorSalvage
+  special:
+    - !type:AddComponentSpecial
+      components:
+      - type: Skills # Corvax-Next-Skills
+        skills:
+        - Butchering
+        - ShuttleControl
+        - Shooting
 
 - type: startingGear
   id: SeniorSalvageSpecialistGear
@@ -26,6 +34,3 @@
     ears: ClothingHeadsetMining
     neck: ClothingNeckCloakMiner
     back: ClothingBackpackSeniorSalvage
-#  storage:
-#    back:
-#    - RubberStampSeniorSalvage

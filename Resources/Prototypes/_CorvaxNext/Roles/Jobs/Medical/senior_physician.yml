@@ -21,6 +21,16 @@
   - Medical
   - Maintenance
   - Chemistry
+  special:
+    - !type:AddComponentSpecial
+      components:
+      - type: Skills # Corvax-Next-Skills
+        skills:
+        - Surgery
+        - MedicalEquipment
+        - Butchering
+      - type: SurgerySpeedModifier
+        speedModifier: 2
 
 - type: startingGear
   id: SeniorPhysicianGear

@@ -103,7 +103,7 @@
     containers:
       storagebase: !type:Container
         ents: []
-        
+
 - type: entity
   name: syringe gun
   parent: BaseStorageItem
@@ -117,7 +117,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,2,0
+    - 0,0,3,0
     whitelist:
       tags:
       - SyringeGunAmmo
@@ -135,7 +135,10 @@
   - type: ContainerAmmoProvider
     container: storagebase
   - type: Item
-    size: Normal
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

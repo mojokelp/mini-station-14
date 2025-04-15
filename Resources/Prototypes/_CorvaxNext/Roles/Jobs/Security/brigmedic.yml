@@ -22,6 +22,7 @@
     - Security
     - Maintenance
     - Service
+    - Chemistry
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -48,7 +49,9 @@
     pocket1: WeaponDisabler
   storage:
     back:
-    - Flash
-    - MedkitAdvancedFilled
+    - MedkitCombatFilled
     - ClothingNeckSecBadgeBrigmedic # Corvax-Next-Badges
     - DefibrillatorCompact
+    - LauncherSyringe
+    - BoxBrigmedic
+    - ChemistryBottlePax
