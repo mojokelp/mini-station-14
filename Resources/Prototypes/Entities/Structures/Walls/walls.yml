@@ -83,6 +83,10 @@
   - type: IconSmooth
     key: walls
     base: brick
+  - type: RustRequiresPathStage # Goobstation
+    pathStage: 4 # Mark of rust
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -115,6 +119,10 @@
   - type: IconSmooth
     key: walls
     base: clock
+  - type: RustRequiresPathStage # Goobstation
+    pathStage: 4 # Mark of rust
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -151,6 +159,10 @@
   - type: IconSmooth
     key: walls
     base: clown
+  - type: RustRequiresPathStage # Goobstation
+    pathStage: 4 # Mark of rust
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -278,6 +290,10 @@
   - type: IconSmooth
     key: walls
     base: diamond
+  - type: RustRequiresPathStage # Goobstation
+    pathStage: 4 # Mark of rust
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -323,6 +339,8 @@
   - type: IconSmooth
     key: walls
     base: gold
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -352,6 +370,10 @@
   - type: IconSmooth
     key: walls
     base: ice
+  - type: RustRequiresPathStage # Goobstation
+    pathStage: 4 # Mark of rust
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -398,7 +420,9 @@
     key: walls
     base: plasma
   - type: RadiationBlocker
-    resistance: 5
+    resistance: 10
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -444,6 +468,8 @@
   - type: IconSmooth
     key: walls
     base: plastic
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -636,6 +662,13 @@
     price: 250
   - type: RadiationBlocker
     resistance: 5
+  - type: RustRequiresPathStage # Goobstation
+    pathStage: 7 # Toxic blade
+  - type: Penetratable # Goobstation - Better snipers
+    penetrateDamage: 100
+    damagePenalty: 0.25
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: WallReinforced
@@ -675,7 +708,8 @@
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
-
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: WallShuttleDiagonal
@@ -814,6 +848,8 @@
   - type: IconSmooth
     key: walls
     base: silver
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 #shuttle walls
 - type: entity
@@ -954,8 +990,13 @@
           3: { state: shuttle_construct-3, visible: true}
           4: { state: shuttle_construct-4, visible: true}
           5: { state: shuttle_construct-5, visible: true}
-  - type: Reflect
-    reflectProb: 1
+  - type: RustRequiresPathStage # Goobstation
+    pathStage: 7 # Toxic blade
+  - type: Penetratable # Goobstation - Better snipers
+    penetrateDamage: 90
+    damagePenalty: 0.3
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -999,8 +1040,8 @@
   - type: IconSmooth
     key: walls
     base: state
-  - type: Reflect
-    reflectProb: 1
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -1047,6 +1088,8 @@
   - type: IconSmooth
     key: walls
     base: solid
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: WallShuttleDiagonal
@@ -1108,6 +1151,8 @@
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -1147,7 +1192,9 @@
     key: walls
     base: uranium
   - type: RadiationBlocker
-    resistance: 6
+    resistance: 20
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -1187,6 +1234,8 @@
   - type: IconSmooth
     key: woods
     base: wood
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -1258,6 +1307,10 @@
   - type: IconSmooth
     key: walls
     base: necropolis
+  - type: RustRequiresPathStage # Goobstation
+    pathStage: 10 # Ascension
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: BaseWall
@@ -1287,6 +1340,10 @@
     - mining
     - miningB
   - type: Appearance
+  - type: RustRequiresPathStage # Goobstation
+    pathStage: 7 # Toxic blade
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: WallShuttleDiagonal
@@ -1333,6 +1390,10 @@
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: RustRequiresPathStage # Goobstation
+    pathStage: 7 # Toxic blade
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: WallVaultAlien
@@ -1440,6 +1501,8 @@
   - type: IconSmooth
     key: cobblebricks
     base: cobblebrick
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WallCosmicCult
 
 - type: entity
   parent: WallCobblebrick
