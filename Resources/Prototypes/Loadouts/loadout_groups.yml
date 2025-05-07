@@ -1033,6 +1033,15 @@
   - WardenJumpskirt
 
 - type: loadoutGroup
+  id: WardenBackpack
+  name: loadout-group-warden-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+  - WardenBackPack
+
+- type: loadoutGroup
   id: WardenOuterClothing
   name: loadout-group-warden-outerclothing
   loadouts:

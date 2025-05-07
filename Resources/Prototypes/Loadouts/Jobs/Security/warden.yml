@@ -40,3 +40,9 @@
   id: WardenArmoredWinterCoat
   equipment:
     outerClothing: ClothingOuterWinterWarden
+
+# Back
+- type: loadout
+  id: WardenBackPack
+  equipment:
+    back: ClothingBackpackWarden
