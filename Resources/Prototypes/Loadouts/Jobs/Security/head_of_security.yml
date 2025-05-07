@@ -76,6 +76,11 @@
     outerClothing: ClothingOuterCoatHoSTrench
 
 - type: loadout
+  id: HeadofSecurityGreatcoatCool
+  equipment:
+    outerClothing: ClothingOuterCoatHoSGreatcoat
+
+- type: loadout
   id: HeadofSecurityWinterCoat
   equipment:
     outerClothing: ClothingOuterWinterHoS
