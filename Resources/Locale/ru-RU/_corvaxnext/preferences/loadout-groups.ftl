@@ -16,8 +16,8 @@ loadout-group-senior-researcher-gloves = Ведущий учёный, перча
 # Security
 loadout-group-brigmedic-head = Бригмедик, голова
 loadout-group-brigmedic-jumpsuit = Бригмедик, комбинезон
-loadout-group-brigmedic-backpack = Бригмедик, верхняя одежда
-loadout-group-brigmedic-outerclothing = Бригмедик, рюкзак
+loadout-group-brigmedic-backpack = Бригмедик, рюкзак
+loadout-group-brigmedic-outerclothing = Бригмедик, верхняя одежда
 loadout-group-senior-officer-head = Инструктор СБ, голова
 loadout-group-senior-officer-jumpsuit = Инструктор СБ, комбинезон
 loadout-group-senior-officer-backpack = Инструктор СБ, рюкзак
