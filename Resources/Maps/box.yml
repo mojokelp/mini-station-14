@@ -4,8 +4,8 @@ meta:
   engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/25/2025 16:43:34
-  entityCount: 28267
+  time: 05/08/2025 09:48:46
+  entityCount: 28271
 maps:
 - 780
 grids:
@@ -774,6 +774,11 @@ entities:
             6019: -2,-22
             6226: -26,-75
             6227: -24,-77
+        - node:
+            color: '#FFFFFFFF'
+            id: Box
+          decals:
+            6304: -1,39
         - node:
             color: '#FFFFFFFF'
             id: BoxGreyscale
@@ -10621,6 +10626,15 @@ entities:
       parent: 8364
 - proto: ActionToggleInternals
   entities:
+  - uid: 25003
+    mapInit: true
+    paused: true
+    components:
+    - type: Transform
+      parent: 8572
+    - type: InstantAction
+      originalIconColor: '#FFFFFFFF'
+      container: 8572
   - uid: 25167
     components:
     - type: Transform
@@ -10635,6 +10649,35 @@ entities:
     - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 20121
+  - uid: 28256
+    mapInit: true
+    paused: true
+    components:
+    - type: Transform
+      parent: 9182
+    - type: InstantAction
+      originalIconColor: '#FFFFFFFF'
+      container: 9182
+- proto: ActionToggleJetpack
+  entities:
+  - uid: 9231
+    mapInit: true
+    paused: true
+    components:
+    - type: Transform
+      parent: 8572
+    - type: InstantAction
+      originalIconColor: '#FFFFFFFF'
+      container: 8572
+  - uid: 28255
+    mapInit: true
+    paused: true
+    components:
+    - type: Transform
+      parent: 9182
+    - type: InstantAction
+      originalIconColor: '#FFFFFFFF'
+      container: 9182
 - proto: ActionToggleLight
   entities:
   - uid: 16587
@@ -10650,6 +10693,13 @@ entities:
     components:
     - type: Transform
       pos: -34.5,-4.5
+      parent: 8364
+- proto: ADTSpawnMechPaddy
+  entities:
+  - uid: 28260
+    components:
+    - type: Transform
+      pos: -0.5,39.5
       parent: 8364
 - proto: ADTToyFigurineBlueshieldOfficer
   entities:
@@ -13900,7 +13950,7 @@ entities:
       pos: 24.5,16.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -95234.28
+      secondsUntilStateChange: -95671.5
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15438,7 +15488,7 @@ entities:
       pos: 9.5,25.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -8490.779
+      secondsUntilStateChange: -8928
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -21438,7 +21488,7 @@ entities:
   - uid: 9388
     components:
     - type: Transform
-      pos: -2.28955,39.38977
+      pos: -2.3207164,39.552757
       parent: 8364
   - uid: 9589
     components:
@@ -88021,7 +88071,7 @@ entities:
       pos: 18.5,-13.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -2465.2913
+      secondsUntilStateChange: -2902.5122
       state: Closing
   - uid: 13388
     components:
@@ -88029,7 +88079,7 @@ entities:
       pos: 18.5,-14.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -2500.9912
+      secondsUntilStateChange: -2938.2122
       state: Closing
   - uid: 13389
     components:
@@ -88197,7 +88247,7 @@ entities:
       pos: -34.5,-14.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -89422.82
+      secondsUntilStateChange: -89860.04
       state: Closing
   - uid: 15010
     components:
@@ -127764,13 +127814,35 @@ entities:
   - uid: 8572
     components:
     - type: Transform
-      pos: -0.68612957,39.73207
+      pos: -2.6488414,39.193382
       parent: 8364
+    - type: GasTank
+      toggleActionEntity: 25003
+    - type: Jetpack
+      toggleActionEntity: 9231
+    - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents:
+          - 9231
+          - 25003
   - uid: 9182
     components:
     - type: Transform
-      pos: -0.38925457,39.51332
+      pos: -2.3519664,39.209007
       parent: 8364
+    - type: GasTank
+      toggleActionEntity: 28256
+    - type: Jetpack
+      toggleActionEntity: 28255
+    - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents:
+          - 28255
+          - 28256
 - proto: Jukebox
   entities:
   - uid: 20632
@@ -128407,6 +128479,13 @@ entities:
     components:
     - type: Transform
       pos: 49.5,-0.5
+      parent: 8364
+- proto: LockerBrigmedicFilled
+  entities:
+  - uid: 28261
+    components:
+    - type: Transform
+      pos: -9.5,31.5
       parent: 8364
 - proto: LockerCaptainFilled
   entities:
@@ -129073,13 +129152,6 @@ entities:
         - 0
         - 0
         - 0
-  - uid: 25003
-    components:
-    - type: Transform
-      pos: -9.5,31.5
-      parent: 8364
-    - type: Lock
-      locked: False
 - proto: LockerParamedicFilled
   entities:
   - uid: 27687
@@ -138101,11 +138173,6 @@ entities:
     - type: Transform
       pos: 2.5,39.5
       parent: 8364
-  - uid: 9231
-    components:
-    - type: Transform
-      pos: -0.5,39.5
-      parent: 8364
   - uid: 9364
     components:
     - type: Transform
@@ -145469,7 +145536,7 @@ entities:
   - uid: 9316
     components:
     - type: Transform
-      pos: -2.430175,38.67102
+      pos: -2.4769664,38.599632
       parent: 8364
   - uid: 11753
     components:
@@ -150070,6 +150137,13 @@ entities:
     - type: Transform
       pos: 47.5,-4.5
       parent: 8364
+- proto: SpawnPointBrigmedic
+  entities:
+  - uid: 28257
+    components:
+    - type: Transform
+      pos: -8.5,31.5
+      parent: 8364
 - proto: SpawnPointCaptain
   entities:
   - uid: 11766
@@ -150496,13 +150570,6 @@ entities:
     components:
     - type: Transform
       pos: 7.5,40.5
-      parent: 8364
-- proto: SpawnPointSeniorOfficer
-  entities:
-  - uid: 28255
-    components:
-    - type: Transform
-      pos: 14.5,33.5
       parent: 8364
 - proto: SpawnPointServiceWorker
   entities:

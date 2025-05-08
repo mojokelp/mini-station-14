@@ -20,7 +20,7 @@
         - type: StationJobs
           availableJobs:
             #service
-            ADTBlueShieldOfficer: [ 0, 1 ] #ADT-Roles
+            ADTBlueShieldOfficer: [ 1, 1 ] #ADT-Roles
             Captain: [ 1, 1 ]
             IAA: [ 1, 1 ] # Corvax-IAA
             HeadOfPersonnel: [ 1, 1 ]
@@ -54,6 +54,7 @@
             SecurityOfficer: [ 3, 4 ]
             Detective: [ 1, 1 ]
             SecurityCadet: [ 2, 2 ]
+            Brigmedic: [ 1, 1 ]
             #Lawyer: [ 1, 1 ] # Corvax-IAA
             #supply
             Quartermaster: [ 1, 1 ]
