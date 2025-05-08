@@ -2,7 +2,7 @@
   id: Plasma
   mapName: 'Plasma'
   mapPath: /Maps/plasma.yml
-  minPlayers: 30
+  minPlayers: 20
   maxPlayers: 80
   stations:
     Plasma:
@@ -20,7 +20,7 @@
         - type: StationJobs
           availableJobs: #Total of 66 jobs roundstart, max of 93 inc. latejoins and trainees.
             #command - 7
-            ADTBlueShieldOfficer: [ 0, 1 ] #ADT-Roles
+            ADTBlueShieldOfficer: [ 1, 1 ] #ADT-Roles
             Captain: [ 1, 1 ]
             IAA: [ 1, 1 ] # Corvax-IAA
             HeadOfPersonnel: [ 1, 1 ]
@@ -61,6 +61,7 @@
             SecurityOfficer: [ 6, 8 ]
             Detective: [ 1, 2 ]
             SecurityCadet: [ 4, 4 ]
+            Brigmedic: [ 1, 1 ]
             #Lawyer: [ 1, 2 ] # Corvax-IAA
             #supply - 8-10
             SalvageSpecialist: [ 5, 5 ]
