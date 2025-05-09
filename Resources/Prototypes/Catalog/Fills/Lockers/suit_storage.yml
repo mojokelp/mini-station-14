@@ -273,3 +273,20 @@
         - id: ClothingOuterHardsuitWizard
         - id: ClothingMaskBreath
         - id: JetpackVoidFilled
+
+#Senior Salvage Hardsuit
+- type: entity
+  id: SuitStorageSeniorSalvageSpecialistFilled
+  suffix: Filled
+  parent: SuitStorageBase
+  name: Хранилище скафандра ведущего утилизатора
+  description: Надёжное хранилище скафандра. Мешает нерадивым утилизаторам украсть скафандр старшего коллеги.
+  components:
+  - type: StorageFill
+    contents:
+      - id: OxygenTankFilled
+      - id: ClothingShoesBootsMag
+      - id: ClothingOuterHardsuitSeniorSalvage
+      - id: ClothingMaskGasExplorer
+  - type: AccessReader
+    access: [["SeniorSalvage"]]

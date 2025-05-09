@@ -4,8 +4,10 @@
   description: job-description-technical-assistant
   playTimeTracker: JobTechnicalAssistant
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 0 #10 hrs # Corvax-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 36000 #10 hrs # Corvax-RoleTime
+      inverted: true # stop playing intern if you're good at engineering!
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"
   supervisors: job-supervisors-engineering

@@ -6,6 +6,10 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 10800 #3 hrs # Corvax-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 36000 #10 hrs Corvax-RoleTime
+      inverted: true
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"
   supervisors: job-supervisors-security

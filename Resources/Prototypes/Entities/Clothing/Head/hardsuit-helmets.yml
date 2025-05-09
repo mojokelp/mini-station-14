@@ -817,3 +817,14 @@
     color: "#f4ffad"
     radius: 5
     energy: 2
+
+- type: entity
+  parent: ClothingHeadHelmetHardsuitSalvage
+  id: ClothingHeadHelmetHardsuitSeniorSalvage
+  name: Шлем скафандра ведущего утилизатора
+  description: Видишь мину на обломке? А она есть!ы
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hardsuits/seniorsalvage.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hardsuits/seniorsalvage.rsi

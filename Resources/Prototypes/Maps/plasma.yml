@@ -66,6 +66,7 @@
             #supply - 8-10
             SalvageSpecialist: [ 5, 5 ]
             CargoTechnician: [ 4, 6 ]
+            SeniorSalvageSpecialist: [ 1, 1 ]
             #civilian - the tiders yearn for the mines
             Passenger: [ 1, 1 ]
         # Corvax-next blob-config-start HUGE
