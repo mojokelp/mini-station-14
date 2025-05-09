@@ -11,7 +11,6 @@
     size: Tiny
   - type: Sprite
   - type: CartridgeAmmo
-    deleteOnSpawn: true
 
 - type: entity
   id: ADT40mmGrenadeBaton
