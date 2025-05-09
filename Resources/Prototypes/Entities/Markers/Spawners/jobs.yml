@@ -75,6 +75,18 @@
       - state: green
       - state: salvagespecialist
 
+- type: entity
+  id: SpawnPointSeniorSalvageSpecialist
+  parent: SpawnPointJobBase
+  name: Спавн ведущего утилизатора
+  components:
+  - type: SpawnPoint
+    job_id: SeniorSalvageSpecialist
+  - type: Sprite
+    layers:
+      - state: green
+      - state: miner
+
 # Civilian
 
 - type: entity

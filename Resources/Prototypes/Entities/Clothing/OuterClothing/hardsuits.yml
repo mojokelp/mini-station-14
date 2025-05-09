@@ -1050,3 +1050,16 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSanta
+
+- type: entity
+  parent: ClothingOuterHardsuitSalvage
+  id: ClothingOuterHardsuitSeniorSalvage
+  name: Скафандр ведущего утилизатора
+  description: Крутой скафандр для крутого копателя камушков!
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Hardsuits/seniorsalvage.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Hardsuits/seniorsalvage.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitSeniorSalvage

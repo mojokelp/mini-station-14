@@ -873,3 +873,16 @@
     interfaces:
       enum.AgentIDCardUiKey.Key:
         type: AgentIDCardBoundUserInterface
+
+- type: entity
+  parent: IDCardStandard
+  id: SeniorSalvageIDCard
+  name: ID карта Ведущего утилизатора
+  description: Карта, необходимая для доступа в различные области станции.
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idshaftminer
+  - type: PresetIdCard
+    job: SeniorSalvageSpecialist

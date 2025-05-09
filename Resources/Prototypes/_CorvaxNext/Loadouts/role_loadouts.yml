@@ -71,3 +71,16 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+
+# Cargo
+- type: roleLoadout
+  id: JobSeniorSalvageSpecialist
+  groups:
+  - GroupTankHarness
+  - CargoTechnicianJumpsuit
+  - SalvageSpecialistOuterClothing
+  - SalvageSpecialistShoes
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool

@@ -3,7 +3,7 @@
   mapName: 'Amber'
   mapPath: /Maps/amber.yml
   # Corvax-start
-  minPlayers: 25
+  minPlayers: 20
   maxPlayers: 55
   # Corvax-end
   stations:
@@ -22,6 +22,7 @@
           # command
           Captain: [ 1, 1 ]
           IAA: [ 1, 1 ] # Corvax-IAA
+          ADTBlueShieldOfficer: [ 1, 1 ] #ADT-Roles
           #service
           HeadOfPersonnel: [ 1, 1 ]
           Bartender: [ 2, 2 ]
@@ -53,12 +54,12 @@
           SecurityOfficer: [ 4, 6 ]
           Detective: [ 1, 1 ]
           SecurityCadet: [ 2, 2 ]
-          #Lawyer: [ 2, 2 ] # Corvax-IAA
-          ADTBlueShieldOfficer: [ 0, 1 ] #ADT-Roles
+          Brigmedic: [ 1, 1 ]
           #supply
           Quartermaster: [ 1, 1 ]
           SalvageSpecialist: [ 5, 5 ]
-          CargoTechnician: [ 3, 4 ]
+          CargoTechnician: [ 4, 4 ]
+          SeniorSalvageSpecialist: [ 1, 1 ]
           #civilian
           Passenger: [ 2, 2 ]
           Clown: [ 1, 1 ]
