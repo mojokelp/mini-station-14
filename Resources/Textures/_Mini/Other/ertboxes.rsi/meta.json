@@ -8,13 +8,16 @@
   },
   "states": [
     {
-    "name": "amber" 
+    "name": "amber"
     },
     {
       "name": "red"
     },
     {
       "name": "gamma"
+    },
+    {
+      "name": "assistant"
     },
     {
       "name": "cburn"
