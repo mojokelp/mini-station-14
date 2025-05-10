@@ -1,6 +1,6 @@
 - type: job
   id: SeniorSalvageSpecialist
-  name: Ведущий утилизатор
+  name: ведущий утилизатор
   description: Главный любитель работки и мудрый наставник раздолбаев-утилей.
   playTimeTracker: JobSeniorSalvageSpecialist
   requirements:
