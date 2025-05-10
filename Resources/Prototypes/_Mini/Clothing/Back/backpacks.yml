@@ -38,6 +38,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
-      - id: MiningDrillDiamond
+      - id: MiningDrill
+      - id: MiningVoucher
   - type: ExplosionResistance
     damageCoefficient: 0.6

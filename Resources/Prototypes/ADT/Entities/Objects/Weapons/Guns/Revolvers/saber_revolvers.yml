@@ -35,7 +35,7 @@
     color: white
     netsync: false
   - type: Gun
-    fireRate: 1.8
+    fireRate: 1.5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
     useKey: false
@@ -71,7 +71,7 @@
             Slash: 5
             Heat: 5
             Structural: 20
-  - type: GunRequiresWield
+#  - type: GunRequiresWield
   - type: ToggleableLightVisuals
     spriteLayer: blade
     inhandVisuals:

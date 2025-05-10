@@ -50,7 +50,7 @@
   id: BlueShieldCase
   name: Оружейная ОСЩ.
   description: Блюспейс хранилище оружия.
-  suffix: ОБР, Эмбер, Основное
+  suffix: ОСЩ
   parent: BaseERTloadoutPrimary
   components:
     - type: Sprite
@@ -135,13 +135,11 @@
   content:
   - Cane
   - ClothingHeadHatTophat
-  - ClothingEyesGlassesSunglasses
   - CigarGold
   - FlippoEngravedLighter
   - WristwatchGold
   - ClothingUniformJumpsuitLawyerBlack
   - ClothingShoesBootsLaceup
-  - SpaceCash2500
 
 - type: thiefBackpackSet
   id: AssistantWelder
@@ -154,9 +152,7 @@
   - ClothingHeadHatWelding
   - ClothingUniformJumpsuitTacticool
   - ClothingOuterVestTank
-  - ClothingHandsGlovesCombat
   - ClothingShoesColorBlack
-  - WelderIndustrialAdvanced
   - ClothingBeltUtilityFilled
   - ClothingNeckVitezstviPin
 
@@ -171,14 +167,10 @@
   - BalloonSyn
   - SyndicateBusinessCard
   - ToyFigurineNukie
-  - DrinkNukieCan
-  - ClothingBeltAssault
   - ClothingEyesGlassesCheapSunglasses
   - ClothingHeadHatSyndie
   - ClothingNeckSyndicakePin
   - ClothingHandsGlovesFingerless
-  - ClothingUniformJumpsuitOperative
-  - ClothingShoesBootsCombat
 
 - type: thiefBackpackSet
   id: AssistantPirate
@@ -196,8 +188,6 @@
   - ClothingHandsGlovesFingerless
   - ClothingShoesBootsLaceup
   - ClothingBeltUtility
-  - HandheldGPSBasic
-  - Binoculars
   - FoamCutlass
 
 - type: thiefBackpackSet

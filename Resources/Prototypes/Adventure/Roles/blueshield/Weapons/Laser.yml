@@ -43,7 +43,7 @@
   - type: StaticPrice
     price: 1000
   - type: BatterySelfRecharger
-    autoRechargeRate: 8
+    autoRechargeRate: 9
     autoRecharge: true
 
 # проджект лазера
@@ -67,17 +67,17 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: StaminaDamageOnCollide
-    damage: 15
+    damage: 17
   - type: Projectile
     impactEffect: BulletImpactEffectDisablerBlue
     damage:
       types:
-        Cold: 8
+        Cold: 7
     soundHit:
       collection: WeakHit
     forceSound: true
   - type: ChangeTemperatureOnCollide
-    heat: -33000 # Lavaland Change
+    heat: -45000 # Lavaland Change
 
 # эффект от станнера
 - type: entity
