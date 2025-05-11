@@ -55,6 +55,7 @@
     - MagazineMagnum
     - ADTBaseUplinkBOBERT
     - ADTertMechUplink
+    - PinpointerNuclear
 - type: startingGear
   id: ERTLeaderGearEVA
   equipment:
@@ -76,7 +77,7 @@
     - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
-    - BoxZiptie
+    - PinpointerNuclear
     - CrowbarRed
     - MagazineMagnum
     - ADTBaseUplinkBOBERT
@@ -104,7 +105,7 @@
     - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
-    - BoxZiptie
+    - PinpointerNuclear
     - CrowbarRed
     - MagazineMagnum
     - ADTBaseUplinkBOBERT
@@ -167,6 +168,7 @@
     - FoodBakedBunHotX
     - Lighter
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear
 - type: startingGear
   id: ERTChaplainGearEVA
   equipment:
@@ -198,6 +200,7 @@
     - FoodBakedBunHotX
     - Lighter
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear
 # Engineer
 - type: job
   id: ERTEngineer
@@ -258,6 +261,7 @@
     - SheetSteel
     - SheetGlass
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear
 - type: startingGear
   id: ERTEngineerGearEVA
   equipment:
@@ -285,6 +289,7 @@
     - SheetPlasteel
     - SheetSteel
     - SheetGlass
+    - PinpointerNuclear
 
 # Security
 - type: job
@@ -338,7 +343,7 @@
     - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
-    - BoxZiptie
+    - PinpointerNuclear
     - CrowbarRed
     - MagazinePistol
     - ADTBaseUplinkBOBERT
@@ -362,7 +367,7 @@
     - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
-    - BoxZiptie
+    - PinpointerNuclear
     - CrowbarRed
     - MagazinePistol
     - ADTBaseUplinkBOBERT
@@ -388,7 +393,7 @@
     - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
-    - BoxZiptie
+    - PinpointerNuclear
     - CrowbarRed
     - MagazinePistol
     - ADTBaseUplinkBOBERT
@@ -449,6 +454,7 @@
     - ChemistryBottleEpinephrine
     - ChemistryBottleEpinephrine
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear
 - type: startingGear
   id: ERTMedicalGearEVA
   equipment:
@@ -473,6 +479,7 @@
     - ChemistryBottleEpinephrine
     - ChemistryBottleEpinephrine
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear
 # Janitor
 - type: job
   id: ERTJanitor
@@ -527,6 +534,7 @@
     - CrowbarRed
     - AdvMopItem
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear
 - type: startingGear
   id: ERTJanitorGearEVA
   equipment:
@@ -549,3 +557,4 @@
     - CrowbarRed
     - AdvMopItem
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear
