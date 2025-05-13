@@ -44,12 +44,11 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
-    requiresSkill: true # Corvax-Next-Skills
   - type: BallisticAmmoProvider
     whitelist:
       tags:
         - Grenade
-    capacity: 3
+    capacity: 1
     proto: GrenadeFrag
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
@@ -73,7 +72,6 @@
     fireRate: 0.5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
-    requiresSkill: true # Corvax-Next-Skills
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -110,7 +108,6 @@
       - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
-    requiresSkill: true # Corvax-Next-Skills
   - type: BallisticAmmoProvider
     whitelist:
       tags:
