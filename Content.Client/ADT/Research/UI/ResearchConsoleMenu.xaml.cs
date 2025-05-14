@@ -17,96 +17,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
 namespace Content.Client.ADT.Research.UI;
-
-//
-//
-//                    Дискорд автора - @_kote
-//            Не забудьте упомянуть, если берёте себе :)
-//
-//
-//                                ███████
-//                               ███   █████
-//                              ███        ████
-//                             ███            █████
-//                            ███                █████
-//                           ███                    █████
-//                          ███                        ████
-//                          ███                           ████             ███
-//                         ███     █████                    █████       ████ ██
-//                         ██     ████████                     ███████████  ███
-//                        ███     █████████                        █████   ███  ████████████████
-//                        ██     ███████████                    ████       ██████████       ████
-//                       ███     ███████████                ████         ████             █████████████          ███████        ███████
-//                      ███     █████████████             ███                           █████████████████████████████████████████████████████████████
-//                      ███    ███████████████                                                    ███                                              ███
-//                     ███     ████████████████                                                        ██                                            ██
-//                     ███    ███████████████████                                                    ███████                                         ██
-//                    ███     ██████████████████                                                        ██                                           ██
-//                    ███    █████████████████                                                             ██                                        ██
-//                    ██     ██████████████                                                                  ██                                      ██
-//                    ██    ████████████                                                                                                  █████     ██
-//                   ███    ███████████                                                                                              █████████     ███
-//                    ██    ██████████                                                                                         ███████████████    ███
-//                    ██    █████████                                                                                ████████████████████████     ███
-//                    ███    ██████                                                                                   █████████████████████     ███
-//                    ███     ████                                                                                      █████████████████     ███
-//                    ███      █                                                                                        ████████████████    ████
-//                     ██     █                                                                                        ████████████████    ███
-//                     ███                                                                                            ███████████████    ████
-//                     ███                                                                                            █████████████     ███
-//                      ██               ██                                                                         ██████████████    ███
-//                      ███             ██      ███████████████████████                       ███████████████████   ███████████     ███
-//            █████      ███            █       ███████████████████████                      █    ███████████████   █████████    ████
-//        ████████████    ███           █        ██████████████████████                     ██     ███████████████  ████       ████
-//      ███         ███    ███          █        ██████████████████████                     ██     ███████████████  █      ██████
-//     ███           ███    ███         █        █████████████████████                      ██     ██████████████   █    ████           ██
-//    ███             ███    ███        █       ██████████████████████                      ██     ██████████████   █  ████         ██████████
-//    ██               ██     ███       ██     ██████████████████████                        █     █████████████   █████          ████      ███
-//   ███     ██    █   ███    ███        ███████████████████████████                         ██    ████████████   ███           ███          ███
-//  ███     ████ █████  ███    ███        ████████████████████████                            ████████████████    ███         ████            ███
-//  ███     ██████████   ███  █████         ████████████████████                                ████████████     ████        ███               ██
-//  ██    ██████████████ ███ ███████          ███████████████                                                    █████      ███       ████     ███
-// ███  ████ ███ ████████ ███ ████                                                                               ██████    ███       █████████████
-// ███  █████ █████ ██████ ██████████                                                                               ███   ███    ██████████████ ██
-// ██   █████████████████  █████                                             █     █    █                          ███   ███   ████████████████ ███
-// ██   ████ ██████████    █████                                              █████ ████                         ████   ███   ███████ █████████ ███
-// ██      ████████████    ████████                                                                             ███     ███    ████ ███████ ████ ██
-// ██      ████████████    ███   ████████                                                                    ████       ██        ██████████████ ██
-// ██      ████████████    ███        ███████  ██                                                         ██ ███       ███      ███████████████████
-// ███     ███████        ███            ████████████                                                  ████████         ██      ████████████   ███
-// ███                    ███                      ████████                                   ██    ██████              ███      ██████████   ███
-//  ████                  ██                        ████     ████  ██████                 ████████████                   ████                ███
-//     █████              ███                 █████████████               ███████████████   ██████████                     ███              ███
-//        ███              ███              ████████                                                 ███                   ██            █████
-//         ███             ████              ███                                                    ██████                ███           ███
-//         ███               ███              ████                                               ███  ████               ███           ███
-//          ███               ███               ███                                          ███        ████             ██            ███
-//           ███                ███               █████                                       ██          ███           ███           ███
-//            ████                ████            ████                                       ██████       ████         ███            ███
-//              ████████████         ██████      █████                                                      ███      ███             ███
-//            █████              ███     ████████████                                   ██████               ██████████              ███
-//           ███                    ███          ██                              ██████████    ███             █ ███                ███
-//          ███                        ██     ███                         ███████               █ ████████      █                  ███████████
-//         ███                            █ ██ ██                    █████                       █    ██ ███     █                ████    █████████
-//        ███                              ██ ██            ███   ███                            ██         ████  ██        ████                 ████
-//       ███                                 ██             █  ███                               ██            ██  ██    ██                        ███
-//       ███                                  ██            ██                                 ███                  ████                           ███
-//       ███          █                         █         ██                                  █  ████                █              ████            ██
-//       ███          ██                         ██     █                                    ███████                 ██         ██                  ██
-//       ███           ██                         ██   █                                            ██                █      ██                     ███
-//        ██             █                         █                                                 █                 █    ██                       ██
-//         ██             █                        ██                                                ██                █   █                         ███
-//         ████             ███                    ██                                                ██               ██  █                          ██
-//           ███               █████              ██                                             █████                █   █                         ███
-//            ███                 ████████████████                                        ████         ███            █  ██                        ███
-//              ████                         ██                                        ██████████                    █   █                       ████
-//                 ████                        ██                                  ████████     █████               ███████                      ███
-//                   █████████████████████████████                           █████████            ███████████████████  ███                     ███
-//                                              ███████                  ██████                       ████████████      ██                   ███
-//                                                 ██████            ██████                                             ██                 ████
-//                                                    █████████████████                                                 ███             █████
-//                                                                                                                       ██          █████
-//                                                                                                                        █████████████
 [GenerateTypedNameReferences]
 public sealed partial class ResearchConsoleMenu : FancyWindow
 {
@@ -130,6 +40,11 @@ public sealed partial class ResearchConsoleMenu : FancyWindow
     /// Выбранная ветка
     /// </summary>
     public ProtoId<TechDisciplinePrototype> CurrentDiscipline = "Industrial";
+
+    /// <summary>
+    /// Выбранное исследование
+    /// </summary>
+    public ProtoId<TechnologyPrototype>? CurrentTech;
 
     /// <summary>
     /// Список всех технологий и их доступности
@@ -158,7 +73,7 @@ public sealed partial class ResearchConsoleMenu : FancyWindow
         _research = _entity.System<ResearchSystem>();
         _sprite = _entity.System<SpriteSystem>();
         _accessReader = _entity.System<AccessReaderSystem>();
-        StaticSprite.SetFromSpriteSpecifier(new SpriteSpecifier.Rsi(new("ADT/Interface/rnd-static.rsi"), "static"), new(2));
+        StaticSprite.SetFromSpriteSpecifier(new SpriteSpecifier.Rsi(new("ADT/Interface/rnd_nt.rsi"), "rnd_nt"), new(2));
 
         ServerButton.OnPressed += _ => OnServerButtonPressed?.Invoke();
         DragContainer.OnKeyBindDown += args => OnKeybindDown(args);
@@ -207,11 +122,15 @@ public sealed partial class ResearchConsoleMenu : FancyWindow
                 continue;
 
             var control = new ResearchConsoleItem(tech, _sprite, List[tech.ID]);
-            DragContainer.AddChild(control);
+            ((DraggablePanel)DragContainer).AddChild(control);
 
             // Двигаем технологии по своим местам
             LayoutContainer.SetPosition(control, _position + tech.Position * 150);
             control.SelectAction += SelectTech;
+
+            // Выбираем для "обновления" превью
+            if (tech.ID == CurrentTech)
+                SelectTech(tech, List[tech.ID]);
         }
     }
 
@@ -229,13 +148,8 @@ public sealed partial class ResearchConsoleMenu : FancyWindow
         foreach (var disciplineId in database.SupportedDisciplines)
         {
             var discipline = _prototype.Index<TechDisciplinePrototype>(disciplineId);
-            var tier = _research.GetHighestDisciplineTier(database, discipline);
+            var percentage = _research.GetHighestDisciplineTier(database, discipline);
 
-            // don't show tiers with no available tech
-            if (tier == 0)
-                continue;
-
-            // i'm building the small-ass control here to spare me some mild annoyance in making a new file
             var texture = new TextureRect
             {
                 TextureScale = new Vector2(2, 2),
@@ -243,7 +157,7 @@ public sealed partial class ResearchConsoleMenu : FancyWindow
             };
             var label = new RichTextLabel();
             texture.Texture = _sprite.Frame0(discipline.Icon);
-            label.SetMessage(Loc.GetString("research-console-tier-info-small", ("tier", tier)));
+            label.SetMessage(Loc.GetString("research-console-tier-percentage", ("perc", percentage)));
 
             var control = new BoxContainer
             {
@@ -313,6 +227,7 @@ public sealed partial class ResearchConsoleMenu : FancyWindow
         if (!_player.LocalEntity.HasValue)
             return;
 
+        CurrentTech = proto.ID;
         var control = new TechnologyInfoPanel(proto, _sprite, _accessReader.IsAllowed(_player.LocalEntity.Value, Entity), avaibility);
         control.BuyAction += args => OnTechnologyCardPressed?.Invoke(args.ID);
         InfoContainer.AddChild(control);
@@ -370,4 +285,3 @@ public sealed partial class ResearchConsoleMenu : FancyWindow
         public TechDisciplinePrototype Proto = proto;
     }
 }
-
