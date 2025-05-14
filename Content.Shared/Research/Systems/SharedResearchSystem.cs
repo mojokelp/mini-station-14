@@ -73,25 +73,17 @@ public abstract class SharedResearchSystem : EntitySystem
         if (!component.SupportedDisciplines.Contains(tech.Discipline))
             return false;
 
-        // if (tech.Tier > disciplineTiers[tech.Discipline])    // ADT Commented
-        //     return false;
+        if (tech.Tier > disciplineTiers[tech.Discipline])
+            return false;
 
         if (component.UnlockedTechnologies.Contains(tech.ID))
             return false;
 
-        // foreach (var prereq in tech.TechnologyPrerequisites) // ADT Commented
-        // {
-        //     if (!component.UnlockedTechnologies.Contains(prereq))
-        //         return false;
-        // }
-
-        // ADT Research Console Rework start
-        foreach (var prereq in tech.RequiredTech)
+        foreach (var prereq in tech.TechnologyPrerequisites)
         {
             if (!component.UnlockedTechnologies.Contains(prereq))
                 return false;
         }
-        // ADT Research Console Rework end
 
         return true;
     }
@@ -125,39 +117,33 @@ public abstract class SharedResearchSystem : EntitySystem
             allUnlocked.Add(proto);
         }
 
-        // ADT Research Console Rework start
-        var highestTier = (float)component.UnlockedTechnologies
-            .Where(x => PrototypeManager.Index<TechnologyPrototype>(x).Discipline == techDiscipline.ID)
-            .Count() / (float)allTech.Count * 3f + 1f;
+        var highestTier = techDiscipline.TierPrerequisites.Keys.Max();
+        var tier = 2; //tier 1 is always given
 
-        // var tier = 2; //tier 1 is always given
+        // todo this might break if you have hidden technologies. i'm not sure
 
-        // // todo this might break if you have hidden technologies. i'm not sure
+        while (tier <= highestTier)
+        {
+            // we need to get the tech for the tier 1 below because that's
+            // what the percentage in TierPrerequisites is referring to.
+            var unlockedTierTech = allUnlocked.Where(p => p.Tier == tier - 1).ToList();
+            var allTierTech = allTech.Where(p => p.Discipline == techDiscipline.ID && p.Tier == tier - 1).ToList();
 
-        // while (tier <= highestTier)
-        // {
-        //     // we need to get the tech for the tier 1 below because that's
-        //     // what the percentage in TierPrerequisites is referring to.
-        //     var unlockedTierTech = allUnlocked.Where(p => p.Tier == tier - 1).ToList();
-        //     var allTierTech = allTech.Where(p => p.Discipline == techDiscipline.ID && p.Tier == tier - 1).ToList();
+            if (allTierTech.Count == 0)
+                break;
 
-        //     if (allTierTech.Count == 0)
-        //         break;
+            var percent = (float) unlockedTierTech.Count / allTierTech.Count;
+            if (percent < techDiscipline.TierPrerequisites[tier])
+                break;
 
-        //     var percent = (float) unlockedTierTech.Count / allTierTech.Count;
-        //     if (percent < techDiscipline.TierPrerequisites[tier])
-        //         break;
+            if (tier >= techDiscipline.LockoutTier &&
+                component.MainDiscipline != null &&
+                techDiscipline.ID != component.MainDiscipline)
+                break;
+            tier++;
+        }
 
-        //     if (tier >= techDiscipline.LockoutTier &&
-        //         component.MainDiscipline != null &&
-        //         techDiscipline.ID != component.MainDiscipline)
-        //         break;
-        //     tier++;
-        // }
-
-        // return tier - 1;
-        return (int)Math.Clamp(highestTier, 1, 3);
-        // ADT Research Console Rework ent
+        return tier - 1;
     }
 
     public FormattedMessage GetTechnologyDescription(
