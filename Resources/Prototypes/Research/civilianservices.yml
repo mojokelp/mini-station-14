@@ -100,9 +100,9 @@
   recipeUnlocks:
   - BorgModuleAdvancedCleaning
   # ADT Research Console Rework start
-  position: 2,0
+  position: 2,1
   requiredTech:
-  - AdvancedEntertainment
+  - BiochemicalStasis
   # ADT Research Console Rework end
 
 - type: technology
@@ -167,9 +167,9 @@
   - PrisonerBodyBag # Corvax-Next-AdvancedBodyBags
   - RadiationBodyBag # Corvax-Next-AdvancedBodyBags
   # ADT Research Console Rework start
-  position: 1,2
+  position: 3,1
   requiredTech:
-  - ADTCloning
+  - AdvancedEntertainment
   # ADT Research Console Rework end
 
 - type: technology
@@ -187,7 +187,7 @@
   # ADT Research Console Rework start
   position: 4,1
   requiredTech:
-  - ADTMedicalMODsuit
+  - BiochemicalStasis
   # ADT Research Console Rework end
 
 - type: technology
@@ -203,9 +203,9 @@
   - AdvMopItem
   - MegaSprayBottle
   # ADT Research Console Rework start
-  position: 2,1
+  position: 2,0
   requiredTech:
-  - RoboticCleanliness
+  - AdvancedEntertainment
   # ADT Research Console Rework end
 
 - type: technology

@@ -98,7 +98,7 @@
   recipeUnlocks:
   - WeaponGauntletGorilla
   # ADT Research Console Rework start
-  position: 4,-1
+  position: 3,-2
   requiredTech:
   - BasicAnomalousResearch
   # ADT Research Console Rework end
@@ -117,7 +117,7 @@
   recipeUnlocks:
   - ArtifactCrusherMachineCircuitboard
   # ADT Research Console Rework start
-  position: 4,1
+  position: 3,2
   requiredTech:
   - BasicXenoArcheology
   # ADT Research Console Rework end
@@ -138,7 +138,7 @@
   technologyPrerequisites:
   - BasicAnomalousResearch
   # ADT Research Console Rework start
-  position: 3,-2
+  position: 4,-1
   requiredTech:
   - BasicAnomalousResearch
   # ADT Research Console Rework end
@@ -200,10 +200,9 @@
     - WeaponForceGun
     - WeaponTetherGun
   # ADT Research Console Rework start
-  position: 5,0
+  position: 6,0
   requiredTech:
-  - AbnormalArtifactManipulation
-  - AnomalyCoreHarnessing
+  - QuantumLeaping
   # ADT Research Console Rework end
 
 - type: technology
@@ -218,7 +217,9 @@
   recipeUnlocks:
   - DeviceQuantumSpinInverter
   # ADT Research Console Rework start
-  position: 6,0
+  position: 5,0
   requiredTech:
-  - GravityManipulation
+  - AdvancedAnomalyResearch
+  - AbnormalArtifactManipulation
+  - AnomalyCoreHarnessing
   # ADT Research Console Rework end
