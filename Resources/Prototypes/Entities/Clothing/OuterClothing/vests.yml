@@ -14,13 +14,10 @@
       coefficients:
         Blunt: 0.6 #ballistic plates = better protection
         Slash: 0.6
-        Piercing: 0.35
+        Piercing: 0.3
         Heat: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.9
-  - type: ClothingSpeedModifier
-    walkModifier: 0.85
-    sprintModifier: 0.85
 
 #Mercenary web vest
 - type: entity

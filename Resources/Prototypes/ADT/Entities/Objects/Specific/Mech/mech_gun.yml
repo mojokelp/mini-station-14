@@ -238,8 +238,8 @@
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: BallisticMechAmmoProvider
-    shots: 100
-    capacity: 100
+    shots: 60
+    capacity: 60
     proto: BulletPistol
     reloadTime: 5
   - type: UIFragment
@@ -265,8 +265,8 @@
       path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: BallisticMechAmmoProvider
     proto: BulletPistolIncendiary
-    shots: 100
-    capacity: 100
+    shots: 60
+    capacity: 60
     ammoType: lightrifleincendiary
     reloadTime: 5
   - type: UIFragment

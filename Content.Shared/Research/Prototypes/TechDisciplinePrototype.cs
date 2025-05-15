@@ -44,10 +44,5 @@ public sealed partial class TechDisciplinePrototype : IPrototype
     /// Purchasing this tier of technology causes a server to become "locked" to this discipline.
     /// </summary>
     [DataField("lockoutTier")]
-    public int LockoutTier = 4; ///ADT-Tweak
-
-    // ADT Research Console Rework start
-    [DataField("uiName", required: true)]
-    public string UiName = string.Empty;
-    // ADT Research Console Rework end
+    public int LockoutTier = 3;
 }
