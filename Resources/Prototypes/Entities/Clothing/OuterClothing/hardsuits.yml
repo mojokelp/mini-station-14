@@ -146,17 +146,23 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.3
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: FireProtection
+    reduction: 0.8
   - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.7
         Slash: 0.7
-        Piercing: 0.5
+        Piercing: 0.45
         Radiation: 0.3
         Caustic: 0.7
+        Heat: 0.2
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSalvage
@@ -255,7 +261,7 @@
       coefficients:
         Blunt: 0.6
         Slash: 0.6
-        Piercing: 0.6
+        Piercing: 0.55
         Caustic: 0.7
   - type: ClothingSpeedModifier
     walkModifier: 0.75
@@ -281,12 +287,15 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
+        Blunt: 0.75
+        Slash: 0.75
         Piercing: 0.7
+        Heat: 0.7
+        Radiation: 0.7
+        Caustic: 0.7
   - type: ClothingSpeedModifier
-    walkModifier: 0.65
-    sprintModifier: 0.65
+    walkModifier: 1
+    sprintModifier: 1
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitBrigmedic
@@ -310,9 +319,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
+        Blunt: 0.6
         Slash: 0.6
-        Piercing: 0.6
+        Piercing: 0.55
         Caustic: 0.7
   - type: ClothingSpeedModifier
     walkModifier: 0.7
@@ -340,15 +349,15 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.6
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.55
         Heat: 0.5
         Radiation: 0.5
         Caustic: 0.6
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCap
@@ -475,14 +484,14 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
+        Blunt: 0.5
         Slash: 0.5
-        Piercing: 0.5
+        Piercing: 0.45
         Radiation: 0.5
         Caustic: 0.6
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 0.75
+    sprintModifier: 0.75
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSecurityRed
@@ -507,14 +516,14 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.8
+        Blunt: 0.65
+        Slash: 0.6
+        Piercing: 0.6
         Radiation: 0.5
         Caustic: 0.8
   - type: ClothingSpeedModifier
-    walkModifier: 0.85
-    sprintModifier: 0.9
+    walkModifier: 1
+    sprintModifier: 1
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitLuxury
@@ -543,7 +552,7 @@
       coefficients:
         Blunt: 0.5
         Slash: 0.5
-        Piercing: 0.5
+        Piercing: 0.4
         Heat: 0.5
         Radiation: 0.5
         Caustic: 0.5
@@ -558,6 +567,7 @@
     - MonkeyWearable
     - Hardsuit
     - WhitelistChameleon
+  - type: DNALocker # ADT-Tweak
 
 # Syndicate Medic Hardsuit
 - type: entity
@@ -576,6 +586,7 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
+  - type: DNALocker # ADT-Tweak
 
 #Syndicate Elite Hardsuit
 - type: entity
@@ -611,10 +622,11 @@
     size: Huge
   - type: ClothingSpeedModifier
     walkModifier: 1.0
-    sprintModifier: 0.9
+    sprintModifier: 1.0
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
+  - type: DNALocker # ADT-Tweak
 
 #Syndicate Commander Hardsuit
 - type: entity
@@ -637,16 +649,17 @@
       coefficients:
         Blunt: 0.4
         Slash: 0.4
-        Piercing: 0.3
+        Piercing: 0.35
         Heat: 0.5
         Radiation: 0.25
         Caustic: 0.4
   - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieCommander
+  - type: DNALocker # ADT-Tweak
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
@@ -679,6 +692,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCybersun
+  - type: DNALocker # ADT-Tweak
 
 #Wizard Hardsuit
 - type: entity
@@ -711,6 +725,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitWizard
+  - type: DNALocker
 
 #Ling Space Suit
 - type: entity
@@ -821,6 +836,7 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertleader.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTLeader
+  - type: DNALocker # ADT-Tweak
 
 #ERT Chaplain Hardsuit
 - type: entity
@@ -835,6 +851,7 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertchaplain.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTChaplain
+  - type: DNALocker # ADT-Tweak
 
 #ERT Engineer Hardsuit
 - type: entity
@@ -849,6 +866,7 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertengineer.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTEngineer
+  - type: DNALocker # ADT-Tweak
 
 #ERT Medic Hardsuit
 - type: entity
@@ -863,6 +881,7 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertmedical.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTMedical
+  - type: DNALocker # ADT-Tweak
 
 #ERT Security Hardsuit
 - type: entity
@@ -881,6 +900,7 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
+  - type: DNALocker # ADT-Tweak
 
 #ERT Janitor Hardsuit
 - type: entity
@@ -895,6 +915,7 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertjanitor.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTJanitor
+  - type: DNALocker # ADT-Tweak
 
 #Deathsquad
 - type: entity
@@ -932,6 +953,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitDeathsquad
+  - type: DNALocker # ADT-Tweak
 
 #CBURN Hardsuit
 - type: entity
@@ -1050,3 +1072,16 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSanta
+
+- type: entity
+  parent: ClothingOuterHardsuitSalvage
+  id: ClothingOuterHardsuitSeniorSalvage
+  name: Скафандр ведущего утилизатора
+  description: Крутой скафандр для крутого копателя камушков!
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Hardsuits/seniorsalvage.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Hardsuits/seniorsalvage.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitSeniorSalvage

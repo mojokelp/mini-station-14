@@ -50,7 +50,7 @@
   id: BlueShieldCase
   name: Оружейная ОСЩ.
   description: Блюспейс хранилище оружия.
-  suffix: ОБР, Эмбер, Основное
+  suffix: ОСЩ
   parent: BaseERTloadoutPrimary
   components:
     - type: Sprite
@@ -60,6 +60,31 @@
         - PistolSet
         - MinigunSet
         - LaserSwordSet
+    - type: ActivatableUI
+      key: enum.ThiefBackpackUIKey.Key
+    - type: UserInterface
+      interfaces:
+        enum.ThiefBackpackUIKey.Key:
+          type: ThiefBackpackBoundUserInterface
+
+- type: entity
+  id: AssistantGizmo
+  name: коробка с вещами
+  description: Перед вылетом, вы положили в эту коробку дорогие сердцу вещи. Осталось только вспомнить, какие именно!
+  suffix: Ассистент
+  parent: BaseERTloadoutSecondary
+  components:
+    - type: Sprite
+      state: assistant
+    - type: Item
+      size: Normal
+    - type: ThiefUndeterminedBackpack
+      possibleSets:
+        - AssistantRich
+        - AssistantWelder
+        - AssistantFan
+        - AssistantPirate
+        - AssistantCasino
     - type: ActivatableUI
       key: enum.ThiefBackpackUIKey.Key
     - type: UserInterface
@@ -99,3 +124,89 @@
     state: icon
   content:
   - ADTWeaponSaberRevBlueshield
+
+- type: thiefBackpackSet
+  id: AssistantRich
+  name: Набор аристократа
+  description: О, ваше прошлое точно сияло, как золотой самородок!
+  sprite:
+    sprite: Objects/Economy/cash.rsi
+    state: cash_500
+  content:
+  - Cane
+  - ClothingHeadHatTophat
+  - CigarGold
+  - FlippoEngravedLighter
+  - WristwatchGold
+  - ClothingUniformJumpsuitLawyerBlack
+  - ClothingShoesBootsLaceup
+
+- type: thiefBackpackSet
+  id: AssistantWelder
+  name: Набор сварщика
+  description: assistant-backpack-category-welder-description
+  sprite:
+    sprite: Clothing/Head/Welding/welding.rsi
+    state: icon
+  content:
+  - ClothingHeadHatWelding
+  - ClothingUniformJumpsuitTacticool
+  - ClothingOuterVestTank
+  - ClothingShoesColorBlack
+  - ClothingBeltUtilityFilled
+  - ClothingNeckVitezstviPin
+
+- type: thiefBackpackSet
+  id: AssistantFan
+  name: Набор фаната Синдиленда
+  description: assistant-backpack-category-fan-description
+  sprite:
+    sprite: Objects/Fun/toys.rsi
+    state: synb
+  content:
+  - BalloonSyn
+  - SyndicateBusinessCard
+  - ToyFigurineNukie
+  - ClothingEyesGlassesCheapSunglasses
+  - ClothingHeadHatSyndie
+  - ClothingNeckSyndicakePin
+  - ClothingHandsGlovesFingerless
+
+- type: thiefBackpackSet
+  id: AssistantPirate
+  name: Набор пирата
+  description: assistant-backpack-category-pirate-description
+  sprite:
+    sprite: Objects/Weapons/Melee/captain_sabre.rsi
+    state: icon
+  content:
+  - ClothingHeadHatPirateTricord
+  - ClothingEyesGlassesCheapSunglasses
+  - MobParrotSmart
+  - ClothingUniformJumpsuitPirate
+  - ClothingOuterCoatGentle
+  - ClothingHandsGlovesFingerless
+  - ClothingShoesBootsLaceup
+  - ClothingBeltUtility
+  - FoamCutlass
+
+- type: thiefBackpackSet
+  id: AssistantCasino
+  name: Набор азартного игрока
+  description: assistant-backpack-category-casino-description
+  sprite:
+    sprite: _CorvaxNext/Objects/Misc/cards.rsi
+    state: sc_Jack_of_Spades_black
+  content:
+  - ClothingHeadHatBowlerHat
+  - ClothingEyesGlasses
+  - ClothingNeckTieRed
+  - ClothingUniformJumpsuitSecBlue
+  - ClothingOuterVest
+  - ClothingShoesBootsLaceup
+  - WristwatchLeather
+  - TreasureCoinGold
+  - TreasureCoinGold
+  - DiceBag
+  - SpaceCash500
+  - CardBoxBlack

@@ -130,7 +130,6 @@
     zeroVisible: true
   - type: Multishot # Goobstation
   - type: Gun
-    requiresSkill: true # Corvax-Next-Skills
 
 - type: entity
   name: retro laser blaster
@@ -156,7 +155,7 @@
   - type: Appearance
   - type: Multishot # Goobstation
   - type: Gun
-    requiresSkill: true # Corvax-Next-Skills
+
 
 - type: entity
   name: makeshift laser pistol
@@ -241,7 +240,6 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    requiresSkill: true # Corvax-Next-Skills
   - type: HitscanBatteryAmmoProvider
     proto: RedLaserPractice
     fireCost: 62.5
@@ -324,7 +322,6 @@
       - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-    requiresSkill: true # Corvax-Next-Skills
   - type: HitscanBatteryAmmoProvider
     proto: Pulse
     fireCost: 200
@@ -357,7 +354,6 @@
     fireRate: 1.5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
-    requiresSkill: true # Corvax-Next-Skills
   - type: HitscanBatteryAmmoProvider
     proto: Pulse
     fireCost: 100
@@ -390,10 +386,13 @@
     fireRate: 1.5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-    requiresSkill: true # Corvax-Next-Skills
+
   - type: HitscanBatteryAmmoProvider
     proto: RedHeavyLaser
     fireCost: 100
+  - type: Tag
+    tags:
+    - TurretCompatibleWeapon
 
 - type: entity
   name: portable particle decelerator
@@ -661,7 +660,6 @@
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-    requiresSkill: true # Corvax-Next-Skills
   - type: HitscanBatteryAmmoProvider
     proto: RedMediumLaser
     fireCost: 100
@@ -792,7 +790,6 @@
     fireRate: 2
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-    requiresSkill: true # Corvax-Next-Skills
   - type: ProjectileBatteryAmmoProvider
     proto: BulletLaserSpread
     fireCost: 150
@@ -823,4 +820,4 @@
     autoRecharge: true
     autoRechargeRate: 24
     autoRechargePause: true
-    autoRechargePauseTime: 30
+    autoRechargePauseTime: 10

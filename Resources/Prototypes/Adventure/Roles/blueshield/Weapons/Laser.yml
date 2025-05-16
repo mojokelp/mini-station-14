@@ -13,7 +13,7 @@
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Gun
-    fireRate: 2.2
+    fireRate: 2.5
     projectileSpeed: 35
     selectedMode: SemiAuto
     availableModes:
@@ -43,7 +43,7 @@
   - type: StaticPrice
     price: 1000
   - type: BatterySelfRecharger
-    autoRechargeRate: 7
+    autoRechargeRate: 24
     autoRecharge: true
 
 # проджект лазера
@@ -57,7 +57,7 @@
     impactEffect: BulletImpactEffectLaserForBH
     damage:
       types:
-        Heat: 17
+        Heat: 16
 
 # проджект станнера
 - type: entity
@@ -67,17 +67,17 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: StaminaDamageOnCollide
-    damage: 15
+    damage: 17
   - type: Projectile
     impactEffect: BulletImpactEffectDisablerBlue
     damage:
       types:
-        Cold: 10
+        Cold: 7
     soundHit:
       collection: WeakHit
     forceSound: true
   - type: ChangeTemperatureOnCollide
-    heat: -15000 # Lavaland Change
+    heat: -45000 # Lavaland Change
 
 # эффект от станнера
 - type: entity

@@ -11,3 +11,34 @@
     size: Huge
   - type: Storage
     maxItemSize: Huge
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackSeniorSalvage
+  name: модифицированный рюкзак ведущего утилизатора
+  description: Рюкзак ведущего утилизатора с функцией РИГ.
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Back/seniorsalvage.rsi
+  - type: Storage
+    grid:
+    - 0,0,7,5
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterHardsuitSeniorSalvage
+    requiredSlot: BACK
+    slot: outerClothing
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: MiningDrill
+      - id: MiningVoucher
+  - type: ExplosionResistance
+    damageCoefficient: 0.6

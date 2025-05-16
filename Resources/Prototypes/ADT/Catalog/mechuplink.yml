@@ -7,7 +7,7 @@
   description: uplink-syndimech-mech-gygax-desc
   productEntity: ADTMechDarkGygaxBattery
   cost:
-    Telecrystal: 30
+    Telecrystal: 60
   categories:
   - ADTUplinkMechMechs
 
@@ -17,7 +17,7 @@
   description: uplink-syndimech-mech-mauler-desc
   productEntity: ADTMechMaulerBattery
   cost:
-    Telecrystal: 50
+    Telecrystal: 100
   categories:
   - ADTUplinkMechMechs
 
@@ -227,7 +227,7 @@
   description: uplink-ertmech-mech-marauder-desc
   productEntity: ADTMechMarauderBattery
   cost:
-    Productunit: 20
+    Productunit: 80
   categories:
   - ADTUplinkERTMechMechs
 
@@ -237,7 +237,7 @@
   description: uplink-syndimech-mech-gygax-desc
   productEntity: ADTMechErtGygaxBattery
   cost:
-    Productunit: 12
+    Productunit: 40
   categories:
   - ADTUplinkERTMechMechs
 

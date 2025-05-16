@@ -6,12 +6,12 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobWarden
-      time: 72000 #20 hrs # Corvax-RoleTime
+      time: 7200 #20 hrs # Corvax-RoleTime
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
       department: Security
-      time: 216000 # 60 hrs
+      time: 21600 # 60 hrs
 
 #Security Star
 - type: loadoutEffectGroup

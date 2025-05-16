@@ -29,6 +29,8 @@
       - Surgery
       - MedicalEquipment
       - Butchering
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
 
 - type: startingGear
   id: ERTLeaderGear
@@ -55,6 +57,7 @@
     - MagazineMagnum
     - ADTBaseUplinkBOBERT
     - ADTertMechUplink
+    - PinpointerNuclear
 - type: startingGear
   id: ERTLeaderGearEVA
   equipment:
@@ -76,7 +79,7 @@
     - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
-    - BoxZiptie
+    - PinpointerNuclear
     - CrowbarRed
     - MagazineMagnum
     - ADTBaseUplinkBOBERT
@@ -104,7 +107,7 @@
     - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
-    - BoxZiptie
+    - PinpointerNuclear
     - CrowbarRed
     - MagazineMagnum
     - ADTBaseUplinkBOBERT
@@ -167,6 +170,7 @@
     - FoodBakedBunHotX
     - Lighter
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear
 - type: startingGear
   id: ERTChaplainGearEVA
   equipment:
@@ -198,6 +202,7 @@
     - FoodBakedBunHotX
     - Lighter
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear
 # Engineer
 - type: job
   id: ERTEngineer
@@ -229,6 +234,8 @@
       - Surgery
       - MedicalEquipment
       - Butchering
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
 
 - type: startingGear
   id: ERTEngineerGear
@@ -258,6 +265,7 @@
     - SheetSteel
     - SheetGlass
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear
 - type: startingGear
   id: ERTEngineerGearEVA
   equipment:
@@ -285,6 +293,7 @@
     - SheetPlasteel
     - SheetSteel
     - SheetGlass
+    - PinpointerNuclear
 
 # Security
 - type: job
@@ -317,6 +326,8 @@
       - Surgery
       - MedicalEquipment
       - Butchering
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
 
 - type: startingGear
   id: ERTSecurityGear
@@ -338,7 +349,7 @@
     - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
-    - BoxZiptie
+    - PinpointerNuclear
     - CrowbarRed
     - MagazinePistol
     - ADTBaseUplinkBOBERT
@@ -362,7 +373,7 @@
     - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
-    - BoxZiptie
+    - PinpointerNuclear
     - CrowbarRed
     - MagazinePistol
     - ADTBaseUplinkBOBERT
@@ -388,7 +399,7 @@
     - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
-    - BoxZiptie
+    - PinpointerNuclear
     - CrowbarRed
     - MagazinePistol
     - ADTBaseUplinkBOBERT
@@ -424,6 +435,8 @@
       - MedicalEquipment
       - Butchering
 
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
 
 - type: startingGear
   id: ERTMedicalGear
@@ -449,6 +462,7 @@
     - ChemistryBottleEpinephrine
     - ChemistryBottleEpinephrine
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear
 - type: startingGear
   id: ERTMedicalGearEVA
   equipment:
@@ -473,6 +487,7 @@
     - ChemistryBottleEpinephrine
     - ChemistryBottleEpinephrine
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear
 # Janitor
 - type: job
   id: ERTJanitor
@@ -504,6 +519,8 @@
       - Surgery
       - MedicalEquipment
       - Butchering
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
 
 - type: startingGear
   id: ERTJanitorGear
@@ -527,6 +544,7 @@
     - CrowbarRed
     - AdvMopItem
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear
 - type: startingGear
   id: ERTJanitorGearEVA
   equipment:
@@ -549,3 +567,4 @@
     - CrowbarRed
     - AdvMopItem
     - ADTBaseUplinkBOBERT
+    - PinpointerNuclear

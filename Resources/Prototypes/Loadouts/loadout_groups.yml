@@ -405,6 +405,9 @@
   loadouts:
   - JanitorJumpsuit
   - JanitorJumpskirt
+  - JanitorJumpsuitMaid
+  - JanitorJumpsuitMaidSkirt
+  - JanitorJumpsuitMaidVeryCool
 
 - type: loadoutGroup
   id: JanitorGloves
@@ -826,6 +829,7 @@
   minLimit: 0
   loadouts:
   - AtmosphericTechnicianWintercoat
+  - AtmosphericsOveralls # CorvaxAtmosFashion
 
 - type: loadoutGroup
   id: AtmosphericTechnicianBackpack
@@ -1011,6 +1015,7 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+  - HeadofSecurityGreatcoatCool
 
 - type: loadoutGroup
   id: WardenHead
@@ -1019,6 +1024,7 @@
   loadouts:
   - WardenHead
   - WardenBeret
+  - WardenHeadAlt
 
 - type: loadoutGroup
   id: WardenJumpsuit
@@ -1028,11 +1034,21 @@
   - WardenJumpskirt
 
 - type: loadoutGroup
+  id: WardenBackpack
+  name: loadout-group-warden-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+  - WardenBackPack
+
+- type: loadoutGroup
   id: WardenOuterClothing
   name: loadout-group-warden-outerclothing
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
+  - WardenCoatAlt
 
 - type: loadoutGroup
   id: SecurityHead

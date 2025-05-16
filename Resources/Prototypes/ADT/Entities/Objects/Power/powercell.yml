@@ -43,5 +43,5 @@
     proto: ADTBulletLaserMK2
     fireCost: 220
   - type: BatterySelfRecharger
-    autoRechargeRate: 8
+    autoRechargeRate: 10
     autoRecharge: true

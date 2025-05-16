@@ -122,6 +122,9 @@
   id: JobSalvageSpecialist
 
 - type: playTimeTracker
+  id: JobSeniorSalvageSpecialist
+
+- type: playTimeTracker
   id: JobScientist
 
 - type: playTimeTracker

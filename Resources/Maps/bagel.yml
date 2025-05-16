@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 249.0.0
+  engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/23/2025 08:00:27
-  entityCount: 25710
+  time: 05/08/2025 09:39:30
+  entityCount: 25706
 maps:
 - 943
 grids:
@@ -1226,7 +1226,6 @@ entities:
             3841: 4,-47
             3897: 5,-47
             5047: -30,-21
-            5077: -25,-2
             5384: -25,-1
             5385: -25,0
         - node:
@@ -1333,6 +1332,8 @@ entities:
             5383: -26,-1
             5391: -24,-7
             5392: -30,-7
+            5768: 3,-1
+            5769: -25,-2
         - node:
             angle: 1.5707963267948966 rad
             color: '#00FFFFFF'
@@ -1346,6 +1347,11 @@ entities:
             5617: -1,46
             5618: 1,60
             5619: -1,60
+        - node:
+            color: '#52B4E996'
+            id: BoxGreyscale
+          decals:
+            5771: -19,-14
         - node:
             color: '#8800FFFF'
             id: BoxGreyscale
@@ -5070,8 +5076,6 @@ entities:
             5193: -17,-18
             5194: -17,-17
             5195: -17,-16
-            5196: -17,-15
-            5199: -17,-14
             5200: -17,-13
             5201: -17,-12
             5202: -17,-11
@@ -5081,6 +5085,8 @@ entities:
             5206: -17,-7
             5207: -17,-6
             5208: -17,-5
+            5772: -17,-14
+            5773: -17,-15
         - node:
             color: '#EFB3414A'
             id: QuarterTileOverlayGreyscale270
@@ -5843,7 +5849,6 @@ entities:
             3329: -27,40
             3339: -15,42
             3963: -54,6
-            5075: -25,-2
             5423: 9,38
             5482: 2,41
         - node:
@@ -5858,7 +5863,6 @@ entities:
           decals:
             3449: 42,-19
             5299: -21,-14
-            5300: -19,-14
             5301: -20,-14
         - node:
             color: '#D381C996'
@@ -6730,6 +6734,12 @@ entities:
             id: matt
           decals:
             1656: -30,-36
+        - node:
+            cleanable: True
+            color: '#52B4E996'
+            id: med
+          decals:
+            5770: -19,-15
         - node:
             cleanable: True
             color: '#FED83DFF'
@@ -9829,13 +9839,6 @@ entities:
     - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 5430
-  - uid: 6830
-    components:
-    - type: Transform
-      parent: 6707
-    - type: InstantAction
-      originalIconColor: '#FFFFFFFF'
-      container: 6707
   - uid: 13159
     components:
     - type: Transform
@@ -9851,13 +9854,6 @@ entities:
     - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 5430
-  - uid: 6734
-    components:
-    - type: Transform
-      parent: 6707
-    - type: InstantAction
-      originalIconColor: '#FFFFFFFF'
-      container: 6707
 - proto: ActionToggleLight
   entities:
   - uid: 4547
@@ -9881,6 +9877,20 @@ entities:
     - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 18476
+- proto: ADTLockerBlueshieldFilledHardsuit
+  entities:
+  - uid: 8748
+    components:
+    - type: Transform
+      pos: 3.5,-0.5
+      parent: 60
+- proto: ADTSpawnMechPaddy
+  entities:
+  - uid: 1906
+    components:
+    - type: Transform
+      pos: -24.5,-1.5
+      parent: 60
 - proto: AirAlarm
   entities:
   - uid: 12
@@ -51793,6 +51803,13 @@ entities:
     - type: Transform
       pos: 23.743336,21.526909
       parent: 60
+- proto: CaptainDrobe
+  entities:
+  - uid: 6419
+    components:
+    - type: Transform
+      pos: -7.5,-6.5
+      parent: 60
 - proto: CaptainIDCard
   entities:
   - uid: 23919
@@ -62286,6 +62303,7 @@ entities:
     - type: Transform
       pos: 20.48184,-11.502675
       parent: 60
+    - type: Visibility
 - proto: ClothingBackpackDuffelSurgeryFilled
   entities:
   - uid: 530
@@ -62293,6 +62311,7 @@ entities:
     - type: Transform
       pos: 38.489937,-12.380952
       parent: 60
+    - type: Visibility
 - proto: ClothingBackpackSatchelLeather
   entities:
   - uid: 8702
@@ -62300,6 +62319,7 @@ entities:
     - type: Transform
       pos: -60.61622,-21.218712
       parent: 60
+    - type: Visibility
 - proto: ClothingBeltChampion
   entities:
   - uid: 18460
@@ -64281,20 +64301,20 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -44.5,5.5
       parent: 60
-- proto: ComputerSalvageExpedition
-  entities:
-  - uid: 5288
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 42.5,-0.5
-      parent: 60
 - proto: ComputerShuttleCargo
   entities:
   - uid: 19004
     components:
     - type: Transform
       pos: 56.5,13.5
+      parent: 60
+- proto: ComputerShuttleMiningLavaland
+  entities:
+  - uid: 5288
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 42.5,-0.5
       parent: 60
 - proto: ComputerSolarControl
   entities:
@@ -71213,13 +71233,6 @@ entities:
         actions: !type:Container
           ents:
           - 13159
-- proto: DresserCaptainFilled
-  entities:
-  - uid: 6419
-    components:
-    - type: Transform
-      pos: -7.5,-6.5
-      parent: 60
 - proto: DresserChiefEngineerFilled
   entities:
   - uid: 944
@@ -71829,7 +71842,7 @@ entities:
   - uid: 17955
     components:
     - type: Transform
-      pos: -18.983906,-13.563609
+      pos: -19.491383,-13.552898
       parent: 60
 - proto: EmergencyOxygenTankFilled
   entities:
@@ -72364,11 +72377,6 @@ entities:
     components:
     - type: Transform
       pos: 48.5,12.5
-      parent: 60
-  - uid: 24116
-    components:
-    - type: Transform
-      pos: 3.5,-0.5
       parent: 60
 - proto: filingCabinetRandom
   entities:
@@ -76343,6 +76351,14 @@ entities:
     components:
     - type: Transform
       pos: -44.5,34.5
+      parent: 60
+- proto: GasMinerPlasma
+  entities:
+  - uid: 8457
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -44.5,40.5
       parent: 60
 - proto: GasMinerWaterVapor
   entities:
@@ -113731,24 +113747,6 @@ entities:
           - 5757
           - 5836
     - type: InsideEntityStorage
-  - uid: 6707
-    components:
-    - type: Transform
-      parent: 1906
-    - type: GasTank
-      toggleActionEntity: 6830
-    - type: Jetpack
-      toggleActionEntity: 6734
-    - type: Physics
-      canCollide: False
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 6734
-          - 6830
-    - type: InsideEntityStorage
 - proto: KitchenElectricGrill
   entities:
   - uid: 2227
@@ -114223,6 +114221,13 @@ entities:
     components:
     - type: Transform
       pos: 33.5,-35.5
+      parent: 60
+- proto: LockerBrigmedicFilled
+  entities:
+  - uid: 6830
+    components:
+    - type: Transform
+      pos: -18.5,-13.5
       parent: 60
 - proto: LockerCaptainFilledNoLaser
   entities:
@@ -118946,11 +118951,6 @@ entities:
       parent: 60
     - type: Physics
       canCollide: False
-  - uid: 21154
-    components:
-    - type: Transform
-      pos: -18.5,-13.5
-      parent: 60
   - uid: 23114
     components:
     - type: Transform
@@ -134730,6 +134730,13 @@ entities:
       parent: 60
     - type: SpamEmitSound
       enabled: False
+- proto: SpawnADTBlueShieldOfficer
+  entities:
+  - uid: 6707
+    components:
+    - type: Transform
+      pos: 3.5,0.5
+      parent: 60
 - proto: SpawnMechRipley
   entities:
   - uid: 25379
@@ -134793,6 +134800,13 @@ entities:
     - type: Transform
       pos: 30.5,-35.5
       parent: 60
+- proto: SpawnMobGorillaLargo
+  entities:
+  - uid: 13102
+    components:
+    - type: Transform
+      pos: 45.5,13.5
+      parent: 60
 - proto: SpawnMobMcGriff
   entities:
   - uid: 2806
@@ -134845,13 +134859,6 @@ entities:
     components:
     - type: Transform
       pos: 40.5,-8.5
-      parent: 60
-- proto: SpawnMobRaccoonMorticia
-  entities:
-  - uid: 13102
-    components:
-    - type: Transform
-      pos: 45.5,13.5
       parent: 60
 - proto: SpawnMobShiva
   entities:
@@ -134933,6 +134940,13 @@ entities:
     components:
     - type: Transform
       pos: 34.5,-36.5
+      parent: 60
+- proto: SpawnPointBrigmedic
+  entities:
+  - uid: 6734
+    components:
+    - type: Transform
+      pos: -19.5,-14.5
       parent: 60
 - proto: SpawnPointCaptain
   entities:
@@ -136312,36 +136326,6 @@ entities:
           occludes: True
           ents:
           - 1904
-  - uid: 1906
-    components:
-    - type: Transform
-      pos: -24.5,-1.5
-      parent: 60
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14673
-        moles:
-        - 1.7459903
-        - 6.568249
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 6707
   - uid: 5313
     components:
     - type: Transform
@@ -139201,11 +139185,6 @@ entities:
     components:
     - type: Transform
       pos: 24.5,-0.5
-      parent: 60
-  - uid: 13296
-    components:
-    - type: Transform
-      pos: -18.5,-13.5
       parent: 60
   - uid: 13498
     components:
@@ -157877,16 +157856,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -20.5,-11.5
       parent: 60
-  - uid: 8514
-    components:
-    - type: Transform
-      pos: -18.5,-13.5
-      parent: 60
-  - uid: 8748
-    components:
-    - type: Transform
-      pos: -19.5,-13.5
-      parent: 60
   - uid: 8920
     components:
     - type: Transform
@@ -157904,11 +157873,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -32.5,-11.5
-      parent: 60
-  - uid: 17466
-    components:
-    - type: Transform
-      pos: -20.5,-13.5
       parent: 60
 - proto: WindoorSecureCargoLocked
   entities:
@@ -159285,12 +159249,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -9.5,-10.5
       parent: 60
-  - uid: 8457
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -20.5,-13.5
-      parent: 60
   - uid: 8493
     components:
     - type: Transform
@@ -159307,6 +159265,12 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -33.5,-2.5
+      parent: 60
+  - uid: 8514
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -20.5,-13.5
       parent: 60
   - uid: 8565
     components:

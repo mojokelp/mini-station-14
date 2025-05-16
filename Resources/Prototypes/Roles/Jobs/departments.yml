@@ -7,6 +7,7 @@
   - CargoTechnician
   - Quartermaster
   - SalvageSpecialist
+  - SeniorSalvageSpecialist
 
 - type: department
   id: Civilian
@@ -106,11 +107,11 @@
   - HeadOfSecurity
   - SecurityCadet
   - SecurityOfficer
-  - SeniorOfficer # Corvax-Next-MentorRoles
-  - Brigmedic # Corvax-Next-Brigmedic
+  - SeniorOfficer
   - Pilot # Corvax-Pilot
   - Detective
   - Warden
+  - Brigmedic # Corvax-Brigmedic
 
 - type: department
   id: Science

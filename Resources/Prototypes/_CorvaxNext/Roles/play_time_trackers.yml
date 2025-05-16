@@ -1,7 +1,4 @@
 - type: playTimeTracker
-  id: JobBrigmedic
-
-- type: playTimeTracker
   id: JobSeniorEngineer
 
 - type: playTimeTracker
@@ -12,3 +9,6 @@
 
 - type: playTimeTracker
   id: JobSeniorResearcher
+
+- type: playTimeTracker
+  id: JobSurgeon

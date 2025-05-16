@@ -125,7 +125,7 @@
   - type: Clothing
     sprite: Clothing/Ears/Headsets/security.rsi
   - type: Headset
-    color: "#1563bd"
+    color: "#DE3A3A"
 
 - type: entity
   parent: [ClothingHeadsetAlt, BaseCommandContraband]
@@ -152,6 +152,7 @@
   description: An updated, modular syndicate intercom that fits over the head and takes encryption keys (there are 5 key slots.).
   components:
   - type: Headset
+    color: "#8f4a4b"
   - type: EncryptionKeyHolder
     keySlots: 5
   - type: ContainerFill

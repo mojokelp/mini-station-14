@@ -977,6 +977,7 @@
   - type: Pda
     id: UniversalIDCard
   - type: HealthAnalyzer
+    maxScanRange: null
     scanDelay: 0
     silent: true
   - type: CartridgeLoader
@@ -1553,3 +1554,30 @@
     borderColor: "#7F3300"
   - type: Icon
     state: pda-wizard
+
+- type: entity
+  parent: BasePDA
+  id: SeniorSalvagePDA
+  name: КПК ведущего утилизатора.
+  description: Пахнет камушками и работкой.
+  components:
+  - type: Pda
+    id: SeniorSalvageIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-seniorminer
+  - type: PdaBorderColor
+    borderColor: "#735321"
+    accentHColor: "#62237F"
+    accentVColor: "#62237F"
+  - type: Icon
+    state: pda-seniorminer
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - AstroNavCartridge

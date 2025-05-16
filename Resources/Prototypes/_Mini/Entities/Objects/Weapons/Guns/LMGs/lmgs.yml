@@ -38,3 +38,6 @@
       path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
     soundEmpty:
       path: /Audio/_Mini/LMGs/mini_empty.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundBoltClosed: /Audio/_Mini/LMGs/mini_bolt.ogg
+    soundBoltOpened: /Audio/_Mini/LMGs/mini_bolt.ogg

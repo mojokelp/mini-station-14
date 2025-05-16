@@ -239,6 +239,13 @@
 
 - type: jobIcon
   parent: JobIcon
+  id: JobIconSeniorSalvageSpecialist
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: ShaftMiner
+
+- type: jobIcon
+  parent: JobIcon
   id: JobIconPassenger
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi

@@ -3,3 +3,15 @@
 
 - type: Tag
   id: CartridgeMinigun
+
+- type: Tag
+  id: ADT40mmGrenade
+
+- type: Tag
+  id: ADTMagazineRifleBibisSoftBig
+
+- type: Tag
+  id: ADTMagazineRifleBibisSoft
+
+- type: Tag
+  id: ADTMagazineRifleBibis

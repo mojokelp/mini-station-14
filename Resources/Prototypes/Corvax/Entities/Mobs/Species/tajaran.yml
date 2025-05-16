@@ -45,6 +45,8 @@
       types:
         Asphyxiation: -2.0
   - type: Wagging
+  - type: NightVision
+    color: "#808080"
 
 - type: entity
   save: false
