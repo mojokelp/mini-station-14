@@ -1,4 +1,3 @@
-
 #gygax
 
 - type: entity
@@ -345,7 +344,7 @@
         Caustic: 0.1
         Structural: 0.25
     mechToPilotDamageMultiplier: 0.0  #Боец в тяжелом мехе не должен получать урон пока сам мех - жив
-    maxintegrity: 420
+    maxintegrity: 400
     baseState: phazon
     openState: phazon-open
     brokenState: phazon-broken
@@ -510,13 +509,13 @@
       coefficients: #Коэффициент для тяжелобронированных мехов
         Blunt: 0.1
         Slash: 0.1
-        Piercing: 0.25
-        Heat: 0.25
+        Piercing: 0.3
+        Heat: 0.3
         Radiation: 0
         Caustic: 0.1
         Structural: 0.25
     mechToPilotDamageMultiplier: 0.0  #Боец в тяжелом мехе не должен получать урон пока сам мех - жив
-    maxintegrity: 450
+    maxintegrity: 390
     baseState: marauder
     openState: marauder-open
     brokenState: marauder-broken
@@ -596,7 +595,7 @@
         Caustic: 0.1
         Structural: 0.15
     mechToPilotDamageMultiplier: 0.0  #Боец в тяжелом мехе не должен получать урон пока сам мех - жив
-    maxintegrity: 600
+    maxintegrity: 500
     baseState: seraph
     openState: seraph-open
     brokenState: seraph-broken
@@ -661,13 +660,13 @@
       coefficients: #коэффициенты для легкобронированных мехов
         Blunt: 0.1
         Slash: 0.1
-        Piercing: 0.5
-        Heat: 0.5
+        Piercing: 0.4
+        Heat: 0.4
         Radiation: 0
         Caustic: 0.1
         Structural: 0.5
     mechToPilotDamageMultiplier: 0.15 #коэффициент для легкобронированных мехов
-    maxintegrity: 360
+    maxintegrity: 320
     baseState: ntgygax
     openState: ntgygax-open
     brokenState: ntgygax-broken
@@ -733,13 +732,13 @@
       coefficients: #коэффициенты для легкобронированных мехов
         Blunt: 0.1
         Slash: 0.1
-        Piercing: 0.5
-        Heat: 0.5
+        Piercing: 0.4
+        Heat: 0.4
         Radiation: 0
         Caustic: 0.1
         Structural: 0.5
     mechToPilotDamageMultiplier: 0.15 #коэффициент для легкобронированных мехов
-    maxintegrity: 360
+    maxintegrity: 320
     baseState: darkgygax
     openState: darkgygax-open
     brokenState: darkgygax-broken
@@ -806,13 +805,13 @@
       coefficients: #Коэффициент для тяжелобронированных мехов
         Blunt: 0.1
         Slash: 0.1
-        Piercing: 0.25
-        Heat: 0.25
+        Piercing: 0.3
+        Heat: 0.3
         Radiation: 0
         Caustic: 0.1
         Structural: 0.25
     mechToPilotDamageMultiplier: 0.0  #Боец в тяжелом мехе не должен получать урон пока сам мех - жив
-    maxintegrity: 450
+    maxintegrity: 390
     baseState: mauler
     openState: mauler-open
     brokenState: mauler-broken
