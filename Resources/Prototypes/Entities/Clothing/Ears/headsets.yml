@@ -283,7 +283,7 @@
   - type: Clothing
     sprite: Clothing/Ears/Headsets/security.rsi
   - type: Headset
-    color: "#1563bd"
+    color: "#DE3A3A"
 
 - type: entity
   parent: [ClothingHeadset, BaseSecurityContraband]
@@ -302,7 +302,7 @@
   - type: Clothing
     sprite: Clothing/Ears/Headsets/brigmedic.rsi
   - type: Headset
-    color: "#1563bd"
+    color: "#DE3A3A"
 
 - type: entity
   parent: ClothingHeadset

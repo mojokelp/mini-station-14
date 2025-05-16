@@ -33,14 +33,18 @@
             Botanist: [ 1, 1 ]
             Chef: [ 1, 1 ]
             Janitor: [ 1, 1 ]
+            SeniorOfficer: [ 1, 1 ]
             #engineering (2 - 3)
+            SeniorEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 1, 1 ]
             StationEngineer: [ 1, 2 ]
             #medical (2 - 3)
+            SeniorPhysician: [ 1, 1 ]
             Chemist: [ 1, 1 ]
             MedicalDoctor: [ 1, 2 ]
             #science (1)
             Scientist: [ 1, 1 ]
+            SeniorResearcher: [ 1, 1 ]
             Passenger: [ 1, 1 ]
 
         # Corvax-next blob-config-start LOW
