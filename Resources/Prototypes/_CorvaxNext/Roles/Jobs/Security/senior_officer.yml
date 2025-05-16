@@ -31,7 +31,6 @@
 - type: startingGear
   id: SeniorOfficerGear
   equipment:
-    shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity
     id: SeniorOfficerPDA
     ears: ClothingHeadsetSecurity
@@ -39,4 +38,6 @@
   storage:
     back:
     - Flash
+    - MagazinePistol
+    - MagazinePistol
     - MagazinePistol
