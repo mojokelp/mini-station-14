@@ -32,12 +32,14 @@
             Bartender: [ 1, 1 ]
             Botanist: [ 1, 1 ]
             Chef: [ 1, 1 ]
-            MedicalDoctor: [ 1, 2 ]
-            Chemist: [ 1, 1 ]
             Janitor: [ 1, 1 ]
-            Musician: [ 1, 1 ]
+            #engineering (2 - 3)
             AtmosphericTechnician: [ 1, 1 ]
             StationEngineer: [ 1, 2 ]
+            #medical (2 - 3)
+            Chemist: [ 1, 1 ]
+            MedicalDoctor: [ 1, 2 ]
+            #science (1)
             Scientist: [ 1, 1 ]
             Passenger: [ 1, 1 ]
 
@@ -47,5 +49,3 @@
           stageCritical: 200
           stageTheEnd: 400
         # Corvax-next blob-config-end
-
-

@@ -107,11 +107,10 @@
   - HeadOfSecurity
   - SecurityCadet
   - SecurityOfficer
-  - SeniorOfficer # Corvax-Next-MentorRoles
-  - Brigmedic # Corvax-Next-Brigmedic
   - Pilot # Corvax-Pilot
   - Detective
   - Warden
+  - Brigmedic # Corvax-Brigmedic
 
 - type: department
   id: Science
