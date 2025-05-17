@@ -31,16 +31,23 @@
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 3, 3 ]
-            #engineering
+            # cargo
+            Quartermaster: [ 1, 1 ]
+            SalvageSpecialist: [ 4, 4 ]
+            SeniorSalvageSpecialist: [ 1, 1 ]
+            CargoTechnician: [ 3, 3 ]
+            # engineering
             ChiefEngineer: [ 1, 1 ]
             SeniorEngineer: [ 1, 1 ]
-            StationEngineer: [ 4, 4 ]
             AtmosphericTechnician: [ 2, 2 ]
+            SeniorEngineer: [ 1, 1 ]
+            StationEngineer: [ 4, 4 ]
             TechnicalAssistant: [ 2, 2 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             SeniorPhysician: [ 1, 1 ]
             MedicalDoctor: [ 3, 4 ]
+            SeniorPhysician: [ 1, 1 ] 
             Chemist: [ 2, 2 ]
             MedicalIntern: [ 2, 2 ]
             Paramedic: [ 1, 2 ]
@@ -48,10 +55,12 @@
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ]
             Scientist: [ 3, 3 ]
+            SeniorResearcher: [ 1, 1 ]
             ResearchAssistant: [ 1, 1 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
+            Brigmedic: [ 1, 1 ]
             SecurityOfficer: [ 4, 4 ]
             Warden: [ 1, 1 ]
             #Lawyer: [ 1, 1 ] # Corvax-IAA
@@ -64,7 +73,7 @@
             SalvageSpecialist: [ 4, 4 ]
             SeniorSalvageSpecialist: [ 1, 1 ]
             #civilian
-            Passenger: [ 1, 1 ]
+            Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
