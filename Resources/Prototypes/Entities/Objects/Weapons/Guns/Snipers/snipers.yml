@@ -74,7 +74,7 @@
     sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
   - type: GunRequiresWield
   - type: Gun
-    fireRate: 0.4
+    fireRate: 0.7
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -84,7 +84,7 @@
     whitelist:
       tags:
       - CartridgeAntiMateriel
-    capacity: 5
+    capacity: 8
     proto: CartridgeAntiMateriel
   - type: SpeedModifiedOnWield
     walkModifier: 0.25
