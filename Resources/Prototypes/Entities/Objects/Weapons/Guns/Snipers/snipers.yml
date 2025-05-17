@@ -19,7 +19,7 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
-    fireRate: 0.75
+    fireRate: 0.8
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -74,7 +74,7 @@
     sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
   - type: GunRequiresWield
   - type: Gun
-    fireRate: 0.7
+    fireRate: 0.8
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -87,11 +87,11 @@
     capacity: 8
     proto: CartridgeAntiMateriel
   - type: SpeedModifiedOnWield
-    walkModifier: 0.25
-    sprintModifier: 0.25
+    walkModifier: 0.5
+    sprintModifier: 0.5
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
-    maxOffset: 3
+    maxOffset: 15
     pvsIncrease: 0.3
 
 - type: entity
