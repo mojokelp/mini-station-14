@@ -1,18 +1,20 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - NextBox
-  - NextBagel
-  - NextSilly
-  - NextPacked
-  - NextPaper
-  - NextAvrite
-  - NextOmega
-  - NextDelta
-  - NextMarathon
-  - Oasis
-  - Core
-  - NextAmber
-  - Plasma
-  - NextAwesome
+  - Amber
+  - Bagel
+  - Box
+  - Convex
+  #- Core
+  - Elkridge
   - Fland
+  #- Gate
+  - Loop
+  - Marathon
+  - Meta
+  - Oasis
+  - Omega
+  - Packed
+  - Plasma
+  - Reach
+  #- Train
