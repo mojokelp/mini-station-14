@@ -72,6 +72,18 @@
   - Trinkets
   - GroupSpeciesBreathToolMedical
 
+- type: roleLoadout
+  id: JobSurgeon
+  groups:
+  - Inventory # Corvax-Loadouts
+  - SurgeonHead
+  - SurgeonJumpsuit
+  - MedicalBackpack
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+  - SurgeonScalpel
+
 # Cargo
 - type: roleLoadout
   id: JobSeniorSalvageSpecialist
