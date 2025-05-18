@@ -471,7 +471,7 @@
 
 #Head of Security's Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseCommandContraband]
+  parent: [ClothingOuterHardsuitBase, BaseCommandContraband, ClothingOuterStorageBase, AllowSuitStorageClothing]
   id: ClothingOuterHardsuitSecurityRed
   name: head of security's hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
@@ -500,7 +500,11 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSecurityRed
-
+  - type: Storage
+    capacity: 16
+    maxItemSize: Normal
+    grid:
+      - 0,0,7,1
 #Luxury Mining Hardsuit
 - type: entity
   parent: ClothingOuterHardsuitBase
