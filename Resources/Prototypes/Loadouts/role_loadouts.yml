@@ -271,7 +271,7 @@
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
-
+  - EngiDevices
 - type: roleLoadout
   id: JobTechnicalAssistant
   groups:
@@ -282,7 +282,7 @@
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
-
+  - EngiDevices
 - type: roleLoadout
   id: JobStationEngineer
   groups:
@@ -297,7 +297,7 @@
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
-
+  - EngiDevices
 - type: roleLoadout
   id: JobAtmosphericTechnician
   groups:
@@ -310,7 +310,7 @@
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
-
+  - EngiDevices
 # Science
 - type: roleLoadout
   id: JobResearchDirector

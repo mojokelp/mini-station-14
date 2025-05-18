@@ -1,0 +1,191 @@
+#Консоль атмос труб
+- type: entity
+  parent: BaseItem
+  id: BaseHandheldAtmosMonitiring
+  name: Атмосферный мониторинг
+  description: Позволяет следить за состоянием атмосферы на станции.
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _Mini/Objects/Devices/tablets.rsi
+      layers:
+        - state: tablet
+        - state: generic
+          shader: unshaded
+    - type: ActivatableUI
+      singleUser: true
+      key: enum.AtmosMonitoringConsoleUiKey.Key
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+    - type: UserInterface
+      interfaces:
+        enum.AtmosMonitoringConsoleUiKey.Key:
+          type: AtmosMonitoringConsoleBoundUserInterface
+        enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
+    - type: GuideHelp
+      guides:
+      - AtmosphericNetworkMonitor
+      - DeviceMonitoringAndControl
+    - type: AtmosMonitoringConsole
+      navMapTileColor: "#1a1a1a"
+      navMapWallColor: "#404040"
+
+- type: entity
+  id: HandheldAtmosMonitiring
+  parent:
+  - BaseHandheldAtmosMonitiring
+  - BaseHandheldComputer
+  suffix: Батарея
+
+- type: entity
+  id: HandheldAtmosMonitiringEmpty
+  parent: HandheldAtmosMonitiring
+  suffix: Пусто
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
+- type: entity
+  id: HandheldAtmosMonitiringUnpowered
+  parent: BaseHandheldAtmosMonitiring
+  suffix: Не запитан
+
+  #Консоль атмос угроз
+
+- type: entity
+  parent: BaseItem
+  id: BaseHandheldComputerAlert
+  name: Мониторинг атмосферных угроз
+  description: Позволяет следить за атмосферыми угрозами на станции.
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _Mini/Objects/Devices/tablets.rsi
+      layers:
+        - state: tablet
+        - state: generic_alert
+          shader: unshaded
+    - type: ActivatableUI
+      singleUser: true
+      key: enum.AtmosAlertsComputerUiKey.Key
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+    - type: UserInterface
+      interfaces:
+          enum.AtmosAlertsComputerUiKey.Key:
+              type: AtmosAlertsComputerBoundUserInterface
+          enum.WiresUiKey.Key:
+            type: WiresBoundUserInterface
+    - type: GuideHelp
+      guides:
+      - AtmosphericAlertsComputer
+      - DeviceMonitoringAndControl
+    - type: AtmosAlertsComputer
+
+- type: entity
+  id: HandheldComputerAlert
+  parent:
+  - BaseHandheldComputerAlert
+  - BaseHandheldComputer
+  suffix:  Батарея
+
+- type: entity
+  id: HandheldComputerAlertEmpty
+  parent: HandheldComputerAlert
+  suffix: Пусто
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
+- type: entity
+  id: HandheldComputerAlertUnpowered
+  parent: BaseHandheldComputerAlert
+  suffix: Не запитан
+
+#консоль проводки
+
+- type: entity
+  parent: BaseItem
+  id: BaseHandheldPowerMonitoring
+  name: Мониторинг проводки
+  description: Позволяет следить за состоянием проводки на станции.
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _Mini/Objects/Devices/tablets.rsi
+      layers:
+        - state: tablet
+        - state: generic_wires
+          shader: unshaded
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+    - type: PowerMonitoringConsole
+    - type: PowerMonitoringCableNetworks
+    - type: NodeContainer
+      examinable: true
+      nodes:
+        hv:
+          !type:CableDeviceNode
+          nodeGroupID: HVPower
+    - type: ActivatableUI
+      singleUser: true
+      key: enum.PowerMonitoringConsoleUiKey.Key
+    - type: UserInterface
+      interfaces:
+        enum.PowerMonitoringConsoleUiKey.Key:
+          type: PowerMonitoringConsoleBoundUserInterface
+        enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
+
+- type: entity
+  id: HandheldPowerMonitoring
+  parent:
+  - BaseHandheldPowerMonitoring
+  - BaseHandheldComputer
+  suffix: Батарея
+
+- type: entity
+  id: HandheldPowerMonitoringEmpty
+  parent: HandheldPowerMonitoring
+  suffix: Пусто
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
+- type: entity
+  id: HandheldPowerMonitoringUnpowered
+  parent: BaseHandheldPowerMonitoring
+  suffix: Не запитан
+
+

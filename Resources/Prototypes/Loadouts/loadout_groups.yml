@@ -766,6 +766,16 @@
   - YellowJumpskirt
 
 - type: loadoutGroup
+  id: EngiDevices
+  name: Ручные консоли
+  minLimit: 0
+  maxLimit: 3
+  loadouts:
+    - AtmosMonitiring
+    - ComputerAlert
+    - PowerMonitoring
+
+- type: loadoutGroup
   id: StationEngineerHead
   name: loadout-group-station-engineer-head
   minLimit: 0

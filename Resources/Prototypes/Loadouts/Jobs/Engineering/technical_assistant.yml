@@ -1,3 +1,12 @@
+- type: loadoutEffectGroup
+  id: EngiDevices
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+        !type:DepartmentTimeRequirement
+        department: Engineering
+        time: 18000
+
 # Jumpsuit
 - type: loadout
   id: YellowJumpsuit
@@ -8,3 +17,31 @@
   id: YellowJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtColorYellow
+
+- type: loadout
+  id: AtmosMonitiring
+  storage:
+    back:
+      - HandheldAtmosMonitiring
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EngiDevices
+
+- type: loadout
+  id: ComputerAlert
+  storage:
+    back:
+      - HandheldComputerAlert
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EngiDevices
+
+- type: loadout
+  id: PowerMonitoring
+  storage:
+      back:
+        - HandheldPowerMonitoring
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EngiDevices
+

@@ -1,7 +1,7 @@
 - type: entity
   name: Мини-пулемет ОСЩ
   id: WeaponMiniMachineGun
-  parent: WeaponLightMachineGunL6
+  parent: [WeaponLightMachineGunL6, BaseSecurityContraband]
   description: Передовое оружие с огромным, по меркам оружейной промышленности НТ, боезапасом, полученным с помощью блюспейспейс технологий!
   components:
   - type: Item
