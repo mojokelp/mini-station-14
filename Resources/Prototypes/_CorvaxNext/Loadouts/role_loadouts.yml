@@ -11,7 +11,7 @@
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
-
+  - EngiDevices
 # Science
 - type: roleLoadout
   id: JobSeniorResearcher
