@@ -91,7 +91,7 @@
     sprintModifier: 0.5
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
-    maxOffset: 15
+    maxOffset: 12
     pvsIncrease: 0.3
 
 - type: entity
