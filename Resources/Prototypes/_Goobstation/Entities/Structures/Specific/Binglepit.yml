@@ -1,5 +1,6 @@
 - type: entity
   id: BinglePit
+  categories: [ Spawner ] # needed so tests don't sus
   name: binglepit
   description: Looks Hungry
   placement:
@@ -64,5 +65,15 @@
         Shock: -1
         Structural: -1
       groups:
-        Brute: -1
+        Brute: -3
   - type: AntiRottingContainer
+  - type: SpawnOnDespawn
+    prototype: CrateFunBingleLoot
+
+- type: entity
+  id: BinglePitBingleless
+  parent: BinglePit
+  suffix: no starting
+  components:
+  - type: BinglePit
+    startingBingles: 0

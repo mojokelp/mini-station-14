@@ -1,3 +1,4 @@
+using System;
 using System.Numerics;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
@@ -78,6 +79,10 @@ public sealed class BinglePitSystem : EntitySystem
         if (!Transform(uid).Coordinates.IsValid(EntityManager))
             QueueDel(uid);
         component.Pit = _containerSystem.EnsureContainer<Container>(uid, "pit");
+
+        var coords = Transform(uid).Coordinates;
+        for (var i = 0; i < component.StartingBingles; i++)
+            Spawn(component.GhostRoleToSpawn, coords);
     }
 
     private void OnStepTriggered(EntityUid uid, BinglePitComponent component, ref StepTriggeredOffEvent args)
