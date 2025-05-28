@@ -10,3 +10,5 @@ JobSeniorEngineer = ведущий инженер
 JobSeniorOfficer = ведущий учёный
 JobSeniorPhysician = ведущий врач
 JobSeniorResearcher = инструктор СБ
+job-name-wardenHelper = помощник смотрителя
+JobWardenHelper = помощник смотрителя
