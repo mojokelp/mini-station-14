@@ -51,6 +51,7 @@
           ResearchAssistant: [ 3, 3 ]
           # security
           Warden: [ 1, 1 ]
+          WardenHelper: [ 1, 1 ]
           SecurityOfficer: [ 3, 4 ]
           SecurityCadet: [ 3, 3 ]
           SeniorOfficer: [ 1, 1 ]
