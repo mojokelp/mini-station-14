@@ -173,6 +173,8 @@
       - MedTekCartridge
       - SecWatchCartridge # Corvax-Next-SecWatch
       - NanoChatCartridge # Corvax-Next-PDAChat
+  - type: Icon
+    state: pda-medical
 
 - type: entity
   parent: BasePDA

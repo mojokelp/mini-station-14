@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseMedicalPDA
+  parent: MedicalPDA
   id: SurgeonPDA
   name: surgeon PDA
   description: Shiny and sterile.
@@ -10,7 +10,8 @@
     borderColor: "#d7d7d0"
     accentVColor: "#5db8be"
   - type: Icon
-    state: pda-surgeon
+    state: pda-madical
   - type: GuideHelp
     guides:
     - Medical Doctor
+
