@@ -62,6 +62,7 @@
             #security - 9-17
             Warden: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
+            WardenHelper: [ 1, 1 ]
             SecurityOfficer: [ 6, 8 ]
             Detective: [ 1, 2 ]
             SecurityCadet: [ 4, 4 ]

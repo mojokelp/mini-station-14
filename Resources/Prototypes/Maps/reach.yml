@@ -34,6 +34,7 @@
             Chef: [ 1, 1 ]
             Janitor: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
+            WardenHelper: [ 1, 1 ]
             #engineering (2 - 3)
             SeniorEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 1, 1 ]
