@@ -370,7 +370,7 @@
 - type: entity
   id: XenoArtifactOmnitool
   parent: BaseOneTimeXenoArtifactEffect
-  description: Obtains ability of omnitool
+  description: Получение функций омнитула
   components:
   - type: XAEApplyComponents
     components:
@@ -417,7 +417,7 @@
 - type: entity
   id: XenoArtifactEffectBadFeeling
   parent: BaseXenoArtifactEffect
-  description: Broadcasts sublime message
+  description: Передача сообщения
   components:
   - type: XAETelepathic
     messages:
@@ -476,7 +476,7 @@
 - type: entity
   id: XenoArtifactEffectJunkSpawn
   parent: BaseXenoArtifactEffect
-  description: Create recyclable junk
+  description: Выделение мусора
   components:
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
@@ -506,7 +506,7 @@
 - type: entity
   id: XenoArtifactPotassiumWave
   parent: BaseXenoArtifactEffect
-  description: Produces potassium
+  description: Выделение калия
   components:
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
@@ -533,7 +533,7 @@
 - type: entity
   id: XenoArtifactFloraSpawn
   parent: BaseXenoArtifactEffect
-  description: Produces flora
+  description: Появление растительности
   components:
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
