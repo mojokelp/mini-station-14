@@ -1,0 +1,259 @@
+- type: entity
+  name: Космо-меч
+  parent: BaseSword
+  id: SwordCosmicCult
+  description: Жуткий двуручный клинок, созданный из непостижимого материала, противоестественно проникший в наш мир. Каждое ваше нутро кричит, что он здесь чужд.
+  components:
+  - type: CosmicEquipment
+  - type: Sprite
+    sprite: _DV/CosmicCult/Objects/cosmicsword.rsi
+    layers:
+      - state: icon
+      - state: icon-overlay
+        shader: unshaded
+  - type: MeleeWeapon
+    resistanceBypass: true
+    angle: 90
+    animation: WeaponArcCosmic
+    attackRate: 1
+    clickDamageModifier: 1.1
+    damage:
+      types:
+        Slash: 8
+        Asphyxiation: 18
+        Structural: 15
+    soundHit:
+      path: /Audio/_DV/CosmicCult/cosmicsword_hit.ogg
+      params:
+        variation: 0.2
+        volume: 1
+    soundSwing:
+      path: /Audio/_DV/CosmicCult/cosmicweapon_swing.ogg
+      params:
+        variation: 0.125
+        volume: -4
+    soundNoDamage:
+      path: /Audio/_DV/CosmicCult/cosmicsword_glance.ogg
+      params:
+        variation: 0.2
+        volume: -11
+  - type: Reflect
+    reflectProb: .21
+    spread: 120
+    soundOnReflect:
+      path: /Audio/_DV/CosmicCult/cosmicsword_glance.ogg
+      params:
+        variation: 0.2
+        volume: -6
+  - type: Wieldable
+    wieldSound:
+      path: /Audio/_DV/CosmicCult/cosmic_wield.ogg
+      params:
+        variation: 0.2
+        volume: -2
+    unwieldSound:
+      path: /Audio/_DV/CosmicCult/cosmic_unwield.ogg
+      params:
+        variation: 0.2
+        volume: 0
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 3
+        Structural: 5
+  - type: DisarmMalus
+  - type: Item
+    size: Large
+    sprite: _DV/CosmicCult/Objects/cosmicsword-inhands.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+
+- type: entity
+  name: Космо-рапира
+  parent: BaseItem
+  id: SpearCosmicCult
+  description: Тревожное копьё, выкованное из неописуемой материи. Близость к нему ощущается как статическое покалывание, расползающееся по нервам.
+  components:
+  - type: CosmicEquipment
+  - type: EmbeddableProjectile
+    removalTime: 2
+    sound: /Audio/_DV/CosmicCult/cosmiclance_impact.ogg
+  - type: Sprite
+    sprite: _DV/CosmicCult/Objects/cosmiclance.rsi
+    layers:
+      - state: icon
+      - state: icon-overlay
+        shader: unshaded
+  - type: MeleeWeapon
+    resistanceBypass: true
+    angle: 0
+    animation: WeaponArcCosmic
+    attackRate: 0.62
+    damage:
+      types:
+        Piercing: 12
+        Asphyxiation: 20
+    soundHit:
+      path: /Audio/_DV/CosmicCult/cosmiclance_hit.ogg
+      params:
+        variation: 0.2
+        volume: 1
+    soundSwing:
+      path: /Audio/_DV/CosmicCult/cosmicweapon_swing.ogg
+      params:
+        variation: 0.125
+        volume: -4
+    soundNoDamage:
+      path: /Audio/_DV/CosmicCult/cosmicsword_glance.ogg
+      params:
+        variation: 0.2
+        volume: -11
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 35
+        Asphyxiation: 35
+  - type: Wieldable
+    wieldSound:
+      path: /Audio/_DV/CosmicCult/cosmic_wield.ogg
+      params:
+        variation: 0.2
+        volume: -2
+    unwieldSound:
+      path: /Audio/_DV/CosmicCult/cosmic_unwield.ogg
+      params:
+        variation: 0.2
+        volume: 0
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Piercing: 5
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,4,0
+    sprite: _DV/CosmicCult/Objects/cosmiclance-inhands.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: EmitSoundOnThrow
+    sound: /Audio/_DV/CosmicCult/cosmicweapon_swing.ogg ## THROWING SOUND - REPLACE THIS!
+  - type: ThrowingAngle
+    angle: 225
+  - type: LandAtCursor
+  - type: Tag
+    tags:
+    - Spear
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PolygonShape
+          vertices:
+            - -0.40,-0.30
+            - -0.30,-0.40
+            - 0.40,0.30
+            - 0.30,0.40
+        density: 20
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+  - type: Sharp
+
+
+- type: entity
+  name: Космо-лезвие
+  parent: BaseItem
+  id: ScytheCosmicCult
+  components:
+  - type: CosmicEquipment
+  - type: Sprite
+    sprite: _DV/CosmicCult/Objects/cosmicscythe.rsi
+    layers:
+      - state: icon
+      - state: icon-overlay
+        shader: unshaded
+  # - type: AmmoCounter
+  - type: UseDelayOnShoot
+  - type: UseDelay
+    delay: 2
+  - type: LeechOnMarker
+    leech:
+      groups:
+        Brute: -10
+  - type: Gun
+    projectileSpeed: 3
+    soundGunshot: /Audio/_DV/CosmicCult/projectile_razor.ogg
+    fireRate: 2
+    useKey: false
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.1
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: BasicEntityAmmoProvider
+    proto: ProjectileCosmicRazor
+    capacity: 1
+    count: 1
+  - type: MeleeWeapon
+    resistanceBypass: true
+    wideAnimationRotation: -135
+    animation: WeaponArcCosmic
+    attackRate: 0.62
+    clickDamageModifier: 1.1
+    damage:
+      types:
+        Slash: 6
+        Asphyxiation: 6
+        Structural: 15
+    soundHit:
+      path: /Audio/_DV/CosmicCult/cosmicsword_hit.ogg
+      params:
+        variation: 0.2
+        volume: 1
+    soundSwing:
+      path: /Audio/_DV/CosmicCult/cosmicweapon_swing.ogg
+      params:
+        variation: 0.125
+        volume: -4
+    soundNoDamage:
+      path: /Audio/_DV/CosmicCult/cosmicsword_glance.ogg
+      params:
+        variation: 0.2
+        volume: -11
+  - type: Reflect
+    reflectProb: .21
+    spread: 120
+    soundOnReflect:
+      path: /Audio/_DV/CosmicCult/cosmicsword_glance.ogg
+      params:
+        variation: 0.2
+        volume: -6
+  - type: Wieldable
+    wieldSound:
+      path: /Audio/_DV/CosmicCult/cosmic_wield.ogg
+      params:
+        variation: 0.2
+        volume: -2
+    unwieldSound:
+      path: /Audio/_DV/CosmicCult/cosmic_unwield.ogg
+      params:
+        variation: 0.2
+        volume: 0
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Structural: 5
+  - type: GunRequiresWield
+  - type: Item
+    size: Ginormous
+    sprite: _DV/CosmicCult/Objects/cosmicscythe-inhands.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right

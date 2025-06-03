@@ -1,0 +1,57 @@
+- type: entity
+  parent: [ClothingOuterHardsuitBase]
+  id: ClothingOuterHardsuitCosmicCult
+  name: Космо-броня
+  description: Тревожная броня, вызывающий онемение при прикосновении. Его пульсирующее свечение создаёт ощущение, будто ты что-то забыл...
+  components:
+  - type: CosmicEquipment
+  - type: Sprite
+    sprite: _DV/CosmicCult/Clothing/cosmiccult_armor.rsi
+  - type: Clothing
+    sprite: _DV/CosmicCult/Clothing/cosmiccult_armor.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Caustic: 0.7
+        Heat: 0.6
+        Radiation: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetCosmicCult
+# Шлем
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: ClothingHeadHelmetCosmicCult
+  name: Космо-шлем
+  description: Кажется, будто этот шлем является продолжением скафандра, как если бы они были единым целым.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: _DV/CosmicCult/Clothing/cosmiccult_armor.rsi
+      layers:
+        - state: icon-helmet
+    - type: Clothing
+      sprite: _DV/CosmicCult/Clothing/cosmiccult_armor.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.3
+      lowPressureMultiplier: 1000
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.9
+          Slash: 0.9
+          Piercing: 0.9
+          Heat: 0.9
+          Radiation: 0.9
+          Caustic: 0.9
