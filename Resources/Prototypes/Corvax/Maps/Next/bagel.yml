@@ -70,7 +70,7 @@
             Passenger: [ -1, -1 ]
             #silicon
             StationAi: [ 1, 1 ]
-            Borg: [ 2, 2 ]
+            Borg: [ 4, 4 ]
         # Goobstation blob-config-start HUGEs
         - type: StationBlobConfig
           stageBegin: 40

@@ -45,8 +45,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Critical
-      200: Dead
+      250: Dead
     stateAlertDict:
       Alive: BorgHealth
       Critical: BorgCrit
@@ -73,6 +72,13 @@
       # Only used for NT borgs that can switch type, defined here to avoid copy-pasting the rest of this component.
       enum.BorgSwitchableTypeUiKey.SelectBorgType:
         type: BorgSelectTypeUserInterface
+    # Start ADT Tweak
+      enum.BorgInfoUiKey.BorgInfo:
+        type: BorgInfoBoundUserInterface
+  - type: CrewManifestViewer
+    ownerKey: enum.BorgInfoUiKey.BorgInfo
+  - type: BorgInfo
+    # End ADT Tweak
   - type: ActivatableUI
     key: enum.BorgUiKey.Key
   - type: SiliconLawBound
@@ -87,9 +93,11 @@
   - type: Inventory
     templateId: borg
   - type: Hands
+    count: 1
+    availableHands: 1
     showInHands: false
     disableExplosionRecursion: true
-    canBeStripped: false
+    canBeStripped: true
   - type: ComplexInteraction
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
@@ -104,8 +112,8 @@
     - Science
   - type: ZombieImmune
   - type: Repairable
-    doAfterDelay: 10
-    allowSelfRepair: false
+    doAfterDelay: 5
+    allowSelfRepair: true
   - type: BorgChassis
   - type: LockingWhitelist
     blacklist:
@@ -146,7 +154,6 @@
     - Stun
     - KnockedDown
     - SlowedDown
-    - Flashed
     - SeeingStatic # ADT IPC (shaders)
   - type: TypingIndicator
     proto: robot
