@@ -71,7 +71,7 @@
             Musician: [ 1, 1 ]
             #silicon
             StationAi: [ 1, 1 ]
-            Borg: [ 2, 2 ]
+            Borg: [ 3, 3 ]
 
         # Corvax-next blob-config-start SMALL+
         - type: StationBlobConfig
