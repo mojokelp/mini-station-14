@@ -101,10 +101,6 @@
   components:
   - type: BorgSwitchableType
     selectedBorgType: service
-  #Start ADT Tweak
-  - type: BorgSwitchableSubtype
-    borgSubtype: default_service
-  #End ADT Tweak
 
 - type: entity
   id: BorgChassisSyndicateAssault

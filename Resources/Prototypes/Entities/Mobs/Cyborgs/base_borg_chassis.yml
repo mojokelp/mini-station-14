@@ -94,9 +94,10 @@
     templateId: borg
   - type: Hands
     count: 1
+    availableHands: 1
     showInHands: false
     disableExplosionRecursion: true
-    canBeStripped: false
+    canBeStripped: true
   - type: ComplexInteraction
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter

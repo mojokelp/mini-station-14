@@ -5,3 +5,5 @@
   slots:
     hand 1:
       part: LeftArmBorg
+    left hand:
+      part: RightHandMonkey
