@@ -18,10 +18,10 @@
     - state: icons-detentions
   - type: ItemBorgModule
     items:
-    - ADTInfCablecuffs
+    - Zipties
     - TelescopicBaton
     - ADTBorgflash
-
+    - WeaponLaserCarbineBorg
 - type: entity
   id: ADTBorgModuleHarm
   parent: [ ADTBaseBorgModuleSecurity, BaseProviderBorgModule ]
@@ -34,7 +34,7 @@
   - type: ItemBorgModule
     items:
     - Truncheon
-    - ADTWeaponLaserCarbineBorg
+    - WeaponLaserCarbineBorg
 
 - type: entity
   id: ADTBorgModuleDisabler

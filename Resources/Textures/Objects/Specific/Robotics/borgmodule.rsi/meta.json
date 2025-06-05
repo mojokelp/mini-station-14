@@ -119,9 +119,6 @@
             "name": "medical"
         },
         {
-            "name": "icon-detentions"
-        },
-        {
             "name": "science"
         },
         {
@@ -167,6 +164,9 @@
         {
             "name": "base-stripes-inhand-right",
             "directions": 4
+        },
+        {
+            "name": "icons-detentions"
         }
     ]
 }

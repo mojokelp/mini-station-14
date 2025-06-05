@@ -7,7 +7,7 @@
   - type: BorgSwitchableType
     selectedBorgType: security
   - type: TTS
-    voice: sentrybot
+    voice: Garitos
 
 - type: entity
   id: ADTBorgChassisKerfusNT
