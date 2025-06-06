@@ -103,7 +103,7 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        165: Dead
+        200: Dead
     - type: Damageable
       damageContainer: ADTSiliconDamageContainer # Not a wall.
     - type: Stamina

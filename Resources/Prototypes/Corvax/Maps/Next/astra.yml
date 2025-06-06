@@ -69,7 +69,7 @@
             Passenger: [ -1, -1 ]
             # silicon
             StationAi: [ 1, 1 ]
-            Borg: [ 2, 2 ]
+            Borg: [ 4, 4 ]
         - type: StationGoal
           goals:
           - Singularity

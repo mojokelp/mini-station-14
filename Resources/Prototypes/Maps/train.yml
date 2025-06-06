@@ -71,7 +71,7 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-            Borg: [ 2, 2 ]
+            Borg: [ 3, 3 ]
             Reporter: [ 1, 1 ]
 
         # Corvax-next blob-config-start SMALL+
