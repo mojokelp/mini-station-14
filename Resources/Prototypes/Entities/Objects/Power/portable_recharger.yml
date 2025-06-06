@@ -14,7 +14,9 @@
     quickEquip: false
     slots:
     - back
+    - belt
   - type: Charger
+    chargeRate: 60
     slotId: charger_slot
     portable: true
   - type: PowerChargerVisuals
@@ -22,7 +24,7 @@
     needsPower: false
     powerLoad: 0
   - type: StaticPrice
-    price: 500
+    price: 800
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
   - type: ContainerContainer
