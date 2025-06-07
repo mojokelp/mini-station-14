@@ -4,7 +4,7 @@
   components:
   - type: CosmicCultRule
   - type: GameRule
-    minPlayers: 15ы
+    minPlayers: 15
     delay:
       min: 60
       max: 120
