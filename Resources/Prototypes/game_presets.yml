@@ -20,7 +20,7 @@
     - junk
     - meteorhell
   name: kessler-syndrome-title
-  showInVote: true # Corvax-Next-Democracy
+  showInVote: false # Corvax-Next-Democracy
   description: kessler-syndrome-description
   rules:
     - KesslerSyndromeScheduler
@@ -79,7 +79,7 @@
   - extended
   - shittersafari
   name: extended-title
-  showInVote: true # Corvax-Next-Democracy
+  showInVote: false # Corvax-Next-Democracy
   description: extended-description
   rules:
   - BasicStationEventScheduler
@@ -94,7 +94,7 @@
   - greenshift
   - shittersafarideluxeedition
   name: greenshift-title
-  showInVote: true # Corvax-Next-Democracy
+  showInVote: false # Corvax-Next-Democracy
   description: greenshift-description
   rules:
   #- SpaceTrafficControlFriendlyEventScheduler
