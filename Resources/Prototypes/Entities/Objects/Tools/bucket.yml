@@ -22,6 +22,11 @@
     slots:
     - HEAD
     quickEquip: false
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
   - type: SolutionContainerManager
     solutions:
       bucket:

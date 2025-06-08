@@ -114,6 +114,10 @@
     weight: 3
     reagents:
     - Ephedrine
+  - quantity: 15
+    weight: 2
+    reagents:
+    - Omnizine
   - quantity: 10
     weight: 1
     reagents:
@@ -122,6 +126,14 @@
     weight: 1
     reagents:
     - Amatoxin
+  - quantity: 10
+    weight: 1
+    reagents:
+    - Impedrezene
+  - quantity: 5
+    weight: 1
+    reagents:
+    - Vestine
 
 # Cooked Object
 - type: entity
