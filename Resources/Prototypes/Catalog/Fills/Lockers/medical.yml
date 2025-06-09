@@ -119,6 +119,7 @@
   id: LockerFillParamedic
   table: !type:AllSelector
     children:
+    - id: HandheldCrewMonitorParamed
     - id: ClothingOuterHardsuitVoidParamed
     - id: ClothingOuterCoatParamedicWB
     - id: ClothingHeadHatParamedicsoft
