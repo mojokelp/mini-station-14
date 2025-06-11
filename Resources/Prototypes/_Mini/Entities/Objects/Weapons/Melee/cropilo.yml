@@ -1,0 +1,51 @@
+- type: entity
+  parent: BaseItem
+  id: ProduceBaseCropilo
+  abstract: true
+  components:
+  - type: SolutionContainerManager
+  - type: Sprite
+    state: produce
+  - type: Produce
+  - type: PotencyVisuals
+  - type: Appearance
+    grindableSolutionName: food
+
+- type: entity
+  name: кропило
+  description: Пушистая кисточка для обрызгивания святой водой. Даже в самых темных делах всегда есть место для божественного очищения.
+  id: Cropilo
+  parent: ProduceBaseCropilo
+  components:
+  - type: Sprite
+    sprite: _Mini/Objects/Weapons/Melee/cropilo.rsi
+    state: cropilo
+  - type: Item
+    size: Normal
+    sprite: _Mini/Objects/Weapons/Melee/cropilo.rsi
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 0.8
+    damage:
+      types:
+        Blunt: 0
+        Holy: 25
+    soundHit:
+        path: /Audio/Weapons/cropilo1.ogg
+  - type: MeleeChemicalInjector
+    transferAmount: 5
+    solution: food
+    pierceArmor: true
+  - type: ExaminableSolution
+    solution: pen
+  - type: PointLight
+    radius: 2
+    energy: 2
+    netsync: false
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10000
+        reagents:
+        - ReagentId: Holywater
+          Quantity: 10000
