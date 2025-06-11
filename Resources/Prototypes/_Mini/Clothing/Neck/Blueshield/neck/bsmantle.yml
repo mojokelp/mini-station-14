@@ -1,0 +1,10 @@
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckMantleBlueshield
+  name: Мантия Офицера "Синий Щит"
+  description: Мантия высокопоставленных телохранителей.
+  components:
+  - type: Sprite
+    sprite: /Textures/_Mini/Clothing/Neck/bsmantle.rsi
+  - type: Clothing
+    sprite: /Textures/_Mini/Clothing/Neck/bsmantle.rsi
