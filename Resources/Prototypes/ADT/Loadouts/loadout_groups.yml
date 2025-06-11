@@ -28,6 +28,7 @@
   loadouts:
   - ADTBlueshieldCloak
   - ADTBlueshieldCloakSecond
+  - BlueshieldMantle
 
 #- type: loadoutGroup
 #  id: BlueshieldBackpack
