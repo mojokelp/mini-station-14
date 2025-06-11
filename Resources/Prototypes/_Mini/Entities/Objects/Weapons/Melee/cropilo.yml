@@ -36,12 +36,36 @@
     transferAmount: 5
     solution: food
     pierceArmor: true
+  - type: UseDelay
+    delay: 5.0
+  - type: Bible
+    damage:
+      groups:
+        Brute: -5
+        Burn: -5
+        Airloss: -5
+        Genetic: -3
+        Toxin: -3
+    damageOnFail:
+      groups:
+        Brute: 5
+        Airloss: 15
+    damageOnUntrainedUse: ## What a non-chaplain takes when attempting to heal someone
+      groups:
+        Burn: 10
   - type: ExaminableSolution
     solution: pen
+  - type: ReactionMixer
+    mixMessage: "bible-mixing-success"
+    reactionTypes:
+    - Holy
   - type: PointLight
     radius: 2
     energy: 2
     netsync: false
+  - type: Clothing
+    slots:
+    - Belt
   - type: SolutionContainerManager
     solutions:
       food:
