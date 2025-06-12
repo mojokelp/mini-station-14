@@ -18,7 +18,7 @@
     state: extraction_pack
   content:
   - Fulton
-  - Fulton
+# - Fulton [NERF]
   - FultonBeacon
   # TODO: 30 marker beacons
 
