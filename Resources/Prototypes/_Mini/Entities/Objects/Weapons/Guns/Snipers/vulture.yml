@@ -4,6 +4,10 @@
   id: WeaponSniperVulture
   description: Лёгкая снайперская винтовка для прострела длинных коридоров. Не облажайся сука!
   components:
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,3,1
   - type: Sprite
     sprite: _Mini/Objects/Weapons/Guns/Snipers/vulture.rsi
     layers:
@@ -14,8 +18,6 @@
   - type: Clothing
     sprite: _Mini/Objects/Weapons/Guns/Snipers/vulture.rsi
   - type: GunRequiresWield
-  - type: Item
-    size: Huge
   - type: AmmoCounter
   - type: Gun
     fireRate: 1.3
