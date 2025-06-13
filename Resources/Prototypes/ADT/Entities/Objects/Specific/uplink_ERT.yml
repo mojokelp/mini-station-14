@@ -36,7 +36,7 @@
       Productunit: 35
 
 - type: entity
-  name: product unit
+  name: Единица технологии
   parent: BaseItem
   id: Productunit
   suffix: 20 PU
