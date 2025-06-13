@@ -50,7 +50,7 @@
   - SpeedLoaderMagnum
   - SpeedLoaderMagnumEmpty
   - MagazineMiniMachineGunBox
-
+  - MagazinePistolAntimaterial
 - type: latheRecipePack
   id: SecurityWeaponsStatic
   recipes:

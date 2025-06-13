@@ -27,7 +27,7 @@
         amount: 2
       - id: RemoteSignaller
         amount: 2
-
+      - id: WeaponSniperVulture
 - type: entity
   id: LockerWardenFilled
   suffix: Filled

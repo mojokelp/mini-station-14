@@ -211,6 +211,13 @@
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
+  id: MagazinePistolAntimaterial
+  result: MagazineMagnumAntimaterial
+  materials:
+    Steel: 600
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
   id: MagazinePistolPractice
   result: MagazinePistolPractice
   materials:
