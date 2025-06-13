@@ -97,6 +97,7 @@ namespace Content.IntegrationTests.Tests
             "NextBox",
             "NextAmber",
             "NextMarathon",
+            "NextCluster",
             "NextOmega",
             "NextPacked",
             "BattleRoyale", // BattleRoyale Change

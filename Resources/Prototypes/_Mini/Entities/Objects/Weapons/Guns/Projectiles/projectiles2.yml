@@ -35,5 +35,5 @@
     whitelist:
       tags:
         - CartridgeMagnumAntimaterial
-    capacity: 6
+    capacity: 8
     proto: CartridgeMagnumAntimaterial

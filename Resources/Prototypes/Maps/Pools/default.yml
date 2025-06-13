@@ -1,18 +1,28 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - NextBox
-  - NextBagel
-  - NextSilly
-  - NextPacked
-  - NextPaper
-  - NextAvrite
-  - NextOmega
+  # Highpop 55+
   - NextDelta
-  - NextMarathon
-  - Oasis
-  - Core
-  - NextAmber
-  - Plasma
+  - NextAvrite
+  - NextAstra
+  - NextPilgrim # 40+
+  - NextBox
+
+  # Semi-Highpop 25–65
+  - NextBagel
+  # Midpop 25–55
+  - NextPaper
+  - NextOutpost
   - NextAwesome
-  - Fland
+  - NextPearl
+  - NextAmber
+  - NextMarathon
+
+  # Semi-Midpop 0–35
+  - NextMaus
+  # Lowpop 0–25
+  - NextSilly
+  - NextTushkan
+  - NextOmega
+  - NextPacked
+  - NextCluster
