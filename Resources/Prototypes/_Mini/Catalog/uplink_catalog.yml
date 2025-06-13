@@ -1,0 +1,118 @@
+- type: listing
+  id: SaintGun
+  name: Пулемёт "Серафим"
+  description: Специальное оружие для борьбы с потусторонними силами.
+  icon: { sprite: _Mini/Objects/Weapons/Guns/LMGs/saint_gun.rsi, state: base }
+  productEntity: WeaponSaintGun
+  cost:
+    Productunit: 15
+  categories:
+  - UplinkERTWeapon
+
+- type: listing
+  id: SaintMelee
+  name: Кропило
+  description: Пушистая кисточка для обрызгивания святой водой.
+  icon: { sprite: _Mini/Objects/Weapons/Melee/cropilo.rsi, state: cropilo }
+  productEntity: Cropilo
+  cost:
+    Productunit: 3
+  categories:
+  - UplinkERTWeapon
+
+# misc
+
+- type: listing
+  id: BoberJawOfLife
+  name: boobr-JawsOfLife-name
+  description: boobr-JawsOfLife-desc
+  productEntity: JawsOfLife
+  cost:
+    Productunit: 4
+  categories:
+  - UplinkERTMisc
+
+- type: listing
+  id: BoberGrenadeShrapnel
+  name: Разрывная граната
+  description: Граната для подавления лёгкобронированного противника
+  productEntity: GrenadeShrapnel
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTMisc
+
+- type: listing
+  id: Boberc4
+  name: boobr-c4-name
+  productEntity: C4
+  description: boobr-c4-desc
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTMisc
+
+- type: listing
+  id: BoberJetPack
+  name: boobr-jetpack-name
+  productEntity: JetpackVoidFilled
+  description:  boobr-jetpack-desc
+  cost:
+    Productunit: 2
+  categories:
+  - UplinkERTMisc
+
+- type: listing
+  id: BoberGrapplingGun
+  name: boobr-grappling-gun-name
+  productEntity: WeaponGrapplingGun
+  description:  boobr-grappling-gun-desc
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTMisc
+
+- type: listing
+  id: BoberMediKit
+  name: boobr-medikit-name
+  productEntity: MedkitAdvancedFilled
+  description:  boobr-medikit-desc
+  cost:
+    Productunit: 2
+  categories:
+  - UplinkERTMisc
+
+- type: listing
+  id: BoberIpcKit
+  name: Продвинутый сварочный аппарат
+  productEntity: WelderIndustrialAdvanced
+  description:  На случай если вы КПБ)
+  cost:
+    Productunit: 2
+  categories:
+  - UplinkERTMisc
+
+- type: listing
+  id: BoberNightVision
+  name: uplink-night-vision-name
+  description:  uplink-night-vision-desc
+  productEntity: ClothingEyesNightVisionGoggles
+  cost:
+    Productunit: 4
+  categories:
+  - UplinkERTMisc
+
+  #ammo
+
+- type: listing
+  id: SaintAmmo
+  name: магазин святых пуль
+  description: Магазин для пулемёта "Серафим".
+  icon: { sprite: _Mini/Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/saint_rifle_mag.rsi, state: base }
+  productEntity: MagazineRifleSaint
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTAmmo
+
+

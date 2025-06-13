@@ -1,0 +1,51 @@
+- type: entity
+  parent: [BaseItem,  StorePresetUplinkERT]
+  id: BaseUplinkBOBERT
+  name: Святой магазин
+  description: Блюспейс магазин отряда быстрого реагирования.
+  suffix: 30 ЕТ
+  components:
+  - type: Sprite
+    sprite: _Mini/Objects/Specific/bobert.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: _Mini/Objects/Specific/bobert.rsi
+    heldPrefix: icon
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      Productunit: 30
+
+- type: entity
+  id: StorePresetUplinkERT
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-uplink
+    categories:
+    - UplinkERTWeapon
+    - UplinkERTMisc
+    - UplinkERTAmmo
+    currencyWhitelist:
+    - Productunit
+
+- type: storeCategory
+  id: UplinkERTWeapon
+  name: Оружие
+  priority: 1
+
+- type: storeCategory
+  id: UplinkERTMisc
+  name: Прочее
+  priority: 2
+
+- type: storeCategory
+  id: UplinkERTAmmo
+  name: Боеприпасы
+  priority: 3

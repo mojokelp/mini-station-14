@@ -98,3 +98,46 @@
       walkModifier: 0.9
       sprintModifier: 0.9
     - type: GunRequiresWield
+
+- type: entity
+  name: Л2-ПК
+  id: WeaponLightMachineGunL2RPK
+  parent: BaseWeaponLightMachineGun
+  description: Л2-ПК - это ручной пулемёт из семейства TechnicLogistic, разработанный на основе хорошо известного L6. Этот пулемёт отличается повышенной точностью и низкой себестоимостью производства. Однако особенности его конструкции сделали его весьма громоздким.
+  components:
+  - type: Sprite
+    sprite: _Mini/Objects/Weapons/Guns/LMGs/L2RPK.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-3
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Mini/Objects/Weapons/Guns/LMGs/L2RPK.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Appearance
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: Gun
+    projectileSpeed: 30
+    minAngle: 18
+    maxAngle: 38
+    angleIncrease: 3
+    angleDecay: 14
+    fireRate: 6
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+        Caustic: 0.95
