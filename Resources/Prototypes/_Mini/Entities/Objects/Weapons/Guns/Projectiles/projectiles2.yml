@@ -1,0 +1,39 @@
+- type: entity
+  id: BulletMagnumAntimaterial
+  name: Мангнум 45 антиматериальная
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 60
+        Structural: 100
+
+- type: entity
+  id: CartridgeMagnumAntimaterial
+  name: патрон магнум 45 антиматериальный
+  parent: BaseCartridgeMagnum
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMagnumAntimaterial
+  - type: Tag
+    tags:
+      - MagazineMagnumAntimaterial
+      - CartridgeMagnumAntimaterial
+
+- type: entity
+  id: MagazineMagnumAntimaterial
+  name: магазин (.45 магнум антиматериальный)
+  parent: [ MagazineMagnum, BaseSecurityContraband ]
+  components:
+  - type: Tag
+    tags:
+      - MagazineMagnumAntimaterial
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeMagnumAntimaterial
+    capacity: 6
+    proto: CartridgeMagnumAntimaterial

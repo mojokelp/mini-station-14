@@ -15,3 +15,15 @@
 
 - type: Tag
   id: ADTMagazineRifleBibis
+
+- type: Tag
+  id: MagazineRifleSaint
+
+- type: Tag
+  id: CartridgeRifleSaint
+
+- type: Tag
+  id: CartridgeMagnumAntimaterial
+
+- type: Tag
+  id: MagazineMagnumAntimaterial

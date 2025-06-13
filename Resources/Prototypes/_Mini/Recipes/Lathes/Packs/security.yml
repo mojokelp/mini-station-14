@@ -9,3 +9,8 @@
   id: SecurityAmmoStaticMini
   recipes:
     - MagazineMiniMachineGunBox
+
+- type: latheRecipePack
+  id: SecurityAmmoStaticAnti
+  recipes:
+    - MagazinePistolAntimaterial

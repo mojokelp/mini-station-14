@@ -26,7 +26,6 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
     fireOnDropChance: 0.9 # Corvax-Next-FireOnDrop
-    requiresSkill: true # Corvax-Next-Skills
   - type: BallisticAmmoProvider
     capacity: 10
     proto: CartridgeLightRifle
@@ -38,7 +37,7 @@
       ballistic-ammo: !type:Container
         ents: []
   - type: StaticPrice
-    price: 500
+    price: 2500
 
 - type: entity
   name: Kardashev-Mosin
