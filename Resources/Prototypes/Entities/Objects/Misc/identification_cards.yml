@@ -745,7 +745,7 @@
   parent: IDCardStandard
   id: PrisonerIDCard
   name: prisoner ID card
-  description: A generically printed ID card for scummy prisoners.
+  description: Стандартная пластиковая ID-карта для заключённых.
   components:
   - type: Sprite
     layers:
