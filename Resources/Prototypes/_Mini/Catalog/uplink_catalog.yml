@@ -40,7 +40,7 @@
   cost:
     Productunit: 1
   categories:
-  - UplinkERTMisc
+  - UplinkERTBomb
 
 - type: listing
   id: Boberc4
@@ -50,7 +50,7 @@
   cost:
     Productunit: 1
   categories:
-  - UplinkERTMisc
+  - UplinkERTBomb
 
 - type: listing
   id: BoberJetPack
@@ -80,7 +80,27 @@
   cost:
     Productunit: 2
   categories:
-  - UplinkERTMisc
+  - UplinkERTmed
+
+- type: listing
+  id: BoberMediKitAir
+  name: автоинъектор удушения
+  productEntity: AirlossAutoInjector
+  description: Экспресс-доза физраствора и дексалина плюс, предназначенная чтобы быстро поднять кого-нибудь на ноги.
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTmed
+
+- type: listing
+  id: BoberMediKitBr
+  name: автоинъектор мех-повреждений
+  productEntity: BruteAutoInjector
+  description: Экспресс-доза бикаридина и транексамовой кислоты, предназначенная для применения в боевых условиях.
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTmed
 
 - type: listing
   id: BoberIpcKit
@@ -92,15 +112,6 @@
   categories:
   - UplinkERTMisc
 
-- type: listing
-  id: BoberNightVision
-  name: uplink-night-vision-name
-  description:  uplink-night-vision-desc
-  productEntity: ClothingEyesNightVisionGoggles
-  cost:
-    Productunit: 4
-  categories:
-  - UplinkERTMisc
 
   #ammo
 
@@ -116,3 +127,12 @@
   - UplinkERTAmmo
 
 
+- type: listing
+  id: saintbomb
+  name: Святая газовая граната
+  productEntity: HolyWaterGrenade
+  description: Выпускает газ, который отрицательно влияет на нечисть.
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTBomb
