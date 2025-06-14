@@ -8,6 +8,8 @@
     - ADTUplinkERTWeapon
     - ADTUplinkERTMisc
     - ADTUplinkERTAmmo
+    - ADTUplinkERTBomb
+    - ADTUplinkERTmed
     currencyWhitelist:
     - Productunit
 

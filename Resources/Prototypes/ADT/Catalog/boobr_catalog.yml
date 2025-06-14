@@ -87,7 +87,7 @@
   cost:
     Productunit: 1
   categories:
-  - ADTUplinkERTMisc
+  - ADTUplinkERTBomb
 
 - type: listing
   id: ADTBoberc4
@@ -97,7 +97,7 @@
   cost:
     Productunit: 1
   categories:
-  - ADTUplinkERTMisc
+  - ADTUplinkERTBomb
 
 - type: listing
   id: ADTBoberJetPack
@@ -127,7 +127,17 @@
   cost:
     Productunit: 2
   categories:
-  - ADTUplinkERTMisc
+  - ADTUplinkERTmed
+
+- type: listing
+  id: ADTBoberMedipen
+  name: боевой медипен
+  productEntity: CombatMedipen
+  description:  Одноразовый медипен, содержащий химические вещества, восстанавливающие большинство видов повреждений.
+  cost:
+    Productunit: 1
+  categories:
+  - ADTUplinkERTmed
 
 - type: listing
   id: ADTBoberIpcKit
@@ -137,7 +147,7 @@
   cost:
     Productunit: 2
   categories:
-  - ADTUplinkERTMisc
+  - ADTUplinkERTmed
 
 - type: listing
   id: ADTBoberPortableRecharger

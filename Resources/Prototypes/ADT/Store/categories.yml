@@ -7,12 +7,22 @@
 - type: storeCategory
   id: ADTUplinkERTMisc
   name: Прочее
-  priority: 2
+  priority: 5
 
 - type: storeCategory
   id: ADTUplinkERTAmmo
   name: Боеприпасы
+  priority: 2
+
+- type: storeCategory
+  id: ADTUplinkERTmed
+  name: Медицина
   priority: 3
+
+- type: storeCategory
+  id: ADTUplinkERTBomb
+  name: Взрывчатка
+  priority: 4
 
 - type: storeCategory
   id: ChangelingAbilities
