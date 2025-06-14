@@ -815,7 +815,7 @@
     - !type:TileNotBlocked
 
 - type: construction
-  name: turnstile
+  name: Турникет
   id: Turnstile
   graph: Turnstile
   startNode: start
@@ -902,7 +902,7 @@
   conditions:
     - !type:TileNotBlocked
       failIfSpace: false
-# Lavaland Change: add ability to build catwalks on any tiles    
+# Lavaland Change: add ability to build catwalks on any tiles
 #    - !type:TileType
 #      targets:
 #        - Lattice
