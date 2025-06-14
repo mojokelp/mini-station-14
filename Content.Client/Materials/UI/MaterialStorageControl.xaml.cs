@@ -61,7 +61,6 @@ public sealed partial class MaterialStorageControl : ScrollContainer
             : storage;
 
         // Goobstation end
-        var mats = _materialStorage.GetStoredMaterials((_owner.Value, materialStorage));
 
         if (_currentMaterials.Equals(mats))
             return;
