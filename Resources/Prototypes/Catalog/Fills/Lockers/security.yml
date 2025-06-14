@@ -57,7 +57,7 @@
       - id: RemoteSignaller
         amount: 2
       - id: Binoculars
-
+      - id: WeaponSniperVulture
 - type: entity
   id: LockerSecurityFilled
   suffix: Filled
