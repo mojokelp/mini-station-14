@@ -3,7 +3,7 @@
   mapName: 'Bagel Station'
   mapPath: /Maps/bagel.yml
   # Corvax-start
-  minPlayers: 20
+  minPlayers: 25
   maxPlayers: 65
   # Corvax-end
   stations:
@@ -18,9 +18,8 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_lox.yml
         - type: StationJobs
-          availableJobs:
-            #command
-            ADTBlueShieldOfficer: [ 1, 1 ] #ADT-Roles
+          availableJobs: # 60 jobs total w/o latejoins & interns, 77 jobs total w/ latejoins & interns
+            #command (7)
             Captain: [ 1, 1 ]
             IAA: [ 1, 1 ] # Corvax-IAA
             #service
@@ -34,46 +33,39 @@
             ServiceWorker: [ 2, 2 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
-            SeniorEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 3, 3 ]
             StationEngineer: [ 4, 4 ]
             TechnicalAssistant: [ 4, 4 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
-            SeniorPhysician: [ 1, 1 ]
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 3, 3 ]
             Paramedic: [ 1, 1 ]
             MedicalIntern: [ 4, 4 ]
             #science
             ResearchDirector: [ 1, 1 ]
-            SeniorResearcher: [ 1, 1 ]
             Scientist: [ 5, 5 ]
-            ResearchAssistant: [ 4, 4 ]
-            #security
+            ResearchAssistant: [ 4, 4 ] #intern, not counted
+            #security (10)
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
-            WardenHelper: [ 1, 1 ]
-            SeniorOfficer: [ 1, 1 ]
-            SecurityOfficer: [ 4, 4 ]
+            SecurityOfficer: [ 6, 6 ]
             Detective: [ 1, 1 ]
             SecurityCadet: [ 4, 4 ]
-            Brigmedic: [ 1, 1 ]
             #Lawyer: [ 2, 2 ] # Corvax-IAA
             #supply
             Quartermaster: [ 1, 1 ]
-            SalvageSpecialist: [ 5, 5 ]
+            SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 3, 3 ]
-            SeniorSalvageSpecialist: [ 1, 1 ]
             #civilian
-            Passenger: [ 1, 1 ]
+            Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             Reporter: [ 2, 2 ]
             #silicon
             StationAi: [ 1, 1 ]
-            Borg: [ 3, 3 ]
+            Borg: [ 2, 2 ]
         # Corvax-next blob-config-start HUGE
         - type: StationBlobConfig
           stageBegin: 40

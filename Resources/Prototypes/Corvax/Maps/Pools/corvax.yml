@@ -2,27 +2,27 @@
   id: CorvaxMapPool
   maps:
   # Highpop 55+
-  - NextDelta
-  - NextAvrite
-  - NextAstra
-  - NextPilgrim # 40+
-  - NextBox
+  - CorvaxDelta
+  - CorvaxAvrite
+  - CorvaxAstra
+  - CorvaxPilgrim # 40+
+  - CorvaxChloris
+  - Box
 
   # Semi-Highpop 25–65
-  - NextBagel
+  - Bagel
   # Midpop 25–55
-  - NextPaper
-  - NextOutpost
-  - NextAwesome
-  - NextPearl
-  - NextAmber
-  - NextMarathon
+  - CorvaxPaper
+  - CorvaxOutpost
+  - CorvaxAwesome
+  - CorvaxPearl
+  - Amber
+  - Marathon
 
   # Semi-Midpop 0–35
-  - NextMaus
+  - CorvaxMaus
   # Lowpop 0–25
-  - NextSilly
-  - NextTushkan
-  - NextOmega
-  - NextPacked
-  - NextCluster
+  - CorvaxSilly
+  - CorvaxTushkan
+  - Omega
+  - Packed
