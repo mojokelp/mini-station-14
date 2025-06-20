@@ -1,4 +1,3 @@
-using Content.Shared._CorvaxNext.Verbs;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
@@ -66,7 +65,7 @@ public abstract class SharedHeadsetSystem : EntitySystem
             {
                 Text = toggled ? $"[bold]{name}" : name,
                 Priority = priority++,
-                Category = NextVerbCategory.ToggleHeadsetSound,
+                Category = VerbCategory.ToggleHeadsetSound,
                 Act = () => ToggleHeadsetSound((uid, component), channel, !toggled)
             });
         }

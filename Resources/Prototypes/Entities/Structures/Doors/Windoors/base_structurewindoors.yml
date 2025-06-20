@@ -167,9 +167,6 @@
   - type: StaticPrice
     price: 150
   - type: PryUnpowered
-  - type: Penetratable # Corvax-Next - Better snipers
-    penetrateDamage: 25
-    damagePenalty: 0.1
 
 - type: entity
   id: BaseSecureWindoor
@@ -240,9 +237,7 @@
     tags:
       - SecureWindoor
       # This tag is used to nagivate the Airlock construction graph. It's needed because the construction graph is shared between Airlock, AirlockGlass, and HighSecDoor
-  - type: Penetratable # Corvax-Next - Better snipers
-    penetrateDamage: 50
-    damagePenalty: 0.1
+
 
 #Plasma Windoors
 - type: entity
@@ -309,9 +304,6 @@
     price: 500
   - type: RadiationBlocker
     resistance: 2
-  - type: Penetratable # Corvax-Next - Better snipers
-    penetrateDamage: 40
-    damagePenalty: 0.1
 
 - type: entity
   id: BaseSecurePlasmaWindoor
@@ -382,9 +374,7 @@
     tags:
       - SecurePlasmaWindoor
       # This tag is used to nagivate the Airlock construction graph. It's needed because the construction graph is shared between Airlock, AirlockGlass, and HighSecDoor
-  - type: Penetratable # Corvax-Next - Better snipers
-    penetrateDamage: 50
-    damagePenalty: 0.1
+
 
 #Uranium Windoors
 - type: entity
@@ -451,9 +441,6 @@
     price: 560
   - type: RadiationBlocker
     resistance: 3
-  - type: Penetratable # Corvax-Next - Better snipers
-    penetrateDamage: 40
-    damagePenalty: 0.1
 
 - type: entity
   id: BaseSecureUraniumWindoor
@@ -524,6 +511,3 @@
     tags:
       - SecureUraniumWindoor
       # This tag is used to nagivate the Airlock construction graph. It's needed because the construction graph is shared between Airlock, AirlockGlass, and HighSecDoor
-  - type: Penetratable # Corvax-Next - Better snipers
-    penetrateDamage: 50
-    damagePenalty: 0.1

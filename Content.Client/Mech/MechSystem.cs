@@ -1,4 +1,4 @@
-using Content.Shared.Mech;
+﻿using Content.Shared.Mech;
 using Content.Shared.Mech.Components;
 using Content.Shared.Mech.EntitySystems;
 using Robust.Client.GameObjects;
@@ -10,7 +10,6 @@ namespace Content.Client.Mech;
 public sealed partial class MechSystem : SharedMechSystem
 {
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] private readonly SpriteSystem _sprite = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -27,7 +26,7 @@ public sealed partial class MechSystem : SharedMechSystem
         if (args.Sprite == null)
             return;
 
-        if (!_sprite.LayerExists((uid, args.Sprite), MechVisualLayers.Base))
+        if (!args.Sprite.TryGetLayer((int)MechVisualLayers.Base, out var layer))
             return;
 
         var state = component.BaseState;
@@ -43,7 +42,7 @@ public sealed partial class MechSystem : SharedMechSystem
             drawDepth = DrawDepth.SmallMobs;
         }
 
-        _sprite.LayerSetRsiState((uid, args.Sprite), MechVisualLayers.Base, state);
-        _sprite.SetDrawDepth((uid, args.Sprite), (int)drawDepth);
+        layer.SetState(state);
+        args.Sprite.DrawDepth = (int)drawDepth;
     }
 }

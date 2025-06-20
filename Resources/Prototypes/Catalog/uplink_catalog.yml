@@ -108,20 +108,6 @@
   - UplinkWeaponry
 
 - type: listing
-  id: UplinkGlovesKnuckleDusters
-  name: uplink-gloves-knuckleduster-name
-  description: uplink-gloves-knuckleduster-desc
-  icon: { sprite: Clothing/Hands/Gloves/KnuckleDusters/syndicateknuckleduster.rsi, state: syndicateknuckleduster }
-  productEntity: ClothingHandsKnuckleDustersSyndicate
-  discountCategory: veryRareDiscounts
-  discountDownTo:
-    Telecrystal: 3
-  cost:
-    Telecrystal: 6
-  categories:
-  - UplinkWeaponry
-
-- type: listing
   id: UplinkDisposableTurret
   name: uplink-disposable-turret-name
   description: uplink-disposable-turret-desc
@@ -196,9 +182,9 @@
   productEntity: BriefcaseSyndieSniperBundleFilled
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 7
+    Telecrystal: 6
   cost:
-    Telecrystal: 15
+    Telecrystal: 12
   categories:
   - UplinkWeaponry
 
@@ -585,7 +571,7 @@
   description: uplink-sniper-ammo-desc
   productEntity: MagazineBoxAntiMateriel
   cost:
-    Telecrystal: 3
+    Telecrystal: 2
   categories:
   - UplinkAmmo
 
@@ -742,8 +728,11 @@
   name: uplink-cigarettes-name
   description: uplink-cigarettes-desc
   productEntity: CigPackSyndicate
-  cost:
+  discountCategory: rareDiscounts
+  discountDownTo:
     Telecrystal: 1
+  cost:
+    Telecrystal: 2
   categories:
   - UplinkChemicals
 
@@ -1035,19 +1024,18 @@
   categories:
   - UplinkDisruption
 
-# Note: Removed for the time being until surgery/newmed is added. Considered bloat until then.
-# - type: listing
-#   id: UplinkDuffelSurgery
-#   name: uplink-duffel-surgery-name
-#   description: uplink-duffel-surgery-desc
-#   productEntity: ClothingBackpackDuffelSyndicateFilledMedical
-#   discountCategory: usualDiscounts
-#   discountDownTo:
-#     Telecrystal: 2
-#   cost:
-#     Telecrystal: 4
-#   categories:
-#   - UplinkDisruption
+- type: listing
+  id: UplinkDuffelSurgery
+  name: uplink-duffel-surgery-name
+  description: uplink-duffel-surgery-desc
+  productEntity: ClothingBackpackDuffelSyndicateFilledMedical
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 2
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkDisruption
 
 - type: listing
   id: UplinkPowerSink
@@ -1140,26 +1128,6 @@
     blacklist:
       components:
       - SurplusBundle
-
-- type: listing
-  id: UplinkStarterKit
-  name: uplink-starter-kit-name
-  description: uplink-starter-kit-desc
-  productEntity: ClothingBackpackDuffelSyndicateFilledStarterKit
-  cost:
-    Telecrystal: 40
-  categories:
-  - UplinkDisruption
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-        - NukeOpsUplink
-    - !type:BuyerWhitelistCondition
-      blacklist:
-        components:
-        - SurplusBundle
-
 
 - type: listing
   id: UplinkSingarityBeacon
@@ -1614,17 +1582,16 @@
   categories:
   - UplinkWearables
 
-# TODO: Revert back to normal thieving gloves when clothes dyeing is added
 - type: listing
   id: UplinkgClothingThievingGloves
-  name: uplink-clothing-chameleon-thieving-gloves-name
-  description: uplink-clothing-chameleon-thieving-gloves-desc
-  productEntity: ClothingHandsChameleonThief
+  name: uplink-clothing-thieving-gloves-name
+  description: uplink-clothing-thieving-gloves-desc
+  productEntity: ThievingGloves
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 2
   cost:
-    Telecrystal: 5
+    Telecrystal: 4
   categories:
   - UplinkWearables
 
@@ -1633,19 +1600,6 @@
   name: uplink-clothing-outer-vest-web-name
   description: uplink-clothing-outer-vest-web-desc
   productEntity: ClothingOuterVestWeb
-  discountCategory: usualDiscounts
-  discountDownTo:
-    Telecrystal: 3
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkWearables
-
-- type: listing
-  id: UplinkClothingOuterVestWebElite
-  name: uplink-clothing-outer-vest-web-elite-name
-  description: uplink-clothing-outer-vest-web-elite-desc
-  productEntity: ClothingOuterVestWebElite
   discountCategory: usualDiscounts
   discountDownTo:
     Telecrystal: 3
@@ -1714,7 +1668,7 @@
   name: uplink-syndie-raid-name
   description: uplink-syndie-raid-desc
   icon: { sprite: /Textures/Clothing/OuterClothing/Armor/syndie-raid.rsi, state: icon }
-  productEntity: ClothingBackpackSyndicateRaidBundle
+  productEntity: ClothingBackpackDuffelSyndicateRaidBundle
   cost:
     Telecrystal: 8
   categories:
@@ -1731,15 +1685,13 @@
   description: uplink-hardsuit-syndieelite-desc
   icon: { sprite: /Textures/Clothing/OuterClothing/Hardsuits/syndieelite.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateEliteHardsuitBundle
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 7
   cost:
     Telecrystal: 12
   categories:
   - UplinkWearables
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
 
 - type: listing
   id: UplinkClothingOuterHardsuitJuggernaut
@@ -1754,11 +1706,6 @@
     Telecrystal: 20
   categories:
   - UplinkWearables
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
 
 - type: listing
   id: UplinkClothingEyesHudSyndicate
@@ -2299,21 +2246,3 @@
     Telecrystal: 2
   categories:
   - UplinkDeception
-
-- type: listing
-  id: UplinkSawAdvanced
-  name: uplink-saw-advanced-name
-  description: uplink-saw-advanced-desc
-  icon: { sprite:  Objects/Specific/Medical/Surgery/saw.rsi, state: advanced}
-  productEntity: SawAdvanced
-  discountCategory: rareDiscounts
-  discountDownTo:
-    Telecrystal: 1
-  cost:
-    Telecrystal: 2
-  categories:
-  - UplinkJob
-  conditions:
-  - !type:BuyerJobCondition
-    whitelist:
-    - MedicalDoctor

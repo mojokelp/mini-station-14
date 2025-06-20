@@ -8,5 +8,4 @@
   color: "#c048c2"
   recognizable: true
   physicalDesc: reagent-physical-desc-slimy
-  slipData:
-    requiredSlipSpeed: 3.5
+  slippery: false

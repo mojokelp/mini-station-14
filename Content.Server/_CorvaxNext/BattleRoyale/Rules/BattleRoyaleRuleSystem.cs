@@ -302,11 +302,11 @@ namespace Content.Server._CorvaxNext.BattleRoyale.Rules
                 if (!component.WinnerAnnounced || component.Victor == null || component.Victor.Value != alivePlayers.First())
                 {
                     component.Victor = alivePlayers.First();
-                    if (!component.WinnerAnnounced && _mind.TryGetMind(component.Victor.Value, out var mindId, out var mind) && _player.TryGetSessionById(mind.UserId, out var session))
+                    if (!component.WinnerAnnounced && _mind.TryGetMind(component.Victor.Value, out var mindId, out var mind))
                     {
                         component.WinnerAnnounced = true;
                         var victorName = MetaData(component.Victor.Value).EntityName;
-                        var playerName = session.Name ?? victorName;
+                        var playerName = mind.Session?.Name ?? victorName;
                         if (Timing.CurTime < TimeSpan.FromSeconds(10))
                         {
                             _chatManager.DispatchServerAnnouncement(
@@ -372,10 +372,10 @@ namespace Content.Server._CorvaxNext.BattleRoyale.Rules
             if (!TryComp<PointManagerComponent>(uid, out var point))
                 return;
 
-            if (component.Victor != null && _mind.TryGetMind(component.Victor.Value, out var victorMindId, out var victorMind) && _player.TryGetSessionById(victorMind.UserId, out var session))
+            if (component.Victor != null && _mind.TryGetMind(component.Victor.Value, out var victorMindId, out var victorMind))
             {
                 var victorName = MetaData(component.Victor.Value).EntityName;
-                var victorPlayerName = session.Name ?? victorName;
+                var victorPlayerName = victorMind.Session?.Name ?? victorName;
                 args.AddLine(Loc.GetString("battle-royale-winner", ("player", victorPlayerName)));
                 args.AddLine("");
             }

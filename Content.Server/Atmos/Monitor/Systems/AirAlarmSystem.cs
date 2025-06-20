@@ -1,9 +1,11 @@
 using Content.Server.Atmos.Monitor.Components;
 using Content.Server.Atmos.Piping.Components;
 using Content.Server.DeviceLinking.Systems;
+using Content.Server.DeviceNetwork;
+using Content.Server.DeviceNetwork.Components;
 using Content.Server.DeviceNetwork.Systems;
-using Content.Server.Doors.Systems;
 using Content.Server.Popups;
+using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
@@ -15,16 +17,13 @@ using Content.Shared.Atmos.Piping.Unary.Components;
 using Content.Shared.Database;
 using Content.Shared.DeviceLinking;
 using Content.Shared.DeviceNetwork;
-using Content.Shared.DeviceNetwork.Components;
 using Content.Shared.DeviceNetwork.Systems;
-using Content.Shared.Doors.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Power;
 using Content.Shared.Wires;
 using Robust.Server.GameObjects;
+using Robust.Shared.Player;
 using System.Linq;
-using Content.Shared.DeviceNetwork.Events;
-using Content.Shared.DeviceNetwork.Components;
 
 namespace Content.Server.Atmos.Monitor.Systems;
 
@@ -37,7 +36,7 @@ namespace Content.Server.Atmos.Monitor.Systems;
 // data key. In response, a packet will be transmitted
 // with the response type as its command, and the
 // response data in its data key.
-public sealed partial class AirAlarmSystem : EntitySystem
+public sealed class AirAlarmSystem : EntitySystem
 {
     [Dependency] private readonly AccessReaderSystem _access = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
@@ -48,7 +47,6 @@ public sealed partial class AirAlarmSystem : EntitySystem
     [Dependency] private readonly DeviceListSystem _deviceList = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
-
 
     #region Device Network API
 
@@ -470,16 +468,10 @@ public sealed partial class AirAlarmSystem : EntitySystem
     /// <param name="uiOnly">Whether this change is for the UI only, or if it changes the air alarm's operating mode. Defaults to true.</param>
     public void SetMode(EntityUid uid, string origin, AirAlarmMode mode, bool uiOnly = true, AirAlarmComponent? controller = null)
     {
-        if (!Resolve(uid, ref controller))
+        if (!Resolve(uid, ref controller) || controller.CurrentMode == mode)
         {
             return;
         }
-
-        if (controller.PanicWireCut)
-        {
-            mode = AirAlarmMode.Panic;
-        }
-
 
         controller.CurrentMode = mode;
 
@@ -662,7 +654,6 @@ public sealed partial class AirAlarmSystem : EntitySystem
         }
         foreach (var (addr, data) in alarm.ScrubberData)
         {
-            data.AirAlarmPanicWireCut = alarm.PanicWireCut;
             dataToSend.Add((addr, data));
         }
         foreach (var (addr, data) in alarm.SensorData)
@@ -680,12 +671,12 @@ public sealed partial class AirAlarmSystem : EntitySystem
         _ui.SetUiState(
             uid,
             SharedAirAlarmInterfaceKey.Key,
-            new AirAlarmUIState(devNet.Address, deviceCount, pressure, temperature, dataToSend, alarm.CurrentMode, highestAlarm.Value, alarm.AutoMode, alarm.PanicWireCut));
+            new AirAlarmUIState(devNet.Address, deviceCount, pressure, temperature, dataToSend, alarm.CurrentMode, highestAlarm.Value, alarm.AutoMode));
     }
 
     private const float Delay = 8f;
     private float _timer;
-    #endregion
+
     public override void Update(float frameTime)
     {
         _timer += frameTime;
@@ -696,9 +687,8 @@ public sealed partial class AirAlarmSystem : EntitySystem
             {
                 SyncAllSensors(uid);
             }
-            //Corvax-Next-Start
-            AlarmforOpenFirelocks();//closing open fire locks
-            // Corvax-Next-End
         }
     }
+
+    #endregion
 }

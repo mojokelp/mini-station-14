@@ -85,8 +85,6 @@
             True: { visible: True }
             False: { visible: False }
     - type: AnimationPlayer
-    - type: Penetratable # Corvax-Next - Better snipers
-      penetrateDamage: 10
 
 - type: entity
   id: ClockworkGrille

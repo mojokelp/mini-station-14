@@ -19,9 +19,6 @@
         Slash: 6
   - type: Item
     sprite: Objects/Tools/Hydroponics/hoe.rsi
-  - type: PhysicalComposition
-    materialComposition:
-      Steel: 100
 
 - type: entity
   name: plant clippers
@@ -52,9 +49,6 @@
       path: /Audio/_CorvaxNext/Medical/Surgery/retractor1.ogg
     endSound:
       path: /Audio/_CorvaxNext/Medical/Surgery/retractor2.ogg
-  - type: PhysicalComposition
-    materialComposition:
-      Steel: 100
 
 - type: entity
   name: scythe
@@ -79,10 +73,6 @@
     - back
   - type: StaticPrice
     price: 40
-  - type: PhysicalComposition
-    materialComposition:
-      Steel: 100
-      Plastic: 100
 
 - type: entity
   name: hatchet
@@ -111,9 +101,6 @@
   - type: SurgeryTool # _CorvaxNext
     startSound:
       path: /Audio/_CorvaxNext/Medical/Surgery/saw.ogg
-  - type: PhysicalComposition
-    materialComposition:
-      Steel: 100
 
 - type: entity
   name: spade
@@ -139,9 +126,6 @@
     sprite: Objects/Tools/Hydroponics/spade.rsi
   - type: Shovel
     speedModifier: 0.75 # slower at digging than a full-sized shovel
-  - type: PhysicalComposition
-    materialComposition:
-      Steel: 100
 
 - type: entity
   name: plant bag

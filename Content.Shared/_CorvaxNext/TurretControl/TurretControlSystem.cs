@@ -1,5 +1,4 @@
 using Content.Shared._CorvaxNext.TurretControl.Components;
-using Content.Shared._CorvaxNext.Verbs;
 using Content.Shared.NPC.Components;
 using Content.Shared.NPC.Prototypes;
 using Content.Shared.NPC.Systems;
@@ -48,7 +47,7 @@ public sealed class TurretControlSystem : EntitySystem
         {
             Text = Loc.GetString(text),
             Disabled = _faction.IsMember(entity, faction),
-            Category = NextVerbCategory.TurretControlMode,
+            Category = VerbCategory.TurretControlMode,
             Priority = priority,
             Act = () => SetFaction(entity, faction)
         };

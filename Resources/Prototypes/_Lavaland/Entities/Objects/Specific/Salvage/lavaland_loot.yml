@@ -13,16 +13,16 @@
 
 - type: entity
   id: LavalandVampirismCrystal
-  parent: LavalandBasePKAUpgrade
+  parent: BasePKAUpgrade
   name: a red crystal
   components:
   - type: Sprite
     sprite: _Lavaland/Objects/Specific/Lavaland/loot.rsi
     state: crystal
-  - type: LavalandGunUpgrade
-    tags: [ LavalandGunUpgradeReloadSpeed ]
-    examineText: lavaland-gun-upgrade-examine-text-vampirism
-  - type: LavalandGunUpgradeVampirism
+  - type: GunUpgrade
+    tags: [ GunUpgradeReloadSpeed ]
+    examineText: gun-upgrade-examine-text-vampirism
+  - type: GunUpgradeVampirism
     damageOnHit:
       types:
         Slash: -1.5

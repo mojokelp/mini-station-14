@@ -11,7 +11,6 @@ using Content.Shared.Mind;
 using Content.Server.Stunnable;
 using Content.Shared.Mindcontrol;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Player;
 
 namespace Content.Server.Mindcontrol;
 
@@ -24,7 +23,6 @@ public sealed class MindcontrolSystem : EntitySystem
     [Dependency] private readonly StunSystem _stun = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
     [ValidatePrototypeId<EntityPrototype>] static EntProtoId mindRole = "MindRoleBrainwashed";
-    [Dependency] private readonly ISharedPlayerManager _player = default!;
     public override void Initialize()
     {
         base.Initialize();
@@ -42,7 +40,7 @@ public sealed class MindcontrolSystem : EntitySystem
     {
         _stun.TryParalyze(uid, TimeSpan.FromSeconds(5f), true);
         if (_mindSystem.TryGetMind(uid, out var mindId, out _))
-            _roleSystem.MindRemoveRole<MindcontrolledRoleComponent>(mindId);
+            _roleSystem.MindTryRemoveRole<MindcontrolledRoleComponent>(mindId);
         _popup.PopupEntity(Loc.GetString("mindcontrol-popup-stop"), uid, PopupType.Large);
         _adminLogManager.Add(LogType.Mind, LogImpact.Medium, $"{ToPrettyString(uid)} is no longer Mindcontrolled.");
     }
@@ -62,10 +60,10 @@ public sealed class MindcontrolSystem : EntitySystem
         if (_roleSystem.MindHasRole<MindcontrolledRoleComponent>(mindId, out var mr))
             AddComp(mr.Value, new RoleBriefingComponent { Briefing = MakeBriefing(component.Master.Value) }, true);
 
-        if (_player.TryGetSessionById(mind.UserId, out var session) && !component.BriefingSent)
+        if (mind?.Session != null && !component.BriefingSent)
         {
             _popup.PopupEntity(Loc.GetString("mindcontrol-popup-start"), uid, PopupType.LargeCaution);
-            _antag.SendBriefing(session, Loc.GetString("mindcontrol-briefing-start", ("master", (MetaData(component.Master.Value).EntityName))), Color.Red, component.MindcontrolStartSound);
+            _antag.SendBriefing(mind.Session, Loc.GetString("mindcontrol-briefing-start", ("master", (MetaData(component.Master.Value).EntityName))), Color.Red, component.MindcontrolStartSound);
             component.BriefingSent = true;
         }
         _adminLogManager.Add(LogType.Mind, LogImpact.Medium, $"{ToPrettyString(uid)} is Mindcontrolled by {ToPrettyString(component.Master.Value)}.");
@@ -77,7 +75,7 @@ public sealed class MindcontrolSystem : EntitySystem
     }
     private void OnMindRemoved(EntityUid uid, MindcontrolledComponent component, MindRemovedMessage args)
     {
-        _roleSystem.MindRemoveRole<MindcontrolledRoleComponent>(args.Mind.Owner);
+        _roleSystem.MindTryRemoveRole<MindcontrolledRoleComponent>(args.Mind.Owner);
     }
     private void OnGetBriefing(Entity<MindcontrolledRoleComponent> target, ref GetBriefingEvent args)
     {

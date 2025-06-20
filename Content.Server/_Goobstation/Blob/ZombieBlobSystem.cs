@@ -1,4 +1,4 @@
-using Content.Server.Atmos;
+﻿using Content.Server.Atmos;
 using Content.Server.Atmos.Components;
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
@@ -46,7 +46,6 @@ public sealed class ZombieBlobSystem : SharedZombieBlobSystem
     [Dependency] private readonly TriggerSystem _trigger = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
-    [Dependency] private readonly ISharedPlayerManager _player = default!;
 
     private const int ClimbingCollisionGroup = (int) (CollisionGroup.BlobImpassable);
 
@@ -153,7 +152,7 @@ public sealed class ZombieBlobSystem : SharedZombieBlobSystem
                 });
             }*/
 
-            if (_mind.TryGetMind(uid, out var mindId, out var mind) && _player.TryGetSessionById(mind.UserId, out var session))
+            if (_mind.TryGetSession(mindComp.Mind, out var session))
             {
                 _chatMan.DispatchServerMessage(session, Loc.GetString("blob-zombie-greeting"));
                 _audio.PlayGlobal(component.GreetSoundNotification, session);

@@ -17,7 +17,6 @@
     - type: Geiger
       showControl: true
       showExamine: true
-      broadcastAudio: true
     - type: Appearance
     - type: GenericVisualizer
       visuals:

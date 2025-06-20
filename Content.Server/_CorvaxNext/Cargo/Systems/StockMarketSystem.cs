@@ -14,7 +14,6 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
-using Content.Shared.Cargo.Components;
 
 namespace Content.Server._CorvaxNext.Cargo.Systems;
 
@@ -32,7 +31,6 @@ public sealed class StockMarketSystem : EntitySystem
     [Dependency] private readonly IdCardSystem _idCardSystem = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly CargoSystem _cargoSystem = default!;
 
     private ISawmill _sawmill = default!;
     private const float MaxPrice = 262144; // 1/64 of max safe integer
@@ -164,14 +162,14 @@ public sealed class StockMarketSystem : EntitySystem
         var totalValue = (int)Math.Round(company.CurrentPrice * amount);
 
         // See if we can afford it
-        if (_cargoSystem.GetBalanceFromAccount(station, bank.PrimaryAccount) < totalValue)
+        if (bank.Balance < totalValue)
             return false;
 
         if (!stockMarket.StockOwnership.TryGetValue(companyIndex, out var currentOwned))
             currentOwned = 0;
 
         // Update the bank account
-        _cargo.UpdateBankAccount((station, bank), -totalValue, bank.PrimaryAccount);
+        _cargo.UpdateBankAccount((station, bank), -totalValue);
         stockMarket.StockOwnership[companyIndex] = currentOwned + amount;
 
         // Log the transaction
@@ -209,7 +207,7 @@ public sealed class StockMarketSystem : EntitySystem
             stockMarket.StockOwnership.Remove(companyIndex);
 
         // Update the bank account
-        _cargo.UpdateBankAccount((station, bank), totalValue, bank.PrimaryAccount);
+        _cargo.UpdateBankAccount((station, bank), totalValue);
 
         // Log the transaction
         _adminLogger.Add(LogType.Action,

@@ -15,7 +15,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'MT'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Next/Shuttles/emergency_next.yml
+          emergencyShuttlePath: /Maps/Corvax/Shuttles/corvax_emergency.yml
         - type: StationJobs
           availableJobs:
             # command
@@ -82,7 +82,9 @@
           - VirusologyAmbusol
           - AstraRepair
           - BluespaceHarvest
+          # Corvax-next blob-config-start HUGEs
         - type: StationBlobConfig
           stageBegin: 40
           stageCritical: 700
           stageTheEnd: 1200
+          # Corvax-next blob-config-end

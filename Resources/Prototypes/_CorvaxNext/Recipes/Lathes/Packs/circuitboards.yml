@@ -12,7 +12,6 @@
   - GameMasterCircuitBoard
   - ArtistCircuitBoard
   - NutimovCircuitBoard
-  - AiRemoteBrain
 
 - type: latheRecipePack
   id: MedicalBiofabBoards

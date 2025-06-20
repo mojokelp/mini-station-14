@@ -1,5 +1,5 @@
 - type: entity
-  id: LavalandBasePKAUpgrade
+  id: BasePKAUpgrade
   parent: BaseItem
   name: PKA modkit
   description: A modkit for a proto-kinetic accelerator.
@@ -9,8 +9,7 @@
     sprite: _Lavaland/Objects/Weapons/upgrade.rsi
   - type: Item
     size: Small
-  - type: LavalandGunUpgrade
-    examineText: lavaland-gun-upgrade-examine-text-damage
+  - type: GunUpgrade
   - type: StaticPrice
     price: 750
   - type: Tag
@@ -18,8 +17,8 @@
     - PKAUpgrade
 
 - type: entity
-  id: LavalandPKAUpgradeDamage
-  parent: LavalandBasePKAUpgrade
+  id: PKAUpgradeDamage
+  parent: BasePKAUpgrade
   name: PKA modkit (damage)
   components:
   - type: Sprite
@@ -31,18 +30,18 @@
       color: "#a71010"
     - state: overlay-3
       color: "#eb4c13"
-  - type: LavalandGunUpgrade
+  - type: GunUpgrade
     capacityCost: 40
-    tags: [ LavalandGunUpgradeDamage ]
-    examineText: lavaland-gun-upgrade-examine-text-damage
-  - type: LavalandGunUpgradeDamage
+    tags: [ GunUpgradeDamage ]
+    examineText: gun-upgrade-examine-text-damage
+  - type: GunUpgradeDamage
     damage:
       types:
         Blunt: 10
 
 - type: entity
-  id: LavalandPKAUpgradeRange
-  parent: LavalandBasePKAUpgrade
+  id: PKAUpgradeRange
+  parent: BasePKAUpgrade
   name: PKA modkit (range)
   components:
   - type: Sprite
@@ -54,15 +53,15 @@
       color: "#1012a7"
     - state: overlay-3
       color: "#1373eb"
-  - type: LavalandGunUpgrade
-    tags: [ LavalandGunUpgradeRange ]
-    examineText: lavaland-gun-upgrade-examine-text-range
-  - type: LavalandGunUpgradeSpeed
+  - type: GunUpgrade
+    tags: [ GunUpgradeRange ]
+    examineText: gun-upgrade-examine-text-range
+  - type: GunUpgradeSpeed
     coefficient: 1.5
 
 - type: entity
-  id: LavalandPKAUpgradeFireRate
-  parent: LavalandBasePKAUpgrade
+  id: PKAUpgradeFireRate
+  parent: BasePKAUpgrade
   name: PKA modkit (fire rate)
   components:
   - type: Sprite
@@ -74,16 +73,16 @@
       color: "#07901b"
     - state: overlay-3
       color: "#9bf134"
-  - type: LavalandGunUpgrade
-    tags: [ LavalandGunUpgradeReloadSpeed ]
+  - type: GunUpgrade
+    tags: [ GunUpgradeReloadSpeed ]
     capacityCost: 20
-    examineText: lavaland-gun-upgrade-examine-text-reload
-  - type: LavalandGunUpgradeFireRate
+    examineText: gun-upgrade-examine-text-reload
+  - type: GunUpgradeFireRate
     coefficient: 1.5
 
 - type: entity
-  id: LavalandPKAUpgradeLight
-  parent: LavalandBasePKAUpgrade
+  id: PKAUpgradeLight
+  parent: BasePKAUpgrade
   name: PKA modkit (light)
   components:
   - type: Sprite
@@ -95,11 +94,11 @@
       color: "#07901b"
     - state: overlay-3
       color: "#9bf134"
-  - type: LavalandGunUpgrade
-    tags: [ LavalandGunUpgradeReloadSpeed ]
-    examineText: lavaland-gun-upgrade-examine-text-light
+  - type: GunUpgrade
+    tags: [ GunUpgradeReloadSpeed ]
+    examineText: gun-upgrade-examine-text-light
     capacityCost: 10
-  - type: LavalandGunComponentUpgrade
+  - type: GunComponentUpgrade
     components:
     - type: UnpoweredFlashlight
     - type: PointLight

@@ -40,8 +40,7 @@ public sealed class BlobObserverSystem : SharedBlobObserverSystem
     [Dependency] private readonly ILogManager _logMan = default!;
     [Dependency] private readonly RoleSystem _roleSystem = default!;
     [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly ISharedPlayerManager _player = default!;
-    [Dependency] private readonly ActorSystem _actor = default!;
+    [Dependency] private readonly ISharedPlayerManager _actorSystem = default!;
     [Dependency] private readonly ViewSubscriberSystem _viewSubscriberSystem = default!;
     [Dependency] private readonly MapSystem _mapSystem = default!;
     [Dependency] private readonly HandsSystem _hands = default!;
@@ -100,9 +99,10 @@ public sealed class BlobObserverSystem : SharedBlobObserverSystem
 
     private void SendBlobBriefing(EntityUid mind)
     {
-        if (_actor.TryGetSession(mind, out var session))
-            if (session != null)
-                _chatManager.DispatchServerMessage(session, Loc.GetString("blob-role-greeting"));
+        if (_mindSystem.TryGetSession(mind, out var session))
+        {
+            _chatManager.DispatchServerMessage(session, Loc.GetString("blob-role-greeting"));
+        }
     }
 
     private void OnCreateBlobObserver(EntityUid blobCoreUid, BlobCoreComponent core, CreateBlobObserverEvent args)
@@ -120,6 +120,7 @@ public sealed class BlobObserverSystem : SharedBlobObserverSystem
         blobObserverComponent.Core = (blobCoreUid, core);
         Dirty(observer,blobObserverComponent);
 
+
         var isNewMind = false;
         if (!_mindSystem.TryGetMind(blobCoreUid, out var mindId, out var mind))
         {
@@ -136,9 +137,7 @@ public sealed class BlobObserverSystem : SharedBlobObserverSystem
 
         if (!isNewMind)
         {
-            _playerManager.TryGetSessionById(args.UserId, out var playerSession);
-
-            var name = playerSession?.Name ?? "???";
+            var name = mind.Session?.Name ?? "???";
             _mindSystem.WipeMind(mindId, mind);
             mindId = _mindSystem.CreateMind(args.UserId, $"Blob Player ({name})");
             mind = Comp<MindComponent>(mindId);
@@ -151,9 +150,9 @@ public sealed class BlobObserverSystem : SharedBlobObserverSystem
         blobRule?.Blobs.Add((mindId,mind));
 
         _mindSystem.TransferTo(mindId, observer, true, mind: mind);
-        if (_player.TryGetSessionById(args.UserId, out var session))
+        if (_actorSystem.TryGetSessionById(args.UserId, out var session))
         {
-            _player.SetAttachedEntity(session, observer, true);
+            _actorSystem.SetAttachedEntity(session, observer, true);
         }
 
         _mindSystem.TryAddObjective(mindId, mind, BlobCaptureObjective);

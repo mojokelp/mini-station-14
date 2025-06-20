@@ -7,7 +7,7 @@ using Robust.Shared.Utility;
 namespace Content.Shared.RCD;
 
 /// <summary>
-/// Contains the parameters for an RCD construction / operation
+/// Contains the parameters for a RCD construction / operation
 /// </summary>
 [Prototype("rcd")]
 public sealed partial class RCDPrototype : IPrototype
@@ -37,19 +37,25 @@ public sealed partial class RCDPrototype : IPrototype
     /// Texture path for this prototypes menu icon
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public SpriteSpecifier? Sprite { get; private set; }
+    public SpriteSpecifier? Sprite { get; private set; } = null;
 
     /// <summary>
     /// The entity prototype that will be constructed (mode dependent)
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public string? Prototype { get; private set; }
+    public string? Prototype { get; private set; } = string.Empty;
 
+    /// <summary>
+    /// If the entity can be flipped, this prototype is available as an alternate (mode dependent)
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadOnly)]
+    public string? MirrorPrototype { get; private set; } = string.Empty;
+    
     /// <summary>
     /// Number of charges consumed when the operation is completed
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public float Cost { get; private set; } = 1;
+    public FixedPoint2 Cost { get; private set; } = 1;
 
     /// <summary>
     /// The length of the operation
@@ -61,10 +67,10 @@ public sealed partial class RCDPrototype : IPrototype
     /// The visual effect that plays during this operation
     /// </summary>
     [DataField("fx"), ViewVariables(VVAccess.ReadOnly)]
-    public EntProtoId? Effect { get; private set; }
+    public EntProtoId? Effect { get; private set; } = null;
 
     /// <summary>
-    /// A list of rules that govern where the entity prototype can be constructed
+    /// A list of rules that govern where the entity prototype can be contructed
     /// </summary>
     [DataField("rules"), ViewVariables(VVAccess.ReadOnly)]
     public HashSet<RcdConstructionRule> ConstructionRules { get; private set; } = new();
@@ -85,7 +91,10 @@ public sealed partial class RCDPrototype : IPrototype
     [DataField, ViewVariables(VVAccess.ReadOnly)]
     public Box2? CollisionBounds
     {
-        get => _collisionBounds;
+        get
+        {
+            return _collisionBounds;
+        }
 
         private set
         {
@@ -101,25 +110,19 @@ public sealed partial class RCDPrototype : IPrototype
         }
     }
 
-    private Box2? _collisionBounds;
+    private Box2? _collisionBounds = null;
 
     /// <summary>
     /// The polygon shape associated with the prototype CollisionBounds (if set)
     /// </summary>
     [ViewVariables(VVAccess.ReadOnly)]
-    public PolygonShape? CollisionPolygon { get; private set; }
+    public PolygonShape? CollisionPolygon { get; private set; } = null;
 
     /// <summary>
     /// Governs how the local rotation of the constructed entity will be set
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadOnly)]
     public RcdRotation Rotation { get; private set; } = RcdRotation.User;
-
-    /// <summary>
-    /// If the entity can be flipped, this prototype is available as an alternate (mode dependent)
-    /// </summary>
-    [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public string? MirrorPrototype { get; private set; } = string.Empty;
 }
 
 public enum RcdMode : byte

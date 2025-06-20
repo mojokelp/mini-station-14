@@ -18,7 +18,6 @@ using Content.Shared.Roles;
 using Content.Shared.StatusEffect;
 using Content.Shared.Verbs;
 using Content.Shared.Zombies;
-using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
@@ -34,7 +33,6 @@ public sealed class ConsentRevolutionarySystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly StatusEffectsSystem _status = default!;
-    [Dependency] private readonly ISharedPlayerManager _player = default!;
 
     private float _accumulator = 0;
     private const float AccumulatorTreshold = 1f;
@@ -252,8 +250,8 @@ public sealed class ConsentRevolutionarySystem : EntitySystem
     public void RequestConsentConversionToEntity(EntityUid target, EntityUid converter)
     {
         // Start conversion
-        if (_mind.TryGetMind(target, out var consentMindId, out var mind) &&
-            _player.TryGetSessionById(mind.UserId, out var session))
+        if (_mind.TryGetMind(target, out var consentMindId, out var _) &&
+            _mind.TryGetSession(consentMindId, out var session))
         {
             // Tell the converter that request was sent
             _popup.PopupEntity(

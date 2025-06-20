@@ -1,5 +1,4 @@
 using Content.Server._CorvaxNext.VoxRaiders.Components;
-using Content.Shared._CorvaxNext.Verbs;
 using Content.Shared.Pinpointer;
 using Content.Shared.Verbs;
 
@@ -26,7 +25,7 @@ public sealed class ControlPinpointerSystem : EntitySystem
             {
                 Text = MetaData(ent).EntityName,
                 Disabled = pin.Target == ent,
-                Category = NextVerbCategory.PinpointerTarget,
+                Category = VerbCategory.PinpointerTarget,
                 Priority = index--,
                 Act = () => _pin.SetTarget(entity, ent, pin)
             });

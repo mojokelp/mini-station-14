@@ -23,6 +23,4 @@ ent-SawImprov = choppa
 ent-SawElectric = circular saw
     .desc = For heavy duty cutting.
 ent-SawAdvanced = advanced circular saw
-    .desc = Interdyne's state-of-the-art surgical saw. Guaranteed to stay spotless and sterile, no matter how messy the job.
-ent-BoneSetter = bone setter
-    .desc = Used for setting bones back into place.
+    .desc = You think you can cut anything with it.

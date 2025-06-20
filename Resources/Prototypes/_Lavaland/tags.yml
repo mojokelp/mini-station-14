@@ -2,16 +2,16 @@
   id: DockMining
 
 - type: Tag
-  id: LavalandPKAUpgrade
+  id: PKAUpgrade
 
 - type: Tag
-  id: LavalandGunUpgradeDamage
+  id: GunUpgradeDamage
 
 - type: Tag
-  id: LavalandGunUpgradeReloadSpeed
+  id: GunUpgradeReloadSpeed
 
 - type: Tag
-  id: LavalandGunUpgradeRange
+  id: GunUpgradeRange
 
 - type: Tag
   id: LavalandInterior5x5

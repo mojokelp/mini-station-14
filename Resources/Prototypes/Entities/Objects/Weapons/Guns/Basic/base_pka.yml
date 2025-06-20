@@ -15,7 +15,7 @@
     lightActionPrototype: ActionTogglePKALight
   - type: PressureDamageChange
   - type: Multishot
-  - type: LavalandUpgradeableGun
+  - type: UpgradeableGun
     whitelist:
       tags:
       - PKAUpgrade

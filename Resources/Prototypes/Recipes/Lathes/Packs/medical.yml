@@ -30,7 +30,6 @@
   recipes:
   - Scalpel
   - Retractor
-  - BoneSetter
   - Cautery
   - Drill
   - Saw
@@ -95,8 +94,6 @@
   - SyringeCryostasis
   - BluespaceBeaker
   - SyringeBluespace
-  - LauncherSyringe
-  - MiniSyringe
 
 - type: latheRecipePack
   id: MedicalBoards

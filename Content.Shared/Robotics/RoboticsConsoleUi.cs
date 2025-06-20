@@ -122,12 +122,7 @@ public partial record struct CyborgControlData
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
     public TimeSpan Timeout = TimeSpan.Zero;
 
-    // Corvax-Next-AiRemoteControl-Start
-    [DataField]
-    public bool IsAiControllable;
-    // Corvax-Next-AiRemoteControl-End
-
-    public CyborgControlData(SpriteSpecifier? chassisSprite, string chassisName, string name, float charge, int moduleCount, bool hasBrain, bool canDisable, bool isAiControllable) // Corvax-Next-AiRemoteControl
+    public CyborgControlData(SpriteSpecifier? chassisSprite, string chassisName, string name, float charge, int moduleCount, bool hasBrain, bool canDisable)
     {
         ChassisSprite = chassisSprite;
         ChassisName = chassisName;
@@ -136,7 +131,6 @@ public partial record struct CyborgControlData
         ModuleCount = moduleCount;
         HasBrain = hasBrain;
         CanDisable = canDisable;
-        IsAiControllable = isAiControllable; // Corvax-Next-AiRemoteControl
     }
 }
 

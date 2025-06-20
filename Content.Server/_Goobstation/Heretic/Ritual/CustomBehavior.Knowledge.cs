@@ -6,7 +6,6 @@ using Content.Shared.Tag;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using System.Text;
-using Robust.Shared.Localization;
 
 namespace Content.Server.Heretic.Ritual;
 
@@ -67,11 +66,9 @@ public sealed partial class RitualKnowledgeBehavior : RitualCustomBehavior
             var sb = new StringBuilder();
             for (int i = 0; i < missingList.Count; i++)
             {
-                var localizedName = Loc.GetString($"ent-Tag{missingList[i]}");
                 if (i != missingList.Count - 1)
-                    sb.Append($"{localizedName}, ");
-                else 
-                    sb.Append(localizedName);
+                    sb.Append($"{missingList[i]}, ");
+                else sb.Append(missingList[i]);
             }
 
             outstr = Loc.GetString("heretic-ritual-fail-items", ("itemlist", sb.ToString()));

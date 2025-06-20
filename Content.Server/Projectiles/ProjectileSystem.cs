@@ -9,7 +9,6 @@ using Content.Shared.FixedPoint;
 using Content.Shared.Projectiles;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Player;
-using Content.Shared._Goobstation.Penetration;
 
 namespace Content.Server.Projectiles;
 
@@ -88,36 +87,21 @@ public sealed class ProjectileSystem : SharedProjectileSystem
                 if (stopPenetration)
                     component.ProjectileSpent = true;
             }
-            // Corvax-Next - Splits penetration change if target have PenetratableComponent
-            if (!TryComp<PenetratableComponent>(target, out var penetratable))
-            {
-                // If the object won't be destroyed, it "tanks" the penetration hit.
-                if (modifiedDamage.GetTotal() < damageRequired)
-                {
-                    component.ProjectileSpent = true;
-                }
 
-                if (!component.ProjectileSpent)
-                {
-                    component.PenetrationAmount += damageRequired;
-                    // The projectile has dealt enough damage to be spent.
-                    if (component.PenetrationAmount >= component.PenetrationThreshold)
-                    {
-                        component.ProjectileSpent = true;
-                    }
-                }
+            // If the object won't be destroyed, it "tanks" the penetration hit.
+            if (modifiedDamage.GetTotal() < damageRequired)
+            {
+                component.ProjectileSpent = true;
             }
-            else
+
+            if (!component.ProjectileSpent)
             {
-                // Corvax-Next - Here penetration threshold count as "penetration health".
-                // If it's lower than damage than penetation damage entity cause it deletes projectile
-                if (component.PenetrationThreshold < penetratable.PenetrateDamage)
+                component.PenetrationAmount += damageRequired;
+                // The projectile has dealt enough damage to be spent.
+                if (component.PenetrationAmount >= component.PenetrationThreshold)
                 {
                     component.ProjectileSpent = true;
                 }
-
-                component.PenetrationThreshold -= FixedPoint2.New(penetratable.PenetrateDamage);
-                component.Damage *= (1 - penetratable.DamagePenaltyModifier);
             }
         }
         else

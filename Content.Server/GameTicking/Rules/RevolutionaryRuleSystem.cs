@@ -37,7 +37,6 @@ using Content.Server.Chat.Systems;
 using Content.Shared.Mind;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
-using Robust.Shared.Player;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -46,20 +45,19 @@ namespace Content.Server.GameTicking.Rules;
 /// </summary>
 public sealed class RevolutionaryRuleSystem : GameRuleSystem<RevolutionaryRuleComponent>
 {
+    [Dependency] private readonly IAdminLogManager _adminLogManager = default!;
     [Dependency] private readonly AntagSelectionSystem _antag = default!;
     [Dependency] private readonly EmergencyShuttleSystem _emergencyShuttle = default!;
     [Dependency] private readonly EuiManager _euiMan = default!;
-    [Dependency] private readonly IAdminLogManager _adminLogManager = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly ISharedPlayerManager _player = default!;
     [Dependency] private readonly MindSystem _mind = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly NpcFactionSystem _npcFaction = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly RoleSystem _role = default!;
-    [Dependency] private readonly RoundEndSystem _roundEnd = default!;
     [Dependency] private readonly SharedStunSystem _stun = default!;
+    [Dependency] private readonly RoundEndSystem _roundEnd = default!;
     [Dependency] private readonly StationSystem _stationSystem = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
 
     //Used in OnPostFlash, no reference to the rule component is available
     public readonly ProtoId<NpcFactionPrototype> RevolutionaryNpcFaction = "Revolutionary";
@@ -188,8 +186,8 @@ public sealed class RevolutionaryRuleSystem : GameRuleSystem<RevolutionaryRuleCo
             _role.MindAddRole(mindId, "MindRoleRevolutionary");
         }
 
-        if (mind is { UserId: not null } && _player.TryGetSessionById(mind.UserId, out var session))
-            _antag.SendBriefing(session, Loc.GetString("rev-role-greeting"), Color.Red, revComp.RevStartSound);
+        if (mind?.Session != null)
+            _antag.SendBriefing(mind.Session, Loc.GetString("rev-role-greeting"), Color.Red, revComp.RevStartSound);
     }
 
     //TODO: Enemies of the revolution
@@ -251,15 +249,15 @@ public sealed class RevolutionaryRuleSystem : GameRuleSystem<RevolutionaryRuleCo
                 _popup.PopupEntity(Loc.GetString("rev-break-control", ("name", Identity.Entity(uid, EntityManager))), uid);
                 _adminLogManager.Add(LogType.Mind, LogImpact.Medium, $"{ToPrettyString(uid)} was deconverted due to all Head Revolutionaries dying.");
 
-                if (!_mind.TryGetMind(uid, out var mindId, out var mind, mc))
+                if (!_mind.TryGetMind(uid, out var mindId, out _, mc))
                     continue;
 
                 // remove their antag role
-                _role.MindRemoveRole<RevolutionaryRoleComponent>(mindId);
+                _role.MindTryRemoveRole<RevolutionaryRoleComponent>(mindId);
 
                 // make it very obvious to the rev they've been deconverted since
                 // they may not see the popup due to antag and/or new player tunnel vision
-                if (_player.TryGetSessionById(mind.UserId, out var session))
+                if (_mind.TryGetSession(mindId, out var session))
                     _euiMan.OpenEui(new DeconvertedEui(), session);
             }
             return true;
@@ -365,8 +363,8 @@ public sealed class RevolutionaryRuleSystem : GameRuleSystem<RevolutionaryRuleCo
             _role.MindAddRole(mindId, "MindRoleRevolutionary");
         }
 
-        if (_player.TryGetSessionById(mind.UserId, out var session))
-            _antag.SendBriefing(session, Loc.GetString("rev-role-greeting"), Color.Red, revComp.RevStartSound);
+        if (mind?.Session != null)
+            _antag.SendBriefing(mind.Session, Loc.GetString("rev-role-greeting"), Color.Red, revComp.RevStartSound);
 
         if (!TryComp<CommandStaffComponent>(target, out var commandComp))
             return;

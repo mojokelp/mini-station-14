@@ -59,7 +59,7 @@
   - type: StorageFill
     contents:
         - id: OxygenTankFilled
-        - id: ClothingOuterEVASuitSyndicate
+        - id: ClothingOuterHardsuitSyndicate
         - id: ClothingHeadHelmetSyndicate
         - id: ClothingMaskGasSyndicate
 
@@ -89,6 +89,18 @@
         - id: ClothingMaskBreath
 
 #HARDSUITS
+#Basic hardsuit
+- type: entity
+  id: SuitStorageBasic
+  parent: SuitStorageBase
+  suffix: Basic Hardsuit
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: ClothingOuterHardsuitBasic
+        - id: ClothingMaskBreath
+
 #Engineering hardsuit
 - type: entity
   id: SuitStorageEngi
@@ -258,7 +270,9 @@
   - type: StorageFill
     contents:
         - id: OxygenTankFilled
+        - id: ClothingOuterHardsuitWizard
         - id: ClothingMaskBreath
+        - id: JetpackVoidFilled
 
 #Senior Salvage Hardsuit
 - type: entity
@@ -276,6 +290,3 @@
       - id: ClothingMaskGasExplorer
   - type: AccessReader
     access: [["SeniorSalvage"]]
-        # TODO: Gone until reworked to have no space protection
-        #- id: ClothingOuterHardsuitWizard
-        #- id: JetpackVoidFilled

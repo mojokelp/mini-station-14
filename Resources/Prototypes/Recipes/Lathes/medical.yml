@@ -21,13 +21,6 @@
 
 - type: latheRecipe
   parent: BaseSurgicalRecipe
-  id: BoneSetter
-  result: BoneSetter
-  materials:
-    Steel: 300
-
-- type: latheRecipe
-  parent: BaseSurgicalRecipe
   id: Cautery
   result: Cautery
 
@@ -223,23 +216,3 @@
   materials:
     Steel: 100
     Plastic: 100
-
-- type: latheRecipe
-  id: LauncherSyringe
-  result: LauncherSyringe
-  completetime: 10
-  materials:
-    Silver: 200
-    Steel: 1000
-    Plastic: 200
-    Glass: 100
-
-- type: latheRecipe
-  id: MiniSyringe
-  result: MiniSyringe
-  completetime: 2
-  materials:
-    Steel: 200
-    Glass: 100
-    Plastic: 100
-

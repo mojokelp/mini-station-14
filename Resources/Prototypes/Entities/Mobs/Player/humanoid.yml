@@ -12,7 +12,6 @@
     - type: RandomHumanoidAppearance
       randomizeName: false
     - type: GhostTakeoverAvailable
-    - type: IdBind
 
 - type: randomHumanoidSettings
   id: EventHumanoidMindShielded
@@ -32,7 +31,6 @@
 - type: randomHumanoidSettings
   id: EventHumanoidCentcomm
   parent: EventHumanoidMindShielded
-  randomizeName: false
   components:
   - type: AutoImplant
     implants:
@@ -101,6 +99,7 @@
 - type: randomHumanoidSettings
   id: ERTLeader
   parent: EventHumanoidCentcomm
+  randomizeName: false
   components:
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
