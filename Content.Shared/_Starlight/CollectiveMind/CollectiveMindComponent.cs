@@ -17,5 +17,8 @@ namespace Content.Shared._Starlight.CollectiveMind
 
         [DataField]
         public bool SeeAllNames = false;
+
+        [DataField]
+        public bool RespectAccents = false;
     }
 }
