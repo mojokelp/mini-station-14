@@ -5,7 +5,7 @@
   icon: { sprite: _Mini/Objects/Weapons/Guns/LMGs/saint_gun.rsi, state: base }
   productEntity: WeaponSaintGun
   cost:
-    Productunit: 15
+    Productunit: 12
   categories:
   - UplinkERTWeapon
 
