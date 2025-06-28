@@ -10,8 +10,8 @@
   - type: Clothing
     sprite: _Mini/Clothing/Shoes/Boots/advanced.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 1.1
-    sprintModifier: 1.1
+    walkModifier: 1.05
+    sprintModifier: 1.05
   - type: GasTank
     outputPressure: 42.6
     air:
