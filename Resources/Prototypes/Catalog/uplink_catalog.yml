@@ -1650,6 +1650,20 @@
   - UplinkWearables
 
 - type: listing
+  id: UplinkMagbootsAdv
+  name: кроваво-чёрные магнитные ботинки
+  description: Современные магнитные ботинки, которые немного ускоряют своего владельца. Сделано горлаксом для горлакса. Имеют увеличенный обьем.
+  icon: { sprite: /Textures/_Mini/Clothing/Shoes/Boots/advanced.rsi, state: icon }
+  productEntity: ClothingShoesBootsMagAdvSynd
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 8
+  cost:
+    Telecrystal: 12
+  categories:
+  - UplinkWearables
+
+- type: listing
   id: UplinkHardsuitSyndie
   name: uplink-hardsuit-syndie-name
   description: uplink-hardsuit-syndie-desc
