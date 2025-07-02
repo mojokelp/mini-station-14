@@ -48,7 +48,7 @@
 
 - type: entity
   id: BlueShieldCase
-  name: Оружейная ОСЩ.
+  name: Оружейная ОСЩ
   description: Блюспейс хранилище оружия.
   suffix: ОСЩ
   parent: BaseERTloadoutPrimary
@@ -94,7 +94,7 @@
 
 - type: thiefBackpackSet
   id: PistolSet
-  name: Крио-пистолет ОСЩ
+  name: Крио-пистолет
   description: Оружие для ведения боя с тяжелобронироваными одиночными целями.
   sprite:
     sprite: Adventure/Roles/blueshield/Weapons/DualphasBH.rsi
@@ -104,20 +104,17 @@
 
 - type: thiefBackpackSet
   id: MinigunSet
-  name: Мини-пулемёт ОСЩ.
+  name: Пулемёт "Защитник"
   description: Оружие для борьбы с многочисленным, малобронированным врагом.
   sprite:
     sprite: _Mini/Objects/Weapons/Guns/LMGs/krio_gun.rsi
     state: icon
   content:
   - WeaponMiniMachineGun
-  - MagazineMiniMachineGunBox
-  - MagazineMiniMachineGunBox
-  - MagazineMiniMachineGunBox
 
 - type: thiefBackpackSet
   id: LaserSwordSet
-  name: Лазерный револьвер ОСЩ.
+  name: Лазерный револьвер
   description: Оружие для борьбы на ближней дистанции.
   sprite:
     sprite: ADT/Objects/Weapons/Guns/Saber_revolvers/energy.rsi

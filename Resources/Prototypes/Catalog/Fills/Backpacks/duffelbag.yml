@@ -81,6 +81,7 @@
     contents:
       - id: WeaponLightMachineGunL6
       - id: MagazineLightRifleBox
+      - id: MagazineLightRifleBox
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -92,9 +93,9 @@
     contents:
       - id: WeaponLauncherChinaLake
       - id: GrenadeBlast
-        amount: 4
+        amount: 6
       - id: GrenadeFrag
-        amount: 4
+        amount: 6
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle

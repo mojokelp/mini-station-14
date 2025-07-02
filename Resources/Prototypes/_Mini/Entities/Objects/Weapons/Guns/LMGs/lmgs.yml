@@ -1,46 +1,54 @@
 - type: entity
-  name: Мини-пулемет ОСЩ
+  name: Пулемёт "Защитник"
   id: WeaponMiniMachineGun
-  parent: [WeaponLightMachineGunL6, BaseSecurityContraband]
-  description: Передовое оружие с огромным, по меркам оружейной промышленности НТ, боезапасом, полученным с помощью блюспейспейс технологий!
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
+  description: Передовое энергетическое оружие с расширенным боезапасом. имеет слабый самозаряд.
   components:
   - type: Item
     size: Huge
     shape:
-    - 0,0,3,2
-  - type: Sprite
-    sprite: _Mini/Objects/Weapons/Guns/LMGs/krio_gun.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-3
-      map: ["enum.GunVisualLayers.Mag"]
+    - 0,0,4,2
   - type: Clothing
-    sprite: _Mini/Objects/Weapons/Guns/LMGs/krio_gun.rsi
-  - type: ItemSlots
+    sprite: /Textures/_Mini/Objects/Weapons/Guns/LMGs/krio_gun.rsi
+    quickEquip: false
     slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineMiniMachineGunBox
-        insertSound: /Audio/_Mini/LMGs/mini_empty.ogg
-        ejectSound: /Audio/_Mini/LMGs/mini_empty.ogg
-        priority: 2
-        whitelist:
-          tags:
-          - MagazineMiniMachineGunBox
+    - Back
+    - suitStorage
   - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
     minAngle: 20
     maxAngle: 21
     angleIncrease: 4
     angleDecay: 16
-    fireRate: 14
+    fireRate: 7
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
-    soundEmpty:
-      path: /Audio/_Mini/LMGs/mini_empty.ogg
-  - type: ChamberMagazineAmmoProvider
-    soundBoltClosed: /Audio/_Mini/LMGs/mini_bolt.ogg
-    soundBoltOpened: /Audio/_Mini/LMGs/mini_bolt.ogg
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: Sprite
+    sprite: /Textures/_Mini/Objects/Weapons/Guns/LMGs/krio_gun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletLaserMini
+    fireCost: 40
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 12
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 5000
+  - type: Battery
+    maxCharge: 4000
+    startingCharge: 4000
 
 
 - type: entity

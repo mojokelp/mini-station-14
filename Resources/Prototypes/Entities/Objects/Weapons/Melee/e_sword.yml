@@ -69,6 +69,7 @@
       - state: inhand-right-blade
         shader: unshaded
   - type: Reflect
+    reflectProb: .4
   - type: IgnitionSource
     temperature: 700
 # Corvax-HiddenDesc-Start
@@ -389,7 +390,7 @@
     size: Small
     sprite: Objects/Weapons/Melee/e_sword_double-inhands.rsi
   - type: Reflect
-    reflectProb: .75
+    reflectProb: .60
     spread: 75
   # Corvax-HiddenDesc-Start
   - type: HiddenDescription
@@ -462,7 +463,7 @@
     size: Small
     sprite: Objects/Weapons/Melee/hypereutactic_blade_inhands.rsi
   - type: Reflect
-    reflectProb: 1.0
+    reflectProb: .80
     spread: 75
 
 # Borgs

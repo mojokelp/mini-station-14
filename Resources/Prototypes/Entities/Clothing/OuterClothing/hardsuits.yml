@@ -617,13 +617,13 @@
   - type: ExplosionResistance
     damageCoefficient: 0.2
   - type: FireProtection
-    reduction: 0.8
+    reduction: 0.2
   - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.6
         Slash: 0.6
-        Piercing: 0.6
+        Piercing: 0.5
         Heat: 0.2
         Radiation: 0.01
         Caustic: 0.5
