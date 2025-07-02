@@ -1,6 +1,6 @@
 - type: gameMap
   id: NextBagel
-  mapName: 'NTTG Багель'
+  mapName: 'NTT Багель'
   mapPath: /Maps/Next/next_bagel.yml
   minPlayers: 26
   maxPlayers: 65
