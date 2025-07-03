@@ -22,7 +22,7 @@
     maxAngle: 21
     angleIncrease: 4
     angleDecay: 16
-    fireRate: 7
+    fireRate: 6
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: Sprite
@@ -38,7 +38,7 @@
     fireCost: 40
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 12
+    autoRechargeRate: 15
   - type: MagazineVisuals
     magState: mag
     steps: 5
