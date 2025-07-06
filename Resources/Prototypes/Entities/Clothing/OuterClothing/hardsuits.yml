@@ -389,13 +389,13 @@
       coefficients:
         Blunt: 0.8
         Slash: 0.8
-        Piercing: 0.8
+        Piercing: 0.3
         Heat: 0.4
         Radiation: 0.0
         Caustic: 0.7
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.8
+    walkModifier: 0.8
+    sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitEngineeringWhite
