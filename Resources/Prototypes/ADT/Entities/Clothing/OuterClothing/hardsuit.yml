@@ -26,7 +26,7 @@
         Caustic: 0.5
         Stun: 0.8
   - type: ExplosionResistance
-    damageCoefficient: 0.3
+    damageCoefficient: 0.6
   - type: ToggleableClothing
     clothingPrototype: ADTClothingHeadHelmetHardsuitBlueshield
   - type: DNALocker

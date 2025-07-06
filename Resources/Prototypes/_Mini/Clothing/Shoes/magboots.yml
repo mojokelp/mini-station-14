@@ -45,3 +45,18 @@
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
+
+- type: entity
+  parent: ClothingShoesBootsMagBase
+  id: ClothingShoesBootsMagBlueshield
+  name: магнитные ботинки офицера синий щит
+  description: Эксклюзиная версия магнитных ботинок для офицеров синий щит.
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Shoes/Boots/blueshield_magboots.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Mini/Clothing/Shoes/Boots/blueshield_magboots.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95

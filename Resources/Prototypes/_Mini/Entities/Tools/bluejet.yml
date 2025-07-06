@@ -7,11 +7,11 @@
   suffix: Empty
   components:
   - type: Item
-    sprite: Objects/Tanks/Jetpacks/void.rsi
+    sprite: _Mini/Objects/Tanks/Jetpacks/blueshield.rsi
   - type: Sprite
-    sprite: Objects/Tanks/Jetpacks/void.rsi
+    sprite: _Mini/Objects/Tanks/Jetpacks/blueshield.rsi
   - type: Clothing
-    sprite: Objects/Tanks/Jetpacks/void.rsi
+    sprite: _Mini/Objects/Tanks/Jetpacks/blueshield.rsi
     slots:
       - Back
       - suitStorage
