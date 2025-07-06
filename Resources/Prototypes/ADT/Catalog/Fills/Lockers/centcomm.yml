@@ -19,6 +19,7 @@
     - id: ClothingShoesBootsJack
     - id: ADTClothingUniformJumpskirtTurtleneckBlueshield
     - id: ADTClothingUniformJumpsuitTurtleneckBlueshield
+    - id: JetpackBlueShieldFilled
 
 - type: entity
   id: ADTLockerBlueshieldFilled
@@ -39,3 +40,4 @@
     - id: ClothingShoesBootsJack
     - id: ADTClothingUniformJumpskirtTurtleneckBlueshield
     - id: ADTClothingUniformJumpsuitTurtleneckBlueshield
+    - id: JetpackBlueShieldFilled

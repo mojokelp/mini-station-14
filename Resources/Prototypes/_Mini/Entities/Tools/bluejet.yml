@@ -1,0 +1,35 @@
+#Empty bs
+- type: entity
+  id: JetpackBlueShieldEmpty
+  parent: [BaseJetpack, BaseSecurityContraband]
+  name: джетпак офицера синего щита
+  description: Это реактивный ранец — джетпак. Вмещает 5 Л газа. Принадлежит офицеру Синего Щита.
+  suffix: Empty
+  components:
+  - type: Item
+    sprite: Objects/Tanks/Jetpacks/void.rsi
+  - type: Sprite
+    sprite: Objects/Tanks/Jetpacks/void.rsi
+  - type: Clothing
+    sprite: Objects/Tanks/Jetpacks/void.rsi
+    slots:
+      - Back
+      - suitStorage
+      - Belt
+
+# Filled bs
+- type: entity
+  id: JetpackBlueShieldFilled
+  parent: JetpackBlueShieldEmpty
+  name: джетпак офицера синего щита
+  suffix: Filled
+  components:
+  - type: GasTank
+    outputPressure: 42.6
+    air:
+      # 13 minutes of thrust
+      volume: 5
+      temperature: 293.15
+      moles:
+        - 1.025689525 # oxygen
+        - 1.025689525 # nitrogen
