@@ -1,4 +1,89 @@
-# - type: additionalMap
-#   id: Meta
-#   maps:
-#   - Train
+ - type: additionalMap
+   id: NextCluster
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextPacked
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextOmega
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextTushkan
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextSilly
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextMaus
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextMarathon
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextAmber
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextPearl
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextAwesome
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextOutpost
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextPaper
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextBagel
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextBox
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextPilgrim
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextAstra
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextAvrite
+   maps:
+   - Train
+
+ - type: additionalMap
+   id: NextDelta
+   maps:
+   - Train
