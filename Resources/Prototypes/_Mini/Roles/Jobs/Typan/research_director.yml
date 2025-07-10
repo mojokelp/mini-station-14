@@ -18,6 +18,7 @@
   access:
   - TypanResearchDirector
   - TypanScience
+  - SyndicateAgent
 
 - type: startingGear
   id: SyndicateRD

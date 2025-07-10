@@ -744,7 +744,7 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: AccessReader
-    access: [["Kitchen"]]
+    access: [["Kitchen"], ["TypanService"]]
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -837,7 +837,7 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: AccessReader
-    access: [["Engineering"]]
+    access: [["Engineering"], ["TypanAtmospherics"]]
   - type: PointLight
     radius: 1.5
     energy: 1.6
