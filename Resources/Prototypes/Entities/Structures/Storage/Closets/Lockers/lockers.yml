@@ -212,7 +212,7 @@
     stateDoorOpen: med_open
     stateDoorClosed: med_door
   - type: AccessReader
-    access: [ [ "Medical" ] ]
+    access: [ [ "Medical" ], ["TypanMedical"] ]
 
 # Medical doctor
 - type: entity

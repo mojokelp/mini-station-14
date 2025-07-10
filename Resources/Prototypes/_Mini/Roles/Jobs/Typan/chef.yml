@@ -12,10 +12,13 @@
       department: Civilian
       time: 6000
   access:
-  - SyndicateAgent
-  - NuclearOperative
-  accessGroups:
-  - AllAccess
+  - TypanService
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Skills # Corvax-Next-Skills
+        skills:
+        - Butchering
 
 - type: startingGear
   id: SyndicateChef

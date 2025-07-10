@@ -16,10 +16,8 @@
     - !type:AgeRequirement
       requiredAge: 24
   access:
-  - SyndicateAgent
-  - NuclearOperative
-  accessGroups:
-  - AllAccess
+  - TypanResearchDirector
+  - TypanScience
 
 - type: startingGear
   id: SyndicateRD
