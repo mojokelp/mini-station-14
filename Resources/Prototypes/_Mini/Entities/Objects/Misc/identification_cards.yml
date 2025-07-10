@@ -12,8 +12,10 @@
     job: TypanCargotech
   - type: Access
     tags:
+    - TypanCargo
+    - TypanMaint
     - SyndicateAgent
-    - NuclearOperative
+    - TypanExternal
 
 
 - type: entity
@@ -27,15 +29,21 @@
     - state: typancardcom
   - type: Access
     tags:
-    - Armory
-    - Cargo
-    - Medical
-    - Engineering
-    - Research
-    - Service
-    - SyndicateAgent
-    - Quartermaster
-    - ResearchDirector
+    - TypanArmory
+    - TypanAtmospherics
+    - TypanCargo
+    - TypanCommand
+    - TypanCommunicationsOfficer
+    - TypanEngineering
+    - TypanMaint
+    - TypanMedical
+    - TypanProtection
+    - TypanResearchDirector
+    - TypanScience
+    - TypanService
+    - TypanTechnicalOperationsSupervisor
+    - TypanVault
+    - TypanExternal
     - NuclearOperative
 
 - type: entity
@@ -49,11 +57,10 @@
     - state: typancardeng
   - type: Access
     tags:
-    - Engineering
+    - TypanEngineering
+    - TypanAtmospherics
+    - TypanMaint
     - SyndicateAgent
-    - NuclearOperative
-    groups:
-    - AllAccess
 
 - type: entity
   parent: IDCardStandard
@@ -66,10 +73,9 @@
     - state: typancardmed
   - type: Access
     tags:
+    - TypanMedical
     - SyndicateAgent
-    - NuclearOperative
-    groups:
-    - AllAccess
+    - TypanMaint
 
 - type: entity
   parent: IDCardStandard
@@ -84,10 +90,14 @@
     job: TypanRD
   - type: Access
     tags:
+    - TypanResearchDirector
+    - TypanScience
     - SyndicateAgent
-    - NuclearOperative
-    groups:
-    - AllAccess
+    - TypanCommand
+    - TypanVault
+    - TypanExternal
+    - TypanEngineering
+    - TypanMaint
 
 - type: entity
   parent: IDCardStandard
@@ -102,10 +112,9 @@
     job: TypanScience
   - type: Access
     tags:
+    - TypanScience
     - SyndicateAgent
-    - NuclearOperative
-    groups:
-    - AllAccess
+    - TypanMaint
 
 - type: entity
   parent: IDCardStandard
@@ -120,10 +129,8 @@
     job: TypanBotanist
   - type: Access
     tags:
+    - TypanService
     - SyndicateAgent
-    - NuclearOperative
-    groups:
-    - AllAccess
 
 - type: entity
   parent: IDCardStandard
@@ -138,7 +145,6 @@
     job: TypanChef
   - type: Access
     tags:
+    - TypanService
     - SyndicateAgent
-    - NuclearOperative
-    groups:
-    - AllAccess
+    - TypanMaint

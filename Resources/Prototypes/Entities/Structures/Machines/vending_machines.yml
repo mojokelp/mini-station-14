@@ -291,7 +291,7 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: AccessReader
-    access: [["Service"]]
+    access: [["Service"], ["TypanService"]]
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -909,7 +909,7 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: AccessReader
-    access: [["Hydroponics"]]
+    access: [["Hydroponics"], ["TypanService"]]
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -992,7 +992,7 @@
   suffix: Hydroponics
   components:
   - type: AccessReader
-    access: [["Hydroponics"]]
+    access: [["Hydroponics"], ["TypanService"]]
 
 - type: entity
   parent: VendingMachine
