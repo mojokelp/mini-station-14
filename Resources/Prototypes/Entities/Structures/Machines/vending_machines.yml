@@ -872,7 +872,7 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: AccessReader
-    access: [["Medical"]]
+    access: [["Medical"], ["TypanMedical"]]
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -2231,7 +2231,7 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: AccessReader
-    access: [["Chemistry"]]
+    access: [["Chemistry"], ["TypanMedical"]]
   - type: GuideHelp
     guides:
     - Chemicals
@@ -2251,5 +2251,5 @@
     denyState: deny
     ejectDelay: 2
   - type: AccessReader
-    access: [["SyndicateAgent"]]
+    access: [["SyndicateAgent"], ["TypanMedical"]]
 

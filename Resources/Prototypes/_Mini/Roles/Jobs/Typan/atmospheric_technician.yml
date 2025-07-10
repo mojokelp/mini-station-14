@@ -12,10 +12,9 @@
       department: Engineering
       time: 7200
   access:
-  - SyndicateAgent
-  - NuclearOperative
-  accessGroups:
-  - AllAccess
+  - TypanEngineering
+  - TypanAtmospherics
+  - TypanMaint
 
 - type: startingGear
   id: SyndicateAtmos

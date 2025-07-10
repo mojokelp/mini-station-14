@@ -1,10 +1,11 @@
+# Typan
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardCargo
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
-    sprite: _Mini/Objects/Misc/typancargo.rsi
+    sprite: _Mini/Objects/Misc/Typancargo.rsi
     layers:
     - state: typancardcargo
   - type: PresetIdCard
@@ -18,10 +19,10 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardCom
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
-    sprite: _Mini/Objects/Misc/typansec.rsi
+    sprite: _Mini/Objects/Misc/Typansec.rsi
     layers:
     - state: typancardcom
   - type: Access
@@ -40,10 +41,10 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardEng
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
-    sprite: _Mini/Objects/Misc/typaneng.rsi
+    sprite: _Mini/Objects/Misc/Typaneng.rsi
     layers:
     - state: typancardeng
   - type: Access
@@ -57,10 +58,10 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardMed
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
-    sprite: _Mini/Objects/Misc/typanmed.rsi
+    sprite: _Mini/Objects/Misc/Typanmed.rsi
     layers:
     - state: typancardmed
   - type: Access
@@ -73,10 +74,10 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardRd
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
-    sprite: _Mini/Objects/Misc/typanrd.rsi
+    sprite: _Mini/Objects/Misc/Typanrd.rsi
     layers:
     - state: typancardrd
   - type: PresetIdCard
@@ -91,10 +92,10 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardScience
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
-    sprite: _Mini/Objects/Misc/typanscien.rsi
+    sprite: _Mini/Objects/Misc/Typanscien.rsi
     layers:
     - state: typancardscience
   - type: PresetIdCard
@@ -109,10 +110,10 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardBotanist
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
-    sprite: _Mini/Objects/Misc/typanbotan.rsi
+    sprite: _Mini/Objects/Misc/Typanbotan.rsi
     layers:
     - state: typancardbotanist
   - type: PresetIdCard
@@ -127,10 +128,10 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardChef
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
-    sprite: _Mini/Objects/Misc/typanchef.rsi
+    sprite: _Mini/Objects/Misc/Typanchef.rsi
     layers:
     - state: typancardchef
   - type: PresetIdCard

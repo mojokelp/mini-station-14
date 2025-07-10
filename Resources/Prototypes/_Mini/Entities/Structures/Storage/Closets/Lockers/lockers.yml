@@ -1,0 +1,69 @@
+- type: entity
+  id: LockerSyndicateAtmos
+  name: шкаф атмостеха синдиката
+  parent: LockerAtmospherics
+  description: Хранилище вещей атмосферного техника синдиката.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: typanatm
+    stateDoorOpen: typanatm_open
+    stateDoorClosed: typanatm_door
+  - type: StorageFill
+    contents:
+      - id: ClothingMaskGasAtmos
+      - id: ClothingOuterSuitAtmosFire
+      - id: ClothingHeadHelmetAtmosFire
+      - id: GasAnalyzer
+      - id: MedkitOxygenFilled
+      - id: HolofanProjector
+      - id: RCDAmmo
+      - id: RPDsindi
+      - id: SindiRCD
+  - type: AccessReader
+    access: [["TypanAtmospherics"]]
+
+- type: entity
+  id: LockerSyndicateCap
+  name: шкаф капитана синдиката
+  parent: LockerAtmospherics
+  description: Хранилище вещей капитана синдиката.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: tac
+    stateDoorOpen: tac_open
+    stateDoorClosed: tac_door
+  - type: StorageFill
+    contents:
+      - id: WeaponRevolverPython
+  - type: AccessReader
+    access: [["TypanAtmospherics"]]
+
+- type: entity
+  id: LockerSyndicateCargo
+  name: шкаф карготехника синдиката
+  parent: LockerSalvageSpecialistFilled
+  description: Хранилище вещей карготехника синдиката.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: cargos
+    stateDoorOpen: cargos_open
+    stateDoorClosed: cargos_door
+  - type: AccessReader
+    access: [["TypanCargo"]]
+
+- type: entity
+  id: LockerSyndicateMed
+  name: шкаф для медикоментов
+  parent: LockerMedicineFilled
+  description: Хранилище вещей карготехника синдиката.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: cargos
+    stateDoorOpen: cargos_open
+    stateDoorClosed: meds_door
+  - type: AccessReader
+    access: [["TypanMedical"]]
