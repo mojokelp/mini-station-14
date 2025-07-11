@@ -4,8 +4,8 @@ meta:
   engineVersion: 252.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/10/2025 23:57:49
-  entityCount: 5946
+  time: 07/11/2025 02:15:47
+  entityCount: 5944
 maps:
 - 1
 grids:
@@ -5999,7 +5999,7 @@ entities:
       pos: 1.5,-0.5
       parent: 5000
     - type: Door
-      secondsUntilStateChange: -1348.566
+      secondsUntilStateChange: -1814.1465
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -6458,7 +6458,7 @@ entities:
       pos: 24.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -13857.55
+      secondsUntilStateChange: -14323.131
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -6678,7 +6678,6 @@ entities:
       parent: 5416
     - type: Physics
       bodyStatus: InAir
-      sleepTime: 0.43333292
     - type: Fixtures
       fixtures:
         fix1:
@@ -6727,7 +6726,6 @@ entities:
       parent: 5416
     - type: Physics
       bodyStatus: InAir
-      sleepTime: 0.716666
     - type: Fixtures
       fixtures:
         fix1:
@@ -18030,7 +18028,9 @@ entities:
     - type: Transform
       pos: 20.5,-14.5
       parent: 2
-  - uid: 4188
+- proto: CryogenicSleepUnitSpawnerLateJoin
+  entities:
+  - uid: 2166
     components:
     - type: Transform
       pos: 20.5,-16.5
@@ -27937,12 +27937,6 @@ entities:
     - type: Transform
       pos: -12.5,17.5
       parent: 2
-  - uid: 2166
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 13.5,-4.5
-      parent: 2
   - uid: 2191
     components:
     - type: Transform
@@ -29750,16 +29744,6 @@ entities:
       parent: 2
 - proto: LockerSyndicateCargo
   entities:
-  - uid: 4417
-    components:
-    - type: Transform
-      pos: -8.5,14.5
-      parent: 2
-  - uid: 4418
-    components:
-    - type: Transform
-      pos: -7.5,14.5
-      parent: 2
   - uid: 4419
     components:
     - type: Transform
@@ -34819,8 +34803,6 @@ entities:
     - type: Transform
       pos: -0.7840576,1.3746643
       parent: 5416
-    - type: Physics
-      sleepTime: 0.2999997
   - uid: 5768
     components:
     - type: Transform
@@ -34952,7 +34934,6 @@ entities:
       parent: 5416
     - type: Physics
       bodyStatus: InAir
-      sleepTime: 0.44999957
     - type: Fixtures
       fixtures:
         fix1:
@@ -35977,48 +35958,48 @@ entities:
       parent: 2
 - proto: SpawnPointLatejoinTypanBotanist
   entities:
-  - uid: 2564
+  - uid: 4188
     components:
     - type: Transform
-      pos: -13.5,4.5
+      pos: -13.5,1.5
       parent: 2
 - proto: SpawnPointLatejoinTypanCargotech
   entities:
-  - uid: 4962
+  - uid: 2567
     components:
     - type: Transform
-      pos: -5.5,13.5
+      pos: 2.5,4.5
       parent: 2
-  - uid: 4966
+  - uid: 2570
     components:
     - type: Transform
-      pos: -6.5,13.5
+      pos: 1.5,4.5
       parent: 2
 - proto: SpawnPointLatejoinTypanChef
   entities:
+  - uid: 4418
+    components:
+    - type: Transform
+      pos: -9.5,1.5
+      parent: 2
+- proto: SpawnPointLatejoinTypanMedic
+  entities:
+  - uid: 2564
+    components:
+    - type: Transform
+      pos: 4.5,0.5
+      parent: 2
   - uid: 2566
     components:
     - type: Transform
-      pos: -9.5,4.5
+      pos: 3.5,0.5
       parent: 2
-- proto: SpawnPointLatejoinTypanMedic
+- proto: SpawnPointLatejoinTypanOfficer
   entities:
   - uid: 2414
     components:
     - type: Transform
-      pos: 8.5,-2.5
-      parent: 2
-  - uid: 2567
-    components:
-    - type: Transform
-      pos: 7.5,-2.5
-      parent: 2
-- proto: SpawnPointLatejoinTypanOfficer
-  entities:
-  - uid: 4959
-    components:
-    - type: Transform
-      pos: 24.5,-7.5
+      pos: 18.5,0.5
       parent: 2
 - proto: SpawnPointLatejoinTypanRD
   entities:
@@ -36029,15 +36010,15 @@ entities:
       parent: 2
 - proto: SpawnPointLatejoinTypanScience
   entities:
-  - uid: 2570
+  - uid: 4959
     components:
     - type: Transform
-      pos: -5.5,-7.5
+      pos: 14.5,-29.5
       parent: 2
-  - uid: 4967
+  - uid: 4962
     components:
     - type: Transform
-      pos: -4.5,-7.5
+      pos: 15.5,-29.5
       parent: 2
 - proto: StairDark
   entities:
@@ -36294,17 +36275,24 @@ entities:
     - type: Transform
       pos: -16.5,4.5
       parent: 2
+- proto: SuitStorageSyndieCargo
+  entities:
+  - uid: 2123
+    components:
+    - type: Transform
+      pos: -7.5,14.5
+      parent: 2
+  - uid: 4417
+    components:
+    - type: Transform
+      pos: -8.5,14.5
+      parent: 2
 - proto: SuitStorageSyndieSB
   entities:
   - uid: 119
     components:
     - type: Transform
       pos: 23.5,10.5
-      parent: 2
-  - uid: 2123
-    components:
-    - type: Transform
-      pos: 23.5,-6.5
       parent: 2
   - uid: 2482
     components:
