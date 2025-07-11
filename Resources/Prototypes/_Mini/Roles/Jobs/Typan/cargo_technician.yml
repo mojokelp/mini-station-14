@@ -35,6 +35,4 @@
     back: ClothingBackpackSyndicate
     shoes: ClothingShoesBootsCombatSyndie
     id: SyndiPDACargo
-  storage: # DeltaV: Add mining voucher
-    back:
-    - AccessConfiguratorTypan
+
