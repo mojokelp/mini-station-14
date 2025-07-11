@@ -612,6 +612,27 @@
     },
     {
        "name": "coroner_secure_open"
+    },
+    {
+       "name": "typanatm"
+    },
+    {
+       "name": "typanatm_door"
+    },
+    {
+       "name": "typanatm_open"
+    },
+    {
+       "name": "cargos"
+    },
+    {
+       "name": "cargos_door"
+    },
+    {
+       "name": "cargos_open"
+    },
+    {
+       "name": "meds_door"
     }
   ]
 }

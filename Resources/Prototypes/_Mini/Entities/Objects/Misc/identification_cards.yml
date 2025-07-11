@@ -1,7 +1,8 @@
+# Typan
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardCargo
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typancargo.rsi
@@ -11,14 +12,16 @@
     job: TypanCargotech
   - type: Access
     tags:
+    - TypanCargo
+    - TypanMaint
     - SyndicateAgent
-    - NuclearOperative
+    - TypanExternal
 
 
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardCom
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typansec.rsi
@@ -26,21 +29,27 @@
     - state: typancardcom
   - type: Access
     tags:
-    - Armory
-    - Cargo
-    - Medical
-    - Engineering
-    - Research
-    - Service
-    - SyndicateAgent
-    - Quartermaster
-    - ResearchDirector
+    - TypanArmory
+    - TypanAtmospherics
+    - TypanCargo
+    - TypanCommand
+    - TypanCommunicationsOfficer
+    - TypanEngineering
+    - TypanMaint
+    - TypanMedical
+    - TypanProtection
+    - TypanResearchDirector
+    - TypanScience
+    - TypanService
+    - TypanTechnicalOperationsSupervisor
+    - TypanVault
+    - TypanExternal
     - NuclearOperative
 
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardEng
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typaneng.rsi
@@ -48,16 +57,15 @@
     - state: typancardeng
   - type: Access
     tags:
-    - Engineering
+    - TypanEngineering
+    - TypanAtmospherics
+    - TypanMaint
     - SyndicateAgent
-    - NuclearOperative
-    groups:
-    - AllAccess
 
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardMed
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typanmed.rsi
@@ -65,15 +73,14 @@
     - state: typancardmed
   - type: Access
     tags:
+    - TypanMedical
     - SyndicateAgent
-    - NuclearOperative
-    groups:
-    - AllAccess
+    - TypanMaint
 
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardRd
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typanrd.rsi
@@ -83,15 +90,19 @@
     job: TypanRD
   - type: Access
     tags:
+    - TypanResearchDirector
+    - TypanScience
     - SyndicateAgent
-    - NuclearOperative
-    groups:
-    - AllAccess
+    - TypanCommand
+    - TypanVault
+    - TypanExternal
+    - TypanEngineering
+    - TypanMaint
 
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardScience
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typanscien.rsi
@@ -101,15 +112,14 @@
     job: TypanScience
   - type: Access
     tags:
+    - TypanScience
     - SyndicateAgent
-    - NuclearOperative
-    groups:
-    - AllAccess
+    - TypanMaint
 
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardBotanist
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typanbotan.rsi
@@ -119,15 +129,13 @@
     job: TypanBotanist
   - type: Access
     tags:
+    - TypanService
     - SyndicateAgent
-    - NuclearOperative
-    groups:
-    - AllAccess
 
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardChef
-  name: ID карта
+  name: ID-карта
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typanchef.rsi
@@ -137,7 +145,6 @@
     job: TypanChef
   - type: Access
     tags:
+    - TypanService
     - SyndicateAgent
-    - NuclearOperative
-    groups:
-    - AllAccess
+    - TypanMaint
