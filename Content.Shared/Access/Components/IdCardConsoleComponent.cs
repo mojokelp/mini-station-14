@@ -75,22 +75,6 @@ public sealed partial class IdCardConsoleComponent : Component
         "Security",
         "Service",
         "Theatre",
-        "TypanArmory",
-        "TypanAtmospherics",
-        "TypanCargo",
-        "TypanCommand",
-        "TypanCommunicationsOfficer",
-        "TypanEngineering",
-        "TypanMaint",
-        "TypanMedical",
-        "TypanProtection",
-        "TypanResearchDirector",
-        "TypanScience",
-        "TypanService",
-        "TypanTechnicalOperationsSupervisor",
-        "TypanVault",
-        "TypanExternal",
-        "SyndicateAgent",
     };
 
     [Serializable, NetSerializable]
