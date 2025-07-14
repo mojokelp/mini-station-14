@@ -1,0 +1,39 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+               MinSize="300 400"
+               Title="{Loc 'telecrystal-exchange-ui-title'}">
+    <BoxContainer Orientation="Vertical" Margin="10">
+        <Label Text="{Loc 'telecrystal-exchange-rate', 
+                         'rate'={Binding ExchangeRate}}"
+               FontColor="Gold"
+               HorizontalAlignment="Center"/>
+        
+        <Label Text="{Loc 'telecrystal-exchange-min-points', 
+                         'points'={Binding MinPointsToExchange}}"
+               FontColor="Orange"
+               HorizontalAlignment="Center"
+               Margin="0 5 0 0"/>
+        
+        <PanelContainer PanelOverride="HandSlotPanel" 
+                        MinSize="100 100"
+                        Margin="0 10 0 0">
+            <SlotControl Name="DiskSlot"
+                       SlotTexture="/Textures/Interface/SlotIcons/disks.rsi/disk.png"/>
+        </PanelContainer>
+        
+        <Label Text="{Loc 'telecrystal-exchange-insert-disk'}"
+               HorizontalAlignment="Center"
+               Margin="0 5 0 0"/>
+        
+        <Label Name="MessageLabel"
+               Text="{Binding Message}"
+               FontColor="{Binding MessageColor}"
+               HorizontalAlignment="Center"
+               Margin="0 5 0 0"/>
+        
+        <Button Name="ExchangeButton" 
+                Text="{Loc 'telecrystal-exchange-button'}"
+                VerticalAlignment="Bottom"
+                Margin="0 10 0 0"/>
+    </BoxContainer>
+</DefaultWindow>

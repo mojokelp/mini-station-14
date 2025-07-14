@@ -1,0 +1,23 @@
+- type: entity
+  parent: BaseMachine
+  id: TelecrystalExchangeConsole
+  name: консоль обмена РНД
+  description: Позволяет обменивать диски РНД на телекристалы.
+  components:
+    - type: PowerReceiver
+      load: 50
+    - type: UserInterface
+      interfaces:
+        - key: enum.TelecrystalExchangeUiKey
+          type: TelecrystalExchangeBoundUserInterface
+    - type: AccessReader
+      enabled: true
+      access:
+        - Science
+    - type: ApcPowerReceiver
+      needsPower: true
+    - type: TelecrystalExchangeConsole
+      exchangeRate: 1
+      minPointsToExchange: 1000
+  sprite: Objects/Specific/Research/artifacts.rsi
+  iconState: telecrystal
