@@ -1,6 +1,6 @@
 - type: entity
   id: MagazineMiniMachineGunBox
-  name: "блюспейс магазин"
+  name: bluespace magazine
   parent: MagazineLightRifleBox
   components:
   - type: Tag

@@ -2,7 +2,7 @@
   id: TypanCargotech
   name: job-name-typan-cargotech
   playTimeTracker: TypanCargotech
-  description: Карготехник из далёкого космоса.
+  description: job-description-typan-cargotech
   startingGear: TypanCargotech
   icon: "JobIconTypanCargotech"
   supervisors: job-supervisors-typan-telecommunications-officer

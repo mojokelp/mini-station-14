@@ -2,7 +2,7 @@
   name: AEK-974
   parent: BaseItem
   id: AbakanRifleMRi
-  description: Советский общевойсковой автомат, разработанный в 2478 году на заводе имени Дегтярёва в Планете Коврове под руководством  Станислав.И.К. Данный Автомат был модифицирован группировкой MRI.
+  description: Soviet assault rifle. This rifle was modified by the MRI group.
   suffix: MRI
   components:
   - type: Sprite

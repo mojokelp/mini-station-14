@@ -20,8 +20,8 @@
 - type: entity
   parent: SmokeGrenadeHoly
   id: HolyWaterGrenade
-  name: фиал святого духа
-  description: В этом величественном сосуде содержится святой дух из рук самого Бога. Господь, освети и благослави путь мой!
+  name: phial of the Holy Spirit
+  description: This majestic vessel contains the Holy Spirit from the hands of God Himself. Lord, illuminate and bless my path!
   components:
   - type: Sprite
     sprite: _Mini/Objects/Weapons/Throwable/holysmokegrenade.rsi

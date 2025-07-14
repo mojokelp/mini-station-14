@@ -1,9 +1,9 @@
 - type: entity
   id: DoorElectronicsTypan
   parent: BaseElectronics
-  name: микросхема шлюза
-  description: Электронная плата, используемая в дверях и шлюзах.
-  suffix: Тайпан
+  name: door electronics
+  description: An electronics board used in doors and airlocks.
+  suffix: Typan
   components:
     - type: Sprite
       sprite: _Mini/Objects/Misc/module.rsi
@@ -25,7 +25,7 @@
 - type: entity
   parent: DoorElectronicsTypan
   id: DoorElectronicsTypanAtmospherics
-  suffix: Тайпан, Атмосферный, Закрыт
+  suffix: Typan, Atmospherics, Closed
   components:
   - type: AccessReader
     access: [["TypanAtmospherics"]]
@@ -33,7 +33,7 @@
 - type: entity
   parent: DoorElectronicsTypan
   id: DoorElectronicsTypanCargo
-  suffix: Тайпан, Снабжение, Закрыт
+  suffix: Typan, Cargo, Closed
   components:
   - type: AccessReader
     access: [["TypanCargo"]]
@@ -41,7 +41,7 @@
 - type: entity
   parent: DoorElectronicsTypan
   id: DoorElectronicsTypanCommand
-  suffix: Тайпан, Командование, Закрыт
+  suffix: Typan, Command, Closed
   components:
   - type: AccessReader
     access: [["TypanCommand"]]
@@ -49,7 +49,7 @@
 - type: entity
   parent: DoorElectronicsTypan
   id: DoorElectronicsTypanEngineering
-  suffix: Тайпан, Инженерный, Закрыт
+  suffix: Typan, Engineering, Closed
   components:
   - type: AccessReader
     access: [["TypanEngineering"]]
@@ -57,7 +57,7 @@
 - type: entity
   parent: DoorElectronicsTypan
   id: DoorElectronicsTypanMaintenance
-  suffix: Тайпан, Технический, Закрыт
+  suffix: Typan, Maintenance, Closed
   components:
   - type: AccessReader
     access: [["TypanMaint"]]
@@ -65,7 +65,7 @@
 - type: entity
   parent: DoorElectronicsTypan
   id: DoorElectronicsTypanMedical
-  suffix: Тайпан, Медицинский, Закрыт
+  suffix: Typan, Medical, Closed
   components:
   - type: AccessReader
     access: [["TypanMedical"]]
@@ -73,7 +73,7 @@
 - type: entity
   parent: DoorElectronicsTypan
   id: DoorElectronicsTypanProtection
-  suffix: Тайпан, Охрана, Закрыт
+  suffix: Typan, Security, Closed
   components:
   - type: AccessReader
     access: [["TypanProtection"]]
@@ -81,7 +81,7 @@
 - type: entity
   parent: DoorElectronicsTypan
   id: DoorElectronicsTypanResearchDirector
-  suffix: Тайпан, Директор исследований, Закрыт
+  suffix: Typan, RD, Closed
   components:
   - type: AccessReader
     access: [["TypanResearchDirector"]]
@@ -89,7 +89,7 @@
 - type: entity
   parent: DoorElectronicsTypan
   id: DoorElectronicsTypanScience
-  suffix: Тайпан, Научный, Закрыт
+  suffix: Typan, Science, Closed
   components:
   - type: AccessReader
     access: [["TypanScience"]]
@@ -97,7 +97,7 @@
 - type: entity
   parent: DoorElectronicsTypan
   id: DoorElectronicsTypanService
-  suffix: Тайпан, Сервис, Закрыт
+  suffix: Typan, Service, Closed
   components:
   - type: AccessReader
     access: [["TypanService"]]
@@ -105,7 +105,7 @@
 - type: entity
   parent: DoorElectronicsTypan
   id: DoorElectronicsTypanTechnicalOperationsSupervisor
-  suffix: Тайпан, Руководитель техобеспечения, Закрыт
+  suffix: Typan, Technical Operations Supervisor, Closed
   components:
   - type: AccessReader
     access: [["TypanTechnicalOperationsSupervisor"]]
@@ -113,7 +113,7 @@
 - type: entity
   parent: DoorElectronicsTypan
   id: DoorElectronicsTypanVault
-  suffix: Тайпан, Хранилище, Закрыт
+  suffix: Typan, Vault, Closed
   components:
   - type: AccessReader
     access: [["TypanVault"]]
@@ -121,7 +121,7 @@
 - type: entity
   parent: DoorElectronicsTypan
   id: DoorElectronicsTypanExternal
-  suffix: Тайпан, Внешний, Закрыт
+  suffix: Typan, External, Closed
   components:
   - type: AccessReader
     access: [["TypanExternal"]]

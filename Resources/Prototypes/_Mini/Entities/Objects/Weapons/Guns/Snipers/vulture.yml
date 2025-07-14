@@ -1,8 +1,8 @@
 - type: entity
-  name: Стервятник БИ
+  name: Vulture
   parent: [BaseWeaponPistol, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponSniperVulture
-  description: Лёгкая снайперская винтовка для прострела длинных коридоров. Не облажайся сука!
+  description: A lightweight sniper rifle for shooting down long corridors. Don't fuck up, bitch!
   components:
   - type: Item
     size: Huge

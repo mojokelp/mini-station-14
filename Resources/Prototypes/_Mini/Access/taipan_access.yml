@@ -19,60 +19,60 @@
 
 - type: accessLevel
   id: TypanArmory
-  name: Арсенал
+  name: id-card-access-taypan-armory
 
 - type: accessLevel
   id: TypanAtmospherics
-  name: Атмосферный
+  name: id-card-access-taypan-atmospherics
 
 - type: accessLevel
   id: TypanCargo
-  name: Снабжение
+  name: id-card-access-taypan-cargo
 
 - type: accessLevel
   id: TypanCommand
-  name: Командование
+  name: id-card-access-taypan-command
 
 - type: accessLevel
   id: TypanCommunicationsOfficer
-  name: Командир
+  name: id-card-access-taypan-comm-ofc
 
 - type: accessLevel
   id: TypanEngineering
-  name: Инженерный
+  name: id-card-access-taypan-engineering
 
 - type: accessLevel
   id: TypanMaint
-  name: Технический
+  name: id-card-access-taypan-maint
 
 - type: accessLevel
   id: TypanMedical
-  name: Медицинский
+  name: id-card-access-taypan-medical
 
 - type: accessLevel
   id: TypanProtection
-  name: Охрана
+  name: id-card-access-taypan-security
 
 - type: accessLevel
   id: TypanResearchDirector
-  name: Научрук
+  name: id-card-access-taypan-rd
 
 - type: accessLevel
   id: TypanScience
-  name: Научный
+  name: id-card-access-taypan-science
 
 - type: accessLevel
   id: TypanService
-  name: Сервисный
+  name: id-card-access-taypan-service
 
 - type: accessLevel
   id: TypanTechnicalOperationsSupervisor
-  name: Технолог
+  name: id-card-access-taypan-tos
 
 - type: accessLevel
   id: TypanVault
-  name: Хранилище
+  name: id-card-access-taypan-vault
 
 - type: accessLevel
   id: TypanExternal
-  name: Внешний
+  name: id-card-access-taypan-external

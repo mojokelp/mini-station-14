@@ -2,8 +2,8 @@
   parent: BaseItem
   id: BaseERTloadoutPrimary
   abstract: true
-  name: кейс неопределённости
-  description: Прочный военный кейс для оружия.
+  name: undetermined case
+  description: A sturdy military case for weapons.
   components:
   - type: Item
     size: Large
@@ -25,8 +25,8 @@
   parent: BaseItem
   id: BaseERTloadoutSecondary
   abstract: true
-  name: коробка неопределённости
-  description: Коробка с табельным оружием.
+  name: undetermined box
+  description: A box with a weapon.
   components:
   - type: Item
     size: Large
@@ -48,9 +48,9 @@
 
 - type: entity
   id: BlueShieldCase
-  name: Оружейная ОСЩ
-  description: Блюспейс хранилище оружия.
-  suffix: ОСЩ
+  name: bluespace case
+  description: Case, containing weapon of blueshield officer.
+  suffix: BSO
   parent: BaseERTloadoutPrimary
   components:
     - type: Sprite
@@ -69,9 +69,9 @@
 
 - type: entity
   id: AssistantGizmo
-  name: коробка с вещами
-  description: Перед вылетом, вы положили в эту коробку дорогие сердцу вещи. Осталось только вспомнить, какие именно!
-  suffix: Ассистент
+  name: box of assistant things
+  description: Before you left, you put some precious items in this box. All you have to do is remember which ones!
+  suffix: Assistant
   parent: BaseERTloadoutSecondary
   components:
     - type: Sprite
@@ -94,8 +94,8 @@
 
 - type: thiefBackpackSet
   id: PistolSet
-  name: Крио-пистолет
-  description: Оружие для ведения боя с тяжелобронироваными одиночными целями.
+  name: bso-set-selector-pistol # Крио-пистолет
+  description: bso-set-selector-pistol-desc # Оружие для ведения боя с тяжелобронироваными одиночными целями.
   sprite:
     sprite: Adventure/Roles/blueshield/Weapons/DualphasBH.rsi
     state: base
@@ -104,8 +104,8 @@
 
 - type: thiefBackpackSet
   id: MinigunSet
-  name: Пулемёт "Защитник"
-  description: Оружие для борьбы с многочисленным, малобронированным врагом.
+  name: bso-set-selector-minigun
+  description: bso-set-selector-minigun-desc
   sprite:
     sprite: _Mini/Objects/Weapons/Guns/LMGs/krio_gun.rsi
     state: icon
@@ -114,8 +114,8 @@
 
 - type: thiefBackpackSet
   id: LaserSwordSet
-  name: Лазерный револьвер
-  description: Оружие для борьбы на ближней дистанции.
+  name: bso-set-selector-laser-sword
+  description: bso-set-selector-laser-sword-desc
   sprite:
     sprite: ADT/Objects/Weapons/Guns/Saber_revolvers/energy.rsi
     state: icon
@@ -124,8 +124,8 @@
 
 - type: thiefBackpackSet
   id: AssistantRich
-  name: Набор аристократа
-  description: О, ваше прошлое точно сияло, как золотой самородок!
+  name: assistant-set-selector-rich # Набор аристократа
+  description: assistant-set-selector-rich-desc # О, ваше прошлое точно сияло, как золотой самородок!
   sprite:
     sprite: Objects/Economy/cash.rsi
     state: cash_500
@@ -140,8 +140,8 @@
 
 - type: thiefBackpackSet
   id: AssistantWelder
-  name: Набор сварщика
-  description: assistant-backpack-category-welder-description
+  name: assistant-set-selector-welder # Набор сварщика
+  description: assistant-set-selector-welder-desc # assistant-backpack-category-welder-description
   sprite:
     sprite: Clothing/Head/Welding/welding.rsi
     state: icon
@@ -155,8 +155,8 @@
 
 - type: thiefBackpackSet
   id: AssistantFan
-  name: Набор фаната Синдиленда
-  description: assistant-backpack-category-fan-description
+  name: assistant-set-selector-syndi # Набор фаната Синдиленда
+  description: assistant-set-selector-syndi-desc # assistant-backpack-category-fan-description
   sprite:
     sprite: Objects/Fun/toys.rsi
     state: synb
@@ -171,8 +171,8 @@
 
 - type: thiefBackpackSet
   id: AssistantPirate
-  name: Набор пирата
-  description: assistant-backpack-category-pirate-description
+  name: assistant-set-selector-pirate # Набор пирата
+  description: assistant-set-selector-pirate-desc # assistant-backpack-category-pirate-description
   sprite:
     sprite: Objects/Weapons/Melee/captain_sabre.rsi
     state: icon
@@ -189,8 +189,8 @@
 
 - type: thiefBackpackSet
   id: AssistantCasino
-  name: Набор азартного игрока
-  description: assistant-backpack-category-casino-description
+  name: assistant-set-selector-gambling # Набор азартного игрока
+  description: assistant-set-selector-gambling-desc # assistant-backpack-category-casino-description
   sprite:
     sprite: _CorvaxNext/Objects/Misc/cards.rsi
     state: sc_Jack_of_Spades_black

@@ -1,8 +1,8 @@
 - type: entity
-  name: Револьер "Архангел"
+  name: Archangel
   parent: [BaseWeaponRevolver, BaseSecurityCommandContraband]
   id: WeaponRevolverSilver
-  description: Револьер для борьбы с потусторонними силами. Стреляет серебрянными пулями, сильно ранящими искажённую плоть.
+  description: A revolver for fighting otherworldly forces. It fires silver bullets that severely wound distorted flesh.
   components:
   - type: Sprite
     sprite: _Mini/Objects/Weapons/Guns/Revolvers/silver.rsi

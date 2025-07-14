@@ -1,5 +1,5 @@
 - type: entity
-  name: атмосферный инженер Синдиката
+  name: latejoin syndicate atmostech
   id: SpawnPointLatejoinTypanAtmos
   parent: SpawnPointJobBase
   components:
@@ -10,7 +10,7 @@
     spawn_type: LateJoin
 
 - type: entity
-  name: ботаник Синдиката
+  name: latejoin syndicate botanist
   id: SpawnPointLatejoinTypanBotanist
   parent: SpawnPointJobBase
   components:
@@ -21,7 +21,7 @@
     spawn_type: LateJoin
 
 - type: entity
-  name: грузчик Синдиката
+  name: latejoin syndicate cargo technician
   id: SpawnPointLatejoinTypanCargotech
   parent: SpawnPointJobBase
   components:
@@ -32,7 +32,7 @@
     spawn_type: LateJoin
 
 - type: entity
-  name: повар Синдиката
+  name: latejoin syndicate syndicate chef
   id: SpawnPointLatejoinTypanChef
   parent: SpawnPointJobBase
   components:
@@ -43,7 +43,7 @@
     spawn_type: LateJoin
 
 - type: entity
-  name: медик Синдиката
+  name: latejoin syndicate medic
   id: SpawnPointLatejoinTypanMedic
   parent: SpawnPointJobBase
   components:
@@ -54,7 +54,7 @@
     spawn_type: LateJoin
 
 - type: entity
-  name: директор исследований Синдиката
+  name: latejoin syndicate research director
   id: SpawnPointLatejoinTypanRD
   parent: SpawnPointJobBase
   components:
@@ -65,7 +65,7 @@
     spawn_type: LateJoin
 
 - type: entity
-  name: учёный Синдиката
+  name: latejoin syndicate sciencist
   id: SpawnPointLatejoinTypanScience
   parent: SpawnPointJobBase
   components:
@@ -76,7 +76,7 @@
     spawn_type: LateJoin
 
 - type: entity
-  name: офицер телекоммуникаций Синдиката
+  name: latejoin syndicate telecommunications officer
   id: SpawnPointLatejoinTypanOfficer
   parent: SpawnPointJobBase
   components:

@@ -2,8 +2,8 @@
 - type: entity
   id: JetpackBlueShieldEmpty
   parent: [BaseJetpack, BaseSecurityContraband]
-  name: джетпак офицера синего щита
-  description: Это реактивный ранец — джетпак. Вмещает 5 Л газа. Принадлежит офицеру Синего Щита.
+  name: blueshield officer's jetpack
+  description: This is a jetpack. It holds 5 liters of gas. It belongs to a blueshield officer.
   suffix: Empty
   components:
   - type: Item
@@ -21,7 +21,6 @@
 - type: entity
   id: JetpackBlueShieldFilled
   parent: JetpackBlueShieldEmpty
-  name: джетпак офицера синего щита
   suffix: Filled
   components:
   - type: GasTank

@@ -1,0 +1,16 @@
+job-name-typan-atmos-tech = атмосферный техник Синдиката
+job-name-typan-botanist = ботаник Синдиката
+job-name-typan-cargotech = грузчик Синдиката
+job-name-typan-chef = повар Синдиката
+job-name-typan-medic = медик Синдиката
+job-name-typan-rd = научный руководитель Синдиката
+job-name-typan-science = учёный Синдиката
+job-name-typan-telecommunications-officer = капитан Синдиката
+JobTypanAtmosTech = атмосферный техник Синдиката
+JobTypanBotanist = ботаник Синдиката
+JobTypanCargotech = грузчик Синдиката
+JobTypanChef = повар Синдиката
+JobTypanMedic = медик Синдиката
+JobTypanRD = научный руководитель Синдиката
+JobTypanScience = учёный Синдиката
+JobTypanTelecommunicationsOfficer = капитан Синдиката

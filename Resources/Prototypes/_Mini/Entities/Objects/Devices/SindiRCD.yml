@@ -1,8 +1,8 @@
 - type: entity
   id: SindiRCD
   parent: [ BaseItem, BaseEngineeringContraband ]
-  name: РСИ
-  description: Реконструкционный Строительный Инструмент - Разработан на основе РСУ силами синдиката, имеет небольшие отличия в виде стильного вида
+  name: RCT
+  description: Reconstruction Construction Tool - developed by the Syndicate based on the RCD, it differs only in its stylish appearance.
   components:
   - type: RCD
     availablePrototypes:
@@ -56,8 +56,8 @@
 - type: entity
   id: RPDsindi
   parent: RCD
-  name: УАИ
-  description: Укладывающий Атмосферный Инструмент - Жалкая копия РПД.. Может быть..
+  name: ALT
+  description: The Atmospheric Laying Tool is a pathetic copy of the RPD.. Maybe..
   components:
   - type: RCD
     isRpd: true
