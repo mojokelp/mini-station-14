@@ -152,12 +152,17 @@
           map: ["light"]
           visible: false
     - type: BorgChassis
-      maxModules: 3
+      maxModules: 5
       moduleWhitelist:
         tags:
           - BorgModuleGeneric
           - BorgModuleMedical
           - BorgModuleSyndicate
+          - BorgModuleTool
+          - BorgModuleDefibrillator
+          - BorgModuleSyndicateWeapon
+          - BorgModuleAdvancedTreatment
+          - BorgModuleAdvancedSurgery
       hasMindState: synd_medical_e
       noMindState: synd_medical
     - type: ShowHealthBars

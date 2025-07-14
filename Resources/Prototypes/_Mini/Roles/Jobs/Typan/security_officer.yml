@@ -3,7 +3,7 @@
   name: job-name-typan-telecommunications-officer
   playTimeTracker: TypanTelecommunicationsOfficer
   description: Офицер телекоммуникаций из далёкого космоса.
-  startingGear: SyndicateFormal
+  startingGear: TypanTelecommunicationsOfficer
   icon: "JobIconSyndicateFormal"
   supervisors: job-supervisors-typan-syndicate
   canBeAntag: false
@@ -50,7 +50,7 @@
         - Shooting
 
 - type: startingGear
-  id: SyndicateFormal
+  id: TypanTelecommunicationsOfficer
   equipment:
     ears: ClothingHeadsetAltSyndicate
     shoes: ClothingShoesBootsCombat

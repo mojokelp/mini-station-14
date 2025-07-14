@@ -21,3 +21,9 @@
 
 - type: playTimeTracker
   id: TypanTelecommunicationsOfficer
+
+- type: playTimeTracker
+  id: JobBorgTypan
+
+- type: playTimeTracker
+  id: JobBorgTypanMedic

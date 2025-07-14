@@ -3,7 +3,7 @@
   name: job-name-typan-atmos-tech
   playTimeTracker: TypanAtmosTech
   description: Атмосферный инженер из далёкого космоса.
-  startingGear: SyndicateAtmos
+  startingGear: TypanAtmosTech
   icon: "JobIconSyndicateAtmos"
   supervisors: job-supervisors-typan-telecommunications-officer
   canBeAntag: false
@@ -18,7 +18,7 @@
   - SyndicateAgent
 
 - type: startingGear
-  id: SyndicateAtmos
+  id: TypanAtmosTech
   equipment:
     ears: ClothingHeadsetAltSyndicate
     jumpsuit: ClothingUniformJumpsuitChiefEngineerSyndie

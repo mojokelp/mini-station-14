@@ -332,6 +332,21 @@
     tags:
     - NuclearOperative
     - SyndicateAgent
+    - TypanArmory
+    - TypanAtmospherics
+    - TypanCargo
+    - TypanCommand
+    - TypanCommunicationsOfficer
+    - TypanEngineering
+    - TypanMaint
+    - TypanMedical
+    - TypanProtection
+    - TypanResearchDirector
+    - TypanScience
+    - TypanService
+    - TypanTechnicalOperationsSupervisor
+    - TypanVault
+    - TypanExternal
   - type: AccessReader
     access: [["SyndicateAgent"], ["NuclearOperative"]]
   - type: SiliconLawProvider

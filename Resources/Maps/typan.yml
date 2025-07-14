@@ -4,8 +4,8 @@ meta:
   engineVersion: 252.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/11/2025 02:50:54
-  entityCount: 5962
+  time: 07/13/2025 20:18:21
+  entityCount: 5966
 maps:
 - 1
 grids:
@@ -5999,7 +5999,7 @@ entities:
       pos: 1.5,-0.5
       parent: 5000
     - type: Door
-      secondsUntilStateChange: -1920.0134
+      secondsUntilStateChange: -2565.746
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -6434,6 +6434,12 @@ entities:
     - type: Transform
       pos: 23.5,15.5
       parent: 2
+  - uid: 5966
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 18.5,16.5
+      parent: 2
 - proto: AirlockTypanScienceLocked
   entities:
   - uid: 2433
@@ -6458,7 +6464,7 @@ entities:
       pos: 24.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -14428.998
+      secondsUntilStateChange: -15074.73
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -6985,11 +6991,6 @@ entities:
     components:
     - type: Transform
       pos: 23.5,15.5
-      parent: 2
-  - uid: 4812
-    components:
-    - type: Transform
-      pos: 16.5,15.5
       parent: 2
 - proto: BarricadeDirectional
   entities:
@@ -11764,6 +11765,11 @@ entities:
     - type: Transform
       pos: 15.5,10.5
       parent: 2
+  - uid: 356
+    components:
+    - type: Transform
+      pos: 18.5,16.5
+      parent: 2
   - uid: 363
     components:
     - type: Transform
@@ -12778,6 +12784,11 @@ entities:
     components:
     - type: Transform
       pos: 26.5,15.5
+      parent: 2
+  - uid: 4812
+    components:
+    - type: Transform
+      pos: 18.5,17.5
       parent: 2
   - uid: 4819
     components:
@@ -17322,6 +17333,13 @@ entities:
           occludes: True
           ents:
           - 1136
+- proto: ClothingBeltAssault
+  entities:
+  - uid: 2933
+    components:
+    - type: Transform
+      pos: 26.553228,4.6077013
+      parent: 2
 - proto: ClothingBeltSyndieHolster
   entities:
   - uid: 4618
@@ -17333,6 +17351,11 @@ entities:
     - type: InsideEntityStorage
 - proto: ClothingBeltUtilityEngineering
   entities:
+  - uid: 677
+    components:
+    - type: Transform
+      pos: -16.58581,-2.3241198
+      parent: 2
   - uid: 3319
     components:
     - type: Transform
@@ -17700,6 +17723,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -36.5,-3.5
       parent: 2
+  - uid: 5964
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 30.5,-4.5
+      parent: 2
 - proto: ComputerAnalysisConsole
   entities:
   - uid: 3298
@@ -17754,22 +17783,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 2.5,-3.5
       parent: 2
-- proto: ComputerCriminalRecords
-  entities:
-  - uid: 2914
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 31.5,-4.5
-      parent: 2
-- proto: ComputerId
-  entities:
-  - uid: 356
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 32.5,-0.5
-      parent: 2
 - proto: ComputerIFFSyndicate
   entities:
   - uid: 2921
@@ -17799,6 +17812,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -18.5,-2.5
       parent: 2
+  - uid: 5965
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 31.5,-4.5
+      parent: 2
 - proto: ComputerRadar
   entities:
   - uid: 378
@@ -17825,14 +17844,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -19.5,-15.5
-      parent: 2
-- proto: ComputerRoboticsControl
-  entities:
-  - uid: 2933
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 30.5,-4.5
       parent: 2
 - proto: ComputerShuttleCargo
   entities:
@@ -29539,6 +29550,14 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -12.5,5.5
       parent: 2
+- proto: HypopenBox
+  entities:
+  - uid: 5963
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 19.404825,11.188501
+      parent: 2
 - proto: IntercomEngineering
   entities:
   - uid: 2154
@@ -30565,6 +30584,14 @@ entities:
     components:
     - type: Transform
       pos: 9.540774,-7.3459015
+      parent: 2
+- proto: MINISyndieComputerId
+  entities:
+  - uid: 2914
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 32.5,-0.5
       parent: 2
 - proto: Multitool
   entities:
@@ -37826,12 +37853,6 @@ entities:
     components:
     - type: Transform
       pos: 23.5,3.5
-      parent: 2
-  - uid: 677
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 18.5,16.5
       parent: 2
   - uid: 679
     components:

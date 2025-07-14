@@ -3,7 +3,7 @@
   name: job-name-typan-rd
   playTimeTracker: TypanRD
   description: Директор исследований из далёкого космоса.
-  startingGear: SyndicateRD
+  startingGear: TypanRD
   icon: "JobIconSyndicateRD"
   supervisors: job-supervisors-typan-syndicate
   canBeAntag: false
@@ -25,7 +25,7 @@
   - TypanEngineering
   - TypanMaint
 - type: startingGear
-  id: SyndicateRD
+  id: TypanRD
   equipment:
     eyes: ClothingEyesGlassesHiddenSecurity
     ears: ClothingHeadsetAltSyndicate

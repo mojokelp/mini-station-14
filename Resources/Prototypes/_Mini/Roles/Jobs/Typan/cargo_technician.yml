@@ -3,7 +3,7 @@
   name: job-name-typan-cargotech
   playTimeTracker: TypanCargotech
   description: Карготехник из далёкого космоса.
-  startingGear: SyndicateCargotech
+  startingGear: TypanCargotech
   icon: "JobIconTypanCargotech"
   supervisors: job-supervisors-typan-telecommunications-officer
   canBeAntag: false
@@ -28,7 +28,7 @@
         - Butchering
 
 - type: startingGear
-  id: SyndicateCargotech
+  id: TypanCargotech
   equipment:
     ears: ClothingHeadsetAltSyndicate
     jumpsuit: ClothingUniformJumpsuitTypanCargotech

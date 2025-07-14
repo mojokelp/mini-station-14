@@ -31,7 +31,9 @@
         },
         {
             "name": "security_officer"
+        },
+        {
+            "name": "borg"
         }
-        
     ]
 }

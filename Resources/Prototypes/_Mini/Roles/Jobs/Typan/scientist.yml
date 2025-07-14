@@ -3,7 +3,7 @@
   name: job-name-typan-science
   playTimeTracker: TypanScience
   description: Учёный из далёкого космоса.
-  startingGear: SyndicateScience
+  startingGear: TypanScience
   icon: "JobIconSyndicateScience"
   supervisors: job-supervisors-typan-rd
   canBeAntag: false
@@ -17,7 +17,7 @@
   - TypanMaint
 
 - type: startingGear
-  id: SyndicateScience
+  id: TypanScience
   equipment:
     ears: ClothingHeadsetAltSyndicate
     jumpsuit: ClothingUniformScienceTypan

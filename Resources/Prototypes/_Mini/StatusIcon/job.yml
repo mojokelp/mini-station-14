@@ -61,3 +61,19 @@
     sprite: /Textures/_Mini/Interface/Misc/job_icons.rsi
     state: security_officer
   jobName: job-name-typan-telecommunications-officer
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconTypanBorg
+  icon:
+    sprite: /Textures/_Mini/Interface/Misc/job_icons.rsi
+    state: borg
+  jobName: job-name-borg
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconTypanBorgMedic
+  icon:
+    sprite: /Textures/_Mini/Interface/Misc/job_icons.rsi
+    state: borg
+  jobName: job-name-borg
