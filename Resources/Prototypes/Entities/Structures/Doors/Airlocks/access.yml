@@ -1314,3 +1314,14 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSyndicateAgent ]
+
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockExternalGlassShuttleCentcommERTLocked
+  suffix: External, ERT, Glass, Docking, Locked
+  components:
+  - type: PriorityDock
+    tag: DockCentcommERT
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsExternal ]
