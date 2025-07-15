@@ -8,7 +8,7 @@
       stationProto: StandardTypanStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'НИКК Тайпан' # Corvax
+          mapNameTemplate: 'НИКК Тайпан'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
@@ -28,4 +28,4 @@
           path: Maps/Shuttles/SindiCargoShuttle.yml
         - type: StationGoal
           goals:
-          - Singularity
+          - SyndicateMaid
