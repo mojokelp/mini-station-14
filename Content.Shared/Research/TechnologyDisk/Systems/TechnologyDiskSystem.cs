@@ -10,6 +10,7 @@ using Content.Shared.Research.TechnologyDisk.Components;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Content.Shared._Mini.Converter;
 
 namespace Content.Shared.Research.TechnologyDisk.Systems;
 
@@ -62,6 +63,18 @@ public sealed class TechnologyDiskSystem : EntitySystem
     {
         if (args.Handled || !args.CanReach || args.Target is not { } target)
             return;
+
+        if (HasComp<ConverterComponent>(target))
+        {
+            _popup.PopupClient(Loc.GetString("bla bla bla"), target, args.User);
+            var rnd = new System.Random();
+            for(int i = rnd.Next(1, 3); i >= 1; --i)
+            {
+                Spawn("Telecrystal", Transform(target).Coordinates);
+            }
+            if (_net.IsServer)
+                QueueDel(ent);
+        }
 
         if (!HasComp<ResearchServerComponent>(target) || !TryComp<TechnologyDatabaseComponent>(target, out var database))
             return;

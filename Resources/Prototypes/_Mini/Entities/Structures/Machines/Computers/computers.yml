@@ -76,3 +76,11 @@
       board: !type:Container
       IdCardConsole-privilegedId: !type:ContainerSlot
       IdCardConsole-targetId: !type:ContainerSlot
+
+- type: entity
+  parent: BaseComputer
+  id: MINIConverterComputer
+  name: обменник дисков
+  description: Машина для обмена дисков на телекристаллы.
+  components:
+  - type: Converter
