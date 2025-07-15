@@ -14,7 +14,7 @@ using Content.Shared._Mini.Converter;
 
 namespace Content.Shared.Research.TechnologyDisk.Systems;
 
-public class TechnologyDiskSystem : EntitySystem
+public sealed class TechnologyDiskSystem : EntitySystem
 {
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
