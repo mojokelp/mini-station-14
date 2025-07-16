@@ -10,6 +10,9 @@ using Content.Shared.Research.TechnologyDisk.Components;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Content.Shared._Mini.Converter;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
 
 namespace Content.Shared.Research.TechnologyDisk.Systems;
 
@@ -21,6 +24,7 @@ public sealed class TechnologyDiskSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedResearchSystem _research = default!;
     [Dependency] private readonly SharedLatheSystem _lathe = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
 
     public override void Initialize()
     {
@@ -39,7 +43,6 @@ public sealed class TechnologyDiskSystem : EntitySystem
         var weightedRandom = _protoMan.Index(ent.Comp.TierWeightPrototype);
         var tier = int.Parse(weightedRandom.Pick(_random));
 
-        //get a list of every distinct recipe in all the technologies.
         var techs = new HashSet<ProtoId<LatheRecipePrototype>>();
         foreach (var tech in _protoMan.EnumeratePrototypes<TechnologyPrototype>())
         {
@@ -52,8 +55,7 @@ public sealed class TechnologyDiskSystem : EntitySystem
         if (techs.Count == 0)
             return;
 
-        //pick one
-        ent.Comp.Recipes = [];
+        ent.Comp.Recipes = new();
         ent.Comp.Recipes.Add(_random.Pick(techs));
         Dirty(ent);
     }
@@ -63,7 +65,22 @@ public sealed class TechnologyDiskSystem : EntitySystem
         if (args.Handled || !args.CanReach || args.Target is not { } target)
             return;
 
-        if (!HasComp<ResearchServerComponent>(target) || !TryComp<TechnologyDatabaseComponent>(target, out var database))
+        if (HasComp<ConverterComponent>(target))
+        {
+            if (!_net.IsServer)
+                return;
+
+            _audio.PlayPvs(new SoundPathSpecifier("/Audio/_Mini/Misc/convert.ogg"), target);
+            _popup.PopupClient(Loc.GetString("tech-disk-exchanged"), target, args.User);
+            Spawn("Telecrystal1", Transform(target).Coordinates);
+
+            QueueDel(ent);
+            args.Handled = true;
+            return;
+        }
+
+        if (!HasComp<ResearchServerComponent>(target) ||
+            !TryComp<TechnologyDatabaseComponent>(target, out var database))
             return;
 
         if (ent.Comp.Recipes != null)
@@ -74,8 +91,10 @@ public sealed class TechnologyDiskSystem : EntitySystem
             }
         }
         _popup.PopupClient(Loc.GetString("tech-disk-inserted"), target, args.User);
+
         if (_net.IsServer)
             QueueDel(ent);
+
         args.Handled = true;
     }
 
@@ -87,7 +106,7 @@ public sealed class TechnologyDiskSystem : EntitySystem
             var prototype = _protoMan.Index(ent.Comp.Recipes[0]);
             message = Loc.GetString("tech-disk-examine", ("result", _lathe.GetRecipeName(prototype)));
 
-            if (ent.Comp.Recipes.Count > 1) //idk how to do this well. sue me.
+            if (ent.Comp.Recipes.Count > 1)
                 message += " " + Loc.GetString("tech-disk-examine-more");
         }
         args.PushMarkup(message);

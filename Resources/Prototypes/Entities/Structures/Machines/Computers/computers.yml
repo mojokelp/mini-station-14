@@ -155,6 +155,15 @@
   - type: GuideHelp
     guides:
     - ShuttleCraft
+  - type: DeviceNetwork
+    deviceNetId: Wired
+  - type: DeviceList
+  - type: DeviceLinkSource
+    range: 30
+    ports:
+      - ShuttleConsoleSender
+
+
 
 - type: entity
   parent: BaseComputerShuttle

@@ -76,3 +76,45 @@
       board: !type:Container
       IdCardConsole-privilegedId: !type:ContainerSlot
       IdCardConsole-targetId: !type:ContainerSlot
+
+- type: entity
+  parent: BaseComputer
+  id: MINIConverterComputer
+  name: консоль инверсивной дематериализации "Омниверс-7"
+  description: Данное устройство реализует протокол Σ-трансмутации, применяя контролируемый обратный коллапс Шрёдингеровской информационной матрицы, запечатлённой в дисках исследований. При активации запускается нелинейная дематериализация по схеме. Проще говоря превращает диски исследований в телекристаллы.
+  components:
+  - type: Converter
+  - type: Sprite
+    sprite: _Mini/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer_uplink
+    - map: ["computerLayerScreen"]
+      state: comm_syndie
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+
+- type: entity
+  parent: [BaseComputer, StorePresetUplink, BaseSyndicateContraband]
+  id: UplinkConsole
+  name: консоль заказов Синдиката
+  description:
+  components:
+  - type: Sprite
+    sprite: _Mini/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer_uplink
+    - map: ["computerLayerScreen"]
+      state: comm_syndie
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      Telecrystal: 1

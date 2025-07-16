@@ -28,6 +28,7 @@
     - BaseStationNanotrasen
     - BaseStationStockMarket # Corvax-Next-StockTrading
     - BaseStationDeliveries
+    - BaseStationERTCall
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform
