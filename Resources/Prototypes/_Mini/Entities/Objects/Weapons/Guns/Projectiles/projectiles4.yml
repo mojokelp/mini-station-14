@@ -23,5 +23,5 @@
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
-        Heat: 9
-        Cold: 3
+        Heat: 8
+        Cold: 2

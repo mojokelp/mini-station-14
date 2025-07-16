@@ -40,6 +40,16 @@
         RandomHumanoidSpawnerERTEngineerEVA: 1
       mustApproveAdmin: true
       requiredRoundDuration: 1 # min
+    saint:
+      name: ert-team-name-saint
+      announcementAfterCall: ert-call-announcement-saint
+      shuttle: /Maps/Shuttles/ERT/red.yml
+      timeToSpawn: 60 # 1 min
+      humansList:
+        RandomHumanoidSpawnerERTChaplainEVA: 4
+        RandomHumanoidSpawnerERTSecurityEVA: 1
+      mustApproveAdmin: true
+      requiredRoundDuration: 1 # min
     cburn:
       name: ert-team-name-cburn
       announcementAfterCall: ert-call-announcement-cburn
