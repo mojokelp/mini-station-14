@@ -48,6 +48,7 @@
         skills:
         - ShuttleControl
         - Shooting
+        - MedicalEquipment
 
 - type: startingGear
   id: TypanTelecommunicationsOfficer
