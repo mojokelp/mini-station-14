@@ -4,8 +4,8 @@ meta:
   engineVersion: 252.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/15/2025 19:51:28
-  entityCount: 6001
+  time: 07/15/2025 22:53:22
+  entityCount: 6002
 maps:
 - 1
 grids:
@@ -6034,7 +6034,7 @@ entities:
       pos: 1.5,-0.5
       parent: 5000
     - type: Door
-      secondsUntilStateChange: -3767.1008
+      secondsUntilStateChange: -4006.9167
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -6499,7 +6499,7 @@ entities:
       pos: 24.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -16276.085
+      secondsUntilStateChange: -16515.9
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -17799,20 +17799,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 30.5,-4.5
       parent: 2
-- proto: ComputerAnalysisConsole
-  entities:
-  - uid: 3298
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -18.5,-15.5
-      parent: 2
-  - uid: 3299
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -12.5,-15.5
-      parent: 2
 - proto: ComputerAtmosMonitoring
   entities:
   - uid: 1158
@@ -17820,14 +17806,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -36.5,-4.5
-      parent: 2
-- proto: ComputerCargoBounty
-  entities:
-  - uid: 388
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.5,8.5
       parent: 2
 - proto: ComputerComms
   entities:
@@ -17905,20 +17883,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,6.5
       parent: 5000
-- proto: ComputerResearchAndDevelopment
-  entities:
-  - uid: 1173
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -3.5,-8.5
-      parent: 2
-  - uid: 3300
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -19.5,-15.5
-      parent: 2
 - proto: ComputerShuttleCargo
   entities:
   - uid: 380
@@ -19795,15 +19759,17 @@ entities:
       parent: 5416
 - proto: FaxMachineSyndie
   entities:
-  - uid: 640
-    components:
-    - type: Transform
-      pos: 29.5,-1.5
-      parent: 2
   - uid: 2359
     components:
     - type: Transform
       pos: 25.5,-7.5
+      parent: 2
+- proto: FaxMachineTypan
+  entities:
+  - uid: 388
+    components:
+    - type: Transform
+      pos: 29.5,-1.5
       parent: 2
 - proto: FireAxeCabinetFilled
   entities:
@@ -30835,7 +30801,47 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: MINIConverterComputer
+- proto: MiniComputerAnalysisConsole
+  entities:
+  - uid: 1173
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -18.5,-15.5
+      parent: 2
+  - uid: 3298
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -12.5,-15.5
+      parent: 2
+- proto: MiniComputerResearchAndDevelopment
+  entities:
+  - uid: 640
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -3.5,-8.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+  - uid: 3299
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -19.5,-15.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+- proto: MiniConverterComputer
   entities:
   - uid: 5999
     components:
@@ -30843,7 +30849,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -3.5,-9.5
       parent: 2
-- proto: MINISyndieComputerId
+- proto: MiniSyndieComputerId
   entities:
   - uid: 2914
     components:
@@ -37746,6 +37752,18 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 1.5,7.5
+      parent: 2
+  - uid: 3300
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 26.5,-8.5
+      parent: 2
+  - uid: 6002
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -6.5,-21.5
       parent: 2
 - proto: UprightPianoInstrument
   entities:

@@ -70,7 +70,7 @@ public sealed class TechnologyDiskSystem : EntitySystem
             if (!_net.IsServer)
                 return;
 
-            _audio.PlayPvs(new SoundPathSpecifier("/Audio/_Mini/Misc/convert.ogg"), target);
+            _audio.PlayPvs(new SoundPathSpecifier("/Audio/_Mini/Misc/convert.ogg"), target, AudioParams.Default.WithVolume(-11f));
             _popup.PopupClient(Loc.GetString("tech-disk-exchanged"), target, args.User);
             Spawn("Telecrystal1", Transform(target).Coordinates);
 
