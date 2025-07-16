@@ -967,11 +967,6 @@
     Telecrystal: 120
   categories:
     - TypanUplinkAllies
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkCarpDehydrated
@@ -1591,7 +1586,7 @@
 # Job Specific
 
 - type: listing
-  id: uplinkGatfruitSeeds
+  id: TypanUplinkGatfruitSeeds
   name: uplink-gatfruit-seeds-name
   description: uplink-gatfruit-seeds-desc
   productEntity: GatfruitSeeds
@@ -1612,7 +1607,7 @@
           - NukeOpsUplink
 
 - type: listing
-  id: uplinkRiggedBoxingGlovesPassenger
+  id: TypanUplinkRiggedBoxingGlovesPassenger
   name: uplink-rigged-boxing-gloves-name
   description: uplink-rigged-boxing-gloves-desc
   productEntity: ClothingHandsGlovesBoxingRigged
@@ -1629,7 +1624,7 @@
         - Passenger
 
 - type: listing
-  id: uplinkRiggedBoxingGlovesBoxer
+  id: TypanUplinkRiggedBoxingGlovesBoxer
   name: uplink-rigged-boxing-gloves-name
   description: uplink-rigged-boxing-gloves-desc
   productEntity: ClothingHandsGlovesBoxingRigged
@@ -1650,7 +1645,7 @@
           - NukeOpsUplink
 
 - type: listing
-  id: uplinkNecronomicon
+  id: TypanUplinkNecronomicon
   name: uplink-necronomicon-name
   description: uplink-necronomicon-desc
   productEntity: BibleNecronomicon
@@ -1675,7 +1670,7 @@
           - NukeOpsUplink
 
 - type: listing
-  id: uplinkRevolverCapGunFake
+  id: TypanUplinkRevolverCapGunFake
   name: uplink-revolver-cap-gun-fake-name
   description: uplink-revolver-cap-gun-fake-desc
   productEntity: RevolverCapGunFake
@@ -1842,3 +1837,43 @@
     Telecrystal: 6
   categories:
   - TypanUplinkMaterials
+
+- type: listing
+  id: TypanUplinkSheetPlastic
+  name: Стопка пластика
+  description: Универсальный современный конструкционный материал. Его всегда мало.
+  productEntity: SheetPlastic
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 6
+  categories:
+  - TypanUplinkMaterials
+
+- type: listing
+  id: TypanUplinkSheetGlass
+  name: Стопка стекла
+  description: Старое доброе стекло. Его всегда мало.
+  productEntity: SheetGlass
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 6
+  categories:
+  - TypanUplinkMaterials
+
+- type: listing
+  id: TypanUplinkAtreides
+  name: Пистолет-пулемёт Атрейдес
+  description: Пле-ке-ке-ке-ке! Использует патроны калибра .35 авто.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/SMGs/atreides.rsi, state: icon }
+  productEntity: WeaponSubMachineGunAtreides
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 12
+  cost:
+    Telecrystal: 30
+  categories:
+  - TypanUplinkWeaponry

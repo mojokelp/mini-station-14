@@ -4,8 +4,8 @@ meta:
   engineVersion: 252.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/15/2025 22:53:22
-  entityCount: 6002
+  time: 07/16/2025 00:27:24
+  entityCount: 6005
 maps:
 - 1
 grids:
@@ -6034,7 +6034,7 @@ entities:
       pos: 1.5,-0.5
       parent: 5000
     - type: Door
-      secondsUntilStateChange: -4006.9167
+      secondsUntilStateChange: -4066.817
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -6499,7 +6499,7 @@ entities:
       pos: 24.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -16515.9
+      secondsUntilStateChange: -16575.8
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14326,6 +14326,21 @@ entities:
     components:
     - type: Transform
       pos: -7.5,6.5
+      parent: 2
+  - uid: 6003
+    components:
+    - type: Transform
+      pos: -5.5,-18.5
+      parent: 2
+  - uid: 6004
+    components:
+    - type: Transform
+      pos: -4.5,-18.5
+      parent: 2
+  - uid: 6005
+    components:
+    - type: Transform
+      pos: -6.5,-18.5
       parent: 2
 - proto: CableMVStack1
   entities:
@@ -30809,12 +30824,24 @@ entities:
       rot: 3.141592653589793 rad
       pos: -18.5,-15.5
       parent: 2
+    - type: AnalysisConsole
+      analyzerEntity: 3296
+    - type: DeviceLinkSource
+      linkedPorts:
+        3296:
+        - ArtifactAnalyzerSender: ArtifactAnalyzerReceiver
   - uid: 3298
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -12.5,-15.5
       parent: 2
+    - type: AnalysisConsole
+      analyzerEntity: 3297
+    - type: DeviceLinkSource
+      linkedPorts:
+        3297:
+        - ArtifactAnalyzerSender: ArtifactAnalyzerReceiver
 - proto: MiniComputerResearchAndDevelopment
   entities:
   - uid: 640
@@ -30877,7 +30904,7 @@ entities:
   - uid: 3464
     components:
     - type: Transform
-      pos: -13.697643,-15.21655
+      pos: -13.6645565,-15.288704
       parent: 2
 - proto: NitrogenCanister
   entities:
