@@ -62,7 +62,7 @@
     Telecrystal: 4
   productEntity: EnergySword
   cost:
-    Telecrystal: 8
+    Telecrystal: 15
   categories:
   - TypanUplinkWeaponry
 
@@ -117,11 +117,6 @@
     Telecrystal: 14
   categories:
   - TypanUplinkWeaponry
-  conditions:
-  - !type:StoreWhitelistCondition
-    blacklist:
-      tags:
-      - NukeOpsUplink
 
 
 - type: listing
@@ -134,14 +129,9 @@
   discountDownTo:
     Telecrystal: 4
   cost:
-    Telecrystal: 8
+    Telecrystal: 16
   categories:
   - TypanUplinkWeaponry
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkSniperBundle
@@ -365,14 +355,10 @@
   description: uplink-ammo-bundle-desc
   productEntity: ClothingBackpackDuffelSyndicateAmmoFilled
   cost:
-    Telecrystal: 15
+    Telecrystal: 20
   categories:
   - TypanUplinkAmmo
   conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
     - !type:BuyerWhitelistCondition
       blacklist:
         components:
@@ -433,10 +419,6 @@
   categories:
   - TypanUplinkChemicals
   conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
   - !type:BuyerWhitelistCondition
     blacklist:
       components:
@@ -533,10 +515,6 @@
   categories:
   - TypanUplinkChemicals
   conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
     - !type:BuyerWhitelistCondition
       blacklist:
         components:
@@ -851,11 +829,6 @@
     Telecrystal: 15
   categories:
   - TypanUplinkDisruption
-  conditions:
-  - !type:StoreWhitelistCondition
-     blacklist:
-       tags:
-       - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkNukieAntimovCircuitBoard
@@ -869,11 +842,6 @@
     Telecrystal: 24
   categories:
   - TypanUplinkDisruption
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkSurplusBundle
@@ -881,14 +849,10 @@
   description: uplink-surplus-bundle-desc
   productEntity: CrateSyndicateSurplusBundle
   cost:
-    Telecrystal: 20
+    Telecrystal: 50
   categories:
   - TypanUplinkDisruption
   conditions:
-  - !type:StoreWhitelistCondition
-    blacklist:
-      tags:
-      - NukeOpsUplink
   - !type:BuyerWhitelistCondition
     blacklist:
       components:
@@ -900,14 +864,10 @@
   description: uplink-super-surplus-bundle-desc
   productEntity: CrateSyndicateSuperSurplusBundle
   cost:
-    Telecrystal: 40
+    Telecrystal: 100
   categories:
   - TypanUplinkDisruption
   conditions:
-  - !type:StoreWhitelistCondition
-    blacklist:
-      tags:
-      - NukeOpsUplink
   - !type:BuyerWhitelistCondition
     blacklist:
       components:
@@ -951,11 +911,6 @@
     Telecrystal: 50
   categories:
   - TypanUplinkAllies
-  conditions:
-  - !type:StoreWhitelistCondition
-    blacklist:
-      tags:
-      - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkReinforcementRadioSyndicateCyborgAssault
@@ -980,11 +935,6 @@
     Telecrystal: 4
   categories:
   - TypanUplinkAllies
-  conditions:
-  - !type:StoreWhitelistCondition
-    blacklist:
-      tags:
-      - NukeOpsUplink
 
 
 - type: listing
@@ -1016,11 +966,6 @@
     Telecrystal: 8
   categories:
     - TypanUplinkImplants
-  conditions:
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-          - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkFreedomImplanter
@@ -1079,53 +1024,15 @@
     - TypanUplinkImplants
 
 - type: listing
-  id: TypanUplinkRadioImplanter
-  name: uplink-radio-implanter-name
-  description: uplink-radio-implanter-desc
-  icon: { sprite: /Textures/Objects/Devices/encryption_keys.rsi, state: synd_label }
-  productEntity: RadioImplanter
-  discountCategory: usualDiscounts
-  discountDownTo:
-    Telecrystal: 1
-  cost:
-    Telecrystal: 2
-  categories:
-  - TypanUplinkImplants
-
-- type: listing
   id: TypanUplinkDeathAcidifierImplanter
   name: uplink-death-acidifier-implant-name
   description: uplink-death-acidifier-implant-desc
   icon: { sprite: /Textures/Objects/Magic/magicactions.rsi, state: gib }
   productEntity: DeathAcidifierImplanter
   cost:
-    Telecrystal: 10
+    Telecrystal: 6
   categories:
     - TypanUplinkImplants
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
-
-- type: listing
-  id: TypanUplinkTypanUplinkImplanter # uplink uplink real
-  name: uplink-uplink-implanter-name
-  description: uplink-uplink-implanter-desc
-  icon: { sprite: /Textures/Objects/Devices/communication.rsi, state: old-radio }
-  productEntity: TypanUplinkImplanter
-  discountCategory: usualDiscounts
-  discountDownTo:
-    Telecrystal: 1
-  cost:
-    Telecrystal: 2
-  categories:
-  - TypanUplinkImplants
-  conditions:
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-          - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkDeathRattle
@@ -1137,10 +1044,6 @@
   categories:
   - TypanUplinkImplants
   conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
     - !type:BuyerWhitelistCondition
       blacklist:
         components:
@@ -1315,11 +1218,6 @@
     Telecrystal: 8
   categories:
   - TypanUplinkWearables
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkHardsuitSyndie
@@ -1345,11 +1243,6 @@
     Telecrystal: 20
   categories:
   - TypanUplinkWearables
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkHardsuitSyndieElite
@@ -1388,11 +1281,6 @@
     Telecrystal: 2
   categories:
     - TypanUplinkWearables
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkClothingConductingGloves
@@ -1601,10 +1489,6 @@
     - !type:BuyerJobCondition
       whitelist:
       - Botanist
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-          - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkRiggedBoxingGlovesPassenger
@@ -1639,10 +1523,6 @@
     - !type:BuyerJobCondition
       whitelist:
         - Boxer
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-          - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkNecronomicon
@@ -1664,10 +1544,6 @@
       blacklist:
         components:
         - SurplusBundle
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-          - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkRevolverCapGunFake
@@ -1704,10 +1580,6 @@
     - !type:BuyerJobCondition
       whitelist:
       - Clown
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-          - NukeOpsUplink
 
 - type: listing
   id: TypanUplinkChimpUpgradeKit
@@ -1725,10 +1597,6 @@
     - !type:BuyerDepartmentCondition
       whitelist:
       - Science
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-          - NukeOpsUplink
 
 #- type: listing
 #  id: TypanUplinkSyndicateSpongeBox
@@ -1877,3 +1745,68 @@
     Telecrystal: 30
   categories:
   - TypanUplinkWeaponry
+
+- type: listing
+  id: TypanUplinkPlasma
+  name: Листы плазмы
+  description: Купите плазму! сделайте из неё бургер, и дайте его сотрудникам НТ!
+  productEntity: SheetPlasma
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 10
+  categories:
+  - TypanUplinkMaterials
+
+- type: listing
+  id: TypanUplinkPlasteel
+  name: Листы пластали
+  description: Купите пласталь! создайте мехов для уничтожения НТ!
+  productEntity: SheetPlasteel
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 8
+  categories:
+  - TypanUplinkMaterials
+
+- type: listing
+  id: TypanUplinkGold
+  name: Слитки золота
+  description: Купите золото! Оно так красиво переливается!
+  productEntity: IngotGold
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 12
+  categories:
+  - TypanUplinkMaterials
+
+- type: listing
+  id: TypanUplinkUranium
+  name: Стопка урана
+  description: Кажется, что вы потихоньку мутируете!
+  productEntity: SheetUranium
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 12
+  categories:
+  - TypanUplinkMaterials
+
+- type: listing
+  id: TypanUplinkFuel
+  name: Антиматериальное топливо
+  description: Используется для заправки ДАМа.
+  productEntity: AmeJar
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 8
+  categories:
+  - TypanUplinkMaterials

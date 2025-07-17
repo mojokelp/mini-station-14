@@ -208,3 +208,31 @@
   - type: GuideHelp
     guides:
     - Xenoarchaeology
+
+- type: entity
+  parent: ComputerShuttleCargo
+  id: MiniComputerShuttleCargo
+  name: консоль управления грузовым шаттлом
+  description: Используется для пилотирования грузового шаттла.
+  suffix: Тайпан
+  components:
+  - type: Sprite
+    sprite: _Mini/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer_uplink
+    - map: ["computerLayerScreen"]
+      state: comm_cargo
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: DroneConsole
+    components:
+      - type: CargoShuttle
+  - type: RadarConsole
+    maxRange: 256
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#43ccb5"
+  - type: Computer
+    board: CargoShuttleConsoleCircuitboard

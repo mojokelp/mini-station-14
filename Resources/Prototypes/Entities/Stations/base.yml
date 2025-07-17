@@ -169,3 +169,12 @@
       ertTeamPrototype: stationERTTeams
       timeToApprove: 180 # 5 min
       timeToAnotherSpawn: 600 # 10 min
+
+- type: entity
+  id: BaseStationSOGCall
+  abstract: true
+  components:
+    - type: ERTCall
+      ertTeamPrototype: stationSOGTeams
+      timeToApprove: 180 # 5 min
+      timeToAnotherSpawn: 600 # 10 min

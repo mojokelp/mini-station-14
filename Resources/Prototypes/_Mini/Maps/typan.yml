@@ -28,4 +28,6 @@
           path: Maps/Shuttles/SindiCargoShuttle.yml
         - type: StationGoal
           goals:
+          - SyndicateAi
+          - SyndicateCargo
           - SyndicateMaid
