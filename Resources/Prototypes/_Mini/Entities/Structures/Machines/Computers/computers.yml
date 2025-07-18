@@ -118,6 +118,8 @@
   - type: Store
     balance:
       Telecrystal: 1
+  - type: Anchorable
+    flags: None
 
 - type: entity
   parent: ComputerResearchAndDevelopment

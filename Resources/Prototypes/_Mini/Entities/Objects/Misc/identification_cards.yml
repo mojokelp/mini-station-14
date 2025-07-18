@@ -148,3 +148,26 @@
     - TypanService
     - SyndicateAgent
     - TypanMaint
+
+- type: entity
+  parent: IDCardStandard
+  id: TypanIDCardOff
+  name: ID-карта
+  components:
+  - type: Sprite
+    sprite: _Mini/Objects/Misc/typansec.rsi
+    layers:
+    - state: typancardcom
+  - type: Access
+    tags:
+    - TypanArmory
+    - TypanCommand
+    - TypanCommunicationsOfficer
+    - TypanEngineering
+    - TypanMaint
+    - TypanProtection
+    - TypanScience
+    - TypanService
+    - TypanVault
+    - TypanExternal
+    - SyndicateAgent

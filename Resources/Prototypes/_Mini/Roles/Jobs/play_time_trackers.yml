@@ -1,4 +1,10 @@
 - type: playTimeTracker
+  id: TypanCommand
+
+- type: playTimeTracker
+  id: TypanRD
+
+- type: playTimeTracker
   id: TypanAtmosTech
 
 - type: playTimeTracker
@@ -14,16 +20,13 @@
   id: TypanMedic
 
 - type: playTimeTracker
-  id: TypanRD
-
-- type: playTimeTracker
   id: TypanScience
-
-- type: playTimeTracker
-  id: TypanTelecommunicationsOfficer
 
 - type: playTimeTracker
   id: JobBorgTypan
 
 - type: playTimeTracker
   id: JobBorgTypanMedic
+
+- type: playTimeTracker
+  id: TypanOfficer

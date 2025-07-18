@@ -1,35 +1,43 @@
 - type: job
-  id: TypanOfficer
-  name: патрульный Синдиката
-  playTimeTracker: TypanOfficer
-  description: Патрульный из далёкого космоса.
-  startingGear: TypanOfficer
-  icon: "JobIconSyndicateOfficer"
+  id: TypanCommand
+  name: job-name-typan-telecommunications-officer
+  playTimeTracker: TypanCommand
+  description: Командир из далёкого космоса.
+  startingGear: TypanCommand
+  icon: "JobIconSyndicateFormal"
   supervisors: job-supervisors-typan-syndicate
   canBeAntag: false
   requirements:
     - !type:DepartmentTimeRequirement
+      department: Science
+      time: 36000
+    - !type:DepartmentTimeRequirement
       department: Medical
-      time: 7200
+      time: 36000
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 7200
+      time: 36000
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 14400
+      time: 36000
     - !type:OverallPlaytimeRequirement
-      time: 21600
+      time: 72000
     - !type:AgeRequirement
       requiredAge: 26
   access:
   - TypanArmory
+  - TypanAtmospherics
+  - TypanCargo
   - TypanCommand
   - TypanCommunicationsOfficer
   - TypanEngineering
   - TypanMaint
+  - TypanMedical
   - TypanProtection
+  - TypanResearchDirector
   - TypanScience
   - TypanService
+  - TypanTechnicalOperationsSupervisor
   - TypanVault
   - TypanExternal
   - SyndicateAgent
@@ -40,27 +48,24 @@
         skills:
         - ShuttleControl
         - Shooting
+        - MedicalEquipment
 
 - type: startingGear
-  id: TypanOfficer
+  id: TypanCommand
   equipment:
     ears: ClothingHeadsetAltSyndicate
     shoes: ClothingShoesBootsCombat
-    jumpsuit: ClothingUniformJumpsuitOperative
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
     gloves: ClothingHandsGlovesCombat
-    id: SyndiPDAOff
+    id: SyndiPDACom
     back: ClothingBackpackSyndicate
-    head: ClothingHeadHatSyndie
-    pocket1: WeaponPistolViper
-    mask: ClothingMaskGasSyndicate
+    pocket1: SyndicateWhistle
+    pocket2: ClothingMaskGasSyndicate
     eyes: ClothingEyesHudTypan
-    outerClothing: ClothingOuterWinterSyndieCapArmored
+    head: ClothingHeadHatSyndieMAA
+    neck: ClothingNeckCloakSyndicateAdmiral
+    outerClothing: ClothingOuterVestWeb
   storage:
     back:
-    - MagazinePistolIncendiary
-    - MagazinePistolIncendiary
-    - Stunprod
-    - Zipties
-    - Zipties
-    - SurvivalMedipen
-
+    - AccessConfiguratorTypan
+    - TypanDoorRemote
