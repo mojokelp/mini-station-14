@@ -112,7 +112,17 @@
     - Science
   - type: ZombieImmune
   - type: Repairable
-    doAfterDelay: 5
+    #fuelcost: 60
+    doAfterDelay: 1 # was 18
+    damage:
+      types:
+        Blunt: -15
+        Slash: -15
+        Piercing: -15
+        Heat: -15
+        Cold: -15
+        Shock: -15
+        Caustic: -15
     allowSelfRepair: true
   - type: BorgChassis
   - type: LockingWhitelist
@@ -256,16 +266,16 @@
       flatReductions:
         Heat: 10 # capable of touching light bulbs and stoves without feeling pain!
   - type: TTS # Corvax-TTS
-    voice: TrainingRobot
+    voice: Aidar
   - type: Targeting # Corvax-Next-Surgery
-#  - type: Skills # Corvax-Next-Skills
-#    skills:
-#   - ShuttleControl
-#    - Shooting
-#    - AdvancedBuilding
-#    - Surgery
-#    - MedicalEquipment
-#    - Butchering
+  - type: Skills # Corvax-Next-Skills
+    skills:
+     - ShuttleControl
+     - Shooting
+     - AdvancedBuilding
+     - Surgery
+     - MedicalEquipment
+     - Butchering
 
 - type: entity
   abstract: true

@@ -162,7 +162,7 @@
   - type: Storage #ADT edit
     grid:
     - 0,0,9,2
-    clickInsert: false 
+    clickInsert: false
 
 - type: entity
   id: MechRipleyBattery

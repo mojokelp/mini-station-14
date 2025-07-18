@@ -177,16 +177,16 @@
           visible: false
     - type: Repairable
       #fuelcost: 60
-      doAfterDelay: 8 # was 18
+      doAfterDelay: 3 # was 18
       damage:
         types:
-          Blunt: -35
-          Slash: -35
-          Piercing: -35
+          Blunt: -20
+          Slash: -20
+          Piercing: -20
           Heat: -20
           Cold: -20
           Shock: -20
-          Caustic: -10
+          Caustic: -20
       #bloodlossModifier: -100
     - type: Bloodstream ### я добавил компонент Bloodstream как заглушку. Он нужен,
 # чтобы хилиться с помощью CableStack. Дело в том, что HealingSystem использует проверку на наличие BloodstreamComponent.
