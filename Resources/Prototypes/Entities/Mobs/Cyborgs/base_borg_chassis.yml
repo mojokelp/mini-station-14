@@ -266,7 +266,7 @@
       flatReductions:
         Heat: 10 # capable of touching light bulbs and stoves without feeling pain!
   - type: TTS # Corvax-TTS
-    voice: Aidar
+    voice: Robot
   - type: Targeting # Corvax-Next-Surgery
   - type: Skills # Corvax-Next-Skills
     skills:

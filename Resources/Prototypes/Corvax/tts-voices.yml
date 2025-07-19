@@ -33,21 +33,18 @@
   name: tts-voice-name-garithos
   sex: Male
   speaker: garithos
-  roundStart: true
 
 - type: ttsVoice
   id: Maiev
   name: tts-voice-name-maiev
   sex: Female
   speaker: maiev
-  roundStart: true
 
 - type: ttsVoice
   id: Myron
-  name: tts-voice-name-myron
+  name: Мира
   sex: Female
   speaker: myron
-  roundStart: true
 
 - type: ttsVoice
   id: Oleg
@@ -60,3 +57,52 @@
   name: tts-voice-name-zina
   sex: Female
   speaker: zina
+
+- type: ttsVoice
+  id: Zanuda
+  name: Зануда
+  sex: Female
+  speaker: zanuda
+
+- type: ttsVoice
+  id: Goga
+  name: Гога
+  sex: Male
+  speaker: goga
+
+- type: ttsVoice
+  id: Zanud
+  name: Нудик
+  sex: Male
+  speaker: zanud
+
+- type: ttsVoice
+  id: Robot
+  name: Робот
+  sex: Male
+  speaker: semen
+  roundStart: false
+
+- type: ttsVoice
+  id: Boyar
+  name: Боярин
+  sex: Male
+  speaker: boyar
+
+- type: ttsVoice
+  id: Vika
+  name: Вика
+  sex: Female
+  speaker: vika
+
+- type: ttsVoice
+  id: Popovich
+  name: Попович
+  sex: Male
+  speaker: popovich
+
+- type: ttsVoice
+  id: Zlata
+  name: Злата
+  sex: Female
+  speaker: zlata
