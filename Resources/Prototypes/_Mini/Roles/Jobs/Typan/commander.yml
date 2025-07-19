@@ -58,7 +58,6 @@
     jumpsuit: ClothingUniformJumpsuitSyndieFormal
     gloves: ClothingHandsGlovesCombat
     id: SyndiPDACom
-    back: ClothingBackpackSyndicate
     pocket1: SyndicateWhistle
     pocket2: ClothingMaskGasSyndicate
     eyes: ClothingEyesHudTypan
