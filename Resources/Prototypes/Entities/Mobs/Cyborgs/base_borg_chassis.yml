@@ -338,6 +338,9 @@
   - type: NpcFactionMember
     factions:
     - Syndicate
+  - type: RandomMetadata
+    nameSegments:
+    - NamesBorg
   - type: Access
     tags:
     - NuclearOperative
