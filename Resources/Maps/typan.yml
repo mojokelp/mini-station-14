@@ -4,8 +4,8 @@ meta:
   engineVersion: 252.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/15/2025 02:00:41
-  entityCount: 5998
+  time: 07/18/2025 03:05:57
+  entityCount: 6003
 maps:
 - 1
 grids:
@@ -681,6 +681,7 @@ entities:
             id: BrickTileWhiteCornerNe
           decals:
             360: 19,1
+            3226: 16,5
         - node:
             color: '#DE3A3A96'
             id: BrickTileWhiteCornerNw
@@ -701,6 +702,11 @@ entities:
             id: BrickTileWhiteInnerNe
           decals:
             1878: -4,-18
+        - node:
+            color: '#DE3A3A96'
+            id: BrickTileWhiteInnerNe
+          decals:
+            3230: 16,1
         - node:
             color: '#52B4E996'
             id: BrickTileWhiteLineE
@@ -725,6 +731,13 @@ entities:
             1905: 8,-20
             1906: 8,-19
             1907: 3,-21
+        - node:
+            color: '#DE3A3A96'
+            id: BrickTileWhiteLineE
+          decals:
+            3227: 16,2
+            3228: 16,3
+            3229: 16,4
         - node:
             color: '#52B4E996'
             id: BrickTileWhiteLineN
@@ -760,6 +773,13 @@ entities:
             1887: 0,-20
             1888: 1,-20
             1889: 2,-20
+        - node:
+            color: '#DE3A3A96'
+            id: BrickTileWhiteLineN
+          decals:
+            3231: 17,1
+            3232: 18,1
+            3233: 15,5
         - node:
             color: '#52B4E996'
             id: BrickTileWhiteLineS
@@ -5717,6 +5737,17 @@ entities:
     - type: Transform
       pos: -7.8240376,-21.277573
       parent: 2
+- proto: ActionToggleLight
+  entities:
+  - uid: 1356
+    mapInit: true
+    paused: true
+    components:
+    - type: Transform
+      parent: 3555
+    - type: InstantAction
+      originalIconColor: '#FFFFFFFF'
+      container: 3555
 - proto: AirAlarm
   entities:
   - uid: 4
@@ -6034,7 +6065,7 @@ entities:
       pos: 1.5,-0.5
       parent: 5000
     - type: Door
-      secondsUntilStateChange: -3510.1646
+      secondsUntilStateChange: -4447.2646
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -6499,7 +6530,7 @@ entities:
       pos: 24.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -16019.148
+      secondsUntilStateChange: -16956.248
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14327,6 +14358,21 @@ entities:
     - type: Transform
       pos: -7.5,6.5
       parent: 2
+  - uid: 6003
+    components:
+    - type: Transform
+      pos: -5.5,-18.5
+      parent: 2
+  - uid: 6004
+    components:
+    - type: Transform
+      pos: -4.5,-18.5
+      parent: 2
+  - uid: 6005
+    components:
+    - type: Transform
+      pos: -6.5,-18.5
+      parent: 2
 - proto: CableMVStack1
   entities:
   - uid: 5848
@@ -17799,20 +17845,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 30.5,-4.5
       parent: 2
-- proto: ComputerAnalysisConsole
-  entities:
-  - uid: 3298
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -18.5,-15.5
-      parent: 2
-  - uid: 3299
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -12.5,-15.5
-      parent: 2
 - proto: ComputerAtmosMonitoring
   entities:
   - uid: 1158
@@ -17820,22 +17852,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -36.5,-4.5
-      parent: 2
-- proto: ComputerCargoBounty
-  entities:
-  - uid: 388
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.5,8.5
-      parent: 2
-- proto: ComputerCargoOrders
-  entities:
-  - uid: 1160
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.5,7.5
       parent: 2
 - proto: ComputerComms
   entities:
@@ -17913,27 +17929,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,6.5
       parent: 5000
-- proto: ComputerResearchAndDevelopment
-  entities:
-  - uid: 1173
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -3.5,-8.5
-      parent: 2
-  - uid: 3300
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -19.5,-15.5
-      parent: 2
-- proto: ComputerShuttleCargo
-  entities:
-  - uid: 380
-    components:
-    - type: Transform
-      pos: 0.5,16.5
-      parent: 2
 - proto: ComputerShuttleSyndie
   entities:
   - uid: 5149
@@ -17959,10 +17954,10 @@ entities:
       parent: 2
 - proto: ComputerTechnologyDiskTerminal
   entities:
-  - uid: 1356
+  - uid: 1160
     components:
     - type: Transform
-      pos: -3.5,-6.5
+      pos: -3.5,-8.5
       parent: 2
 - proto: ConveyorBelt
   entities:
@@ -19803,15 +19798,17 @@ entities:
       parent: 5416
 - proto: FaxMachineSyndie
   entities:
-  - uid: 640
-    components:
-    - type: Transform
-      pos: 29.5,-1.5
-      parent: 2
   - uid: 2359
     components:
     - type: Transform
       pos: 25.5,-7.5
+      parent: 2
+- proto: FaxMachineTypan
+  entities:
+  - uid: 388
+    components:
+    - type: Transform
+      pos: 29.5,-1.5
       parent: 2
 - proto: FireAxeCabinetFilled
   entities:
@@ -29897,9 +29894,24 @@ entities:
   - uid: 3555
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -7.351664,-21.404308
+      pos: -7.3228903,-21.332153
       parent: 2
+    - type: HandheldLight
+      toggleActionEntity: 1356
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 1356
+    - type: Physics
+      canCollide: True
+    - type: ActionsContainer
 - proto: LargeBeaker
   entities:
   - uid: 2168
@@ -30726,19 +30738,19 @@ entities:
     - type: Transform
       pos: 9.509975,-6.1568575
       parent: 2
-- proto: MedkitBrute
+- proto: MedkitBruteFilled
   entities:
-  - uid: 2951
+  - uid: 2684
     components:
     - type: Transform
-      pos: 9.55119,-7.1478467
+      pos: 9.522989,-6.6596804
       parent: 2
-- proto: MedkitBurn
+- proto: MedkitBurnFilled
   entities:
-  - uid: 2660
+  - uid: 2947
     components:
     - type: Transform
-      pos: 9.540774,-7.512684
+      pos: 9.560489,-7.1221805
       parent: 2
 - proto: MedkitCombatFilled
   entities:
@@ -30754,11 +30766,6 @@ entities:
       parent: 2
 - proto: MedkitFilled
   entities:
-  - uid: 4789
-    components:
-    - type: Transform
-      pos: 9.530357,-6.574532
-      parent: 2
   - uid: 5717
     components:
     - type: Transform
@@ -30806,26 +30813,26 @@ entities:
       playLandSound: True
       landTime: 1920.4825023
       thrownTime: 1920.2980797
-- proto: MedkitO2
+- proto: MedkitOxygenFilled
   entities:
-  - uid: 2947
+  - uid: 3300
     components:
     - type: Transform
-      pos: 9.540774,-6.939369
+      pos: 9.59799,-7.5096807
       parent: 2
-- proto: MedkitRadiation
+- proto: MedkitRadiationFilled
   entities:
-  - uid: 4791
+  - uid: 2482
     components:
     - type: Transform
-      pos: 9.530357,-6.7204666
+      pos: 9.585489,-7.3596807
       parent: 2
-- proto: MedkitToxin
+- proto: MedkitToxinFilled
   entities:
-  - uid: 2684
+  - uid: 2951
     components:
     - type: Transform
-      pos: 9.540774,-7.3459015
+      pos: 9.547989,-6.9471807
       parent: 2
 - proto: MiniatureEnergyCrossbow
   entities:
@@ -30843,7 +30850,73 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: MINISyndieComputerId
+- proto: MiniComputerAnalysisConsole
+  entities:
+  - uid: 1173
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -18.5,-15.5
+      parent: 2
+    - type: AnalysisConsole
+      analyzerEntity: 3296
+    - type: DeviceLinkSource
+      linkedPorts:
+        3296:
+        - ArtifactAnalyzerSender: ArtifactAnalyzerReceiver
+  - uid: 3298
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -12.5,-15.5
+      parent: 2
+    - type: AnalysisConsole
+      analyzerEntity: 3297
+    - type: DeviceLinkSource
+      linkedPorts:
+        3297:
+        - ArtifactAnalyzerSender: ArtifactAnalyzerReceiver
+- proto: MiniComputerResearchAndDevelopment
+  entities:
+  - uid: 640
+    components:
+    - type: Transform
+      pos: -3.5,-6.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+  - uid: 3299
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -19.5,-15.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+- proto: MiniComputerShuttleCargo
+  entities:
+  - uid: 380
+    components:
+    - type: Transform
+      pos: 0.5,16.5
+      parent: 2
+- proto: MiniConverterComputer
+  entities:
+  - uid: 5999
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -3.5,-9.5
+      parent: 2
+- proto: MiniSyndieComputerId
   entities:
   - uid: 2914
     components:
@@ -30871,7 +30944,7 @@ entities:
   - uid: 3464
     components:
     - type: Transform
-      pos: -13.697643,-15.21655
+      pos: -13.6645565,-15.288704
       parent: 2
 - proto: NitrogenCanister
   entities:
@@ -34485,6 +34558,11 @@ entities:
       parent: 5000
 - proto: RandomArtifactSpawner
   entities:
+  - uid: 2660
+    components:
+    - type: Transform
+      pos: 0.5,-16.5
+      parent: 2
   - uid: 4790
     components:
     - type: Transform
@@ -36657,6 +36735,16 @@ entities:
     - type: Transform
       pos: -16.5,4.5
       parent: 2
+  - uid: 4278
+    components:
+    - type: Transform
+      pos: 24.5,10.5
+      parent: 2
+  - uid: 4789
+    components:
+    - type: Transform
+      pos: 24.5,12.5
+      parent: 2
   - uid: 5981
     components:
     - type: Transform
@@ -36681,20 +36769,10 @@ entities:
     - type: Transform
       pos: 23.5,10.5
       parent: 2
-  - uid: 2482
-    components:
-    - type: Transform
-      pos: 24.5,10.5
-      parent: 2
   - uid: 2912
     components:
     - type: Transform
       pos: 22.5,10.5
-      parent: 2
-  - uid: 4278
-    components:
-    - type: Transform
-      pos: 24.5,12.5
       parent: 2
   - uid: 4279
     components:
@@ -37380,6 +37458,20 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -1.5,-21.5
+      parent: 2
+- proto: TechnologyDisk
+  entities:
+  - uid: 6000
+    components:
+    - type: Transform
+      pos: 29.303198,-1.0822709
+      parent: 2
+- proto: TechnologyDiskRare
+  entities:
+  - uid: 6001
+    components:
+    - type: Transform
+      pos: 19.553349,11.112105
       parent: 2
 - proto: TegCenter
   entities:

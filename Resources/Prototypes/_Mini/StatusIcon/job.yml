@@ -59,8 +59,16 @@
   id: JobIconSyndicateFormal
   icon:
     sprite: /Textures/_Mini/Interface/Misc/job_icons.rsi
-    state: security_officer
+    state: commander
   jobName: job-name-typan-telecommunications-officer
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSyndicateOfficer
+  icon:
+    sprite: /Textures/_Mini/Interface/Misc/job_icons.rsi
+    state: security_officer
+  jobName: патрульный синдиката
 
 - type: jobIcon
   parent: JobIcon

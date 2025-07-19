@@ -25,7 +25,7 @@ public sealed class TechnologyDiskSystem : EntitySystem
     [Dependency] private readonly SharedResearchSystem _research = default!;
     [Dependency] private readonly SharedLatheSystem _lathe = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
-    private const string CallAnnouncementSound = "/Audio/_Mini/Misc/convert.ogg";
+
     public override void Initialize()
     {
         base.Initialize();
@@ -55,7 +55,7 @@ public sealed class TechnologyDiskSystem : EntitySystem
         if (techs.Count == 0)
             return;
 
-        ent.Comp.Recipes = [];
+        ent.Comp.Recipes = new();
         ent.Comp.Recipes.Add(_random.Pick(techs));
         Dirty(ent);
     }
@@ -69,8 +69,9 @@ public sealed class TechnologyDiskSystem : EntitySystem
         {
             if (!_net.IsServer)
                 return;
-            _popup.PopupClient(Loc.GetString("диски обменяны"), target, args.User);
-            // Спавним только 1 телекристалл вместо случайного количества
+
+            _audio.PlayPvs(new SoundPathSpecifier("/Audio/_Mini/Misc/convert.ogg"), target, AudioParams.Default.WithVolume(-11f));
+            _popup.PopupClient(Loc.GetString("tech-disk-exchanged"), target, args.User);
             Spawn("Telecrystal1", Transform(target).Coordinates);
 
             QueueDel(ent);

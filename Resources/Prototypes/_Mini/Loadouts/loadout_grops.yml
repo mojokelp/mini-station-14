@@ -130,10 +130,11 @@
 - type: loadoutGroup
   id: SindieBackpack
   name: Typan backpacks
-  minLimit: 0
+  minLimit: 1
+  maxLimit: 1
   loadouts:
-  - TypanMedicBackpack
-  - TypanMedicDuffel
+  - TypanBackpack
+  - TypanDuffel
 
 - type: loadoutGroup
   id: SindieJumpsuit

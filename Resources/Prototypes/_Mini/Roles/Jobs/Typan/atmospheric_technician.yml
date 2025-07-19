@@ -16,6 +16,13 @@
   - TypanAtmospherics
   - TypanMaint
   - SyndicateAgent
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Skills # Corvax-Next-Skills
+        skills:
+        - ShuttleControl
+        - AdvancedBuilding
 
 - type: startingGear
   id: TypanAtmosTech
@@ -23,5 +30,4 @@
     ears: ClothingHeadsetAltSyndicate
     jumpsuit: ClothingUniformJumpsuitChiefEngineerSyndie
     shoes: ClothingShoesBootsTypan
-    back: ClothingBackpackSyndicate
     id: SyndiPDAEng

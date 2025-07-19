@@ -24,6 +24,13 @@
   - TypanExternal
   - TypanEngineering
   - TypanMaint
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Skills # Corvax-Next-Skills
+        skills:
+        - AdvancedBuilding
+
 - type: startingGear
   id: TypanRD
   equipment:
@@ -32,5 +39,4 @@
     shoes: ClothingShoesBootsCombat
     gloves: ClothingHandsRDTypan
     id: SyndiPDARD
-    back: ClothingBackpackSyndicate
     jumpsuit: ClothingUniformJumpsuitSyndieFormal

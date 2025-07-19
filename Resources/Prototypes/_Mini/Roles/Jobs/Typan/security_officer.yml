@@ -1,16 +1,13 @@
 - type: job
-  id: TypanTelecommunicationsOfficer
+  id: TypanOfficer
   name: job-name-typan-telecommunications-officer
-  playTimeTracker: TypanTelecommunicationsOfficer
+  playTimeTracker: TypanOfficer
   description: job-description-typan-telecommunications-officer
-  startingGear: TypanTelecommunicationsOfficer
-  icon: "JobIconSyndicateFormal"
+  startingGear: TypanOfficer
+  icon: "JobIconSyndicateOfficer"
   supervisors: job-supervisors-typan-syndicate
   canBeAntag: false
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Science
-      time: 7200
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 7200
@@ -19,25 +16,20 @@
       time: 7200
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 7200
-    - !type:OverallPlaytimeRequirement
       time: 14400
+    - !type:OverallPlaytimeRequirement
+      time: 21600
     - !type:AgeRequirement
       requiredAge: 26
   access:
   - TypanArmory
-  - TypanAtmospherics
-  - TypanCargo
   - TypanCommand
   - TypanCommunicationsOfficer
   - TypanEngineering
   - TypanMaint
-  - TypanMedical
   - TypanProtection
-  - TypanResearchDirector
   - TypanScience
   - TypanService
-  - TypanTechnicalOperationsSupervisor
   - TypanVault
   - TypanExternal
   - SyndicateAgent
@@ -50,18 +42,24 @@
         - Shooting
 
 - type: startingGear
-  id: TypanTelecommunicationsOfficer
+  id: TypanOfficer
   equipment:
     ears: ClothingHeadsetAltSyndicate
     shoes: ClothingShoesBootsCombat
-    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    jumpsuit: ClothingUniformJumpsuitOperative
     gloves: ClothingHandsGlovesCombat
-    id: SyndiPDACom
-    back: ClothingBackpackSyndicate
-    pocket1: SyndicateWhistle
-    pocket2: ClothingMaskGasSyndicate
+    id: SyndiPDAOff
+    head: ClothingHeadHatSyndie
+    pocket1: WeaponPistolViper
+    mask: ClothingMaskGasSyndicate
     eyes: ClothingEyesHudTypan
-    neck: ClothingNeckCloakSyndicateAdmiral
-  storage: # DeltaV: Add mining voucher
+    outerClothing: ClothingOuterWinterSyndieCapArmored
+  storage:
     back:
-    - AccessConfiguratorTypan
+    - MagazinePistolIncendiary
+    - MagazinePistolIncendiary
+    - Stunprod
+    - Zipties
+    - Zipties
+    - SurvivalMedipen
+

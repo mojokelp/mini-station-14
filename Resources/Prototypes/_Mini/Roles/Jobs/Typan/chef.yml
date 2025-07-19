@@ -27,7 +27,6 @@
   equipment:
     ears: ClothingHeadsetAltSyndicate
     jumpsuit: ClothingUniformJumpsuitTypanChef
-    back: ClothingBackpackSyndicate
     outerClothing: ClothingOuterApronTypanChef
     shoes: ClothingShoesColorBlack
     id: SyndiPDAChef

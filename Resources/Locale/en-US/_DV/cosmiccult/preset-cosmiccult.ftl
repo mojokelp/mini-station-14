@@ -2,7 +2,7 @@
 
 cosmiccult-announcement-sender = ???
 
-cosmiccult-title = Космический Культ
+cosmiccult-title = Космокульт
 cosmiccult-description = Среди экипажа скрываются культисты.
 
 roles-antag-cosmiccult-name = Космический Культист

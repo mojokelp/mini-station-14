@@ -1,0 +1,70 @@
+- type: job
+  id: TypanCommand
+  name: job-name-typan-telecommunications-officer
+  playTimeTracker: TypanCommand
+  description: Командир из далёкого космоса.
+  startingGear: TypanCommand
+  icon: "JobIconSyndicateFormal"
+  supervisors: job-supervisors-typan-syndicate
+  canBeAntag: false
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 36000
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 36000
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 36000
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 36000
+    - !type:OverallPlaytimeRequirement
+      time: 72000
+    - !type:AgeRequirement
+      requiredAge: 26
+  access:
+  - TypanArmory
+  - TypanAtmospherics
+  - TypanCargo
+  - TypanCommand
+  - TypanCommunicationsOfficer
+  - TypanEngineering
+  - TypanMaint
+  - TypanMedical
+  - TypanProtection
+  - TypanResearchDirector
+  - TypanScience
+  - TypanService
+  - TypanTechnicalOperationsSupervisor
+  - TypanVault
+  - TypanExternal
+  - SyndicateAgent
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Skills # Corvax-Next-Skills
+        skills:
+        - ShuttleControl
+        - Shooting
+        - MedicalEquipment
+
+- type: startingGear
+  id: TypanCommand
+  equipment:
+    ears: ClothingHeadsetAltSyndicate
+    shoes: ClothingShoesBootsCombat
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    gloves: ClothingHandsGlovesCombat
+    id: SyndiPDACom
+    pocket1: SyndicateWhistle
+    pocket2: ClothingMaskGasSyndicate
+    eyes: ClothingEyesHudTypan
+    head: ClothingHeadHatSyndieMAA
+    neck: ClothingNeckCloakSyndicateAdmiral
+    outerClothing: ClothingOuterVestWeb
+  storage:
+    back:
+    - AccessConfiguratorTypan
+    - TypanDoorRemote

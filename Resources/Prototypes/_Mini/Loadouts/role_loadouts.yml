@@ -8,9 +8,7 @@
   - SindieNeck
   - SindieFace
   - TBotanistOuterClothing
-  - SindiShoes
-  - Glasses
-  - SindiSurvival
+  - SurvivalSyndicate
   - SindieTrinkets
 
 - type: roleLoadout
@@ -25,7 +23,7 @@
   - TAtmosOuterClothing
   - SindiShoes
   - Glasses
-  - SindiSurvival
+  - SurvivalSyndicate
   - SindieTrinkets
 
 - type: roleLoadout
@@ -40,7 +38,7 @@
   - TCargoOuterClothing
   - SindiShoes
   - Glasses
-  - SindiSurvival
+  - SurvivalSyndicate
   - SindieTrinkets
 
 - type: roleLoadout
@@ -55,7 +53,7 @@
   - TChefOuterClothing
   - SindiShoes
   - Glasses
-  - SindiSurvival
+  - SurvivalSyndicate
   - SindieTrinkets
 
 - type: roleLoadout
@@ -77,7 +75,7 @@
   - SindieComOuterClothing
   - SindiShoes
   - Glasses
-  - SindiSurvival
+  - SurvivalSyndicate
   - SindieTrinkets
 
 - type: roleLoadout
@@ -92,19 +90,21 @@
   - TScienceOuterClothing
   - SindiShoes
   - Glasses
-  - SindiSurvival
+  - SurvivalSyndicate
   - SindieTrinkets
 
 - type: roleLoadout
-  id: TypanTelecommunicationsOfficer
+  id: TypanCommand
   groups:
-  - Inventory
-  - GroupTankHarness
-  - SindieComjumpsuit
-  - SindieBackpack
-  - SindieNeck
-  - SindieFace
-  - SindieComOuterClothing
-  - SindiShoes
-  - SindiSurvival
-  - SindieTrinkets
+    - Inventory
+    - GroupTankHarness
+    #- SindieComjumpsuit
+    - SindieBackpack
+    #- SindieNeck
+    #- SindieFace
+    #- SindieComOuterClothing
+    #- SindiShoes
+    - SurvivalSyndicate
+    #- SindieTrinkets
+  whitelist:
+    - TypanCommand

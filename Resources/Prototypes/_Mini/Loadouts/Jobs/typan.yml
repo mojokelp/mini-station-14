@@ -1,10 +1,10 @@
 - type: loadout
-  id: TypanMedicBackpack
+  id: TypanBackpack
   equipment:
     back: ClothingBackpackSyndicate
 
 - type: loadout
-  id: TypanMedicDuffel
+  id: TypanDuffel
   equipment:
     back: ClothingBackpackDuffelSyndicate
 

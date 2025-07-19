@@ -4,8 +4,8 @@ meta:
   engineVersion: 252.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/10/2025 15:26:39
-  entityCount: 240
+  time: 07/17/2025 01:30:01
+  entityCount: 242
 maps: []
 grids:
 - 173
@@ -901,12 +901,13 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -1.5,7.5
       parent: 173
-- proto: ComputerShuttleCargo
+- proto: ComputerRadar
   entities:
-  - uid: 86
+  - uid: 242
     components:
     - type: Transform
-      pos: -2.5,8.5
+      rot: -1.5707963267948966 rad
+      pos: -0.5,4.5
       parent: 173
 - proto: CrateSyndicate
   entities:
@@ -1265,6 +1266,13 @@ entities:
     - type: Transform
       pos: -3.4157653,6.6564445
       parent: 173
+- proto: MiniComputerShuttleCargo
+  entities:
+  - uid: 86
+    components:
+    - type: Transform
+      pos: -2.5,8.5
+      parent: 173
 - proto: Multitool
   entities:
   - uid: 112
@@ -1370,6 +1378,11 @@ entities:
         - Pressed: Toggle
         225:
         - Pressed: Toggle
+  - uid: 241
+    components:
+    - type: Transform
+      pos: -2.5,8.5
+      parent: 173
 - proto: SMESAdvanced
   entities:
   - uid: 37

@@ -4,13 +4,14 @@
   description: department-Typan-description
   color: "#D381C9"
   roles:
+  - TypanCommand
+  - TypanRD
+  - TypanOfficer
   - TypanAtmosTech
   - TypanBotanist
   - TypanCargotech
   - TypanChef
   - TypanMedic
-  - TypanRD
   - TypanScience
-  - TypanTelecommunicationsOfficer
   - TypanBorg
   - TypanBorgMedic

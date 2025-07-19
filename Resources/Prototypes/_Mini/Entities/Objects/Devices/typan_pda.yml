@@ -161,3 +161,21 @@
     borderColor: "#891417"
   - type: Icon
     state: pda-syndi-chef
+
+- type: entity
+  parent: BaseTypanPDA
+  id: SyndiPDAOff
+  name: КПК патрульного Синдиката
+  description: Оснащён всеми средствами и возможностями для получения наизлейших приказов.
+  components:
+  - type: Pda
+    id: TypanIDCardOff
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-syndi-com
+  - type: PdaBorderColor
+    borderColor: "#891417"
+  - type: Icon
+    state: pda-syndi-com

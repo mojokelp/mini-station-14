@@ -283,6 +283,7 @@
   - Trinkets
   - GroupSpeciesBreathTool
   - EngiDevices
+
 - type: roleLoadout
   id: JobStationEngineer
   groups:
@@ -558,6 +559,105 @@
   - BoxerGloves
   - BoxingStimulant
   - CommonBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobTypanAtmosTech
+  groups:
+  - Inventory # Corvax-Loadouts
+  - GroupTankHarness
+  - SyndicateBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobTypanBotanist
+  groups:
+  - Inventory # Corvax-Loadouts
+  - GroupTankHarness
+  - SyndicateBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobTypanCargotech
+  groups:
+  - Inventory # Corvax-Loadouts
+  - GroupTankHarness
+  - SyndicateBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobTypanChef
+  groups:
+  - Inventory # Corvax-Loadouts
+  - GroupTankHarness
+  - SyndicateBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobTypanMedic
+  groups:
+  - Inventory # Corvax-Loadouts
+  - GroupTankHarness
+  - SyndicateBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobTypanRD
+  groups:
+  - Inventory # Corvax-Loadouts
+  - GroupTankHarness
+  - SyndicateBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobTypanScience
+  groups:
+  - Inventory # Corvax-Loadouts
+  - GroupTankHarness
+  - SyndicateBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobTypanCommand
+  groups:
+  - Inventory # Corvax-Loadouts
+  - GroupTankHarness
+  - SyndicateBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobTypanOfficer
+  groups:
+  - Inventory # Corvax-Loadouts
+  - GroupTankHarness
+  - SyndicateBackpack
   - Glasses
   - Survival
   - Trinkets
