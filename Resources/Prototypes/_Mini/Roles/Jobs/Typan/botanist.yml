@@ -21,7 +21,6 @@
   equipment:
     ears: ClothingHeadsetAltSyndicate
     jumpsuit: ClothingUniformJumpsuitTypanBotanist
-    back: ClothingBackpackSyndicate
     shoes: ClothingShoesColorBlack
     id: SyndiPDABotan
     outerClothing: ClothingOuterApronTypanBotanist

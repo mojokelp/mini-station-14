@@ -49,7 +49,6 @@
     jumpsuit: ClothingUniformJumpsuitOperative
     gloves: ClothingHandsGlovesCombat
     id: SyndiPDAOff
-    back: ClothingBackpackSyndicate
     head: ClothingHeadHatSyndie
     pocket1: WeaponPistolViper
     mask: ClothingMaskGasSyndicate

@@ -32,7 +32,6 @@
   equipment:
     ears: ClothingHeadsetAltSyndicate
     jumpsuit: ClothingUniformJumpsuitTypanCargotech
-    back: ClothingBackpackSyndicate
     shoes: ClothingShoesBootsCombatSyndie
     id: SyndiPDACargo
 
