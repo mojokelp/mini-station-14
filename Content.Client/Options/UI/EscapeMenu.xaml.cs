@@ -17,11 +17,19 @@ namespace Content.Client.Options.UI
     public sealed partial class EscapeMenu : DefaultWindow
     {
         [Dependency] private readonly IUriOpener _uriOpener = default!;
+        [Dependency] private readonly IPlayerManager _playerManager = default!;
+        [Dependency] private readonly IConfigurationManager _cfg = default!;
         public EscapeMenu()
         {
             RobustXamlLoader.Load(this);
             Boosty.OnPressed += _ => _uriOpener.OpenUri(new Uri("https://boosty.to/mini-station"));
             Discord.OnPressed += _ => _uriOpener.OpenUri(new Uri("https://discord.gg/mini-station"));
+            AuthorizationDiscordButton.OnPressed += _ =>
+            {
+                var userId = _playerManager.LocalSession?.UserId;
+                var requestUrl = $"{_cfg.GetCVar(CCCVars.DiscordAuthApiUrl)}/login/{userId.ToString()}";
+                _uriOpener.OpenUri(new Uri(requestUrl));
+            };
         }
     }
 }
