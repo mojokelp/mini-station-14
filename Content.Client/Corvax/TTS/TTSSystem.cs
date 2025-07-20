@@ -1,6 +1,7 @@
 ﻿using Content.Shared.Chat;
 using Content.Shared.Corvax.CCCVars;
 using Content.Shared.Corvax.TTS;
+using Content.Shared._Mini.MiniCCVars;
 using Robust.Client.Audio;
 using Robust.Client.ResourceManagement;
 using Robust.Shared.Audio;
@@ -28,18 +29,15 @@ public sealed class TTSSystem : EntitySystem
     /// <summary>
     /// Reducing the volume of the TTS when whispering. Will be converted to logarithm.
     /// </summary>
-
-    private const float WhisperFade = 2f;
-
+    private const float WhisperFade = 3f;
 
     /// <summary>
     /// The volume at which the TTS sound will not be heard.
+    /// </summary>
+    private const float MinimalVolume = -6f;
 
-    private const float MinimalVolume = -5f;
-
-
-    private float _volume = 0.0f;
-    private float _volumeRadio = 1.0f;
+    private float _volume = 3.0f;
+    private float _volumeRadio = 3.0f;
     private bool _playRadio = true;
     private int _fileIdx = 0;
 
@@ -48,6 +46,8 @@ public sealed class TTSSystem : EntitySystem
         _sawmill = Logger.GetSawmill("tts");
         _res.AddRoot(Prefix, _contentRoot);
         _cfg.OnValueChanged(CCCVars.TTSVolume, OnTtsVolumeChanged, true);
+        _cfg.OnValueChanged(MiniCCVars.TTSVolumeRadio, OnTtsRadioVolumeChanged, true);
+        _cfg.OnValueChanged(MiniCCVars.RadioTTSSoundsEnabled, OnTtsPlayRadioChanged, true);
         SubscribeNetworkEvent<PlayTTSEvent>(OnPlayTTS);
     }
 
@@ -55,6 +55,8 @@ public sealed class TTSSystem : EntitySystem
     {
         base.Shutdown();
         _cfg.UnsubValueChanged(CCCVars.TTSVolume, OnTtsVolumeChanged);
+        _cfg.UnsubValueChanged(MiniCCVars.TTSVolumeRadio, OnTtsRadioVolumeChanged);
+        _cfg.UnsubValueChanged(MiniCCVars.RadioTTSSoundsEnabled, OnTtsPlayRadioChanged);
         _contentRoot.Dispose();
     }
 

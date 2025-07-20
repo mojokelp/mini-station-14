@@ -127,8 +127,8 @@ namespace Content.Client.Entry
             _prototypeManager.RegisterIgnore("stationGoal"); // Corvax-StationGoal
             _prototypeManager.RegisterIgnore("ghostRoleRaffleDecider");
             _prototypeManager.RegisterIgnore("sponsorGroup"); // Sponsor think
-            _prototypeManager.RegisterIgnore("ertTeams"); // DS14 ERT Teams
-            _prototypeManager.RegisterIgnore("ertShuttle"); // DS14 ERT Shuttles
+            _prototypeManager.RegisterIgnore("ertTeams");
+            _prototypeManager.RegisterIgnore("ertShuttle");
             _componentFactory.GenerateNetIds();
             _adminManager.Initialize();
             _screenshotHook.Initialize();
