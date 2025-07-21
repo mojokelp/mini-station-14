@@ -1,29 +1,26 @@
 - type: soundCollection
   id: LobbyMusic
   files:
+    - /Audio/Corvax/Lobby/nodecision.ogg # Corvax-LobbyMusic
+    - /Audio/Corvax/Lobby/service.ogg # Corvax-LobbyMusic
+    - /Audio/Corvax/Lobby/title2.ogg # Corvax-LobbyMusic
+    - /Audio/Lobby/absconditus.ogg
+    - /Audio/Lobby/comet_haley.ogg
+    - /Audio/Lobby/endless_space.ogg
+    - /Audio/Lobby/every_light_is_blinking_at_once.ogg
+    - /Audio/Lobby/lasers_rip_apart_the_bulkhead.ogg
+    - /Audio/Lobby/mod.flip-flap.ogg
+    - /Audio/Lobby/pwmur.ogg
+    - /Audio/Lobby/singuloose.ogg
+    - /Audio/Lobby/space_asshole.ogg
+    - /Audio/Lobby/Spac_Stac.ogg
+    - /Audio/Lobby/thunderdome.ogg
+    - /Audio/Lobby/the_wizard.ogg
     - /Audio/Lobby/title2.ogg
     - /Audio/Lobby/title3.ogg
-    - /Audio/Lobby/thunderdome.ogg
-    - /Audio/Lobby/absconditus.ogg
-    - /Audio/Lobby/space_asshole.ogg
-    - /Audio/Lobby/the_wizard.ogg
-    - /Audio/Lobby/endless_space.ogg
-    - /Audio/Lobby/singuloose.ogg
-    - /Audio/Lobby/comet_haley.ogg
-    - /Audio/Lobby/mod.flip-flap.ogg
-    - /Audio/Lobby/Spac_Stac.ogg
-    - /Audio/Lobby/pwmur.ogg
-    - /Audio/Lobby/lasers_rip_apart_the_bulkhead.ogg
-    - /Audio/Lobby/every_light_is_blinking_at_once.ogg
-    - /Audio/Lobby/mod.flip-flap.ogg
-    - /Audio/Lobby/pwmur.ogg 
-    - /Audio/Lobby/space_asshole.ogg
-    - /Audio/Corvax/Lobby/title2.ogg # Corvax-LobbyMusic
-    - /Audio/Corvax/Lobby/service.ogg # Corvax-LobbyMusic
-    - /Audio/Corvax/Lobby/nodecision.ogg # Corvax-LobbyMusic
-    - /Audio/_Mini/Music/kaknavoine.ogg
-    - /Audio/_Mini/Music/PARADISO2.ogg
-    - /Audio/_Mini/Music/Tatiana_Kurtukova-Mother.ogg
-    - /Audio/_Mini/Music/war-friend.ogg
-    - /Audio/_Mini/Music/wnight.ogg
-    - /Audio/_Mini/Music/Zhirinovsky_Batman.ogg
+    - /Audio/_Mini/Music/Zhirinovsky_Batman.ogg # Mini
+    - /Audio/_Mini/Music/PARADISO2.ogg # Mini
+    - /Audio/_Mini/Music/Tatiana_Kurtukova-Mother.ogg # Mini
+    - /Audio/_Mini/Music/kaknavoine.ogg # Mini
+    - /Audio/_Mini/Music/war-friend.ogg # Mini
+    - /Audio/_Mini/Music/wnight.ogg # Mini
