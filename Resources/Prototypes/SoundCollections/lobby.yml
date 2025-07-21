@@ -1,6 +1,8 @@
 - type: soundCollection
   id: LobbyMusic
   files:
+    - /Audio/Lobby/title2.ogg
+    - /Audio/Lobby/title3.ogg
     - /Audio/Lobby/thunderdome.ogg
     - /Audio/Lobby/absconditus.ogg
     - /Audio/Lobby/space_asshole.ogg
