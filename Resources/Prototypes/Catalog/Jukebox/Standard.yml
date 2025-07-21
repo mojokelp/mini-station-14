@@ -39,3 +39,45 @@
   name: PigeonBeans - Sunset
   path:
     path: /Audio/Jukebox/sunset.ogg
+    
+- type: jukebox
+  id: zhiribatman
+  name: Отпетые мошенники x Владимир Жириновский - Обратите внимание
+  path:
+    path: /Audio/_Mini/Music/Zhirinovsky_Batman.ogg
+    
+- type: jukebox
+  id: onwar
+  name: Agatha Christie - Как На Войне 
+  path:
+    path: /Audio/_Mini/Music/kaknavoine.ogg  
+      
+- type: jukebox
+  id: wnight
+  name: Neco Arc - Белая ночь 
+  path:
+    path: /Audio/_Mini/Music/wnight.ogg      
+
+- type: jukebox
+  id: mother
+  name: Татьяна Куртукова - Матушка
+  path:
+    path: /Audio/_Mini/Music/Tatiana_Kurtukova-Mother.ogg
+    
+- type: jukebox
+  id: warfriend
+  name: Песенка боевых друзей
+  path:
+    path: /Audio/_Mini/Music/war-friend.ogg
+
+- type: jukebox
+  id: paradisco2
+  name: PARADISO 2
+  path:
+    path: /Audio/_Mini/Music/PARADISO2.ogg
+
+
+
+
+
+
