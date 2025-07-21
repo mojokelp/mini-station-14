@@ -11,7 +11,7 @@
       types:
         Blunt: 20
   - type: TimedDespawn
-    lifetime: 0.100 # Lavaland Change
+    lifetime: 0.200 # Lavaland Change
 
 - type: entity
   id: WeakBulletKinetic
@@ -24,7 +24,7 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Blunt: 10
+        Blunt: 15
 
 - type: entity
   id: PelletKinetic
