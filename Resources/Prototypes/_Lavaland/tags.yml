@@ -5,13 +5,7 @@
   id: PKAUpgrade
 
 - type: Tag
-  id: GunUpgradeDamage
-
-- type: Tag
   id: GunUpgradeReloadSpeed
-
-- type: Tag
-  id: GunUpgradeRange
 
 - type: Tag
   id: LavalandInterior5x5

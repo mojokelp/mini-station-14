@@ -29,10 +29,10 @@
       - MobGoliath
       - ADTMobLegion
       - ADTMobNightmareSpider
-      - ADTMobShockSpider
     rarePrototypes:
       - MobAncientGoliath
       - ADTRandomTendrilSpawner
+      - MobDrake
 #      - ADTAbominationDeath
   - type: TimedDespawn
     lifetime: 1
