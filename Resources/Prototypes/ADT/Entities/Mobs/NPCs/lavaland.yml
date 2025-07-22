@@ -74,7 +74,6 @@
             min: 1
             max: 1
   - type: Fauna
-  - type: AshStormImmune
 
 - type: entity
   id: ADTMobLegionSkull
@@ -126,7 +125,6 @@
         15
   - type: TimedDespawn
     lifetime: 30
-  - type: AshStormImmune
 
 - type: entity
   id: MobAncientGoliath

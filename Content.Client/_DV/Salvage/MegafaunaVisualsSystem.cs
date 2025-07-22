@@ -26,10 +26,10 @@ public sealed class MegafaunaVisualsSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<MegafaunaComponent, AppearanceChangeEvent>(OnAppearanceChange);
+        SubscribeLocalEvent<MegaComponent, AppearanceChangeEvent>(OnAppearanceChange);
     }
 
-    private void OnAppearanceChange(EntityUid uid, MegafaunaComponent comp, ref AppearanceChangeEvent args)
+    private void OnAppearanceChange(EntityUid uid, MegaComponent comp, ref AppearanceChangeEvent args)
     {
         if (!TryComp<SpriteComponent>(uid, out var sprite))
             return;

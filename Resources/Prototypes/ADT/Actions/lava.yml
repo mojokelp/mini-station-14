@@ -1,17 +1,4 @@
-# Игроки
-- type: entity
-  id: ActionPumpCursedHeart
-  name: action-pump-heart
-  description: action-pump-heart-desc
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: InstantAction
-    icon:
-      sprite: ADT/Objects/Specific/Lavaland/loot.rsi
-      state: cursed_heart
-    itemIconStyle: BigAction
-    event: !type:PumpHeartActionEvent
-    useDelay: 1
+
 
 # Фауна
 - type: entity
