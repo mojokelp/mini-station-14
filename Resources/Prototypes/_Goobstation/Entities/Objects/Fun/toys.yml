@@ -64,23 +64,23 @@
     state: plushie_durk
   - type: EmitSoundOnUse
     sound:
-      path: /Audio/Effects/adminhelp.ogg
+      path: /Audio/_Mini/Misc/mst.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/Effects/adminhelp.ogg
+      path: /Audio/_Mini/Misc/mst.ogg
   - type: EmitSoundOnActivate
     sound:
-      path: /Audio/Effects/adminhelp.ogg
+      path: /Audio/_Mini/Misc/mst.ogg
   - type: EmitSoundOnTrigger
     sound:
-      path: /Audio/Effects/adminhelp.ogg
+      path: /Audio/_Mini/Misc/mst.ogg
   - type: EmitSoundOnCollide
     sound:
-      path: /Audio/Effects/adminhelp.ogg
+      path: /Audio/_Mini/Misc/mst.ogg
   - type: Food
     requiresSpecialDigestion: false
     useSound:
-      path: /Audio/Effects/adminhelp.ogg
+      path: /Audio/_Mini/Misc/mst.ogg
 
 - type: entity
   parent: BasePlushie
