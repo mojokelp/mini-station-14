@@ -287,19 +287,10 @@
   id: LavaDungeon
 
 - type: Tag
-  id: PKAUpgrade
-
-- type: Tag
   id: GunUpgradeDamage
 
 - type: Tag
   id: GunUpgradeRange
-
-- type: Tag
-  id: GunUpgradeReloadSpeed
-
-- type: Tag
-  id: ADT40mmGrenade
 
 #sponsor_items
 - type: Tag
@@ -324,9 +315,6 @@
 
 - type: Tag
   id: ADTRUranShard
-
-- type: Tag
-  id: DockMining
 
 - type: Tag
   id: MiningShop
@@ -411,9 +399,6 @@
 
 - type: Tag
   id: ADTDoNotMakeOrigami
-
-
-  id: ADTSyrelBattleAxe
 
 - type: Tag
   id: VehicleKey
