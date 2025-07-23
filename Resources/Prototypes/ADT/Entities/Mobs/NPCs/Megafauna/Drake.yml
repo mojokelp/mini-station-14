@@ -249,7 +249,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      600: Dead
+      1200: Dead
   - type: MeleeWeapon
     soundHit:
       path: "/Audio/Weapons/smash.ogg"
