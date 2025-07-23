@@ -134,6 +134,7 @@
       children:
       - id: LavalandTendrilLavaWatcher
       - id: LavalandTendrilGoliath
+      - id: ADTTendrilLegion
     - !type:GroupSelector
         weight: 20
         children:

@@ -1,0 +1,47 @@
+- type: listing
+  id: ADTUplinkJumpboots
+  name: uplink-jumpboots-name
+  description: uplink-jumpboots-desc
+  icon: { sprite: ADT/Clothing/Shoes/Boots/jumpboots_syndie.rsi, state: icon }
+  productEntity: ADTClothingJumpBootsSynd
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkWearables
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: UplinkADTAntagIronTray
+  name: uplink-ADTAntagIronTray-name
+  description: uplink-ADTAntagIronTray-desc
+  icon: { sprite: ADT/Objects/Specific/Service/iron_tray.rsi, state: icon}
+  productEntity: ADTAntagIronTray
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Chef
+    - Clown
+    - Mime
+    - Botanist
+    - Bartender
+
+- type: listing
+  id: ADTUplinkSegway
+  name: uplink-segway-name
+  description: uplink-segway-desc
+  icon:
+    sprite: Objects/Vehicles/syndicatesegway.rsi
+    state: vehicle
+  productEntity: ADTVehicleSyndicateSegway
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkPointless

@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Grid
-  engineVersion: 250.0.0
+  engineVersion: 252.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/26/2025 18:12:31
-  entityCount: 2120
+  time: 07/23/2025 02:24:15
+  entityCount: 2108
 maps: []
 grids:
 - 2
@@ -528,7 +528,8 @@ entities:
           4,4:
             0: 59199
           4,-1:
-            0: 61166
+            0: 28398
+            2: 32768
           5,1:
             0: 62207
           5,2:
@@ -658,6 +659,21 @@ entities:
           - 0
           - 0
           - 0
+        - volume: 2500
+          temperature: 293.14975
+          moles:
+          - 20.078888
+          - 75.53487
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
@@ -673,13 +689,6 @@ entities:
     - type: Transform
       pos: 25.63463,-1.3284492
       parent: 2
-- proto: ADTClarkeHarness
-  entities:
-  - uid: 533
-    components:
-    - type: Transform
-      pos: 23.506609,0.5044808
-      parent: 2
 - proto: ADTClarkeHead
   entities:
   - uid: 536
@@ -687,56 +696,12 @@ entities:
     - type: Transform
       pos: 17.347971,-0.4007573
       parent: 2
-- proto: ADTClarkeLArm
-  entities:
-  - uid: 591
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 21.46356,1.4974885
-      parent: 2
-- proto: ADTClarkeLTread
-  entities:
-  - uid: 590
-    components:
-    - type: Transform
-      pos: 21.52606,1.5756135
-      parent: 2
 - proto: ADTClarkePeripheralsElectronics
   entities:
   - uid: 594
     components:
     - type: Transform
       pos: 25.587755,-1.5784492
-      parent: 2
-- proto: ADTClarkeRArm
-  entities:
-  - uid: 592
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 21.479185,1.7318635
-      parent: 2
-- proto: ADTClarkeRTread
-  entities:
-  - uid: 583
-    components:
-    - type: Transform
-      pos: 21.510435,1.2943635
-      parent: 2
-- proto: ADTMechWeaponCutter
-  entities:
-  - uid: 582
-    components:
-    - type: Transform
-      pos: 23.481806,-1.5254333
-      parent: 2
-- proto: AdvancedMineralScanner
-  entities:
-  - uid: 598
-    components:
-    - type: Transform
-      pos: 18.725359,-4.4796057
       parent: 2
 - proto: AirAlarm
   entities:
@@ -1636,6 +1601,11 @@ entities:
       parent: 2
 - proto: BorgCharger
   entities:
+  - uid: 176
+    components:
+    - type: Transform
+      pos: 15.5,4.5
+      parent: 2
   - uid: 297
     components:
     - type: Transform
@@ -4543,6 +4513,24 @@ entities:
     - type: Transform
       pos: 19.5,-0.5
       parent: 2
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14673
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: CrateTrashCartJani
   entities:
   - uid: 1268
@@ -9040,13 +9028,6 @@ entities:
     - type: Transform
       pos: 13.5,15.5
       parent: 2
-- proto: JawsOfLife
-  entities:
-  - uid: 584
-    components:
-    - type: Transform
-      pos: 21.477577,2.4773524
-      parent: 2
 - proto: KitchenMicrowave
   entities:
   - uid: 11050
@@ -9146,13 +9127,6 @@ entities:
     - type: Transform
       pos: 16.5,-13.5
       parent: 2
-- proto: MechEquipmentDrill
-  entities:
-  - uid: 176
-    components:
-    - type: Transform
-      pos: 23.52868,-1.1973083
-      parent: 2
 - proto: MedicalBed
   entities:
   - uid: 11089
@@ -9208,16 +9182,6 @@ entities:
     components:
     - type: Transform
       pos: 35.56623,17.405731
-      parent: 2
-  - uid: 580
-    components:
-    - type: Transform
-      pos: 19.510525,-4.276205
-      parent: 2
-  - uid: 581
-    components:
-    - type: Transform
-      pos: 19.604275,-4.588705
       parent: 2
   - uid: 11093
     components:
@@ -9687,13 +9651,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 11.5,7.5
-      parent: 2
-- proto: PowerDrill
-  entities:
-  - uid: 585
-    components:
-    - type: Transform
-      pos: 21.633827,2.6804774
       parent: 2
 - proto: PoweredLEDSmallLight
   entities:
@@ -11065,11 +11022,6 @@ entities:
     components:
     - type: Transform
       pos: 31.5,2.5
-      parent: 2
-  - uid: 572
-    components:
-    - type: Transform
-      pos: 15.5,-0.5
       parent: 2
 - proto: StasisBed
   entities:
