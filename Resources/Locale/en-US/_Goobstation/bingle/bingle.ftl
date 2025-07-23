@@ -1,20 +1,19 @@
+bingle-accent-1 = Бингла
+bingle-accent-2 = Бинг
+bingle-accent-3 = Бонгла
+bingle-accent-4 = Бонг
+bingle-accent-5 = БИНГЛА
 
-bingle-accent-1 = Bingle
-bingle-accent-2 = Bing
-bingle-accent-3 = Bongle
-bingle-accent-4 = Bong
-bingle-accent-5 = BINGLE
+chat-speech-verb-name-bingle = Бингла
+bingle-verb-1 = Квакает
+bingle-verb-2 = Бормочет
+bingle-verb-3 = Возглашает
+bingle-verb-4 = Ворчит
 
-chat-speech-verb-name-bingle = Bingle
-bingle-verb-1 = Croaks
-bingle-verb-2 = Mumbles
-bingle-verb-3 = Harks
-bingle-verb-4 = Grumbles
+bingle-station-announcement = Внимание. На станции обнаружена биологическая угроза уровня "Бингл".
 
-bingle-station-announcement = Bingle Bingle Bingle
+ghost-role-information-bingle-name = Посвящённый Бездны(Бингл)
+ghost-role-information-bingle-description = Бездна - это жизнь. Бездна - это истина. Вы должны способствовать её расширению.
 
-ghost-role-information-bingle-name = Bingle
-ghost-role-information-bingle-description = The Pit is love. The Pit is life. The Pit must grow
-
-bingle-upgrade-success = You feel stronger
-bingle-pit-grow =  The pit grows larger
+bingle-upgrade-success = Вы чувствуете прилив сил
+bingle-pit-grow = Бездна расширяется
