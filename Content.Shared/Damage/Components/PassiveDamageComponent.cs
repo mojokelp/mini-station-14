@@ -8,7 +8,7 @@ namespace Content.Shared.Damage.Components;
 /// <summary>
 /// Passively damages the entity on a specified interval.
 /// </summary>
-[RegisterComponent, NetworkedComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class PassiveDamageComponent : Component
 {
     /// <summary>
