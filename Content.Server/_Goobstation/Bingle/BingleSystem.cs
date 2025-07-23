@@ -3,7 +3,6 @@ using Content.Shared.Popups;
 using Content.Shared._Goobstation.Bingle;
 using Robust.Shared.Map;
 using System.Numerics;
-using Content.Shared._White.Overlays;
 using Content.Server.Flash.Components;
 using Content.Server.Polymorph.Components;
 using Content.Server.Polymorph.Systems;
@@ -22,7 +21,6 @@ public sealed class BingleSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<BingleComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<BingleComponent, AttackAttemptEvent>(OnAttackAttempt);
-        SubscribeLocalEvent<BingleComponent, ToggleNightVisionEvent>(OnNightvision);
         SubscribeLocalEvent<BingleComponent, ToggleCombatActionEvent>(OnCombatToggle);
     }
 
@@ -63,14 +61,6 @@ public sealed class BingleSystem : EntitySystem
         //Prevent Friendly Bingle fire
         if (HasComp<BinglePitComponent>(args.Target) || HasComp<BingleComponent>(args.Target))
             args.Cancel();
-    }
-
-    private void OnNightvision(EntityUid uid, BingleComponent component, ToggleNightVisionEvent args)
-    {
-        if (!TryComp<FlashImmunityComponent>(uid, out var flashComp))
-            return;
-
-        flashComp.Enabled = !flashComp.Enabled;
     }
 
     private void OnCombatToggle(EntityUid uid, BingleComponent component, ToggleCombatActionEvent args)
