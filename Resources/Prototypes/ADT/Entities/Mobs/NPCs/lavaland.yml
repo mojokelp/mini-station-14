@@ -187,12 +187,6 @@
         sound:
           collection: MeatLaserImpact
 
-- type: weightedRandomEntity
-  id: AncientGoliathActions
-  weights:
-    ActionAncientGoliathTentacle: 0.5
-    ActionGoliathTentacle: 0.5
-
 # SPIDERS
 
 - type: entity
