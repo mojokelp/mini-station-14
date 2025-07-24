@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackWinRar
-  name: Рюкзак WinRar
-  description: Говорят в этом рюкзаке заархивирована станция, но пароль от архива давно забыт...
+  name: winrar backpack
+  description: They say the station is archived in this backpack, but the password to the archive has long been forgotten...
   components:
   - type: Sprite
     sprite: _Mini/Clothing/Back/Backpacks/backpackWinRar.rsi
@@ -15,8 +15,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackSeniorSalvage
-  name: модифицированный рюкзак ведущего утилизатора
-  description: Рюкзак ведущего утилизатора с функцией РИГ.
+  name: senior salvage specialist's backpack
+  description: Senior salvage specialist's modified backpack with RIG function
   components:
   - type: Sprite
     sprite: _Mini/Clothing/Back/seniorsalvage.rsi

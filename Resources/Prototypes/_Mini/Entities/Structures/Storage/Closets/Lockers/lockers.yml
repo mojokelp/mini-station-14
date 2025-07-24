@@ -43,7 +43,7 @@
 - type: entity
   id: LockerSyndicateCargo
   name: syndicate cargo technician's locker
-  parent: LockerSalvageSpecialistFilled
+  parent: LockerSalvageSpecialist
   description: A standard-issue Syndicate storage unit.
   components:
     - type: Appearance

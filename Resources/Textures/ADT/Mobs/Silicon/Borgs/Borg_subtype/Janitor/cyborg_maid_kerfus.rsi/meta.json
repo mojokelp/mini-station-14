@@ -8,15 +8,15 @@
   },
   "states": [
     {
-        "name": "service_e_r",
+        "name": "janitor_e_r",
         "directions": 4
     },
     {
-        "name": "service",
+        "name": "janitor",
         "directions": 4
     },
     {
-        "name": "service_e",
+        "name": "janitor_e",
         "directions": 4,
         "delays": [
             [
@@ -46,7 +46,7 @@
         ]
     },
     {
-        "name": "service_l",
+        "name": "janitor_l",
         "directions": 4,
         "delays": [
             [

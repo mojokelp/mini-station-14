@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingHandsGlovesSyntheticBase
   id: ClothingHandsRDTypan
-  name: перчатки директора исследований
-  description: Тактические перчатки, защищающие его обладателя от нежелательных соприкосновений.
+  name: syndicate research director's gloves
+  description: Tactical gloves that protect the wearer from unwanted contact.
   components:
   - type: Sprite
     sprite: Clothing/Hands/Gloves/tacticalmaidgloves.rsi
@@ -15,8 +15,8 @@
 - type: entity
   parent: ClothingHandsButcherable
   id: ClothingHandsScienceTypan
-  name: перчатки ученого синдиката
-  description: Удобные перчатки для проведения различных экспериментов.
+  name: syndicate sciencist's gloves
+  description: Comfortable gloves for carrying out various experiments.
   components:
   - type: Sprite
     sprite: Clothing/Hands/Gloves/robohands.rsi

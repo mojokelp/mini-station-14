@@ -97,7 +97,7 @@
 - type: entity
   id: ADTKerfusJanitorChassis
   parent: BorgChassisJanitor
-  name: kerfus cyborg
+  name: kerfus janitor cyborg
   components:
   - type: BorgSwitchableType
     selectedBorgType: janitor

@@ -10,7 +10,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._TT.AdditionalMap;
 
-public sealed class TTAdditionalMapLoaderSystem : EntitySystem
+public sealed class AdditionalMapLoaderSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly MapSystem _map = default!;

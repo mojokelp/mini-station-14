@@ -56,7 +56,7 @@
   id: tread_security
   sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Security/tread_security.rsi
   dummyPrototype: ADTTreadSecurityChassis
- 
+
 - type: borgSubtype
   parentBorgType: security
   id: egg_security
@@ -88,21 +88,21 @@
   id: kerfus_service
   sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Service/cyborg_kerfus.rsi
   dummyPrototype: ADTKerfusServiceChassis
-  
+
 - type: borgSubtype
-  parentBorgType: service
+  parentBorgType: janitor
   id: kerfus_janitor
   sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Janitor/cyborg_maid_kerfus.rsi
   dummyPrototype: ADTKerfusJanitorChassis
-  
+
 - type: borgSubtype
   parentBorgType: generic
   id: old_generic
   sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Generic/old_generic.rsi
-  dummyPrototype: BorgChassisGeneric
- 
+  dummyPrototype: ADTOldBorgChassisGeneric
+
 #Medical
- 
+
 - type: borgSubtype
   parentBorgType: medical
   id: qualified_doctor
