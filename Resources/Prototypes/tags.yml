@@ -1396,4 +1396,7 @@
 - type: Tag
   id: WriteIgnoreStamps
 
+- type: Tag
+  id: ADTBorgModuleSecurity
+
 # ALPHABETICAL
