@@ -100,7 +100,7 @@
   cost:
     Productunit: 2
   categories:
-  - UplinkERTmed
+  - UplinkERTMed
 
 - type: listing
   id: BoberMediKitAir
@@ -110,7 +110,7 @@
   cost:
     Productunit: 1
   categories:
-  - UplinkERTmed
+  - UplinkERTMed
 
 - type: listing
   id: BoberMediKitBr
@@ -120,7 +120,7 @@
   cost:
     Productunit: 1
   categories:
-  - UplinkERTmed
+  - UplinkERTMed
 
 - type: listing
   id: BoberIpcKit

@@ -33,7 +33,7 @@
     - UplinkERTMisc
     - UplinkERTAmmo
     - UplinkERTBomb
-    - UplinkERTmed
+    - UplinkERTMed
     currencyWhitelist:
     - Productunit
 
