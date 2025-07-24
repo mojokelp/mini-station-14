@@ -15,10 +15,8 @@
   description: "/ServerInfo/ADT/SpeciesDescriptions/Unath.xml"
   pros:
   - Могут таскать объекты хвостом.
-  special:
-  - Имеют общий язык с таярами.
   cons:
-  - Шприцы не могут пройти через чешую унатхов.
+  - Получают больше урона от холода.
   # ADT Species window end
 
 - type: speciesBaseSprites
