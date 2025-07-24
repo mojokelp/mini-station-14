@@ -94,8 +94,8 @@
 
 - type: thiefBackpackSet
   id: PistolSet
-  name: bso-set-selector-pistol # Крио-пистолет
-  description: bso-set-selector-pistol-desc # Оружие для ведения боя с тяжелобронироваными одиночными целями.
+  name: bso-set-selector-pistol
+  description: bso-set-selector-pistol-desc
   sprite:
     sprite: Adventure/Roles/blueshield/Weapons/DualphasBH.rsi
     state: base
@@ -124,8 +124,8 @@
 
 - type: thiefBackpackSet
   id: AssistantRich
-  name: assistant-set-selector-rich # Набор аристократа
-  description: assistant-set-selector-rich-desc # О, ваше прошлое точно сияло, как золотой самородок!
+  name: assistant-set-selector-rich
+  description: assistant-set-selector-rich-desc
   sprite:
     sprite: Objects/Economy/cash.rsi
     state: cash_500
@@ -140,8 +140,8 @@
 
 - type: thiefBackpackSet
   id: AssistantWelder
-  name: assistant-set-selector-welder # Набор сварщика
-  description: assistant-set-selector-welder-desc # assistant-backpack-category-welder-description
+  name: assistant-set-selector-welder
+  description: assistant-set-selector-welder-desc
   sprite:
     sprite: Clothing/Head/Welding/welding.rsi
     state: icon
@@ -155,8 +155,8 @@
 
 - type: thiefBackpackSet
   id: AssistantFan
-  name: assistant-set-selector-syndi # Набор фаната Синдиленда
-  description: assistant-set-selector-syndi-desc # assistant-backpack-category-fan-description
+  name: assistant-set-selector-syndi
+  description: assistant-set-selector-syndi-desc
   sprite:
     sprite: Objects/Fun/toys.rsi
     state: synb
@@ -171,8 +171,8 @@
 
 - type: thiefBackpackSet
   id: AssistantPirate
-  name: assistant-set-selector-pirate # Набор пирата
-  description: assistant-set-selector-pirate-desc # assistant-backpack-category-pirate-description
+  name: assistant-set-selector-pirate
+  description: assistant-set-selector-pirate-desc
   sprite:
     sprite: Objects/Weapons/Melee/captain_sabre.rsi
     state: icon
@@ -189,8 +189,8 @@
 
 - type: thiefBackpackSet
   id: AssistantCasino
-  name: assistant-set-selector-gambling # Набор азартного игрока
-  description: assistant-set-selector-gambling-desc # assistant-backpack-category-casino-description
+  name: assistant-set-selector-gambling
+  description: assistant-set-selector-gambling-desc
   sprite:
     sprite: _CorvaxNext/Objects/Misc/cards.rsi
     state: sc_Jack_of_Spades_black
