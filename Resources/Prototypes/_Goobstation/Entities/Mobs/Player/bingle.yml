@@ -1,8 +1,8 @@
 - type: entity
-  name: bingle
+  name: Бингл
   id: MobBingle
   parent: MobSpaceBasic
-  description: bingle
+  description: Хлюпающий хранитель бездны
   components:
   - type: Bingle
   - type: GhostTakeoverAvailable
