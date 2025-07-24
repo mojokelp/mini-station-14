@@ -3,7 +3,7 @@
   name: job-name-typan-science
   playTimeTracker: TypanScience
   description: job-description-typan-science
-  startingGear: SyndicateScience
+  startingGear: TypanScience
   icon: "JobIconSyndicateScience"
   supervisors: job-supervisors-typan-rd
   canBeAntag: false
