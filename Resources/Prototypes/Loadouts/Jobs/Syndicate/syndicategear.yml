@@ -10,3 +10,7 @@
   equipment:
     back: ClothingBackpackDuffelSyndicate
 
+- type: loadout
+  id: SyndiSatchel
+  equipment:
+    back: ClothingBackpackSatchelTypan

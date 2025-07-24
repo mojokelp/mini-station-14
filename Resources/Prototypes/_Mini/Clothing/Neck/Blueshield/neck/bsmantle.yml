@@ -7,5 +7,4 @@
   - type: Sprite
     sprite: /Textures/_Mini/Clothing/Neck/bsmantle.rsi
   - type: Clothing
-  - type: Clothing
     # sprite path inherited from the Sprite component – no need to repeat

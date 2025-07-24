@@ -10,7 +10,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Science
-      time: 6000
+      time: 50400
     - !type:OverallPlaytimeRequirement
       time: 21600
     - !type:AgeRequirement

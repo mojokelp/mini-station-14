@@ -1404,6 +1404,7 @@
   loadouts:
   - SyndiBackpack
   - SyndiDuffel
+  - SyndiSatchel
 
 - type: loadoutGroup
   id: SyndicateCoat

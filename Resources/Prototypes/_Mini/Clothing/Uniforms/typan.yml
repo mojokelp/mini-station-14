@@ -82,9 +82,9 @@
   description: Слегка выцветшая от химикатов униформа.
   components:
   - type: Sprite
-    sprite: _ADT/Clothing/Uniforms/Jumpsuit/uniform_ili.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_ili.rsi
   - type: Clothing
-    sprite: _ADT/Clothing/Uniforms/Jumpsuit/uniform_ili.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_ili.rsi
 
 - type: entity
   parent: ClothingUniformBase
