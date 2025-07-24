@@ -29,7 +29,7 @@
 - type: entity
   parent: BaseTypanPDA
   id: SyndiPDAScience
-  name: syndicate sciencist PDA
+  name: syndicate scientist PDA
   description: It looks like this PDA was hacked.
   components:
   - type: Pda
