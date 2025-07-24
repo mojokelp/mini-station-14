@@ -41,7 +41,7 @@ ent-AirlockTypanTechnicalOperationsSupervisorLocked = { ent-Airlock }
 # glass airlock
 
 ent-AirlockTypanGlassServiceLocked = { ent-AirlockGlass }
-    .desc = { ent-AirlockGlas.desc }
+    .desc = { ent-AirlockGlass.desc }
     .suffix = Тайпан, Сервис, Закрыт
 
 ent-AirlockTypanGlassAtmosphericsLocked = { ent-AirlockGlass }
