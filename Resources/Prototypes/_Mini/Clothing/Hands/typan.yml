@@ -15,7 +15,7 @@
 - type: entity
   parent: ClothingHandsButcherable
   id: ClothingHandsScienceTypan
-  name: syndicate sciencist's gloves
+  name: syndicate scientist's gloves
   description: Comfortable gloves for carrying out various experiments.
   components:
   - type: Sprite
