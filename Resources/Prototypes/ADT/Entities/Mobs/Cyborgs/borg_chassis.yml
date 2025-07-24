@@ -38,8 +38,8 @@
     noMindState: service_e_r
   - type: BorgTransponder
     sprite:
-      sprite: ADT/Mobs/Silicon/Borgs/Service/cyborg_kerfus.rsi
-      state: kerfus
+      sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Service/cyborg_kerfus.rsi
+      state: service
     name: kerfus cyborg
   - type: IntrinsicRadioTransmitter
     channels:
