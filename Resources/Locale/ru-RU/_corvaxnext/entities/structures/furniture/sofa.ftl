@@ -59,4 +59,4 @@ ent-BenchBlueComfyLeft = левая синяя комфортная скамей
     .desc = { ent-BenchBlueComfy.desc }
 
 ent-BenchBlueComfyRight = правая синяя комфортная скамейка
-    .desc = { ent-BenchBlueComfy    .desc }
+    .desc = { ent-BenchBlueComfy.desc }

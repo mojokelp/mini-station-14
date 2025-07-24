@@ -2,7 +2,7 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardCargo
-  name: ID-карта
+  name: ID-card
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typancargo.rsi
@@ -21,7 +21,7 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardCom
-  name: ID-карта
+  name: ID-card
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typansec.rsi
@@ -49,7 +49,7 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardEng
-  name: ID-карта
+  name: ID-card
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typaneng.rsi
@@ -65,7 +65,7 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardMed
-  name: ID-карта
+  name: ID-card
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typanmed.rsi
@@ -80,7 +80,7 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardRd
-  name: ID-карта
+  name: ID-card
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typanrd.rsi
@@ -102,7 +102,7 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardScience
-  name: ID-карта
+  name: ID-card
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typanscien.rsi
@@ -119,7 +119,7 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardBotanist
-  name: ID-карта
+  name: ID-card
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typanbotan.rsi
@@ -135,7 +135,7 @@
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardChef
-  name: ID-карта
+  name: ID-card
   components:
   - type: Sprite
     sprite: _Mini/Objects/Misc/typanchef.rsi

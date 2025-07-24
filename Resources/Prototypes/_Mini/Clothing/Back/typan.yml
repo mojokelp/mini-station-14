@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackSatchelTypan
-  name: сумка синдиката
-  description: Модная сумка в красно-чёрных тонах.
+  name: syndicate satchel
+  description: A fashionable red and black bag.
   components:
   - type: Sprite
     sprite: _Mini/Clothing/Back/bag.rsi
@@ -13,10 +13,10 @@
     - 8,0,9,3
 
 - type: entity
-  name: сумка для растений синдиката
+  name: syndicate plant bag
   id: TypanPlantBag
   parent: BaseStorageItem
-  description: Сумка для ботаников, чтобы легко переносить свои огромные урожаи.
+  description: A bag for botanists to easily carry their huge harvests.
   components:
   - type: Sprite
     sprite: _Mini/Clothing/Back/plant_bag.rsi
@@ -42,9 +42,8 @@
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterApronTypanBotanist
-  name: фартук ботаника синдиката
-  suffix: Botanical
-  description: Толстый фартук, идеально подходящий для защиты вашей нежной плоти от пятен, грязи и крови.
+  name: syndicate botanist's apron
+  description: A thick apron, perfect for protecting your delicate flesh from stains, dirt, and blood.
   components:
   - type: Sprite
     sprite: _Mini/Clothing/OuterClothing/apron_botanist.rsi

@@ -28,8 +28,8 @@ namespace Content.Server._Mini.Typan
 
         private void OnPostGameMapLoad(PostGameMapLoad ev)
 		{
-			var prototypes = _prototype.EnumeratePrototypes<TTAdditionalMapPrototype>();
-			TTAdditionalMapPrototype? matched = null;
+			var prototypes = _prototype.EnumeratePrototypes<AdditionalMapPrototype>();
+			AdditionalMapPrototype? matched = null;
 			foreach (var proto in prototypes)
 			{
 				if (proto.MapProtoIds.Contains(ev.GameMap.ID))

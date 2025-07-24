@@ -12,8 +12,8 @@
     grindableSolutionName: food
 
 - type: entity
-  name: кропило
-  description: Пушистая кисточка для обрызгивания святой водой. Даже в самых темных делах всегда есть место для божественного очищения.
+  name: sprinkler
+  description: A fluffy brush for sprinkling with holy water. Even in the darkest of deeds, there is always room for divine purification.
   id: Cropilo
   parent: ProduceBaseCropilo
   components:

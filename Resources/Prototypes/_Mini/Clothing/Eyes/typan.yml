@@ -1,8 +1,8 @@
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons]
   id: ClothingEyesHudSyndicateAgentTypan
-  name: визор медика синдиката
-  description: Визор, используемый медиками на защищенных станциях синдиката.
+  name: syndicate medic hud
+  description: A hud used by medics on Syndicate secure stations.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Hud/syndagent.rsi
@@ -16,8 +16,8 @@
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons]
   id: ClothingEyesHudTypan
-  name: визор офицера телекоммуникаций
-  description: Удобный визор со встроенной системой разпознавания.
+  name: syndicate hud
+  description: A convenient hud with a built-in recognition system.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Hud/synd.rsi

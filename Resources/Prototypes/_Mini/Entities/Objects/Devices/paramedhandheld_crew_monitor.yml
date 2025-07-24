@@ -1,10 +1,10 @@
 - type: entity
-  name: портативный монитор экипажа парамедика
+  name: handheld paramedic monitor
   categories: [ DoNotMap ]
   parent: [ BaseHandheldComputer ]
   # Нет уж, я ваши зелёные буковки читать не буду!
   id: HandheldCrewMonitorParamed
-  description: Это — отдельная ветвь разработки, портативный монитор экипажа, который работает точно также, как оригинал. На деле — дешевый ширпотреб, зато свою функцию он исполняет исправно.
+  description: This is a separate branch of development, a portable crew monitor that works exactly like the original. In fact, it's a cheap commodity, but it performs its function well.
   components:
   - type: Item
     heldPrefix: paramedscanner

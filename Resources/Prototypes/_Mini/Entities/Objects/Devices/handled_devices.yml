@@ -2,8 +2,8 @@
 - type: entity
   parent: BaseItem
   id: BaseHandheldAtmosMonitiring
-  name: Атмосферный мониторинг
-  description: Позволяет следить за состоянием атмосферы на станции.
+  name: handheld atmos monitoring console
+  description: It allows you to monitor the atmospheric conditions at the station.
   abstract: true
   components:
     - type: Sprite
@@ -44,12 +44,12 @@
   parent:
   - BaseHandheldAtmosMonitiring
   - BaseHandheldComputer
-  suffix: Батарея
+  suffix: Battery
 
 - type: entity
   id: HandheldAtmosMonitiringEmpty
   parent: HandheldAtmosMonitiring
-  suffix: Пусто
+  suffix: Empty
   components:
   - type: ItemSlots
     slots:
@@ -59,15 +59,15 @@
 - type: entity
   id: HandheldAtmosMonitiringUnpowered
   parent: BaseHandheldAtmosMonitiring
-  suffix: Не запитан
+  suffix: Unpowered
 
   #Консоль атмос угроз
 
 - type: entity
   parent: BaseItem
   id: BaseHandheldComputerAlert
-  name: Мониторинг атмосферных угроз
-  description: Позволяет следить за атмосферыми угрозами на станции.
+  name: handheld atmos alerts console
+  description: It allows you to monitor the station's atmospheric threats and alerts.
   abstract: true
   components:
     - type: Sprite
@@ -106,12 +106,12 @@
   parent:
   - BaseHandheldComputerAlert
   - BaseHandheldComputer
-  suffix:  Батарея
+  suffix: Battery
 
 - type: entity
   id: HandheldComputerAlertEmpty
   parent: HandheldComputerAlert
-  suffix: Пусто
+  suffix: Empty
   components:
   - type: ItemSlots
     slots:
@@ -121,15 +121,15 @@
 - type: entity
   id: HandheldComputerAlertUnpowered
   parent: BaseHandheldComputerAlert
-  suffix: Не запитан
+  suffix: Unpowered
 
 #консоль проводки
 
 - type: entity
   parent: BaseItem
   id: BaseHandheldPowerMonitoring
-  name: Мониторинг проводки
-  description: Позволяет следить за состоянием проводки на станции.
+  name: handheld power monitoring console
+  description: It allows you to monitor the wiring status at the station.
   abstract: true
   components:
     - type: Sprite
@@ -171,12 +171,12 @@
   parent:
   - BaseHandheldPowerMonitoring
   - BaseHandheldComputer
-  suffix: Батарея
+  suffix: Battery
 
 - type: entity
   id: HandheldPowerMonitoringEmpty
   parent: HandheldPowerMonitoring
-  suffix: Пусто
+  suffix: Empty
   components:
   - type: ItemSlots
     slots:
@@ -186,6 +186,6 @@
 - type: entity
   id: HandheldPowerMonitoringUnpowered
   parent: BaseHandheldPowerMonitoring
-  suffix: Не запитан
+  suffix: Unpowered
 
 

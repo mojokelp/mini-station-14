@@ -11,8 +11,8 @@
 - type: entity
   parent: BaseTypanPDA
   id: SyndiPDARD
-  name: КПК директора исследований Синдиката
-  description: Сосредоточение наизлейших технологий! Пахнет дешёвым пластиком...
+  name: syndicate research director PDA
+  description: A concentration of the worst technologies! It smells like cheap plastic...
   components:
   - type: Pda
     id: TypanIDCardRd
@@ -29,8 +29,8 @@
 - type: entity
   parent: BaseTypanPDA
   id: SyndiPDAScience
-  name: КПК учёного Синдиката
-  description: Похоже этот КПК был взломан.
+  name: syndicate scientist PDA
+  description: It looks like this PDA was hacked.
   components:
   - type: Pda
     id: TypanIDCardScience
@@ -47,8 +47,8 @@
 - type: entity
   parent: BaseTypanPDA
   id: SyndiPDABotan
-  name: КПК ботаника Синдиката
-  description: Весь разъеден ядами растительного происхождения.
+  name: syndicate botanist PDA
+  description: It's completely corroded by plant-based poisons.
   components:
   - type: Pda
     id: TypanIDCardBotanist
@@ -65,8 +65,8 @@
 - type: entity
   parent: BaseTypanPDA
   id: MedicalPDASyndi
-  name: КПК врача Синдиката
-  description: Ходят легенды, что на нём отображается пульс главы НТ.
+  name: syndicate medic PDA
+  description: There are legends that it displays the pulse of the head of the NT.
   components:
   - type: Pda
     id: TypanIDCardMed
@@ -93,8 +93,8 @@
 - type: entity
   parent: BaseTypanPDA
   id: SyndiPDAEng
-  name: КПК атмосферного инженера Синдиката
-  description: Крепкий КПК мастера на все руки.
+  name: syndicate atmospheric technician PDA
+  description: A sturdy all-in-one PDA.
   components:
   - type: Pda
     id: TypanIDCardEng
@@ -111,8 +111,8 @@
 - type: entity
   parent: BaseTypanPDA
   id: SyndiPDACom
-  name: КПК командира Синдиката
-  description: Оснащён всеми средствами и возможностями для получения наизлейших приказов.
+  name: syndicate telecommunications officer PDA
+  description: Equipped with all the means and capabilities to receive the most terrible orders.
   components:
   - type: Pda
     id: TypanIDCardCom
@@ -129,8 +129,8 @@
 - type: entity
   parent: BaseTypanPDA
   id: SyndiPDACargo
-  name: КПК карготехника Синдиката
-  description: В слоту для ручки застрял зуб карпоакулы.
+  name: syndicate cargo technician PDA
+  description: A sharkminnow's tooth is stuck in the pen slot.
   components:
   - type: Pda
     id: TypanIDCardCargo
@@ -147,8 +147,8 @@
 - type: entity
   parent: BaseTypanPDA
   id: SyndiPDAChef
-  name: КПК повара Синдиката
-  description: Ну так как оно будет? С кишками или без кишок?
+  name: syndicate chef PDA
+  description: So how will it be? With or without the guts?
   components:
   - type: Pda
     id: TypanIDCardChef

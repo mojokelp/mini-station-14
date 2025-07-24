@@ -1,6 +1,6 @@
 - type: entity
-  name: пинпоинтер аномальной активности
-  description: Указывает на скопления нечисти и аномальной активности. Перезагрузите перед использованием!!!
+  name: anomal activity pinpointer
+  description: Indicates the presence of evil spirits and abnormal activity. Please restart before use!
   id: PinpointerCult
   parent: [PinpointerBase, BaseCommandContraband]
   components:

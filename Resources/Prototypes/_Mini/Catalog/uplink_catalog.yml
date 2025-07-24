@@ -1,7 +1,7 @@
 - type: listing
   id: SaintGun
-  name: Пулемёт "Серафим"
-  description: Специальное оружие для борьбы с потусторонними силами.
+  name: uplink-ert-saint-gun-name
+  description: uplink-ert-saint-gun-desc
   icon: { sprite: _Mini/Objects/Weapons/Guns/LMGs/saint_gun.rsi, state: base }
   productEntity: WeaponSaintGun
   cost:
@@ -11,8 +11,8 @@
 
 - type: listing
   id: SaintMelee
-  name: Кропило
-  description: Пушистая кисточка для обрызгивания святой водой.
+  name: uplink-ert-saint-melee-name
+  description: uplink-ert-saint-melee-desc
   icon: { sprite: _Mini/Objects/Weapons/Melee/cropilo.rsi, state: cropilo }
   productEntity: Cropilo
   cost:
@@ -24,8 +24,8 @@
 
 - type: listing
   id: BoberJawOfLife
-  name: boobr-JawsOfLife-name
-  description: boobr-JawsOfLife-desc
+  name: uplink-ert-jaws-of-life-name
+  description: uplink-ert-jaws-of-life-desc
   productEntity: JawsOfLife
   cost:
     Productunit: 4
@@ -34,8 +34,8 @@
 
 - type: listing
   id: BoberGrenadeShrapnel
-  name: Разрывная граната
-  description: Граната для подавления лёгкобронированного противника
+  name: uplink-ert-grenade-shrapnel-name
+  description: uplink-ert-grenade-shrapnel-desc
   productEntity: GrenadeShrapnel
   cost:
     Productunit: 1
@@ -44,9 +44,9 @@
 
 - type: listing
   id: Boberc4
-  name: boobr-c4-name
+  name: uplink-ert-c4-name
   productEntity: C4
-  description: boobr-c4-desc
+  description: uplink-ert-c4-desc
   cost:
     Productunit: 1
   categories:
@@ -54,9 +54,9 @@
 
 - type: listing
   id: BoberJetPack
-  name: boobr-jetpack-name
+  name: uplink-ert-jetpack-name
   productEntity: JetpackVoidFilled
-  description:  boobr-jetpack-desc
+  description: uplink-ert-jetpack-desc
   cost:
     Productunit: 2
   categories:
@@ -64,9 +64,9 @@
 
 - type: listing
   id: BoberOxtank
-  name: Двойной кислородный баллон
+  name: uplink-ert-double-ox-name
   productEntity: DoubleEmergencyOxygenTank
-  description: Высококлассный двухбаллонный резервуар аварийного жизнеобеспечения. Вмещает 2,5 Л газа.
+  description: uplink-ert-double-ox-desc
   cost:
     Productunit: 1
   categories:
@@ -74,9 +74,9 @@
 
 - type: listing
   id: BoberNitank
-  name: Двойной азотный баллон
+  name: uplink-ert-double-nit-name
   productEntity: DoubleEmergencyNitrogenTank
-  description: Высококлассный двухбаллонный резервуар аварийного жизнеобеспечения. Вмещает 2,5 Л газа.
+  description: uplink-ert-double-nit-desc
   cost:
     Productunit: 1
   categories:
@@ -94,39 +94,39 @@
 
 - type: listing
   id: BoberMediKit
-  name: boobr-medikit-name
+  name: uplink-ert-medkit-name
   productEntity: MedkitAdvancedFilled
-  description:  boobr-medikit-desc
+  description:  uplink-ert-medkit-desc
   cost:
     Productunit: 2
   categories:
-  - UplinkERTmed
+  - UplinkERTMed
 
 - type: listing
   id: BoberMediKitAir
-  name: Автоинъектор удушения
+  name: uplink-ert-airloss-pen-name
   productEntity: AirlossAutoInjector
-  description: Экспресс-доза физраствора и дексалина плюс, предназначенная чтобы быстро поднять кого-нибудь на ноги.
+  description: uplink-ert-airloss-pen-desc
   cost:
     Productunit: 1
   categories:
-  - UplinkERTmed
+  - UplinkERTMed
 
 - type: listing
   id: BoberMediKitBr
-  name: Автоинъектор мех-повреждений
+  name: uplink-ert-brute-pen-name
   productEntity: BruteAutoInjector
-  description: Экспресс-доза бикаридина и транексамовой кислоты, предназначенная для применения в боевых условиях.
+  description: uplink-ert-brute-pen-desc
   cost:
     Productunit: 1
   categories:
-  - UplinkERTmed
+  - UplinkERTMed
 
 - type: listing
   id: BoberIpcKit
-  name: Продвинутый сварочный аппарат
+  name: uplink-ert-welder-name
   productEntity: WelderIndustrialAdvanced
-  description:  На случай если вы КПБ)
+  description: uplink-ert-welder-desc
   cost:
     Productunit: 2
   categories:
@@ -137,8 +137,8 @@
 
 - type: listing
   id: SaintAmmo
-  name: Магазин святых пуль
-  description: Магазин для пулемёта "Серафим".
+  name: uplink-ert-saint-ammo-name
+  description: uplink-ert-saint-ammo-desc
   icon: { sprite: _Mini/Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/saint_rifle_mag.rsi, state: base }
   productEntity: MagazineRifleSaint
   cost:
@@ -148,10 +148,10 @@
 
 
 - type: listing
-  id: saintbomb
-  name: Святая газовая граната
+  id: SaintBomb
+  name: uplink-ert-holywater-bomb-name
   productEntity: HolyWaterGrenade
-  description: Выпускает газ, который отрицательно влияет на нечисть.
+  description: uplink-ert-holywater-bomb-desc
   cost:
     Productunit: 1
   categories:

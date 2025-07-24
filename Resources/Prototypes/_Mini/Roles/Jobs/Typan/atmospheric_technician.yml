@@ -2,7 +2,7 @@
   id: TypanAtmosTech
   name: job-name-typan-atmos-tech
   playTimeTracker: TypanAtmosTech
-  description: Атмосферный инженер из далёкого космоса.
+  description: job-description-typan-atmos-tech
   startingGear: TypanAtmosTech
   icon: "JobIconSyndicateAtmos"
   supervisors: job-supervisors-typan-telecommunications-officer

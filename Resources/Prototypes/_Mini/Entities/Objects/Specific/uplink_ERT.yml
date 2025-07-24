@@ -1,9 +1,9 @@
 - type: entity
   parent: [BaseItem,  StorePresetUplinkERT]
   id: BaseUplinkBOBERT
-  name: Святой магазин
-  description: Блюспейс магазин отряда быстрого реагирования.
-  suffix: 30 ЕТ
+  name: holy store
+  description: Store of Emergency Response Team, powered with bluespace.
+  suffix: 30 PU
   components:
   - type: Sprite
     sprite: _Mini/Objects/Specific/bobert.rsi
@@ -33,31 +33,31 @@
     - UplinkERTMisc
     - UplinkERTAmmo
     - UplinkERTBomb
-    - UplinkERTmed
+    - UplinkERTMed
     currencyWhitelist:
     - Productunit
 
 - type: storeCategory
   id: UplinkERTWeapon
-  name: Оружие
+  name: store-category-weapon-ert
   priority: 1
 
 - type: storeCategory
   id: UplinkERTMisc
-  name: Прочее
+  name: store-category-misc-ert
   priority: 5
 
 - type: storeCategory
   id: UplinkERTAmmo
-  name: Боеприпасы
-  priority: 2
-
-- type: storeCategory
-  id: UplinkERTBomb
-  name: Взрывчатка
+  name: store-category-ammo-ert
   priority: 3
 
 - type: storeCategory
+  id: UplinkERTBomb
+  name: store-category-bomb-ert
+  priority: 2
+
+- type: storeCategory
   id: UplinkERTmed
-  name: Медицина
+  name: store-category-med-ert
   priority: 4

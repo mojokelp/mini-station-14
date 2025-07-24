@@ -22,6 +22,7 @@
     - TelescopicBaton
     - ADTBorgflash
     - WeaponLaserCarbineBorg
+    
 - type: entity
   id: ADTBorgModuleHarm
   parent: [ ADTBaseBorgModuleSecurity, BaseProviderBorgModule ]
@@ -30,7 +31,7 @@
   - type: Sprite
     layers:
     - state: security
-    - state: icons-harm
+    - state: icons-detentions
   - type: ItemBorgModule
     items:
     - Truncheon
@@ -44,7 +45,7 @@
   - type: Sprite
     layers:
     - state: security
-    - state: icons-disabler
+    - state: icons-detentions
   - type: ItemBorgModule
     items:
     - ADTInfCablecuffs

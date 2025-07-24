@@ -57,12 +57,55 @@
   sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Security/tread_security.rsi
   dummyPrototype: ADTTreadSecurityChassis
 
+- type: borgSubtype
+  parentBorgType: security
+  id: egg_security
+  sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Security/egg_security.rsi
+  dummyPrototype: ADTEggSecurityChassis
+
 #Service
 
+- type: borgSubtype
+  parentBorgType: service
+  id: brobot_service
+  sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Service/brobot_service.rsi
+  dummyPrototype: ADTBroBotServiceChassis
+
+- type: borgSubtype
+  parentBorgType: service
+  id: female_service
+  sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Service/female_service.rsi
+  dummyPrototype: ADTFemaleServiceChassis
+
+- type: borgSubtype
+  parentBorgType: service
+  id: bartender_service
+  sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Service/bartender_service.rsi
+  dummyPrototype: ADTBartenderServiceChassis
 
 - type: borgSubtype
   parentBorgType: service
   id: kerfus_service
   sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Service/cyborg_kerfus.rsi
   dummyPrototype: ADTKerfusServiceChassis
+
+- type: borgSubtype
+  parentBorgType: janitor
+  id: kerfus_janitor
+  sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Janitor/cyborg_maid_kerfus.rsi
+  dummyPrototype: ADTKerfusJanitorChassis
+
+- type: borgSubtype
+  parentBorgType: generic
+  id: old_generic
+  sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Generic/old_generic.rsi
+  dummyPrototype: ADTOldBorgChassisGeneric
+
+#Medical
+
+- type: borgSubtype
+  parentBorgType: medical
+  id: qualified_doctor
+  sprite: ADT/Mobs/Silicon/Borgs/Borg_subtype/Medical/qualified_doctor.rsi
+  dummyPrototype: ADTQualifiedDoctorChassis
 

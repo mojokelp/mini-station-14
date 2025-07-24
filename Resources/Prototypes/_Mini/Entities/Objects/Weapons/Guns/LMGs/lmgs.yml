@@ -1,8 +1,8 @@
 - type: entity
-  name: Пулемёт "Защитник"
+  name: Defender
   id: WeaponMiniMachineGun
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
-  description: Передовое энергетическое оружие с расширенным боезапасом. имеет слабый самозаряд.
+  description: Advanced energy weapon with extended ammunition. has a weak self-reload.
   components:
   - type: Item
     size: Huge
@@ -53,8 +53,8 @@
 
 - type: entity
   id: WeaponSaintGun
-  name: Пулемёт "Серафим"
-  description: Специальное оружие для борьбы с потусторонними силами. Отче наш, Иже еси на небесе́х! Да святится имя Твое, да прии́дет Царствие Твое, да будет воля Твоя, яко на небеси́ и на земли́...
+  name: Seraphim
+  description: A special weapon for fighting otherworldly forces. Our Father, who art in heaven! Let thy name be holy, let thy kingdom come, let thy will be done, both in heaven and on earth...
   parent: [WeaponRifleAk, BaseSecurityContraband]
   components:
     - type: Item
@@ -108,10 +108,10 @@
     - type: GunRequiresWield
 
 - type: entity
-  name: Л2-ПК
+  name: L2-PK
   id: WeaponLightMachineGunL2RPK
   parent: BaseWeaponLightMachineGun
-  description: Л2-ПК - это ручной пулемёт из семейства TechnicLogistic, разработанный на основе хорошо известного L6. Этот пулемёт отличается повышенной точностью и низкой себестоимостью производства. Однако особенности его конструкции сделали его весьма громоздким.
+  description: The L2-PK is a light machine gun from the TechnicLogistic family, developed based on the well-known L6. This machine gun is known for its increased accuracy and low production costs. However, its design has made it quite bulky.
   components:
   - type: Sprite
     sprite: _Mini/Objects/Weapons/Guns/LMGs/L2RPK.rsi

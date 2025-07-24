@@ -1,6 +1,6 @@
 - type: entity
   id: BulletMagnumAntimaterial
-  name: Мангнум 45 антиматериальная
+  name: magnum bullet
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -12,7 +12,7 @@
 
 - type: entity
   id: CartridgeMagnumAntimaterial
-  name: патрон магнум 45 антиматериальный
+  name: cartridge (.45 magnum antimaterial)
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
@@ -24,7 +24,7 @@
 
 - type: entity
   id: MagazineMagnumAntimaterial
-  name: магазин (.45 магнум антиматериальный)
+  name: magazine (.45 magnum antimaterial)
   parent: [ MagazineMagnum, BaseSecurityContraband ]
   components:
   - type: Tag

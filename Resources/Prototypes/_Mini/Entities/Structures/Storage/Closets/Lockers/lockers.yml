@@ -1,8 +1,8 @@
 - type: entity
   id: LockerSyndicateAtmos
-  name: шкаф атмостеха синдиката
+  name: syndicate atmospheric technician's locker
   parent: LockerAtmospherics
-  description: Хранилище вещей атмосферного техника синдиката.
+  description: A standard-issue Syndicate storage unit.
   components:
     - type: Appearance
     - type: EntityStorageVisuals
@@ -25,9 +25,9 @@
 
 - type: entity
   id: LockerSyndicateCap
-  name: шкаф капитана синдиката
+  name: syndicate captain's locker
   parent: LockerAtmospherics
-  description: Хранилище вещей капитана синдиката.
+  description: A standard-issue Syndicate storage unit.
   components:
     - type: Appearance
     - type: EntityStorageVisuals
@@ -42,9 +42,9 @@
 
 - type: entity
   id: LockerSyndicateCargo
-  name: шкаф карготехника синдиката
+  name: syndicate cargo technician's locker
   parent: LockerSalvageSpecialist
-  description: Хранилище вещей карготехника синдиката.
+  description: A standard-issue Syndicate storage unit.
   components:
     - type: Appearance
     - type: EntityStorageVisuals
@@ -60,9 +60,9 @@
 
 - type: entity
   id: LockerSyndicateMed
-  name: шкаф для медикоментов
+  name: medical locker
   parent: LockerMedicineFilled
-  description: Хранилище вещей медика.
+  description: A standard-issue Syndicate storage unit.
   components:
     - type: Appearance
     - type: EntityStorageVisuals

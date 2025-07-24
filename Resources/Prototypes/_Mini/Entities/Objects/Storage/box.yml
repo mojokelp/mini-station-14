@@ -1,7 +1,7 @@
 - type: entity
   id: BoxBrigmedic
-  name: Коробка с мини-шприцами
-  desc: О да! Обколите ассистенотов ядом!
+  name: box of mini syringes
+  desc: Oh yes! Inject the assistants with poison!
   parent: BoxCardboard
   components:
     - type: StorageFill

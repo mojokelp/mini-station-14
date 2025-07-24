@@ -1,8 +1,8 @@
 - type: job
   id: TypanOfficer
-  name: патрульный Синдиката
+  name: job-name-typan-officer
   playTimeTracker: TypanOfficer
-  description: Патрульный из далёкого космоса.
+  description: job-description-typan-officer
   startingGear: TypanOfficer
   icon: "JobIconSyndicateOfficer"
   supervisors: job-supervisors-typan-syndicate

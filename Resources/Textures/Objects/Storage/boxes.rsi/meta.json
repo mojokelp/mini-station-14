@@ -34,9 +34,15 @@
           {
               "name": "meson"
           },
+	  {
+	      "name": "secglasses"
+	  },
           {
               "name": "sechud"
           },
+	  {
+	      "name": "sunglasses"
+	  },
           {
               "name": "bottle"
           },
