@@ -106,7 +106,7 @@
   parent:
   - BaseHandheldComputerAlert
   - BaseHandheldComputer
-  suffix:  Battery
+  suffix: Battery
 
 - type: entity
   id: HandheldComputerAlertEmpty
