@@ -2,7 +2,6 @@ using System.IO;
 using System.Linq;
 using System.Numerics;
 using Content.Client.ADT.Lobby.UI;
-using Content.Client.Corvax.Sponsors;
 using Content.Client.Guidebook;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
@@ -56,7 +55,7 @@ namespace Content.Client.Lobby.UI
         private readonly JobRequirementsManager _requirements;
         private readonly LobbyUIController _controller;
         private readonly ISharedSponsorsManager? _sponsorsManager; //Sponsor think
-
+        [Dependency] private readonly DocumentParsingManager _parsingMan = default!;
         private readonly SpriteSystem _sprite;
 
         private FlavorText.FlavorText? _flavorText;
