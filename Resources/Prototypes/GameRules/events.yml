@@ -39,6 +39,7 @@
     - id: ZombieOutbreak
     - id: LoneOpsSpawn
     - id: DerelictCyborgSpawn
+    - id: Pirates
    # - id: ZombieOutbreak
     - id: BlobSpawn #Goobstation - Blob
    # - id: WizardSpawn
