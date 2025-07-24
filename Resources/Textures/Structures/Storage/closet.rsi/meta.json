@@ -623,16 +623,31 @@
        "name": "typanatm_open"
     },
     {
-       "name": "cargos"
+       "name": "typancargo"
     },
     {
-       "name": "cargos_door"
+       "name": "typancargo_door"
     },
     {
-       "name": "cargos_open"
+       "name": "typancargo_open"
     },
     {
-       "name": "meds_door"
+       "name": "typanmed_door"
+    },
+    {
+       "name": "typanmed"
+    },
+    {
+       "name": "typan_sci"
+    },
+    {
+       "name": "typan_sci_door"
+    },
+    {
+       "name": "typanbot"
+    },
+    {
+       "name": "typanbot_door"
     }
   ]
 }

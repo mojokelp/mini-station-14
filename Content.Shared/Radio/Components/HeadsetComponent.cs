@@ -32,8 +32,6 @@ public sealed partial class HeadsetComponent : Component
     public HashSet<ProtoId<RadioChannelPrototype>> ToggledSoundChannels = [];
     // Corvax-Next-HeadsetSound-End
 
-    // DS14-start
     [DataField]
     public Color Color { get; private set; } = Color.Lime;
-    // DS14-end
 }

@@ -25,7 +25,7 @@
   #- type: Wieldable
   # Lavaland Change end
   - type: Gun
-    fireRate: 0.5
+    fireRate: 0.6
     selectedMode: SemiAuto
     #angleDecay: 45 # Lavaland Change
     minAngle: 3 # Lavaland Change

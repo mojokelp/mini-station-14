@@ -244,7 +244,7 @@
       - state: base-part-inhand-right
       - state: base-stripes-inhand-right
         color: "#7B0F12"
-      
+
 
 - type: entity
   id: BaseBorgModuleSyndicateAssault
@@ -388,10 +388,9 @@
   - type: ItemBorgModule
     items:
     - MiningDrill
-    - Shovel
+    - WeaponProtoKineticAccelerator
     - MineralScannerUnpowered
     - OreBag
-    - Crowbar
     - RadioHandheld
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: mining-module }
@@ -409,6 +408,8 @@
     items:
     - WeaponGrapplingGun
     - HandheldGPSBasic
+    - Crowbar
+    - WelderIndustrial
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: grappling-module }
 

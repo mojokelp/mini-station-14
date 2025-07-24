@@ -388,9 +388,9 @@ namespace Content.Server.Communications
                 return;
             }
 
-            _chatSystem.DispatchGlobalAnnouncement(msg, title, announcementSound: comp.AnnouncementSound, colorOverride: comp.Color, originalMessage: originalMessage, author: message.Actor); // DS14 TODO
+            _chatSystem.DispatchGlobalAnnouncement(msg, title, announcementSound: comp.AnnouncementSound, colorOverride: comp.Color, originalMessage: originalMessage, author: message.Actor);
 
-            _adminLogger.Add(LogType.Chat, LogImpact.Low, $"{ToPrettyString(message.Actor):player} has sent the following global announcement: {msg}"); // DS14 TODO (has sent the following station announcement)
+            _adminLogger.Add(LogType.Chat, LogImpact.Low, $"{ToPrettyString(message.Actor):player} has sent the following global announcement: {msg}");
 
         }
 

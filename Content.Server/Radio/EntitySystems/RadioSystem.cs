@@ -113,7 +113,6 @@ public sealed class RadioSystem : EntitySystem
             ? FormattedMessage.EscapeText(message)
             : message;
 
-        // DS14-start
 
         var headsetColor = TryComp(radioSource, out HeadsetComponent? headset) ? headset.Color : channel.Color;
 
@@ -148,7 +147,6 @@ public sealed class RadioSystem : EntitySystem
             ("headset-color", headsetColor),
             ("job", job));
 
-        // DS14-end
 
         // most radios are relayed to chat, so lets parse the chat message beforehand
         var chat = new ChatMessage(
@@ -158,7 +156,7 @@ public sealed class RadioSystem : EntitySystem
             NetEntity.Invalid,
             null);
         var chatMsg = new MsgChatMessage { Message = chat };
-        var ev = new RadioReceiveEvent(message, messageSource, channel, radioSource, chatMsg, []); // DS14
+        var ev = new RadioReceiveEvent(message, messageSource, channel, radioSource, chatMsg, []);
 
         var sendAttemptEv = new RadioSendAttemptEvent(channel, radioSource);
         RaiseLocalEvent(ref sendAttemptEv);
@@ -198,7 +196,7 @@ public sealed class RadioSystem : EntitySystem
             RaiseLocalEvent(receiver, ref ev);
         }
 
-        RaiseLocalEvent(new RadioSpokeEvent(messageSource, message, ev.Receivers.ToArray())); // DS14
+        RaiseLocalEvent(new RadioSpokeEvent(messageSource, message, ev.Receivers.ToArray()));
 
         if (name != Name(messageSource))
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Radio message from {ToPrettyString(messageSource):user} as {name} on {channel.LocalizedName}: {message}");
@@ -225,7 +223,7 @@ public sealed class RadioSystem : EntitySystem
         return false;
     }
 
-    // DS14-start
+
     private string Highlight(string msg)
     {
 
@@ -265,5 +263,4 @@ public sealed class RadioSystem : EntitySystem
 
         return redex_word.Remove(redex_word.Length - 1);
     }
-    // DS14-end
 }
