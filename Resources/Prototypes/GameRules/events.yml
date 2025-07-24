@@ -41,7 +41,8 @@
     - id: DerelictCyborgSpawn
    # - id: ZombieOutbreak
     - id: BlobSpawn #Goobstation - Blob
-    - id: WizardSpawn
+   # - id: WizardSpawn
+    - id: BingleSpawn #Goobstation - Bingle
 
 - type: entity
   id: BaseStationEvent
