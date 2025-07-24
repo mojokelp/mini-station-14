@@ -1,8 +1,8 @@
 - type: job
   id: TypanCommand
-  name: job-name-typan-telecommunications-officer
+  name: job-name-typan-command
   playTimeTracker: TypanCommand
-  description: Командир из далёкого космоса.
+  description: job-description-typan-command
   startingGear: TypanCommand
   icon: "JobIconSyndicateFormal"
   supervisors: job-supervisors-typan-syndicate

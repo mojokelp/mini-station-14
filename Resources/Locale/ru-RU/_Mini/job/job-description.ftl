@@ -6,3 +6,4 @@ job-description-typan-medic = Медик из далёкого космоса.
 job-description-typan-rd = Директор исследований из далёкого космоса.
 job-description-typan-science = Учёный из далёкого космоса.
 job-description-typan-officer = Офицер из далёкого космоса.
+job-description-typan-command = Командир из далёкого космоса.
