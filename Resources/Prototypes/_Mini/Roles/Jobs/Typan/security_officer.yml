@@ -1,8 +1,8 @@
 - type: job
   id: TypanOfficer
-  name: job-name-typan-telecommunications-officer
+  name: job-name-typan-officer
   playTimeTracker: TypanOfficer
-  description: job-description-typan-telecommunications-officer
+  description: job-description-typan-officer
   startingGear: TypanOfficer
   icon: "JobIconSyndicateOfficer"
   supervisors: job-supervisors-typan-syndicate

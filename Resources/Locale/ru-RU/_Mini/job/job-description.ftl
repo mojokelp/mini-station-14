@@ -5,4 +5,4 @@ job-description-typan-chef = Повар из далёкого космоса.
 job-description-typan-medic = Медик из далёкого космоса.
 job-description-typan-rd = Директор исследований из далёкого космоса.
 job-description-typan-science = Учёный из далёкого космоса.
-job-description-typan-telecommunications-officer = Офицер телекоммуникаций из далёкого космоса.
+job-description-typan-officer = Офицер из далёкого космоса.
