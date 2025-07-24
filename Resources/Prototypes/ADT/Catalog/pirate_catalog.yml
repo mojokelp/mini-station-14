@@ -112,17 +112,6 @@
   - ADTPirate
 
 - type: listing
-  id: ADTPirateCutter
-  name: uplink-pirate-cutter-name
-  description: uplink-pirate-cutter-desc
-  icon: { sprite: /Textures/ADT/Objects/Weapons/Guns/Battery/cutteradv.rsi, state: icon }
-  productEntity: ADTWeaponCutterAdv
-  cost:
-    Piastre: 2500
-  categories:
-  - ADTPirate
-
-- type: listing
   id: ADTPirateMicroreactor
   name: uplink-pirate-microreactor-name
   description: uplink-pirate-microreactor-desc
@@ -149,7 +138,7 @@
   name: uplink-pirate-cannon-name
   description: uplink-pirate-cannon-desc
   icon: { sprite: /Textures/Objects/Weapons/Guns/Shuttles/pirate_cannon.rsi, state: base }
-  productEntity: ShuttleGunPirateCannon 
+  productEntity: ShuttleGunPirateCannon
   cost:
     Piastre: 4500
   categories:
@@ -236,7 +225,7 @@
   id: ADTPirateLethalShot
   name: uplink-pirate-lethal-shot-name
   description: uplink-pirate-lethal-shot-desc
-  icon: { sprite: /Textures/Objects/Storage/boxes.rsi, state: shelllethal }
+  icon: { sprite: /Textures/Objects/Storage/boxes.rsi, state: shelltoy }
   productEntity: BoxLethalshot
   cost:
     Piastre: 300
