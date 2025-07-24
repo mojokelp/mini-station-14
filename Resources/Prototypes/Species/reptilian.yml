@@ -11,6 +11,13 @@
   maleFirstNames: NamesReptilianMale
   femaleFirstNames: NamesReptilianFemale
   naming: FirstDashFirst
+  # ADT Species window start
+  description: "/ServerInfo/ADT/SpeciesDescriptions/Unath.xml"
+  pros:
+  - Могут таскать объекты хвостом.
+  cons:
+  - Получают больше урона от холода.
+  # ADT Species window end
 
 - type: speciesBaseSprites
   id: MobReptilianSprites

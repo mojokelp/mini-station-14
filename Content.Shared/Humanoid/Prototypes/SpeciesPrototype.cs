@@ -2,6 +2,7 @@ using Content.Shared.Dataset;
 using Content.Shared.Humanoid.Markings;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
+using Robust.Shared.Utility;
 
 namespace Content.Shared.Humanoid.Prototypes;
 
@@ -135,6 +136,23 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// </summary>
     [DataField]
     public int MaxAge = 120;
+
+    // ADT Species Window start
+    [DataField]
+    public SpeciesCategory Category = SpeciesCategory.Classic;
+
+    [DataField]
+    public ResPath? Description;
+
+    [DataField]
+    public List<string> Pros = new();
+
+    [DataField]
+    public List<string> Cons = new();
+
+    [DataField]
+    public List<string> Special = new();
+    // ADT Species Window end
 }
 
 public enum SpeciesNaming : byte
@@ -146,3 +164,12 @@ public enum SpeciesNaming : byte
     FirstDashLast, // Parkstation-IPC
     FirstDashFirstDashFirst
 }
+
+// ADT start
+public enum SpeciesCategory : byte
+{
+    Classic,
+    Unusual,
+    Special
+}
+// ADT end
