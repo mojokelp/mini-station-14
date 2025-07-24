@@ -65,7 +65,7 @@
     spawn_type: LateJoin
 
 - type: entity
-  name: latejoin syndicate sciencist
+  name: latejoin syndicate scientist
   id: SpawnPointLatejoinTypanScience
   parent: SpawnPointJobBase
   components:
