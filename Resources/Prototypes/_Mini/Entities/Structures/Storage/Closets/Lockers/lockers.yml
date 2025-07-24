@@ -7,7 +7,7 @@
     - type: Appearance
     - type: EntityStorageVisuals
       stateBaseClosed: typanatm
-      stateDoorOpen: typanatm_open
+      stateDoorOpen: tac_open
       stateDoorClosed: typanatm_door
     - type: StorageFill
       contents:
@@ -48,9 +48,9 @@
   components:
     - type: Appearance
     - type: EntityStorageVisuals
-      stateBaseClosed: cargos
-      stateDoorOpen: cargos_open
-      stateDoorClosed: cargos_door
+      stateBaseClosed: typancargo
+      stateDoorOpen: tac_open
+      stateDoorClosed: typancargo_door
     - type: AccessReader
       access: [["TypanCargo"]]
     - type: EntityTableContainerFill
@@ -62,13 +62,13 @@
   id: LockerSyndicateMed
   name: шкаф для медикоментов
   parent: LockerMedicineFilled
-  description: Хранилище вещей карготехника синдиката.
+  description: Хранилище вещей медика.
   components:
     - type: Appearance
     - type: EntityStorageVisuals
-      stateBaseClosed: cargos
-      stateDoorOpen: cargos_open
-      stateDoorClosed: meds_door
+      stateBaseClosed: typanmed
+      stateDoorOpen: tac_open
+      stateDoorClosed: typanmed_door
     - type: AccessReader
       access: [["TypanMedical"]]
 
@@ -89,3 +89,31 @@
       - id: MineralScanner
       - id: ClothingEyesGlassesMeson
       - id: SeismicCharge
+
+- type: entity
+  id: LockerSyndicateSci
+  name: шкаф учёного
+  parent: LockerScienceFilled
+  description: Хранилище вещей учёного.
+  components:
+    - type: Appearance
+    - type: EntityStorageVisuals
+      stateBaseClosed: typan_sci
+      stateDoorOpen: tac_open
+      stateDoorClosed: typan_sci_door
+    - type: AccessReader
+      access: [["TypanScience"]]
+
+- type: entity
+  id: LockerSyndicateBot
+  name: шкаф ботаника
+  parent: LockerBotanistFilled
+  description: Хранилище вещей ботаника.
+  components:
+    - type: Appearance
+    - type: EntityStorageVisuals
+      stateBaseClosed: typanbot
+      stateDoorOpen: tac_open
+      stateDoorClosed: typanbot_door
+    - type: AccessReader
+      access: [["TypanService"]]
