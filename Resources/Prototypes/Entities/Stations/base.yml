@@ -85,7 +85,7 @@
           - /Maps/Corvax/Ruins/corvax_sanctus.yml
           - /Maps/Corvax/Ruins/corvax_ussp_debris.yml
           - /Maps/Corvax/Ruins/corvax_ussp_asteroid.yml
-          # Corvax-Mapping-End
+           # Corvax-Mapping-End
           - /Maps/Ruins/wrecklaimer.yml
         vgroid: !type:DungeonSpawnGroup
           minimumDistance: 400
@@ -97,7 +97,7 @@
             enabled: true
             inherent: true
           protos:
-            - VGRoid
+          - VGRoid
 
 
 - type: entity
