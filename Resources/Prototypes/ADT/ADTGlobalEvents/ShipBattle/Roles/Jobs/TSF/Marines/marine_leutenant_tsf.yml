@@ -4,9 +4,7 @@
   description: job-description-marine-leutenant-tsf
   playTimeTracker: JobADTBattleShipMarineLeutenantTSF
   requirements:
-    - !type:SexRequirement
-      allowedSex:
-      - Male
+
     - !type:SpeciesRequirement
       inverted: false
       species:

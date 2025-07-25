@@ -7,9 +7,9 @@ namespace Content.Server.ADT.AdditionalMapLoader;
 
 public sealed class AdditionalMapLoaderSystem : EntitySystem
 {
-    [Dependency] private readonly GameTicking.GameTicker _gameTicker = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IMapManager _mapManager = default!;
+    [Dependency] private readonly GameTicker _gameTicker = default!;
 
     public override void Initialize()
     {
@@ -38,8 +38,7 @@ public sealed class AdditionalMapLoaderSystem : EntitySystem
     private void CreateAndInitializeMap(Maps.GameMapPrototype mapProto)
     {
         var map = _mapManager.CreateMap();
-        _mapManager.AddUninitializedMap(map);
-        _gameTicker.LoadGameMap(mapProto, map, null);
+        _gameTicker.LoadGameMap(mapProto, out map, null);
         _mapManager.DoMapInitialize(map);
     }
 }

@@ -1,4 +1,4 @@
 namespace Content.Shared._CorvaxNext.TurretControl.Components;
 
 [RegisterComponent]
-public sealed partial class TurretControllableComponent : Component;
+public sealed partial class CorvaxTurretControllableComponent : Component;

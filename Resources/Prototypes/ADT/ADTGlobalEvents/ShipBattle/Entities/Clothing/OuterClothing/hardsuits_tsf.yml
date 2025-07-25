@@ -56,12 +56,7 @@
     interfaces:
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
-  # ADT Grab start
-  - type: ModifyGrabStageTime
-    modifiers:
-      Hard: 1.75
-      Choke: 1.5
-  # ADT Grab end
+
 
 #Command
 

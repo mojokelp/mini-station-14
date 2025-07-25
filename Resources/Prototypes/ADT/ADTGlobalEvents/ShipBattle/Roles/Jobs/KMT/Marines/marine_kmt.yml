@@ -4,9 +4,7 @@
   description: job-description-marine-kmt
   playTimeTracker: JobADTBattleShipMarineKMT
   requirements:
-    - !type:SexRequirement
-      allowedSex:
-      - Male
+
     - !type:SpeciesRequirement
       inverted: false
       species:

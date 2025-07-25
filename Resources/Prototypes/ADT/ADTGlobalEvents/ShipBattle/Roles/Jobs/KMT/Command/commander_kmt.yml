@@ -4,22 +4,19 @@
   description: job-description-commander-kmt
   playTimeTracker: JobADTBattleShipCommanderKMT
   requirements:
-    - !type:SexRequirement
-      allowedSex:
-      - Male
     - !type:SpeciesRequirement
       inverted: false
       species:
       - Human
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 36000 #10 hrs 
+      time: 36000 #10 hrs
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 36000 #10 hrs 
+      time: 36000 #10 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000 #10 hrs 
+      time: 36000 #10 hrs
     - !type:OverallPlaytimeRequirement
       time: 252000 #70 hrs
     - !type:AgeRequirement #ADT-Tweak

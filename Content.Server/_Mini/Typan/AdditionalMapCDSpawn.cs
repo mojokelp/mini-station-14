@@ -1,4 +1,4 @@
-using Content.Server._TT.AdditionalMap;
+using Content.Server.ADT.AdditionalMapLoader;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Rules;
 using Content.Server.Maps;
@@ -59,7 +59,7 @@ namespace Content.Server._Mini.Typan
             {
                 if (transform.MapID != mapId)
                     continue;
-				
+
                 var disk = Spawn("CoordinatesDisk", transform.Coordinates);
 
                 var dest = EnsureComp<ShuttleDestinationCoordinatesComponent>(disk);

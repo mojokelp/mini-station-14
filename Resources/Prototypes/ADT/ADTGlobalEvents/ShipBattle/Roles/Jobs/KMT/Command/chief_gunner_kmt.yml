@@ -4,9 +4,6 @@
   description: job-description-chief-gunnner-kmt
   playTimeTracker: JobADTBattleShipChiefGunnerKMT
   requirements:
-    - !type:SexRequirement
-      allowedSex:
-      - Male
     - !type:SpeciesRequirement
       inverted: false
       species:

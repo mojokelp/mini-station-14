@@ -4,9 +4,7 @@
   description: job-description-gunner-tsf
   playTimeTracker: JobADTBattleShipGunnerTSF
   requirements:
-    - !type:SexRequirement
-      allowedSex:
-      - Male
+
     - !type:SpeciesRequirement
       inverted: false
       species:
