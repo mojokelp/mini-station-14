@@ -3,7 +3,7 @@
   name: Правила сервера
   priority: 0
   ruleEntry: true
-  text: "/ServerInfo//Guidebook/ServerRules/DefaultRules.xml"
+  text: "/ServerInfo/_Mini/ServerRules/DefaultRules.xml"
   children:
   - DefaultRule0
   - DefaultRule1
