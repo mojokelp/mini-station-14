@@ -65,7 +65,7 @@
       tags:
         - CartridgeCaselessRifle
     proto: CartridgeCaselessRifle
-    capacity: 10
+    capacity: 15
   - type: Item
     size: Small
   - type: Sprite
@@ -103,7 +103,7 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRifle
-    capacity: 10
+    capacity: 15
   - type: Sprite
     slayers:
     - state: red
@@ -123,7 +123,7 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRiflePractice
-    capacity: 10
+    capacity: 15
   - type: Sprite
     layers:
     - state: practice

@@ -48,7 +48,6 @@
     sprite: Structures/Windows/plastitanium_window.rsi
     state: full
   - type: IconSmooth
-    key: windows
     base: ptwindow
   - type: Airtight
   - type: Fixtures
