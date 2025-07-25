@@ -21,12 +21,12 @@ public sealed class TurretControlSystem : EntitySystem
 
     public override void Initialize()
     {
-        SubscribeLocalEvent<TurretControllableComponent, GetVerbsEvent<Verb>>(OnGetVerbs);
+        SubscribeLocalEvent<CorvaxTurretControllableComponent, GetVerbsEvent<Verb>>(OnGetVerbs);
     }
 
-    private void OnGetVerbs(Entity<TurretControllableComponent> entity, ref GetVerbsEvent<Verb> e)
+    private void OnGetVerbs(Entity<CorvaxTurretControllableComponent> entity, ref GetVerbsEvent<Verb> e)
     {
-        if (!TryComp<TurretControllerComponent>(e.User, out var controller))
+        if (!TryComp<CorvaxTurretControllerComponent>(e.User, out var controller))
             return;
 
         foreach (var component in controller.RequiredComponents)
