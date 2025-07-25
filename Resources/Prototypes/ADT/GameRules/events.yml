@@ -1,28 +1,14 @@
 - type: entity
-  id: ADTNeutralSpiderSpawn
-  parent: BaseStationEventShortDelay
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    earliestStart: 20
-    minimumPlayers: 15
-    weight: 5
-    duration: 60
-  - type: VentCrittersRule
-    entries:
-    - id: ADTMobMiniSpider
-      prob: 0.01
-
-- type: entity
   id: Pirates
   parent: BaseGameRule
   components:
   - type: StationEvent
+    startAnnouncement: station-event-pirats-start-announcement
+    startAudio:
+      path: /Audio/Announcements/pirates.ogg
     earliestStart: 30
     weight: 5
-    minimumPlayers: 30
+    minimumPlayers: 20
     reoccurrenceDelay: 30
     duration: 1
   - type: PiratesRule
