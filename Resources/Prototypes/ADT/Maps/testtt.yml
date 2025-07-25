@@ -28,104 +28,104 @@
   maps:
   - NextCluster
 
-# Настройки станции для тестов. Станция атакующих
-- type: entity
-  id: StandardStationShipTestAttaked
-  parent:
-  - BaseStation
-  - BaseStationJobsSpawning
-  - BaseStationRecords
-  - BaseStationNanotrasen
-  - BaseStationMagnet
-  - BaseStationNews
-  - BaseStationShuttlesShipVsShipAttaked
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: Transform
+# # Настройки станции для тестов. Станция атакующих
+# - type: entity
+#   id: StandardStationShipTestAttaked
+#   parent:
+#   - BaseStation
+#   - BaseStationJobsSpawning
+#   - BaseStationRecords
+#   - BaseStationNanotrasen
+#   - BaseStationMagnet
+#   - BaseStationNews
+#   - BaseStationShuttlesShipVsShipAttaked
+#   categories: [ HideSpawnMenu ]
+#   components:
+#     - type: Transform
 
-# Настройки станции для тестов. Станция обороны
-- type: entity
-  id: StandardStationShipTestDefended
-  parent:
-  - BaseStation
-  - BaseStationJobsSpawning
-  - BaseStationRecords
-  - BaseStationNanotrasen
-  - BaseStationMagnet
-  - BaseStationNews
-  - BaseStationShuttlesShipVsShipDefended
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: Transform
+# # Настройки станции для тестов. Станция обороны
+# - type: entity
+#   id: StandardStationShipTestDefended
+#   parent:
+#   - BaseStation
+#   - BaseStationJobsSpawning
+#   - BaseStationRecords
+#   - BaseStationNanotrasen
+#   - BaseStationMagnet
+#   - BaseStationNews
+#   - BaseStationShuttlesShipVsShipDefended
+#   categories: [ HideSpawnMenu ]
+#   components:
+#     - type: Transform
 
-- type: entity
-  id: BaseStationShuttlesShipVsShipAttaked
-  abstract: true
-  components:
-    - type: GridSpawn
-      groups:
-        security: !type:GridSpawnGroup
-          nameGrid: false
-          paths:
-          - /Maps/ADTMaps/Shuttles/sec_shuttle_attaked.yml
+# - type: entity
+#   id: BaseStationShuttlesShipVsShipAttaked
+#   abstract: true
+#   components:
+#     - type: GridSpawn
+#       groups:
+#         security: !type:GridSpawnGroup
+#           nameGrid: false
+#           paths:
+#           - /Maps/ADTMaps/Shuttles/sec_shuttle_attaked.yml
 
-- type: entity
-  id: BaseStationShuttlesShipVsShipDefended
-  abstract: true
-  components:
-    - type: GridSpawn
-      groups:
-        security: !type:GridSpawnGroup
-          nameGrid: false
-          paths:
-          - /Maps/ADTMaps/Shuttles/sec_shuttle_defend.yml
+# - type: entity
+#   id: BaseStationShuttlesShipVsShipDefended
+#   abstract: true
+#   components:
+#     - type: GridSpawn
+#       groups:
+#         security: !type:GridSpawnGroup
+#           nameGrid: false
+#           paths:
+#           - /Maps/ADTMaps/Shuttles/sec_shuttle_defend.yml
 
 
-# Станция аттакующих
-- type: gameMap
-  id: ADT_Cluster_Legacy_attaked_ship
-  mapName: 'Cluster Legacy Attaked'
-  mapPath: /Maps/ADTMaps/ADTStations/adt_cluster_legacy_attaked.yml
-  minPlayers: 1
-  maxPlayers: 35
-  stations:
-    ADT_Cluster_Legacy:
-      stationProto: StandardStationShipTestAttaked
-      components:
-        # - type: StationEmergencyShuttle
-        #   emergencyShuttlePath: /Maps/Shuttles/emergency_cluster.yml
-        - type: StationNameSetup
-          mapNameTemplate: '{0} Cluster Station Attaked {1}'
-          nameGenerator:
-            !type:NanotrasenNameGenerator
-            prefixCreator: '14-L'
-        - type: StationJobs
-          availableJobs:
-            # # Security
-            #SecurityOfficerAttackers: [ 6, 6 ]
+# # Станция аттакующих
+# - type: gameMap
+#   id: ADT_Cluster_Legacy_attaked_ship
+#   mapName: 'Cluster Legacy Attaked'
+#   mapPath: /Maps/ADTMaps/ADTStations/adt_cluster_legacy_attaked.yml
+#   minPlayers: 1
+#   maxPlayers: 35
+#   stations:
+#     ADT_Cluster_Legacy:
+#       stationProto: StandardStationShipTestAttaked
+#       components:
+#         # - type: StationEmergencyShuttle
+#         #   emergencyShuttlePath: /Maps/Shuttles/emergency_cluster.yml
+#         - type: StationNameSetup
+#           mapNameTemplate: '{0} Cluster Station Attaked {1}'
+#           nameGenerator:
+#             !type:NanotrasenNameGenerator
+#             prefixCreator: '14-L'
+#         - type: StationJobs
+#           availableJobs:
+#             # # Security
+#             #SecurityOfficerAttackers: [ 6, 6 ]
 
-# Станция обороняющихся
-- type: gameMap
-  id: ADT_Cluster_Legacy_deffend_ship
-  mapName: 'Cluster Legacy Defender'
-  mapPath: /Maps/ADTMaps/ADTStations/adt_cluster_legacy_deffend.yml
-  minPlayers: 1
-  maxPlayers: 35
-  stations:
-    ADT_Cluster_Legacy:
-      stationProto: StandardStationShipTestDefended
-      components:
-        # - type: StationEmergencyShuttle
-        #   emergencyShuttlePath: /Maps/Shuttles/emergency_cluster.yml
-        - type: StationNameSetup
-          mapNameTemplate: '{0} Cluster Station Defender {1}'
-          nameGenerator:
-            !type:NanotrasenNameGenerator
-            prefixCreator: '14-L'
-        - type: StationJobs
-          availableJobs:
-            # # Security
-            SecurityOfficerDefenders: [ 6, 6 ]
+# # Станция обороняющихся
+# - type: gameMap
+#   id: ADT_Cluster_Legacy_deffend_ship
+#   mapName: 'Cluster Legacy Defender'
+#   mapPath: /Maps/ADTMaps/ADTStations/adt_cluster_legacy_deffend.yml
+#   minPlayers: 1
+#   maxPlayers: 35
+#   stations:
+#     ADT_Cluster_Legacy:
+#       stationProto: StandardStationShipTestDefended
+#       components:
+#         # - type: StationEmergencyShuttle
+#         #   emergencyShuttlePath: /Maps/Shuttles/emergency_cluster.yml
+#         - type: StationNameSetup
+#           mapNameTemplate: '{0} Cluster Station Defender {1}'
+#           nameGenerator:
+#             !type:NanotrasenNameGenerator
+#             prefixCreator: '14-L'
+#         - type: StationJobs
+#           availableJobs:
+#             # # Security
+#             SecurityOfficerDefenders: [ 6, 6 ]
 
             # Command
             # Captain: [ 1, 1 ]

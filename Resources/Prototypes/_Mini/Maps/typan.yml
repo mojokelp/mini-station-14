@@ -22,7 +22,7 @@
             TypanRD: [ 0, 1 ]
             TypanScience: [ 0, 3 ]
             TypanOfficer: [ 0, 2 ]
-            TypanBorg: [ 0, 1 ]
+            TypanBorg: [ 0, 2 ]
             TypanBorgMedic: [ 0, 1 ]
             TypanCommand: [ 0, 1 ]
         - type: StationCargoShuttle
