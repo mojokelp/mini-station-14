@@ -4,8 +4,8 @@ meta:
   engineVersion: 252.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/25/2025 20:42:04
-  entityCount: 6420
+  time: 07/25/2025 21:30:29
+  entityCount: 6426
 maps:
 - 1
 grids:
@@ -3150,6 +3150,12 @@ entities:
             color: '#42424293'
             id: WoodTrimThinLineEWhite
           decals:
+            2441: -4,11
+            2442: -4,12
+            2443: -4,13
+            2444: -4,15
+            2445: -4,16
+            2446: -4,17
             3615: -17,11
             3616: -17,10
             3617: -17,9
@@ -3161,16 +3167,6 @@ entities:
             3623: -17,4
             3624: -17,3
             3625: -17,2
-        - node:
-            color: '#42424293'
-            id: WoodTrimThinLineEWhite
-          decals:
-            2441: -4,11
-            2442: -4,12
-            2443: -4,13
-            2444: -4,15
-            2445: -4,16
-            2446: -4,17
         - node:
             color: '#424242FF'
             id: WoodTrimThinLineEWhite
@@ -6339,7 +6335,7 @@ entities:
       pos: 1.5,-0.5
       parent: 5000
     - type: Door
-      secondsUntilStateChange: -16963.803
+      secondsUntilStateChange: -17021.37
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -6867,7 +6863,7 @@ entities:
       pos: 24.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -29472.787
+      secondsUntilStateChange: -29530.354
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -35920,6 +35916,17 @@ entities:
       rot: 3.141592653589793 rad
       pos: -17.5,-0.5
       parent: 2
+  - uid: 6421
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -18.5,9.5
+      parent: 2
+  - uid: 6422
+    components:
+    - type: Transform
+      pos: 0.5,5.5
+      parent: 2
 - proto: PoweredlightBlue
   entities:
   - uid: 2429
@@ -36241,6 +36248,30 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -24.5,-7.5
+      parent: 2
+  - uid: 6423
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -22.5,5.5
+      parent: 2
+  - uid: 6424
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -22.5,0.5
+      parent: 2
+  - uid: 6425
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -24.5,-0.5
+      parent: 2
+  - uid: 6426
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -27.5,5.5
       parent: 2
 - proto: Protolathe
   entities:
