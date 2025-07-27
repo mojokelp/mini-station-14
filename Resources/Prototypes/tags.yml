@@ -1399,4 +1399,7 @@
 - type: Tag
   id: ADTBorgModuleSecurity
 
+- type: Tag
+  id: ADTLasgunRevolverCell
+
 # ALPHABETICAL
