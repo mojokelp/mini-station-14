@@ -49,6 +49,7 @@
         - ShuttleControl
         - Shooting
         - MedicalEquipment
+        - Surgery
 
 - type: startingGear
   id: TypanCommand
