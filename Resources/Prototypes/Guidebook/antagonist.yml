@@ -1,9 +1,10 @@
 - type: guideEntry
   id: Antagonists
   name: guide-entry-antagonists
-  text: "/ServerInfo/Guidebook/Antagonist/Antagonists.xml"
+  text: "/ServerInfo/_Mini/Antagonist/Antagonists.xml"
   children:
   - Traitors
+  - Bingle # Goobstation / Mini - Bingles
   - Blob # Goobstation - Blob
   - CosmicCult # DeltaV - Cosmic Cult
   - NuclearOperatives
@@ -18,39 +19,39 @@
 - type: guideEntry
   id: Traitors
   name: guide-entry-traitors
-  text: "/ServerInfo/Guidebook/Antagonist/Traitors.xml"
+  text: "/ServerInfo/_Mini/Antagonist/Traitors.xml"
 
 - type: guideEntry
   id: NuclearOperatives
   name: guide-entry-nuclear-operatives
-  text: "/ServerInfo/Guidebook/Antagonist/Nuclear Operatives.xml"
+  text: "/ServerInfo/_Mini/Antagonist/Nuclear Operatives.xml"
 
 - type: guideEntry
   id: Zombies
   name: guide-entry-zombies
-  text: "/ServerInfo/Guidebook/Antagonist/Zombies.xml"
+  text: "/ServerInfo/_Mini/Antagonist/Zombies.xml"
 
 - type: guideEntry
   id: Revolutionaries
   name: guide-entry-revolutionaries
-  text: "/ServerInfo/Guidebook/Antagonist/Revolutionaries.xml"
+  text: "/ServerInfo/_Mini/Antagonist/Revolutionaries.xml"
 
 - type: guideEntry
   id: MinorAntagonists
   name: guide-entry-minor-antagonists
-  text: "/ServerInfo/Guidebook/Antagonist/MinorAntagonists.xml"
+  text: "/ServerInfo/_Mini/Antagonist/MinorAntagonists.xml"
 
 - type: guideEntry
   id: SpaceNinja
   name: guide-entry-space-ninja
-  text: "/ServerInfo/Guidebook/Antagonist/SpaceNinja.xml"
+  text: "/ServerInfo/_Mini/Antagonist/SpaceNinja.xml"
 
 - type: guideEntry
   id: Thieves
   name: guide-entry-thieves
-  text: "/ServerInfo/Guidebook/Antagonist/Thieves.xml"
+  text: "/ServerInfo/_Mini/Antagonist/Thieves.xml"
 
 - type: guideEntry
   id: Wizard
   name: guide-entry-wizard
-  text: "/ServerInfo/Guidebook/Antagonist/Wizard.xml"
+  text: "/ServerInfo/_Mini/Antagonist/Wizard.xml"

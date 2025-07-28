@@ -1,0 +1,52 @@
+<Document>
+
+# Рецепты приготовления в микроволновке
+
+Это последняя опубликованная версия сборника рецептов "NanoTrasen Central Command Kitchen de Cuisine's", предназначенного для шеф-поваров, готовящих блюда на судах NanoTrasen.
+
+## Пицца
+<GuideMicrowaveGroupEmbed Group="Pizza"/>
+
+## Вкусные блюда
+<GuideMicrowaveGroupEmbed Group="Savory"/>
+
+## Хлеб
+<GuideMicrowaveGroupEmbed Group="Breads"/>
+
+## Завтраки
+<GuideMicrowaveGroupEmbed Group="Breakfast"/>
+
+## Еда для Нианов
+<GuideMicrowaveGroupEmbed Group="Moth"/>
+
+## Пасты и Лапша
+<GuideMicrowaveGroupEmbed Group="Pasta"/>
+
+## Выпечка и Десерты
+<GuideMicrowaveGroupEmbed Group="Dessert"/>
+
+## Супы и Рагу
+<GuideMicrowaveGroupEmbed Group="Soup"/>
+
+## Пироги и Тарталетки
+<GuideMicrowaveGroupEmbed Group="Pie"/>
+
+## Батончики и Печенье
+<GuideMicrowaveGroupEmbed Group="BarsAndCookies"/>
+
+## Торты
+<GuideMicrowaveGroupEmbed Group="Cake"/>
+
+## Салаты
+<GuideMicrowaveGroupEmbed Group="Salad"/>
+
+## Лекарства
+<GuideMicrowaveGroupEmbed Group="Medicinal"/>
+
+## Другие
+<GuideMicrowaveGroupEmbed Group="Other"/>
+
+## Секрет
+<GuideMicrowaveGroupEmbed Group="Secret"/>
+
+</Document>

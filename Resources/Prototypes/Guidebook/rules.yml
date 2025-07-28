@@ -366,14 +366,14 @@
 
 # # Ban-Related Guide Entries are used as hyperlinks in certain Ruleset Guide Entry explanations.
 
-# - type: guideEntry
-#   id: BanTypes
-#   name: guide-entry-rules-ban-types
-#   ruleEntry: true
-#   text: "/ServerInfo/Guidebook/ServerRules/BanTypes.xml"
+- type: guideEntry
+  id: BanTypes
+  name: guide-entry-rules-ban-types
+  ruleEntry: true
+  text: "/ServerInfo/_Mini/ServerRules/BanTypes.xml"
 
-# - type: guideEntry
-#   id: BanDurations
-#   name: guide-entry-rules-ban-durations
-#   ruleEntry: true
-#   text: "/ServerInfo/Guidebook/ServerRules/BanDurations.xml"
+- type: guideEntry
+  id: BanDurations
+  name: guide-entry-rules-ban-durations
+  ruleEntry: true
+  text: "/ServerInfo/_Mini/ServerRules/BanDurations.xml"
