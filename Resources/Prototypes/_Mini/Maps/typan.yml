@@ -24,7 +24,7 @@
             TypanOfficer: [ 2, 2 ]
             TypanBorg: [ 2, 2 ]
             TypanBorgMedic: [ 1, 1 ]
-            TypanCommand: [ 1, 1 ]
+            TypanCommander: [ 1, 1 ]
         - type: StationCargoShuttle
           path: Maps/Shuttles/SindiCargoShuttle.yml
         - type: StationGoal

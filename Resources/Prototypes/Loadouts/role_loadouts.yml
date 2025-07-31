@@ -642,7 +642,7 @@
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
-  id: JobTypanCommand
+  id: JobTypanCommander
   groups:
   - Inventory # Corvax-Loadouts
   - GroupTankHarness

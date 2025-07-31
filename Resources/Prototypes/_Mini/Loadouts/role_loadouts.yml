@@ -94,7 +94,7 @@
   - SindieTrinkets
 
 - type: roleLoadout
-  id: TypanCommand
+  id: TypanCommander
   groups:
     - Inventory
     - GroupTankHarness
@@ -107,4 +107,4 @@
     - SurvivalSyndicate
     #- SindieTrinkets
   whitelist:
-    - TypanCommand
+    - TypanCommander

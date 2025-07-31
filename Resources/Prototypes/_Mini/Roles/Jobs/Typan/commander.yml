@@ -1,9 +1,9 @@
 - type: job
-  id: TypanCommand
+  id: TypanCommander
   name: job-name-typan-command
-  playTimeTracker: TypanCommand
+  playTimeTracker: TypanCommander
   description: job-description-typan-command
-  startingGear: TypanCommand
+  startingGear: TypanCommander
   icon: "JobIconSyndicateFormal"
   supervisors: job-supervisors-typan-syndicate
   canBeAntag: false
@@ -52,7 +52,7 @@
         - Surgery
 
 - type: startingGear
-  id: TypanCommand
+  id: TypanCommander
   equipment:
     ears: ClothingHeadsetAltSyndicate
     shoes: ClothingShoesBootsCombat

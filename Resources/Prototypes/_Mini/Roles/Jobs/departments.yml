@@ -2,9 +2,9 @@
   id: Typan
   name: department-Typan
   description: department-Typan-description
-  color: "#D381C9"
+  color: "#9b2d30"
   roles:
-  - TypanCommand
+  - TypanCommander
   - TypanRD
   - TypanOfficer
   - TypanAtmosTech
@@ -18,7 +18,7 @@
   id: TypanSynt
   name: department-Typan-Synt
   description: department-Typan-Synt-description
-  color: "#D381C9"
+  color: "#9b2d30"
   roles:
   - TypanBorg
   - TypanBorgMedic

@@ -30,7 +30,7 @@
       - TypanOfficer
       - TypanBorg
       - TypanBorgMedic
-      - TypanCommand
+      - TypanCommander
 
 - type: entity
   id: TypanStationShuttles
