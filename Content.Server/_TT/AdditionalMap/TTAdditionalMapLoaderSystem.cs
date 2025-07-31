@@ -1,13 +1,10 @@
-﻿/*
- * License: MIT
- * Copyright: (c) 2025 TornadoTechnology
- */
-
-using Content.Server.GameTicking;
+﻿using Content.Server.GameTicking;
 using Robust.Server.GameObjects;
 using Robust.Shared.EntitySerialization;
+using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 
+// Author: by TornadoTech
 namespace Content.Server._TT.AdditionalMap;
 
 public sealed class TTAdditionalMapLoaderSystem : EntitySystem
