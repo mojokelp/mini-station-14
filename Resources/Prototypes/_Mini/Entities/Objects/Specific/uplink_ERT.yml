@@ -58,6 +58,6 @@
   priority: 2
 
 - type: storeCategory
-  id: UplinkERTmed
+  id: UplinkERTMed
   name: store-category-med-ert
   priority: 4
