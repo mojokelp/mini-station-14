@@ -1,11 +1,15 @@
+﻿/*
+ * License: MIT
+ * Copyright: (c) 2025 TornadoTechnology
+ */
+
 using Content.Server.Maps;
 using Robust.Shared.Prototypes;
 
-// Author: by TornadoTech
-namespace Content.Server.ADT.AdditionalMapLoader;
+namespace Content.Server._TT.AdditionalMap;
 
 [Prototype("additionalMap")]
-public sealed class AdditionalMapPrototype : IPrototype
+public sealed class TTAdditionalMapPrototype : IPrototype
 {
     [IdDataField]
     public string ID { get; } = string.Empty;

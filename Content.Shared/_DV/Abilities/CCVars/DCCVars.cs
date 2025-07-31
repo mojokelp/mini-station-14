@@ -24,7 +24,7 @@ public sealed class DCCVars
     /// The multiplier for the difficulty of the monument.
     /// </summary>
     public static readonly CVarDef<float> CosmicCultistDifficultyMultiplier =
-        CVarDef.Create("cosmiccult.difficulty_multiplier", 1.75f, CVar.SERVER);
+        CVarDef.Create("cosmiccult.difficulty_multiplier", 1.55f, CVar.SERVER);
 
     /// <summary>
     /// How much entropy a convert is worth towards the next monument tier.
@@ -36,7 +36,7 @@ public sealed class DCCVars
     /// How much of the crew the cult is aiming to convert for a tier 3 monument.
     /// </summary>
     public static readonly CVarDef<int> CosmicCultTargetConversionPercent =
-        CVarDef.Create("cosmiccult.target_conversion_percent", 50, CVar.SERVER);
+        CVarDef.Create("cosmiccult.target_conversion_percent", 30, CVar.SERVER);
 
     /// <summary>
     /// How long the timer for the cult's stewardship vote lasts.

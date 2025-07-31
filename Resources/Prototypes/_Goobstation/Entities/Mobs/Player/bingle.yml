@@ -27,7 +27,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      170: Dead # by request
+      150: Dead # by request
   - type: MobState
     allowedStates:
       - Alive
@@ -59,7 +59,7 @@
   - type: Stamina
     critThreshold: 120
   - type: StaminaDamageOnHit # from stunbaton
-    damage: 33
+    damage: 25
     overtime: 40
     sound: /Audio/Weapons/egloves.ogg
   - type: Damageable
