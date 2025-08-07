@@ -25,13 +25,9 @@
     prototypes:
 #      - ADTAbominationHypertrophied
 #      - ADTAbominationBloated
-      - MobWatcherLavaland
       - MobGoliath
       - ADTMobLegion
-      - ADTMobNightmareSpider
     rarePrototypes:
-      - MobAncientGoliath
-      - ADTRandomTendrilSpawner
       - MobDrake
 #      - ADTAbominationDeath
   - type: TimedDespawn
