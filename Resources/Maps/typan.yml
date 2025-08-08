@@ -4,8 +4,8 @@ meta:
   engineVersion: 252.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/01/2025 00:51:31
-  entityCount: 6759
+  time: 08/02/2025 07:59:19
+  entityCount: 6767
 maps:
 - 1
 grids:
@@ -6479,7 +6479,7 @@ entities:
       pos: 1.5,-0.5
       parent: 5000
     - type: Door
-      secondsUntilStateChange: -22866.82
+      secondsUntilStateChange: -22943.621
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7057,7 +7057,7 @@ entities:
       pos: 24.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -35375.805
+      secondsUntilStateChange: -35452.605
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -40284,6 +40284,60 @@ entities:
     components:
     - type: Transform
       pos: 13.5,-31.5
+      parent: 2
+- proto: SpawnTypanAtmos
+  entities:
+  - uid: 6760
+    components:
+    - type: Transform
+      pos: -16.5,15.5
+      parent: 2
+- proto: SpawnTypanBotanist
+  entities:
+  - uid: 6761
+    components:
+    - type: Transform
+      pos: -15.5,15.5
+      parent: 2
+- proto: SpawnTypanChef
+  entities:
+  - uid: 6767
+    components:
+    - type: Transform
+      pos: -14.5,15.5
+      parent: 2
+- proto: SpawnTypanCommander
+  entities:
+  - uid: 6762
+    components:
+    - type: Transform
+      pos: -14.5,15.5
+      parent: 2
+- proto: SpawnTypanMedic
+  entities:
+  - uid: 6763
+    components:
+    - type: Transform
+      pos: -14.5,14.5
+      parent: 2
+  - uid: 6764
+    components:
+    - type: Transform
+      pos: -16.5,15.5
+      parent: 2
+- proto: SpawnTypanRD
+  entities:
+  - uid: 6765
+    components:
+    - type: Transform
+      pos: -16.5,14.5
+      parent: 2
+- proto: SpawnTypanScience
+  entities:
+  - uid: 6766
+    components:
+    - type: Transform
+      pos: -15.5,15.5
       parent: 2
 - proto: StairDark
   entities:
