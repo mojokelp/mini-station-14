@@ -18,19 +18,19 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform
-    - type: TTStationHandleJob
-      jobs:
-      - TypanAtmosTech
-      - TypanBotanist
-      - TypanCargotech
-      - TypanChef
-      - TypanMedic
-      - TypanRD
-      - TypanScience
-      - TypanOfficer
-      - TypanBorg
-      - TypanBorgMedic
-      - TypanCommander
+    # - type: TTStationHandleJob
+    #   jobs:
+    #   - TypanAtmosTech
+    #   - TypanBotanist
+    #   - TypanCargotech
+    #   - TypanChef
+    #   - TypanMedic
+    #   - TypanRD
+    #   - TypanScience
+    #   - TypanOfficer
+    #   - TypanBorg
+    #   - TypanBorgMedic
+    #   - TypanCommander
 
 - type: entity
   id: TypanStationShuttles
