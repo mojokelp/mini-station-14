@@ -63,3 +63,13 @@
     enabled: true
     sound:
       path: /Audio/_Mini/Radio/Music.ogg
+
+- type: entity
+  id: RadioRen1
+  parent: RadioBase
+  suffix: Ивент, Скованные одной цепью
+  components:
+  - type: AmbientSound
+    enabled: true
+    sound:
+      path: /Audio/_Mini/Radio/Music1.ogg
