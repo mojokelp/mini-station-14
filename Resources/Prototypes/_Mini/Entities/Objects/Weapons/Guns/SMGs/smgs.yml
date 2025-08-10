@@ -19,8 +19,8 @@
       minAngle: -10
       maxAngle: -10
     - type: Gun
-      minAngle: 50
-      maxAngle: 50
+      minAngle: 40
+      maxAngle: 40
       fireRate: 9
       burstFireRate: 7
       soundGunshot:
