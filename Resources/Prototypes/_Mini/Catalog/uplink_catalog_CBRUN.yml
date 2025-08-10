@@ -1,0 +1,131 @@
+- type: listing
+  id: BoberFMG1
+  name: Fmg-9
+  description: Fmg-9 — это оружие, которое отличается высокой скоростью стрельбы и низкой стоимостью производства. Однако оно обладает низкой точностью, что делает его менее эффективным для точных попаданий.
+  icon: { sprite: /Textures/_Mini/Objects/Weapons/Guns/SMG/Fmg.rsi, state: icon }
+  productEntity: WeaponSubMachineGunFmg9
+  cost:
+    Productunit: 7
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: BoberPulse1
+  name: Импульсный карабин
+  description: boobr-pulse-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Battery/pulse_carbine.rsi, state: icon }
+  productEntity: WeaponPulseCarbine
+  cost:
+    Productunit: 20
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: Boberbulldog1
+  name: Бульдог
+  description: Бульдог он и в африке зверь. loginsirs, но мул на стероидах.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/bulldog.rsi, state: icon }
+  productEntity: WeaponShotgunBulldog
+  cost:
+    Productunit: 20
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: BoberKammerer1
+  name: Каммерер
+  description: Быстро, мощно, сочно.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/pump.rsi, state: icon }
+  productEntity: WeaponShotgunKammerer
+  cost:
+    Productunit: 10
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: BoberEnforcer1
+  name: Силовик
+  description: Быстро, мощно, сочно. x2
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/enforcer.rsi, state: icon }
+  productEntity: WeaponShotgunEnforcer
+  cost:
+    Productunit: 15
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: PillAmbuzol
+  name: Амбузол
+  description: Не дает иммунитет от зомби вируса, но спасает если вы были заражены
+  icon: { sprite: /Textures/Objects/Specific/Medical/healing_toolbox.rsi, state: icon }
+  productEntity: PillAmbuzol
+  cost:
+    Productunit: 5
+  categories:
+  - UplinkCBRUNAmbo
+
+- type: listing
+  id: PillAmbuzolPlus
+  name: Амбузол плюс
+  description: Дает иммунитет от зомби вируса.
+  icon: { sprite: /Textures/Objects/Specific/Medical/healing_toolbox.rsi, state: icon }
+  productEntity: PillAmbuzolPlus
+  cost:
+    Productunit: 15
+  categories:
+  - UplinkCBRUNAmbo
+
+- type: listing
+  id: UplinkMagazinePistolSubMachineGun1
+  name: uplink-pistol-magazine-c20r-name
+  description: uplink-pistol-magazine-c20r-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red-icon }
+  productEntity: MagazinePistolSubMachineGun
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkCBRUNAmmo
+
+- type: listing
+  id: UplinkMagazineBulldog
+  name: Пустой Барабан для Бульдога
+  description: Барабанный магазин на 8 зарядов — это емкий и надежный магазин, позволяющий быстро перезаряжать оружие. Он обеспечивает высокую вместимость боеприпасов, что особенно удобно в боевых ситуациях, позволяя вести длительный огонь без частых перезарядок.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Shotgun/m12.rsi, state: base }
+  productEntity: MagazineShotgunEmpty
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkCBRUNAmmo
+
+- type: listing
+  id: UplinkLethalShot
+  name: Коробка Ружейных Патронов
+  description: В коробке 16 ружейных патронов
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi, state: base }
+  productEntity: BoxLethalshot
+  cost:
+    Productunit: 2
+  categories:
+  - UplinkCBRUNAmmo
+
+- type: listing
+  id: UplinkBoxShotgunSlug
+  name: Коробка Ружейных Пуль
+  description: В коробке 16 ружейных Пуль
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi, state: slug }
+  productEntity: BoxShotgunSlug
+  cost:
+    Productunit: 2
+  categories:
+  - UplinkCBRUNAmmo
+
+- type: listing
+  id: UplinkBoxShotgunIncendiary
+  name: Коробка зажигательных Ружейных Пуль
+  description: В коробке 16 зажигательных ружейных патронов
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi, state: incendiary }
+  productEntity: BoxShotgunIncendiary
+  cost:
+    Productunit: 3
+  categories:
+  - UplinkCBRUNAmmo

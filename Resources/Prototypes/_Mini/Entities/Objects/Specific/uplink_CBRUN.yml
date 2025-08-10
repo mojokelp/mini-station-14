@@ -1,0 +1,41 @@
+
+- type: entity
+  id: StorePresetUplinkCBRUNW
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-uplink
+    categories:
+    - UplinkCBRUNWeapon
+    - UplinkCBRUNAmmo
+    - ADTUplinkERTBomb
+    - ADTUplinkERTmed
+    - UplinkERTMisc
+    - UplinkCBRUNAmbo
+    currencyWhitelist:
+    - Productunit
+
+- type: entity
+  parent: [BaseItem,  StorePresetUplinkCBRUNW]
+  id: BaseUplinkCBRUNW
+  name: Блюспейс магазин
+  description: Блюспейс магазин отряда РХБЗЗ.
+  suffix: 35 ЕТ
+  components:
+  - type: Sprite
+    sprite: _Mini/Objects/Specific/bobert.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: _Mini/Objects/Specific/bobert.rsi
+    heldPrefix: icon
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      Productunit: 35
+
