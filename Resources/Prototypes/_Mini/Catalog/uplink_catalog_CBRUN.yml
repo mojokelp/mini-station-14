@@ -1,11 +1,33 @@
 - type: listing
   id: BoberFMG1
   name: Fmg-9
-  description: Fmg-9 — это оружие, которое отличается высокой скоростью стрельбы и низкой стоимостью производства. Однако оно обладает низкой точностью, что делает его менее эффективным для точных попаданий.
+  description: Fmg-9 — это оружие, которое отличается высокой скоростью стрельбы и низкой точностью.
   icon: { sprite: /Textures/_Mini/Objects/Weapons/Guns/SMG/Fmg.rsi, state: icon }
   productEntity: WeaponSubMachineGunFmg9
   cost:
     Productunit: 7
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: achete1
+  name: Мачете
+  description: Мачете — острый и легкий нож для ближнего боя и выживания. Идеально подходит для прорубания через растительность.
+  icon: { sprite: /Textures/Objects/Weapons/Melee/machete.rsi, state: icon }
+  productEntity: Machete
+  cost:
+    Productunit: 2
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: dbShotgun
+  name: Обрез
+  description: Обрез — компактный и мощный дробовик для ближнего боя, можно положить в карман.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/sawn.rsi, state: icon }
+  productEntity: WeaponShotgunSawn
+  cost:
+    Productunit: 5
   categories:
   - UplinkCBRUNWeapon
 
@@ -23,7 +45,7 @@
 - type: listing
   id: Boberbulldog1
   name: Бульдог
-  description: Бульдог он и в африке зверь. loginsirs, но мул на стероидах.
+  description: Барабанный дробовик — мощное оружие с высокой скорострельностью и большим магазином для ближнего боя.
   icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/bulldog.rsi, state: icon }
   productEntity: WeaponShotgunBulldog
   cost:
@@ -34,7 +56,7 @@
 - type: listing
   id: BoberKammerer1
   name: Каммерер
-  description: Быстро, мощно, сочно.
+  description: Помповый дробовик — мощное оружие ближнего боя, быстро наносит большой урон и идеально подходит для захвата и защиты в ближних боях.
   icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/pump.rsi, state: icon }
   productEntity: WeaponShotgunKammerer
   cost:
@@ -45,7 +67,7 @@
 - type: listing
   id: BoberEnforcer1
   name: Силовик
-  description: Быстро, мощно, сочно. x2
+  description: Улучшенный помповый дробовик — повышенная мощность, точность и скорострельность для эффективной борьбы в ближнем бою.
   icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/enforcer.rsi, state: icon }
   productEntity: WeaponShotgunEnforcer
   cost:
@@ -57,7 +79,7 @@
   id: PillAmbuzol
   name: Амбузол
   description: Не дает иммунитет от зомби вируса, но спасает если вы были заражены
-  icon: { sprite: /Textures/Objects/Specific/Medical/healing_toolbox.rsi, state: icon }
+  icon: { sprite: /Textures/Objects/Storage/boxes.rsi, state: pillbox }
   productEntity: PillAmbuzol
   cost:
     Productunit: 5
@@ -68,7 +90,7 @@
   id: PillAmbuzolPlus
   name: Амбузол плюс
   description: Дает иммунитет от зомби вируса.
-  icon: { sprite: /Textures/Objects/Specific/Medical/healing_toolbox.rsi, state: icon }
+  icon: { sprite: /Textures/Objects/Storage/boxes.rsi, state: pillbox }
   productEntity: PillAmbuzolPlus
   cost:
     Productunit: 15
@@ -89,8 +111,7 @@
 - type: listing
   id: UplinkMagazineBulldog
   name: Пустой Барабан для Бульдога
-  description: Барабанный магазин на 8 зарядов — это емкий и надежный магазин, позволяющий быстро перезаряжать оружие. Он обеспечивает высокую вместимость боеприпасов, что особенно удобно в боевых ситуациях, позволяя вести длительный огонь без частых перезарядок.
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Shotgun/m12.rsi, state: base }
+  description: Барабанный магазин на 8 зарядов — это емкий и надежный магазин, позволяющий быстро перезаряжать оружие.
   productEntity: MagazineShotgunEmpty
   cost:
     Productunit: 1
@@ -99,8 +120,8 @@
 
 - type: listing
   id: UplinkLethalShot
-  name: Коробка Ружейных Патронов
-  description: В коробке 16 ружейных патронов
+  name: коробка дроби
+  description: Упаковка из 16 ружейных патронов — надежное и удобное решение для продолжительной стрельбы.
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi, state: base }
   productEntity: BoxLethalshot
   cost:
@@ -111,7 +132,7 @@
 - type: listing
   id: UplinkBoxShotgunSlug
   name: Коробка Ружейных Пуль
-  description: В коробке 16 ружейных Пуль
+  description: Упаковка из 16 пуль — надежный боезапас для точной и мощной стрельбы в бою.
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi, state: slug }
   productEntity: BoxShotgunSlug
   cost:
@@ -121,8 +142,8 @@
 
 - type: listing
   id: UplinkBoxShotgunIncendiary
-  name: Коробка зажигательных Ружейных Пуль
-  description: В коробке 16 зажигательных ружейных патронов
+  name: Коробка зажигательной дроби 
+  description: Упаковка из 16 зажигательных патронов — эффективное средство для поджигания целей и создания огненных эффектов.
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi, state: incendiary }
   productEntity: BoxShotgunIncendiary
   cost:
