@@ -120,9 +120,9 @@
 
 - type: listing
   id: UplinkMagazineBulldog
-  name: Пустой Барабан для Бульдога
+  name: Барабан для Бульдога
   description: Барабанный магазин на 8 зарядов — это емкий и надежный магазин, позволяющий быстро перезаряжать оружие.
-  productEntity: MagazineShotgunEmpty
+  productEntity: MagazineShotgunIncendiary
   cost:
     Productunit: 1
   categories:
@@ -162,7 +162,7 @@
   - UplinkCBRUNAmmo
 
 - type: listing
-  id: ADTBoberPortableRecharger
+  id: BoberPortableRecharger
   name: boobr-portable-recharger-name
   description:  boobr-portable-recharger-desc
   productEntity: PortableRecharger
