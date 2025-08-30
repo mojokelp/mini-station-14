@@ -26,6 +26,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Content.Server.Preferences.Managers;
+using Content.Shared.Database; // Sunrise-Ahelp-Antispam, based on Starlight Build: https://github.com/ss14Starlight/space-station-14/pull/85
 
 namespace Content.Server.Administration.Systems
 {
@@ -647,6 +648,19 @@ namespace Content.Server.Administration.Systems
                 // Unauthorized bwoink (log?)
                 return;
             }
+
+            // Sunrise-Ahelp-Antispam-Start
+            // Based on Starlight Build: https://github.com/ss14Starlight/space-station-14/pull/85
+            var currentTime = _timing.RealTime;
+
+            if (IsOnCooldown(message.UserId, currentTime))
+                return;
+
+            if (IsSpam(message.UserId, message.Text))
+                _banManager.CreateServerBan(senderSession.UserId, senderSession.Name, null, null, null, 180, NoteSeverity.High, Loc.GetString("ahelp-antispam-ban-reason"));
+
+            AddToRecentMessages(message.UserId, message.Text, currentTime);
+            // Sunrise-Ahelp-Antispam-End
 
             if (_rateLimit.CountAction(eventArgs.SenderSession, RateLimitKey) != RateLimitStatus.Allowed)
                 return;

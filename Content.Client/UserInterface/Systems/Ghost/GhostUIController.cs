@@ -6,7 +6,6 @@ using Content.Shared.Ghost;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
 using Content.Shared._Sunrise.SunriseCCVars;
-using Content.Sunrise.Interfaces.Shared;
 using Robust.Shared.Configuration;
 using GhostWarpsResponseEvent = Content.Shared.Ghost.SharedGhostSystem.GhostWarpsResponseEvent;
 
@@ -130,7 +129,6 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.ReturnToBodyPressed += ReturnToBody;
         Gui.GhostRolesPressed += GhostRolesPressed;
         Gui.TargetWindow.WarpClicked += OnWarpClicked;
-        Gui.TargetWindow.OnGhostnadoClicked += OnGhostnadoClicked;
 		Gui.GhostBarPressed += GhostBarPressed; // Corvax-Next-GhostBar
 		Gui.GhostBarWindow.SpawnButtonPressed += GhostBarSpawnPressed; // Corvax-Next-GhostBar
 
