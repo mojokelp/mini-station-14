@@ -3,7 +3,7 @@ using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
-namespace Content.Shared._Sunrise.Helpers;
+namespace Content.Shared._Mini.Helpers;
 
 public sealed class ChatIconsHelpersSystem : EntitySystem
 {

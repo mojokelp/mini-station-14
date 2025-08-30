@@ -1,7 +1,7 @@
-﻿using Content.Shared._Sunrise.Ghost;
+﻿using Content.Shared._Mini.Ghost;
 using Content.Shared.Zombies;
 
-namespace Content.Server._Sunrise.Ghost;
+namespace Content.Server._Mini.Ghost;
 
 /// <summary>
 /// Система, динамически выдающая <see cref="GhostPanelAntagonistMarkerComponent"/>

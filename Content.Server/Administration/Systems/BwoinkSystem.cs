@@ -26,7 +26,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Content.Server.Preferences.Managers;
-using Content.Shared.Database; // Sunrise-Ahelp-Antispam, based on Starlight Build: https://github.com/ss14Starlight/space-station-14/pull/85
+using Content.Shared.Database; // Ahelp-Antispam, based on Starlight Build: https://github.com/ss14Starlight/space-station-14/pull/85
 
 namespace Content.Server.Administration.Systems
 {
@@ -45,7 +45,7 @@ namespace Content.Server.Administration.Systems
         [Dependency] private readonly IAfkManager _afkManager = default!;
         [Dependency] private readonly IServerDbManager _dbManager = default!;
         [Dependency] private readonly PlayerRateLimitManager _rateLimit = default!;
-        [Dependency] private readonly IBanManager _banManager = default!; // Sunrise-Ahelp-Antispam
+        [Dependency] private readonly IBanManager _banManager = default!; // Mini-Ahelp-Antispam
 
         [GeneratedRegex(@"^https://discord\.com/api/webhooks/(\d+)/((?!.*/).*)$")]
         private static partial Regex DiscordRegex();
@@ -79,13 +79,13 @@ namespace Content.Server.Administration.Systems
         // Should be shorter than DescriptionMax
         private const ushort MessageLengthCap = 3000;
 
-        // Sunrise-Ahelp-Antispam-Start
+        // Mini-Ahelp-Antispam-Start
         private readonly TimeSpan _messageCooldown = TimeSpan.FromSeconds(2);
 
         private readonly Queue<(NetUserId Channel, string Text, TimeSpan Timestamp)> _recentMessages = new();
         private const int MaxRecentMessages = 10;
         private const int SpamCheckMessageCount = 3;
-        // Sunrise-Ahelp-Antispam-End
+        // Mini-Ahelp-Antispam-End
 
         // Text to be used to cut off messages that are too long. Should be shorter than MessageLengthCap
         private const string TooLongText = "... **(too long)**";
@@ -658,7 +658,7 @@ namespace Content.Server.Administration.Systems
                 return;
             }
 
-            // Sunrise-Ahelp-Antispam-Start
+            // Ahelp-Antispam-Start
             // Based on Starlight Build: https://github.com/ss14Starlight/space-station-14/pull/85
             var currentTime = _timing.RealTime;
 
@@ -669,7 +669,7 @@ namespace Content.Server.Administration.Systems
                 _banManager.CreateServerBan(senderSession.UserId, senderSession.Name, null, null, null, 180, NoteSeverity.High, Loc.GetString("ahelp-antispam-ban-reason"));
 
             AddToRecentMessages(message.UserId, message.Text, currentTime);
-            // Sunrise-Ahelp-Antispam-End
+            // Ahelp-Antispam-End
 
             if (_rateLimit.CountAction(eventArgs.SenderSession, RateLimitKey) != RateLimitStatus.Allowed)
                 return;
@@ -877,7 +877,7 @@ namespace Content.Server.Administration.Systems
             public bool OnCall;
         }
 
-        // Sunrise-Ahelp-Antispam-Start
+        // Mini-Ahelp-Antispam-Start
         private void AddToRecentMessages(NetUserId channelId, string text, TimeSpan timestamp)
         {
             _recentMessages.Enqueue((channelId, text, timestamp));
@@ -912,7 +912,7 @@ namespace Content.Server.Administration.Systems
         {
             return _recentMessages;
         }
-        // Sunrise-Ahelp-Antispam-End
+        // Mini-Ahelp-Antispam-End
     }
 
     public sealed class AHelpMessageParams

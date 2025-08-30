@@ -181,12 +181,12 @@
       - MindRoleGhostRoleTeamAntagonist
       raffle:
         settings: short
-# Sunrise-start
+# Mini-start
     - type: GhostPanelAntagonistMarker
       name: ghost-panel-antagonist-slime-name
       description: ghost-panel-antagonist-slime-description
       priority: 80
-# Sunrise-end
+# Mini-end
 
 - type: entity
   name: green slime
@@ -227,12 +227,12 @@
       - MindRoleGhostRoleTeamAntagonist
       raffle:
         settings: short
-# Sunrise-start
+# Mini-start
     - type: GhostPanelAntagonistMarker
       name: ghost-panel-antagonist-slime-name
       description: ghost-panel-antagonist-slime-description
       priority: 80
-# Sunrise-end
+# Mini-end
 
 - type: entity
   name: yellow slime
@@ -272,9 +272,9 @@
       - MindRoleGhostRoleTeamAntagonist
       raffle:
         settings: short
-# Sunrise-start
+# Mini-start
     - type: GhostPanelAntagonistMarker
       name: ghost-panel-antagonist-slime-name
       description: ghost-panel-antagonist-slime-description
       priority: 80
-# Sunrise-end
+# Mini-end

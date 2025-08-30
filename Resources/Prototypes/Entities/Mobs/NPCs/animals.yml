@@ -2531,12 +2531,12 @@
   - MobGiantSpider
   id: MobGiantSpiderAngry
   components:
-  # Sunrise edit start
+  # Mini edit start
   - type: GhostPanelAntagonistMarker
     name: ghost-panel-antagonist-spider-name
     description: ghost-panel-antagonist-spider-description
     priority: 100
-  # Sunrise edit end
+  # Mini edit end
 
 - type: entity
   name: clown spider
@@ -2544,12 +2544,12 @@
   id: MobClownSpider
   description: Combines the two most terrifying things in existence, spiders and clowns.
   components:
-    # Sunrise edit start
+    # Mini edit start
     - type: GhostPanelAntagonistMarker
       name: ghost-panel-antagonist-spider-clown-name
       description: ghost-panel-antagonist-spider-clown-description
       priority: 90
-    # Sunrise edit end
+    # Mini edit end
     - type: Sprite
       drawdepth: Mobs
       layers:

@@ -1,13 +1,13 @@
 ﻿using System.Linq;
-using Content.Client._Sunrise.UserInterface.Controls;
+using Content.Client._Mini.UserInterface.Controls;
 using Robust.Client.UserInterface.Controls;
 using GhostWarpPlayer = Content.Shared.Ghost.SharedGhostSystem.GhostWarpPlayer;
 using GhostWarpPlace = Content.Shared.Ghost.SharedGhostSystem.GhostWarpPlace;
 using GhostWarpGlobalAntagonist = Content.Shared.Ghost.SharedGhostSystem.GhostWarpGlobalAntagonist;
 
-namespace Content.Client._Sunrise.UserInterface.Systems.Ghost.Controls;
+namespace Content.Client._Mini.UserInterface.Systems.Ghost.Controls;
 
-public sealed partial class SunriseGhostTargetWindow
+public sealed partial class MiniGhostTargetWindow
 {
     private static readonly Color AntagonistButtonColor = Color.FromHex("#7F4141");
     private static readonly Color PlaceButtonColor = Color.FromHex("#969696");

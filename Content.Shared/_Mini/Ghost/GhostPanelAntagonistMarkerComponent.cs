@@ -1,6 +1,6 @@
 ﻿using Robust.Shared.GameStates;
 
-namespace Content.Shared._Sunrise.Ghost;
+namespace Content.Shared._Mini.Ghost;
 
 /// <summary>
 /// Компонент, отвечающий за отобрание сущности в панели призрака как антагониста

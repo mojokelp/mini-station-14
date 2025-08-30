@@ -299,11 +299,11 @@ namespace Content.Server.Ghost
                 return;
             }
 
-            // Sunrise edit start - для красивой гост меню
+            // Mini edit start - для красивой гост меню
             var response = new GhostWarpsResponseEvent(GetPlayerWarps().ToList(),
                 GetLocationWarps().ToList(),
                 GetAntagonistWarps().ToList());
-            // Sunrise edit end
+            // Mini edit end
 
             RaiseNetworkEvent(response, args.SenderSession.Channel);
         }
@@ -360,7 +360,7 @@ namespace Content.Server.Ghost
                 _physics.SetLinearVelocity(uid, Vector2.Zero, body: physics);
         }
 
-        /* SUNRISE EDIT - методы переделаны и вынесены в partial класс для гост панели
+        /* Mini EDIT - методы переделаны и вынесены в partial класс для гост панели
 
         private IEnumerable<GhostWarp> GetLocationWarps()
         {

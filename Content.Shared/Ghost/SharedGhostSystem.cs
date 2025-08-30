@@ -106,7 +106,7 @@ namespace Content.Shared.Ghost
         public bool IsWarpPoint { get;  }
     }
 
-    /* SUNRISE EDIT - Эти штуки переделаны и вынесены в partial класс. Для панельки гостов
+    /* Mini EDIT - Эти штуки переделаны и вынесены в partial класс. Для панельки гостов
     /// <summary>
     /// A server to client response for a <see cref="GhostWarpsRequestEvent"/>.
     /// Contains players, and locations a ghost can warp to

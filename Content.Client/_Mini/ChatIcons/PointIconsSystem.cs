@@ -1,5 +1,5 @@
 ﻿using Content.Client.UserInterface.Systems.Chat;
-using Content.Shared._Sunrise.SunriseCCVars;
+using Content.Shared._Mini.MiniCCVars;
 using Content.Shared.Chat;
 using Content.Shared.Examine;
 using Content.Shared.Popups;
@@ -7,7 +7,7 @@ using Robust.Client.Player;
 using Robust.Client.UserInterface;
 using Robust.Shared.Configuration;
 
-namespace Content.Client._Sunrise.ChatIcons;
+namespace Content.Client._Mini.ChatIcons;
 
 // TODO: Придумать способ как убирать из чата уже написанные теги при выключении настройки
 // Очень желательно не делать это внутри класса тега
@@ -41,14 +41,14 @@ public sealed class PointIconsSystem : EntitySystem
 
         SubscribeLocalEvent<MetaDataComponent, EntityPopupedEvent>(OnPopup);
 
-        _cfg.OnValueChanged(SunriseCCVars.ChatPointingVisuals, b => _enabled = b, true);
+        _cfg.OnValueChanged(MiniCCVars.ChatPointingVisuals, b => _enabled = b, true);
     }
 
     public override void Shutdown()
     {
         base.Shutdown();
 
-        _cfg.UnsubValueChanged(SunriseCCVars.ChatPointingVisuals, b => _enabled = b);
+        _cfg.UnsubValueChanged(MiniCCVars.ChatPointingVisuals, b => _enabled = b);
     }
 
     private void OnPopup(Entity<MetaDataComponent> ent, ref EntityPopupedEvent args)

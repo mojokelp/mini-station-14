@@ -5,7 +5,7 @@ using Content.Client.UserInterface.Systems.Ghost.Widgets;
 using Content.Shared.Ghost;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
-using Content.Shared._Sunrise.SunriseCCVars;
+using Content.Shared._Mini.MiniCCVars;
 using Robust.Shared.Configuration;
 using GhostWarpsResponseEvent = Content.Shared.Ghost.SharedGhostSystem.GhostWarpsResponseEvent;
 

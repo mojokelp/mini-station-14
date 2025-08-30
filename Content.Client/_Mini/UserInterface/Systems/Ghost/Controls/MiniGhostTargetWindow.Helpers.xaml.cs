@@ -4,9 +4,9 @@ using Content.Shared.Roles;
 using GhostWarpPlayer = Content.Shared.Ghost.SharedGhostSystem.GhostWarpPlayer;
 using GhostWarpGlobalAntagonist = Content.Shared.Ghost.SharedGhostSystem.GhostWarpGlobalAntagonist;
 
-namespace Content.Client._Sunrise.UserInterface.Systems.Ghost.Controls;
+namespace Content.Client._Mini.UserInterface.Systems.Ghost.Controls;
 
-public sealed partial class SunriseGhostTargetWindow
+public sealed partial class MiniGhostTargetWindow
 {
     // Символ трех точек, вставляемый в конец обрезанного имени
     private const string Ellipsis = "...";

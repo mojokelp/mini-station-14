@@ -1,6 +1,6 @@
 ﻿using Robust.Client.UserInterface.Controls;
 
-namespace Content.Client._Sunrise.UserInterface.Controls;
+namespace Content.Client._Mini.UserInterface.Controls;
 
 public sealed class RichTextButton : Button
 {

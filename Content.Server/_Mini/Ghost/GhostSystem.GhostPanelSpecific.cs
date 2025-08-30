@@ -1,4 +1,4 @@
-﻿using Content.Shared._Sunrise.Ghost;
+﻿using Content.Shared._Mini.Ghost;
 using Content.Shared.Ghost;
 using Content.Shared.Humanoid;
 using Content.Shared.Mind.Components;

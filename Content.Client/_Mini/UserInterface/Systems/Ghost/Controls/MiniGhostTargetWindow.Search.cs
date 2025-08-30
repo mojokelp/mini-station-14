@@ -1,10 +1,10 @@
 ﻿using System.Numerics;
-using Content.Client._Sunrise.UserInterface.Controls;
+using Content.Client._Mini.UserInterface.Controls;
 using Robust.Client.UserInterface.Controls;
 
-namespace Content.Client._Sunrise.UserInterface.Systems.Ghost.Controls;
+namespace Content.Client._Mini.UserInterface.Systems.Ghost.Controls;
 
-public sealed partial class SunriseGhostTargetWindow
+public sealed partial class MiniGhostTargetWindow
 {
     // Введенный в поисковую строку текст, закешированный для удобного доступа
     private string _searchText = string.Empty;
